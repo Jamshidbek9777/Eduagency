@@ -107,7 +107,7 @@ const Header = () => {
             </div>
 
            <div className="bg-picture">
-            <img src="../../public/img/header-bg.png" alt="" />
+            <img src="/img/header-bg.png" alt="" />
            </div>
           </div>
 
@@ -210,7 +210,7 @@ const Header = () => {
             </div>
 
            <div className="bg-picture">
-            <img src="../../public/img/header-bg.png" alt="" />
+            <img src="/img/header-bg.png" alt="" />
            </div>
           </div>
           <div className="slide-content info">
