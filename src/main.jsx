@@ -17,6 +17,7 @@ import AcademicTour from "./pages/AcademicTour.jsx";
 import UniversityCom from "./pages/UniversityCom.jsx";
 import Contacts from "./pages/Contacts.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
+import Services from "./components/Services.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -33,6 +34,7 @@ root.render(
       <Route path="/university-community" exact element={<UniversityCom />} />
       <Route path="/contacts" exact element={<Contacts />} />
       <Route path="/about" exact element={<AboutPage />} />
+      <Route path="/services" exact element={<Services />} />
     </Routes>
     <Footer />
     {/* <Up /> */}
