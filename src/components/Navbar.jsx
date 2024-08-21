@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import MobileNavbar from "./MobileNavbar";
 import { getLanguage, getText } from "../locales/index";
 import { LANGUAGE } from "../tools/constants";
@@ -22,11 +22,20 @@ const Navbar = () => {
   };
 
   const handleOpenMobileNav = () => {
-    setBurger(!burger);
-    document.body.style.overflow = burger ? "auto" : "hidden";
+    setBurger(prevBurger => !prevBurger);
   };
 
-  window.addEventListener("scroll", changeNavbar);
+  useEffect(() => {
+    window.addEventListener("scroll", changeNavbar);
+
+    return () => {
+      window.removeEventListener("scroll", changeNavbar);
+    };
+  }, []);
+
+  useEffect(() => {
+    document.body.style.overflow = burger ? "hidden" : "auto";
+  }, [burger]);
 
   return (
     <>
