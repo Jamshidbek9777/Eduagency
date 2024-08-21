@@ -3,17 +3,17 @@ import Partners from "../components/Partners";
 import Getintouch from "../components/Getintouch";
 import { servicesLinks } from "../data/servicesLinks";
 import "../sass/about.scss";
-import "../sass/main.scss"
+import "../sass/main.scss";
 import TwoPartners from "../components/TwoPartners";
 
 function MobileServicesLinksIn() {
   return (
-    <>
+    <div>
       <div className="mobile-page-ServiceLinkIn">
         <img
           src="/img/serviceLinkInMobile-bg.svg"
           alt="404"
-          className="mobile-serviceLinksIn-bg"
+          className="service-mobile"
         />
         <div className="mobile-about-texts">
           <h2>Hakkimizda</h2>
@@ -67,23 +67,14 @@ function MobileServicesLinksIn() {
         </div>
         <div className="twoPartners">
           <h3>Ortaklarımız</h3>
+          <Partners />
           <TwoPartners />
-          <div className="twoPartners_p">
-            <img src="img/part1.png" alt="404" />
-            <img src="img/part2.png" alt="404" />
-            <img src="img/part3.png" alt="404" />
-            <img src="img/part4.png" alt="404" />
-            <img src="img/part5.png" alt="404" />
-            <img src="img/part6.png" alt="404" />
-            <img src="img/part7.png" alt="404" />
-            <img src="img/part8.png" alt="404" />
-          </div>
         </div>
         <div style={{ marginTop: "100px" }}>
           <Getintouch />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

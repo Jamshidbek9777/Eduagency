@@ -1615,22 +1615,38 @@ body {
   display: none;
 }
 
-.mobile-page-ServiceLinkIn {
-  display: none !important;
-  @media (max-width: 992px) { 
-      display: block !important;
-    
-  }
-}
-
-
 @media (min-width: 992px) {
   .serviceLinkIn-bg-div {
     display: block;
   }
 }
 
-.mobile-serviceLinksIn-bg{
+.mobile-serviceLinksIn-bg {
   width: 100%;
   margin-top: 60px;
+}
+
+.bg-picture {
+  margin-top: 30px;
+}
+
+.service-pc {
+  display: none;
+}
+
+.service-mobile {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .service-pc {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .service-mobile {
+    width: 100%;
+    display: block;
+  }
 }
