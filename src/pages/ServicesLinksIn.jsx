@@ -9,7 +9,7 @@ import MobileServicesLinksIn from "./MobileServicesLinksIn";
 function ServicesLinksIn() {
   return (
     <>
-      <div className="about-page-bg">
+      <div className="serviceLinkIn-bg-div">
         <div className="container">
           <div className="about-page-p">
             <div className="about-page-texts">

@@ -3,16 +3,17 @@ import Partners from "../components/Partners";
 import Getintouch from "../components/Getintouch";
 import { servicesLinks } from "../data/servicesLinks";
 import "../sass/about.scss";
+import "../sass/main.scss"
 import TwoPartners from "../components/TwoPartners";
 
 function MobileServicesLinksIn() {
   return (
     <>
-      <div className=" about-page-mobile">
+      <div className="mobile-page-ServiceLinkIn">
         <img
-          src="/img/mobile-about-bg.svg"
+          src="/img/serviceLinkInMobile-bg.svg"
           alt="404"
-          className="mobile-about-bg"
+          className="mobile-serviceLinksIn-bg"
         />
         <div className="mobile-about-texts">
           <h2>Hakkimizda</h2>

@@ -1071,6 +1071,39 @@ body {
         font-family: "Roboto";
       }
     }
+    .twoPartners_p {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      justify-content: center;
+      place-content: center;
+
+      place-items: center;
+      img {
+        width: 100px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .twoPartners_p {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      }
+    }
+
+    @media (min-width: 768px) {
+      .twoPartners_p {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .twoPartners_p {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      }
+    }
   }
 
   .Getintouch,
@@ -1525,6 +1558,7 @@ body {
 .twoPartners {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
   margin-top: 119px;
   h3 {
@@ -1555,7 +1589,6 @@ body {
       border-radius: 8px;
     }
   }
-
   @media (max-width: 480px) {
     .twoPartners_p {
       grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
@@ -1573,4 +1606,31 @@ body {
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
   }
+}
+
+.serviceLinkIn-bg-div {
+  background-image: url("/img/servisLinkIn-bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+.mobile-page-ServiceLinkIn {
+  display: none !important;
+  @media (max-width: 992px) { 
+      display: block !important;
+    
+  }
+}
+
+
+@media (min-width: 992px) {
+  .serviceLinkIn-bg-div {
+    display: block;
+  }
+}
+
+.mobile-serviceLinksIn-bg{
+  width: 100%;
+  margin-top: 60px;
 }
