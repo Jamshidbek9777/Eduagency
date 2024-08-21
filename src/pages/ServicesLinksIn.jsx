@@ -6,15 +6,15 @@ import { servicesLinks } from "../data/servicesLinks";
 import TwoPartners from "../components/TwoPartners";
 import MobileServicesLinksIn from "./MobileServicesLinksIn";
 import Swiper from "../components/Swipper";
-import "../sass/serviceSwiper.scss"
+import "../sass/serviceSwiper.scss";
 
 function ServicesLinksIn() {
   return (
     <>
       <div className="">
-        <div className="container service-pc">
+        <div className="container service-pc" style={{ marginTop: "30px" }}>
           <Swiper>
-            <div className="slide-content info">
+            <div className="slide-content-m min10 info">
               <div className="texts">
                 <h4>Muracaat İşlemleri</h4>
                 <p>
@@ -58,9 +58,12 @@ function ServicesLinksIn() {
               <div className="bg-picture">
                 <img src="/img/servisLinkIn-bg.svg" alt="" />
               </div>
+              <div className="bg-picture min78">
+                <img src="/img/serviceLinkInMobile-bg.svg" alt="" />
+              </div>
             </div>
 
-            <div className="slide-content info">
+            <div className="slide-content-m min10 info">
               <div className="texts">
                 <h4>Muracaat İşlemleri</h4>
                 <p>
@@ -104,8 +107,11 @@ function ServicesLinksIn() {
               <div className="bg-picture">
                 <img src="/img/servisLinkIn-bg.svg" alt="" />
               </div>
+              <div className="bg-picture min78">
+                <img src="/img/serviceLinkInMobile-bg.svg" alt="" />
+              </div>
             </div>
-            <div className="slide-content info">
+            <div className="slide-content-m min10 info">
               <div className="texts">
                 <h4>Muracaat İşlemleri</h4>
                 <p>
@@ -147,7 +153,10 @@ function ServicesLinksIn() {
               </div>
 
               <div className="bg-picture">
-                <img src="/img/servisLinkIn-bg.svg" alt="404" />
+                <img src="/img/servisLinkIn-bg.svg" alt="" />
+              </div>
+              <div className="bg-picture min78">
+                <img src="/img/serviceLinkInMobile-bg.svg" alt="" />
               </div>
             </div>
           </Swiper>
