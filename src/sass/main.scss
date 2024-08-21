@@ -1638,6 +1638,16 @@ body {
   display: none;
 }
 
+.mobile-page-ServiceLinkIn{
+  display: none;
+}
+
+@media (max-width: 776px) {
+  .mobile-page-ServiceLinkIn{
+    display: block;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .service-pc {
     display: block;
