@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import "../sass/swiper.scss";
 
-const Swiper = ({ children, autoplayInterval = 30000 }) => {
+const Swiper = ({ children, autoplayInterval = 40000 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const autoplayRef = useRef(null);
   const swiperRef = useRef(null);
