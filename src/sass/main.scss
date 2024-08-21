@@ -1163,7 +1163,6 @@ body {
       font-size: 20px;
       font-weight: 400;
       line-height: 22px;
-      color: #c4c4c4;
 
       &:focus,
       &:focus-within {
@@ -1187,6 +1186,34 @@ body {
 
     .inputWrap {
       position: relative;
+      ::placeholder {
+        color: #c4c4c4 !important;
+      }
+
+      select {
+        border: none;
+        border-radius: 0;
+        border-bottom: 2px solid #dcdcdc;
+        box-sizing: border-box;
+        background: transparent;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 22px;
+        color: #c4c4c4;
+        margin-bottom: 20px;
+        font-weight: 400;
+        padding-left: 0;
+      }
+      .select-style {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background: #fff url("/public/img/Left\ Button.png") no-repeat right
+          center;
+        background-size: 16px;
+        border-radius: 4px;
+        width: 100%;
+      }
 
       textarea {
         border: none;
@@ -1194,7 +1221,7 @@ body {
         border-bottom: 2px solid #dcdcdc;
         box-sizing: border-box;
         background: transparent;
-        color: #000 !important;
+        color: #c4c4c4 !important;
         height: 150px;
         margin-bottom: 20px;
         font-weight: 400;
@@ -1258,14 +1285,14 @@ body {
         justify-content: space-around;
         align-items: center;
         text-align: center;
-        flex-wrap: wrap; /* Added for responsive design */
+        flex-wrap: wrap;
 
         .contact-blog-in {
           display: flex;
           align-items: center;
           flex-direction: column;
           text-align: center;
-          margin: 10px; /* Added for spacing */
+          margin: 10px;
 
           a {
             font-size: 16px;
@@ -1273,7 +1300,7 @@ body {
 
           p,
           h4 {
-            color: #000;
+            color: #c4c4c4;
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
@@ -1491,6 +1518,59 @@ body {
         font-weight: 700;
         color: #666;
       }
+    }
+  }
+}
+
+.twoPartners {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 119px;
+  h3 {
+    color: #000;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 76px;
+    @media (max-width: 992px) {
+      font-size: 54px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
+  }
+  .twoPartners_p {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    justify-content: center;
+    place-content: center;
+    place-items: center;
+    img {
+      width: 100px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .twoPartners_p {
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+  }
+
+  @media (min-width: 768px) {
+    .twoPartners_p {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .twoPartners_p {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
   }
 }

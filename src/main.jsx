@@ -18,6 +18,7 @@ import UniversityCom from "./pages/UniversityCom.jsx";
 import Contacts from "./pages/Contacts.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
 import Services from "./components/Services.jsx";
+import ServicesLinksIn from "./pages/ServicesLinksIn.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -35,6 +36,7 @@ root.render(
       <Route path="/contacts" exact element={<Contacts />} />
       <Route path="/about" exact element={<AboutPage />} />
       <Route path="/services" exact element={<Services />} />
+      <Route path="/services/in" exact element={<ServicesLinksIn />} />
     </Routes>
     <Footer />
     {/* <Up /> */}

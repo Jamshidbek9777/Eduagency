@@ -1,46 +1,46 @@
 import { useState } from "react";
-import { getText } from "../locales";
-import InputMask from "react-input-mask";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
+import InputMask from "react-input-mask";
 
 const Getintouch = () => {
-  const [form1] = useState(false);
-  const [form2] = useState(false);
-  const [form3] = useState(false);
-  const [form4] = useState(false);
-  const TOKEN = "6595677829:AAGkeV8LwYLNGNjsu8xus7o6gkFkOhvp1sQ";
-  const USERID = "-1002173244569";
-  // import { CHAT_ID } from "../constants";
-
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("+998");
   const [email, setEmail] = useState("");
-  const [desription, setDescription] = useState("");
-
+  const [service, setService] = useState("");
+  const [description, setDescription] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
-  let text = `Name: ${name}.%0AMessage: ${desription}.%0APhone number: ${phone}%0AEmail: ${
-    email.length == 0 ? "Email is empty" : email
-  }.`;
+  const TOKEN = "6595677829:AAGkeV8LwYLNGNjsu8xus7o6gkFkOhvp1sQ";
+  const USERID = "-1002173244569";
 
-  const sendFeedback = (e) => {
-    setIsLoading(true);
+  const encodeText = (text) => encodeURIComponent(text);
+
+  const sendFeedback = async (e) => {
     e.preventDefault();
+    setIsLoading(true);
 
-    axios.post(
-      `https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=${USERID}&text=${text}`
-    );
+    const text = `Name: ${name}\nMessage: ${description}\nPhone number: ${phone}\nEmail: ${
+      email.length === 0 ? "Email is empty" : email}\n Services: ${service}`;
 
-    // https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${text}
-
-    toast.success("Gonderildi");
-    setIsLoading(false);
-    setName("");
-    setPhone("");
-    setDescription("");
-    setEmail("");
+    try {
+      await axios.post(
+        `https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=${USERID}&text=${encodeText(
+          text
+        )}`
+      );
+      toast.success("Message sent successfully!");
+    } catch (error) {
+      toast.error("Failed to send message. Please try again.");
+    } finally {
+      setIsLoading(false);
+      setName("");
+      setPhone("+998");
+      setEmail("");
+      setDescription("");
+      setService("");
+    }
   };
 
   return (
@@ -52,7 +52,7 @@ const Getintouch = () => {
               <img
                 className="w-100 img-getInTouch"
                 src="img/getintouch.png"
-                alt=""
+                alt="Contact Us"
               />
             </div>
           </div>
@@ -65,7 +65,6 @@ const Getintouch = () => {
               </p>
               <div className="row">
                 <div className="inputWrap col-sm-6">
-                  {/* <h6 className={`${form1 ? "active" : ""}`}>Adınız</h6> */}
                   <InputMask
                     placeholder="Adınız"
                     onChange={(e) => setName(e.target.value)}
@@ -77,7 +76,6 @@ const Getintouch = () => {
                   />
                 </div>
                 <div className="inputWrap col-sm-6">
-                  {/* <h6 className={`${form2 ? "active" : ""}`}>Telefon numaranız</h6> */}
                   <InputMask
                     placeholder="Telefon numaranız"
                     onChange={(e) => setPhone(e.target.value)}
@@ -85,11 +83,11 @@ const Getintouch = () => {
                     className="form-control"
                     name="phone"
                     required
-                    type="number"
+                    mask="+999999999999"
+                    type="text"
                   />
                 </div>
                 <div className="inputWrap">
-                  {/* <h6 className={`${form3 ? "active" : ""}`}>Email</h6> */}
                   <InputMask
                     placeholder="E-posta"
                     onChange={(e) => setEmail(e.target.value)}
@@ -100,29 +98,47 @@ const Getintouch = () => {
                     type="email"
                   />
                 </div>
+                <div className="inputWrap">
+                  <select
+                    onChange={(e) => setService(e.target.value)}
+                    value={service}
+                    className="form-control select-style"
+                    name="service"
+                    required
+                  >
+                    <option value="" disabled>
+                      Ne tür hizmetlerle ilgileniyorsunuz?
+                    </option>
+                    <option value="Service 1">Service 1</option>
+                    <option value="Service 2">Service 2</option>
+                    <option value="Service 3">Service 3</option>
+                    <option value="Service 4">Service 4</option>
+                  </select>
+                </div>
               </div>
               <div className="inputWrap">
-                {/* <h6 className={`last ${form4 ? "actives" : ""}`}>Mesaj*</h6> */}
                 <textarea
                   placeholder="Mesaj"
                   onChange={(e) => setDescription(e.target.value)}
-                  value={desription}
+                  value={description}
                   className="form-control"
                   name="message"
                   required
                 />
               </div>
-              <p className="bottom-top-p">"Gönder" butonuna tıklayarak şartları kabul etmiş olursunuz <a href="#">kişisel verilerin işlenmesi.</a></p>
-              <button disabled={isLoading} className="btn">
+              <p className="bottom-top-p">
+                "Gönder" butonuna tıklayarak şartları kabul etmiş olursunuz{" "}
+                <a href="#">kişisel verilerin işlenmesi.</a>
+              </p>
+              <button type="submit" disabled={isLoading} className="btn">
                 {isLoading ? (
                   <span
                     style={{ color: "#fff" }}
                     className="spinner-border-sm spinner-border ms-2"
                   ></span>
                 ) : (
-                  ""
+                  "Göndermek"
                 )}
-                Göndermek
               </button>
               <ToastContainer />
             </form>
