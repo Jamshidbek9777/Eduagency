@@ -69,8 +69,9 @@ function ServicesLinksIn() {
           </div>
           <div className="twoPartners">
             <h3>Ortaklarımız</h3>
+            <Partners />
             <TwoPartners />
-            <div className="twoPartners_p">
+            {/* <div className="twoPartners_p">
               <img src="img/part1.png" alt="404" />
               <img src="img/part2.png" alt="404" />
               <img src="img/part3.png" alt="404" />
@@ -79,7 +80,7 @@ function ServicesLinksIn() {
               <img src="img/part6.png" alt="404" />
               <img src="img/part7.png" alt="404" />
               <img src="img/part8.png" alt="404" />
-            </div>
+            </div> */}
           </div>
         </div>
         <div style={{marginTop: "100px"}}>
