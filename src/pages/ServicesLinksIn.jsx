@@ -1,7 +1,6 @@
 import React from "react";
 import "../sass/about.scss";
 import Partners from "../components/Partners";
-import About from "../components/About";
 import Getintouch from "../components/Getintouch";
 import { servicesLinks } from "../data/servicesLinks";
 import TwoPartners from "../components/TwoPartners";

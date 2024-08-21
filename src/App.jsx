@@ -3,13 +3,15 @@ import About from "./components/About";
 import Services from "./components/Services";
 import Getintouch from "./components/Getintouch";
 import Partners from "./components/Partners";
+import ServiceBlog from "./components/ServiceBlog";
 
 const App = () => {
+  
   return (
     <>
       <Header />
       <Partners />
-      <Services />
+      <ServiceBlog />
       <About
         title={"Hakkımızda"}
         desc={

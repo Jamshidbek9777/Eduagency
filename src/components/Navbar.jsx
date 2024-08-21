@@ -61,13 +61,13 @@ const Navbar = () => {
             >
               <ul className="nav-menu">
                 <li>
-                  <a href="/">{getText("home")}</a>
+                  <Link to="/">{getText("home")}</Link>
                 </li>
                 <li>
                   <Link to="/about">{getText("aboutUs")}</Link>
                 </li>
                 <li>
-                  <a href="/services">Bizim hizmetler</a>
+                  <Link to="/services">Bizim hizmetler</Link>
                 </li>
                 <li>
                   <Link to="/contacts">{getText("contacts")}</Link>

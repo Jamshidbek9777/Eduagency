@@ -58,9 +58,9 @@ const MobileNavbar = ({ burger, setBurger }) => {
                 animate="visible"
                 transition={{ delay: 0.1 }}
               >
-                <a onClick={() => setBurger(!burger)} href="/">
+                <Link onClick={() => setBurger(!burger)} to="/">
                   {getText("home")}
-                </a>
+                </Link>
               </motion.li>
               <motion.li
                 variants={itemVariants}
@@ -78,9 +78,9 @@ const MobileNavbar = ({ burger, setBurger }) => {
                 animate="visible"
                 transition={{ delay: 0.3 }}
               >
-                <a onClick={() => setBurger(!burger)} href="/services">
+                <Link onClick={() => setBurger(!burger)} to="/services">
                   Bizim hizmetler
-                </a>
+                </Link>
               </motion.li>
               <motion.li
                 variants={itemVariants}
