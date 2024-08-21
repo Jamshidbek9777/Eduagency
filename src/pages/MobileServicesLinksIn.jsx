@@ -3,7 +3,7 @@ import Partners from "../components/Partners";
 import Getintouch from "../components/Getintouch";
 import { servicesLinks } from "../data/servicesLinks";
 import "../sass/about.scss";
-import "../sass/main.scss"
+import "../sass/main.scss";
 import TwoPartners from "../components/TwoPartners";
 
 function MobileServicesLinksIn() {
@@ -16,7 +16,7 @@ function MobileServicesLinksIn() {
           className="mobile-serviceLinksIn-bg"
         />
         <div className="mobile-about-texts">
-          <h2>Hakkimizda</h2>
+          <h2>Muracaat İşlemleri</h2>
           <p>
             Öğrenciler, ajansın uzman danışmanlarından Türkiye ve
             Özbekistan'daki eğitim kurumları hakkında ayrıntılı bilgi
@@ -67,7 +67,7 @@ function MobileServicesLinksIn() {
         </div>
         <div className="twoPartners">
           <h3>Ortaklarımız</h3>
-          <Partners/>
+          <Partners />
           <TwoPartners />
         </div>
         <div style={{ marginTop: "100px" }}>

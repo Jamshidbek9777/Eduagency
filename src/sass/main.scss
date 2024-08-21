@@ -1622,7 +1622,7 @@ body {
 }
 
 .mobile-serviceLinksIn-bg {
-  width: 100%;
+  // width: 100%;
   margin-top: 60px;
 }
 
@@ -1638,23 +1638,91 @@ body {
   display: none;
 }
 
-.mobile-page-ServiceLinkIn{
+.mobile-page-ServiceLinkIn {
+  margin: 20px;
   display: none;
-}
 
-@media (max-width: 776px) {
-  .mobile-page-ServiceLinkIn{
-    display: block;
+  .mobile-serviceLinksIn-bg {
+    width: 100%;
+    margin-top: 50px !important;
+    border-radius: 20px;
+  }
+
+  .mobile-about-texts {
+    h2 {
+      font-size: 24px;
+      font-weight: 500;
+      margin-top: 16px;
+    }
+    p {
+      font-size: 15px;
+      color: rgba(0, 0, 0, 0.7);
+      font-weight: 400;
+      line-height: 24px;
+      margin-top: 8px;
+    }
+    .myBtn {
+      margin-top: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      button {
+        color: #fff;
+        font-family: Jost;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border: none;
+        display: flex;
+        padding: 16px 32px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border-radius: 70px;
+        background: #34C759;
+
+        /* Card */
+        box-shadow: 4px -6px 4px 0px rgba(255, 255, 255, 0.25) inset,
+          0px 5px 4px 0px rgba(255, 255, 255, 0.25) inset;
+        &:nth-child(2) {
+          border-radius: 70px;
+          background: #34c759;
+
+          /* Card */
+          box-shadow: 4px -6px 4px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 5px 4px 0px rgba(255, 255, 255, 0.25) inset;
+        }
+      }
+
+      @media (max-width: 992px) {
+        button {
+          padding: 10px 20px !important;
+        }
+      }
+    }
   }
 }
 
-@media screen and (min-width: 992px) {
+@media (max-width: 776px) {
+  .mobile-page-ServiceLinkIn {
+    display: block;
+    .mobile-about-texts {
+      width: 100%;
+      .myBtn {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 776px) {
   .service-pc {
     display: block;
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 776px) {
   .service-mobile {
     width: 100%;
     display: block;
