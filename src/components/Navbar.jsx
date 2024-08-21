@@ -22,7 +22,7 @@ const Navbar = () => {
   };
 
   const handleOpenMobileNav = () => {
-    setBurger(prevBurger => !prevBurger);
+    setBurger((prevBurger) => !prevBurger);
   };
 
   useEffect(() => {
@@ -95,7 +95,11 @@ const Navbar = () => {
               onClick={handleOpenMobileNav}
               className={`burger pr-4 ml-auto d-flex d-lg-none`}
             >
-              <img src="/img/burger.svg" alt="burger" />
+              {burger ? (
+                <img src="/img/opened-burger.png" alt="burger" />
+              ) : (
+                <img src="/img/burger.svg" alt="burger" />
+              )}
             </div>
           </div>
         </div>
