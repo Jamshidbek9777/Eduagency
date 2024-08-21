@@ -5,8 +5,8 @@ import { getLanguage, getText } from "../locales/index";
 import { LANGUAGE } from "../tools/constants";
 
 const MobileNavbar = ({ burger, setBurger }) => {
-  const changeLanguage = (e) => {
-    localStorage.setItem(LANGUAGE, e.target.value);
+  const changeLanguage = (lang) => {
+    localStorage.setItem(LANGUAGE, lang);
     document.location.reload(true);
   };
 
@@ -94,36 +94,34 @@ const MobileNavbar = ({ burger, setBurger }) => {
               </motion.li>
             </ul>
             <div className="siteLang d-flex align-items-center">
-              {/* <i>
-                <img src="img/tr.png" alt="" />
-              </i> */}
-              {/* <select onChange={changeLanguage}>
-                <option value="uz" selected={getLanguage() === "uz"}>
-                  Oʻzbek
-                </option>
-                <option value="en" selected={getLanguage() === "en"}>
-                  English
-                </option>
-                <option value="tr" selected={getLanguage() === "tr"}>
-                  Türkçe
-                </option>
-              </select> */}
               <div className="all-menu">
                 <ul className="nav-mobile-menu">
                   <li>
-                    <a href="#" className="flag-div">
+                    <a
+                      href="#"
+                      className="flag-div"
+                      onClick={() => changeLanguage("tr")}
+                    >
                       <img src="/img/turkey.png" alt="turkey icon" />
                       Turkish
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="flag-div">
+                    <a
+                      href="#"
+                      className="flag-div"
+                      onClick={() => changeLanguage("uz")}
+                    >
                       <img src="/img/uzbekistán.png" alt="uzbekistán icon" />
                       O’zbek
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="flag-div">
+                    <a
+                      href="#"
+                      className="flag-div"
+                      onClick={() => changeLanguage("ru")}
+                    >
                       <img src="/img/russia.png" alt="russia icon" />
                       Русский
                     </a>
