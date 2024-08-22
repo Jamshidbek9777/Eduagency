@@ -3,9 +3,10 @@ import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Swiper from "../components/Swipper";
-import HeaderMobile from "./HeaderMobile";
 import Partners from "./Partners";
 import TwoPartners from "./TwoPartners";
+import Getintouch from "./Getintouch";
+import ServiceMobile from "./ServiceMobile";
 
 const Services = () => {
   const navigate = useNavigate();
@@ -118,7 +119,7 @@ const Services = () => {
               </div>
 
               <div className="bg-picture">
-                <img src="/img/header-bg.png" alt="" />
+                <img src="/img/servisLinkIn-bg.svg" alt="" />
               </div>
             </div>
 
@@ -221,7 +222,7 @@ const Services = () => {
               </div>
 
               <div className="bg-picture">
-                <img src="/img/header-bg.png" alt="" />
+                <img src="/img/servisLinkIn-bg.svg" alt="" />
               </div>
             </div>
             <div className="slide-content info">
@@ -293,7 +294,7 @@ const Services = () => {
                   <p>
                     Öğrencilerin kabul aldığı eğitim kurumlarına yerleştirilmesi
                     sürecinde de ajans rehberlik eder.
-                  </p>
+                  </p>HeaderMobile
                   <button>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -323,16 +324,16 @@ const Services = () => {
               </div>
 
               <div className="bg-picture">
-                <img src="/img/header-bg.png" alt="404" />
+                <img src="/img/servisLinkIn-bg.svg" alt="404" />
               </div>
             </div>
           </Swiper>
         </div>
 
-        <HeaderMobile />
+        <ServiceMobile />
       </div>
 
-      <Partners />
+      <TwoPartners />
 
       <div className="services" id="services">
         <div className="container">
@@ -443,8 +444,14 @@ const Services = () => {
             </div>
           </div>
         </div>
-
-        <TwoPartners />
+        <div className="partners-services">
+          <h2>Ortaklarımız</h2>
+          <Partners />
+          <TwoPartners />
+        </div>
+        <div style={{marginTop: "120px"}}>
+          <Getintouch />
+        </div>
       </div>
     </>
   );

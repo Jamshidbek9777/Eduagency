@@ -827,6 +827,29 @@ body {
 
   .services {
     margin: 100px 0;
+    .partners-services {
+      margin-top: 120px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      h2 {
+        color: #000;
+        font-family: Jost;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 76px; /* 118.75% */
+        @media (max-width: 1200px) {
+          font-size: 54px;
+        }
+        @media (max-width: 992px) {
+          font-size: 50px;
+        }
+        @media (max-width: 768px) {
+          font-size: 24px;
+        }
+      }
+    }
     .myItem {
       height: 170px;
 
@@ -1681,7 +1704,7 @@ body {
         align-items: center;
         gap: 8px;
         border-radius: 70px;
-        background: #34C759;
+        background: #34c759;
 
         /* Card */
         box-shadow: 4px -6px 4px 0px rgba(255, 255, 255, 0.25) inset,
