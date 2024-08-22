@@ -37,11 +37,6 @@ const Navbar = () => {
     document.body.style.overflow = burger ? "hidden" : "auto";
   }, [burger]);
 
-  const handleToggleNavbar = () => {
-    setNavbar(!navbar);
-    localStorage.setItem("navbarActive", !navbar);
-  };
-
   const changeLanguage = (e) => {
     localStorage.setItem(LANGUAGE, e.target.value);
     document.location.reload(true);
@@ -58,8 +53,6 @@ const Navbar = () => {
   const handleDropdownHover = (state) => {
     setIsDropdownOpen(state);
   };
-
-  const activeLink = localStorage.getItem("activeLink") || location.pathname;
 
   return (
     <>
@@ -87,7 +80,9 @@ const Navbar = () => {
                 <li onClick={() => handleLinkClick("/")}>
                   <Link
                     to="/"
-                    className={activeLink === "/" ? "active-link" : ""}
+                    className={`${
+                      location.pathname === "/" ? "active-link" : ""
+                    }`}
                   >
                     {getText("home")}
                   </Link>
@@ -95,7 +90,9 @@ const Navbar = () => {
                 <li onClick={() => handleLinkClick("/about")}>
                   <Link
                     to="/about"
-                    className={activeLink === "/about" ? "active-link" : ""}
+                    className={`${
+                      location.pathname === "/about" ? "active-link" : ""
+                    }`}
                   >
                     {getText("aboutUs")}
                   </Link>
@@ -106,7 +103,9 @@ const Navbar = () => {
                 >
                   <Link
                     to="/services"
-                    className={activeLink === "/services" ? "active-link" : ""}
+                    className={`${
+                      location.pathname === "/services" ? "active-link" : ""
+                    }`}
                   >
                     Bizim hizmetler
                   </Link>
@@ -119,24 +118,62 @@ const Navbar = () => {
                     transition={{ duration: 0.3 }}
                     className={`dropdown-menu ${isDropdownOpen ? "show" : ""}`}
                   >
-                    <li>
-                      <Link to="/application">Muracaat İşlemleri</Link>
+                    <li onClick={() => handleLinkClick("/application")}>
+                      <Link
+                        to="/application"
+                        className={`${
+                          location.pathname === "/application"
+                            ? "active-link"
+                            : ""
+                        }`}
+                      >
+                        Muracaat İşlemleri
+                      </Link>
                     </li>
-                    <li>
-                      <Link to="/student-transfer">Öğrenci Transferi</Link>
+                    <li onClick={() => handleLinkClick("/student-transfer")}>
+                      <Link
+                        to="/student-transfer"
+                        className={`${
+                          location.pathname === "/student-transfer"
+                            ? "active-link"
+                            : ""
+                        }`}
+                      >
+                        Öğrenci Transferi
+                      </Link>
                     </li>
-                    <li>
-                      <Link to="/expert-transfer">Uzman Transferi</Link>
+                    <li onClick={() => handleLinkClick("/expert-transfer")}>
+                      <Link
+                        to="/expert-transfer"
+                        className={`${
+                          location.pathname === "/expert-transfer"
+                            ? "active-link"
+                            : ""
+                        }`}
+                      >
+                        Uzman Transferi
+                      </Link>
                     </li>
-                    <li>
-                      <Link to="/academic-tour">Turkiye Uluslararasi Ofisi</Link>
+                    <li onClick={() => handleLinkClick("/academic-tour")}>
+                      <Link
+                        to="/academic-tour"
+                        className={`${
+                          location.pathname === "/academic-tour"
+                            ? "active-link"
+                            : ""
+                        }`}
+                      >
+                        Turkiye Uluslararasi Ofisi
+                      </Link>
                     </li>
                   </motion.ul>
                 </li>
                 <li onClick={() => handleLinkClick("/contacts")}>
                   <Link
                     to="/contacts"
-                    className={activeLink === "/contacts" ? "active-link" : ""}
+                    className={`${
+                      location.pathname === "/contacts" ? "active-link" : ""
+                    }`}
                   >
                     {getText("contacts")}
                   </Link>
