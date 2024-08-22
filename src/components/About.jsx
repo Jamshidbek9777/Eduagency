@@ -21,7 +21,7 @@ const About = ({title, desc}) => {
                         <img className='w-100' src="img/about.png" alt="" />
 
                         <div className="icon">
-                            <Link to=""><FontAwesomeIcon className='fa-gradient' icon={faArrowRight} /></Link>
+                            <Link to="/about"><FontAwesomeIcon className='fa-gradient' icon={faArrowRight} /></Link>
                         </div>
                     </div>
                 </div>

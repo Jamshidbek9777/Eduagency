@@ -687,8 +687,9 @@ body {
         display: flex;
         flex-direction: column;
         gap: 12px;
+
         button {
-          color: #fff;
+          color: #fff !important;
           font-family: Jost;
           font-size: 24px;
           font-style: normal;
@@ -826,7 +827,7 @@ body {
   }
 
   .services {
-    margin: 100px 0;
+    margin: 250px 0;
     .partners-services {
       margin-top: 120px;
       display: flex;

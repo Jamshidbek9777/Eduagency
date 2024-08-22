@@ -17,7 +17,7 @@ const Services = () => {
 
   return (
     <>
-      <div className="header">
+      {/* <div className="header">
         <div className="container header-pc">
           <Swiper>
             <div className="slide-content info">
@@ -331,9 +331,9 @@ const Services = () => {
         </div>
 
         <ServiceMobile />
-      </div>
+      </div> */}
 
-      <TwoPartners />
+      {/* <TwoPartners /> */}
 
       <div className="services" id="services">
         <div className="container">
@@ -444,11 +444,11 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className="partners-services">
+        {/* <div className="partners-services">
           <h2>Ortaklarımız</h2>
           <Partners />
           <TwoPartners />
-        </div>
+        </div> */}
         <div style={{marginTop: "120px"}}>
           <Getintouch />
         </div>

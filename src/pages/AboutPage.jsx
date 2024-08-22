@@ -8,7 +8,7 @@ import MobileAboutPage from "./MobileAboutPage";
 function AboutPage() {
   return (
     <>
-      <div className="about-page-bg">
+      {/* <div className="about-page-bg">
         <div className="container">
           <div className="about-page-p">
             <div className="about-page-texts">
@@ -50,9 +50,9 @@ function AboutPage() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="about-page">
+      <div className="about-page" style={{marginTop: "250px"}}>
         <div className="container">
           <div className="partners-div-p">
             <Partners />

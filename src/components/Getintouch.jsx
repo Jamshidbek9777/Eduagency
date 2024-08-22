@@ -109,10 +109,12 @@ const Getintouch = () => {
                     <option value="" disabled>
                       Ne tür hizmetlerle ilgileniyorsunuz?
                     </option>
-                    <option value="Service 1">Service 1</option>
-                    <option value="Service 2">Service 2</option>
-                    <option value="Service 3">Service 3</option>
-                    <option value="Service 4">Service 4</option>
+                    <option value="Service 1">Muracaat İşlemleri</option>
+                    <option value="Service 2">Öğrenci Transferi</option>
+                    <option value="Service 3">Uzman Transferi</option>
+                    <option value="Service 4">Fuar Organizasyonları</option>
+                    <option value="Service 4">Akademik tur organizasyonları</option>
+                    <option value="Service 4">Üniversiteler Arası İş Birliği Danışmanlığı</option>
                   </select>
                 </div>
               </div>

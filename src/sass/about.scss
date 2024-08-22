@@ -233,7 +233,7 @@
   flex-direction: row;
   gap: 12px;
   button {
-    color: #fff;
+    color: #fff !important;
     font-family: Jost;
     font-size: 24px;
     font-style: normal;
@@ -296,7 +296,9 @@
     align-items: start;
     flex-direction: column;
     z-index: 1;
-
+    // h1{
+    //   max-width: 00px;
+    // }
     h4 {
       color: #000;
       font-size: 76px;
@@ -331,6 +333,7 @@
         font-size: 16px;
       }
     }
+    
   }
   .card {
     display: flex;
