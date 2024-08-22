@@ -3,6 +3,7 @@ import "../sass/swiperContent.scss";
 import HeaderMobile from "./HeaderMobile";
 import Swiper from "./Swipper";
 import headerData from "../data/headerData.js";
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className="header">
@@ -15,31 +16,47 @@ const Header = () => {
                 <p>{item.description}</p>
                 <div className="myBtn">
                   <button>
-                    Detaylı bilgi
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="32"
-                      height="33"
-                      viewBox="0 0 32 33"
-                      fill="none"
+                    <Link
+                      to={item.headerLink}
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "5px",
+                      }}
                     >
-                      <path
-                        d="M19.24 8.40662L27.3333 16.5L19.24 24.5933"
-                        stroke="white"
-                        stroke-width="2"
-                        stroke-miterlimit="10"
-                        stroke-linecap="square"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M4.66663 15.5H3.66663V17.5H4.66663V15.5ZM27.1066 17.5C27.6589 17.5 28.1066 17.0523 28.1066 16.5C28.1066 15.9477 27.6589 15.5 27.1066 15.5V17.5ZM4.66663 17.5H27.1066V15.5H4.66663V17.5Z"
-                        fill="white"
-                      />
-                    </svg>
+                      <p style={{ color: "white" }}>Detaylı bilgi</p>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="33"
+                        viewBox="0 0 32 33"
+                        fill="none"
+                      >
+                        <path
+                          d="M19.24 8.40662L27.3333 16.5L19.24 24.5933"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-miterlimit="10"
+                          stroke-linecap="square"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.66663 15.5H3.66663V17.5H4.66663V15.5ZM27.1066 17.5C27.6589 17.5 28.1066 17.0523 28.1066 16.5C28.1066 15.9477 27.6589 15.5 27.1066 15.5V17.5ZM4.66663 17.5H27.1066V15.5H4.66663V17.5Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </Link>
                   </button>
                   <button>
-                    <a href="tel:+998334691101" style={{ color: "white" }}>
-                      İletişime geçin
+                    <a
+                      href="tel:+998334691101"
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "5px",
+                      }}
+                    >
+                      <p style={{ color: "white" }}>İletişime geçin</p>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="32"
