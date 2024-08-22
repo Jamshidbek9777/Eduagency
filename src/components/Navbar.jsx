@@ -1,12 +1,22 @@
 import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import MobileNavbar from "./MobileNavbar";
+import { motion } from "framer-motion";
 import { getLanguage, getText } from "../locales/index";
 import { LANGUAGE } from "../tools/constants";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   const [burger, setBurger] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    const isActive = localStorage.getItem("navbarActive");
+    if (isActive) {
+      setNavbar(true);
+    }
+  }, []);
 
   const changeNavbar = () => {
     if (window.scrollY >= 30) {
@@ -16,18 +26,8 @@ const Navbar = () => {
     }
   };
 
-  const changeLanguage = (e) => {
-    localStorage.setItem(LANGUAGE, e.target.value);
-    document.location.reload(true);
-  };
-
-  const handleOpenMobileNav = () => {
-    setBurger((prevBurger) => !prevBurger);
-  };
-
   useEffect(() => {
     window.addEventListener("scroll", changeNavbar);
-
     return () => {
       window.removeEventListener("scroll", changeNavbar);
     };
@@ -36,6 +36,30 @@ const Navbar = () => {
   useEffect(() => {
     document.body.style.overflow = burger ? "hidden" : "auto";
   }, [burger]);
+
+  const handleToggleNavbar = () => {
+    setNavbar(!navbar);
+    localStorage.setItem("navbarActive", !navbar);
+  };
+
+  const changeLanguage = (e) => {
+    localStorage.setItem(LANGUAGE, e.target.value);
+    document.location.reload(true);
+  };
+
+  const handleLinkClick = (path) => {
+    localStorage.setItem("activeLink", path);
+  };
+
+  const handleOpenMobileNav = () => {
+    setBurger((prevBurger) => !prevBurger);
+  };
+
+  const handleDropdownHover = (state) => {
+    setIsDropdownOpen(state);
+  };
+
+  const activeLink = localStorage.getItem("activeLink") || location.pathname;
 
   return (
     <>
@@ -60,17 +84,62 @@ const Navbar = () => {
               }`}
             >
               <ul className="nav-menu">
-                <li>
-                  <Link to="/">{getText("home")}</Link>
+                <li onClick={() => handleLinkClick("/")}>
+                  <Link
+                    to="/"
+                    className={activeLink === "/" ? "active-link" : ""}
+                  >
+                    {getText("home")}
+                  </Link>
                 </li>
-                <li>
-                  <Link to="/about">{getText("aboutUs")}</Link>
+                <li onClick={() => handleLinkClick("/about")}>
+                  <Link
+                    to="/about"
+                    className={activeLink === "/about" ? "active-link" : ""}
+                  >
+                    {getText("aboutUs")}
+                  </Link>
                 </li>
-                <li>
-                  <Link to="/services">Bizim hizmetler</Link>
+                <li
+                  onMouseEnter={() => handleDropdownHover(true)}
+                  onMouseLeave={() => handleDropdownHover(false)}
+                >
+                  <Link
+                    to="/services"
+                    className={activeLink === "/services" ? "active-link" : ""}
+                  >
+                    Bizim hizmetler
+                  </Link>
+                  <motion.ul
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{
+                      opacity: isDropdownOpen ? 1 : 0,
+                      y: isDropdownOpen ? 0 : -10,
+                    }}
+                    transition={{ duration: 0.3 }}
+                    className={`dropdown-menu ${isDropdownOpen ? "show" : ""}`}
+                  >
+                    <li>
+                      <Link to="/application">Muracaat İşlemleri</Link>
+                    </li>
+                    <li>
+                      <Link to="/student-transfer">Öğrenci Transferi</Link>
+                    </li>
+                    <li>
+                      <Link to="/expert-transfer">Uzman Transferi</Link>
+                    </li>
+                    <li>
+                      <Link to="/academic-tour">Turkiye Uluslararasi Ofisi</Link>
+                    </li>
+                  </motion.ul>
                 </li>
-                <li>
-                  <Link to="/contacts">{getText("contacts")}</Link>
+                <li onClick={() => handleLinkClick("/contacts")}>
+                  <Link
+                    to="/contacts"
+                    className={activeLink === "/contacts" ? "active-link" : ""}
+                  >
+                    {getText("contacts")}
+                  </Link>
                 </li>
               </ul>
               <div className="siteLang d-flex align-items-center">

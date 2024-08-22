@@ -99,6 +99,41 @@ body {
     // background: #ffffffbb;
     transition: all ease 0.8s;
 
+    .nav-menu {
+  position: relative;
+  
+  li {
+    position: relative;
+
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #fff;
+      padding: 10px 0;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      display: none;
+      list-style: none;
+      
+      li {
+        padding: 10px 20px;
+        white-space: nowrap;
+        margin: 0 !important;
+      }
+    }
+
+    &:hover .dropdown-menu {
+      display: block;
+    }
+  }
+}
+
+.show {
+  display: block !important;
+}
+
+
     &.active {
       // background: #000000d7;
       border-radius: 0 0 20px 20px;
@@ -107,6 +142,8 @@ body {
       margin: 0;
       animation: anim 0.8s ease-in-out;
       padding: 15px 0;
+
+   
 
       .burger {
         .burger1,
@@ -558,6 +595,7 @@ body {
         padding-bottom: 32px;
         z-index: 1;
         h1 {
+          max-width: 800px;
           font-size: 70px;
           letter-spacing: -2px;
           line-height: 1.1;

@@ -7,13 +7,14 @@ import Partners from "./Partners";
 import TwoPartners from "./TwoPartners";
 import Getintouch from "./Getintouch";
 import ServiceMobile from "./ServiceMobile";
+import ServiceBlog from "./ServiceBlog";
 
 const Services = () => {
   const navigate = useNavigate();
 
-  const handleNavigate = () => {
-    navigate("/services/in");
-  };
+  // const handleNavigate = () => {
+  //   navigate("/services/in");
+  // };
 
   return (
     <>
@@ -337,7 +338,7 @@ const Services = () => {
 
       <div className="services" id="services">
         <div className="container">
-          <div className="myItem align-items-center d-flex">
+          {/* <div className="myItem align-items-center d-flex">
             <div className="title">
               <h2>Hizmetler</h2>
             </div>
@@ -346,13 +347,10 @@ const Services = () => {
                 <img src="img/logo.png" alt="" />
               </div>
             </div>
-          </div>
+          </div> */}
 
-          <div className="service-blogs">
-            <div
-              className="item d-flex align-items-center"
-              onClick={handleNavigate}
-            >
+          {/* <div className="service-blogs">
+            <div className="item d-flex align-items-center">
               <div className="img">
                 <img src="img/service1.png" alt="" />
               </div>
@@ -373,10 +371,7 @@ const Services = () => {
                 </i>
               </div>
             </div>
-            <div
-              className="item d-flex align-items-center"
-              onClick={handleNavigate}
-            >
+            <div className="item d-flex align-items-center">
               <div className="img">
                 <img src="img/service2.png" alt="" />
               </div>
@@ -395,10 +390,7 @@ const Services = () => {
                 </i>
               </div>
             </div>
-            <div
-              className="item d-flex align-items-center"
-              onClick={handleNavigate}
-            >
+            <div className="item d-flex align-items-center">
               <div className="img">
                 <img src="img/service3.png" alt="" />
               </div>
@@ -417,10 +409,7 @@ const Services = () => {
                 </i>
               </div>
             </div>
-            <div
-              className="item d-flex align-items-center"
-              onClick={handleNavigate}
-            >
+            <div className="item d-flex align-items-center">
               <div className="img">
                 <img src="img/service4.png" alt="" />
               </div>
@@ -442,14 +431,12 @@ const Services = () => {
                 </i>
               </div>
             </div>
-          </div>
+          </div> */}
+
+          <ServiceBlog />
         </div>
-        {/* <div className="partners-services">
-          <h2>Ortaklarımız</h2>
-          <Partners />
-          <TwoPartners />
-        </div> */}
-        <div style={{marginTop: "120px"}}>
+
+        <div style={{ marginTop: "120px" }}>
           <Getintouch />
         </div>
       </div>

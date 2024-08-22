@@ -92,27 +92,29 @@ const Header = () => {
                     Öğrencilerin kabul aldığı eğitim kurumlarına yerleştirilmesi
                     sürecinde de ajans rehberlik eder.
                   </p>
-                  <button>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="32"
-                      height="32"
-                      viewBox="0 0 32 32"
-                      fill="none"
-                    >
-                      <path
-                        d="M19.24 7.90662L27.3333 16L19.24 24.0933"
-                        stroke="white"
-                        stroke-width="2"
-                        stroke-miterlimit="10"
-                        stroke-linecap="square"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M4.66667 15H3.66667V17H4.66667V15ZM27.1067 17C27.659 17 28.1067 16.5523 28.1067 16C28.1067 15.4477 27.659 15 27.1067 15V17ZM4.66667 17H27.1067V15H4.66667V17Z"
-                        fill="white"
-                      />
-                    </svg>
+                  <button >
+                    <Link to={item.headerLink}>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                      >
+                        <path
+                          d="M19.24 7.90662L27.3333 16L19.24 24.0933"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-miterlimit="10"
+                          stroke-linecap="square"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.66667 15H3.66667V17H4.66667V15ZM27.1067 17C27.659 17 28.1067 16.5523 28.1067 16C28.1067 15.4477 27.659 15 27.1067 15V17ZM4.66667 17H27.1067V15H4.66667V17Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </Link>
                   </button>
                 </div>
                 <img src="/img/svg.svg" alt="" />

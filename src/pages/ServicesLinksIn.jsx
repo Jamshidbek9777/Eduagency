@@ -11,7 +11,7 @@ import "../sass/serviceSwiper.scss";
 function ServicesLinksIn() {
   return (
     <>
-      <div className="">
+      {/* <div className="">
         <div className="container service-pc" style={{ marginTop: "30px" }}>
           <Swiper>
             <div className="slide-content-m min10 info">
@@ -161,7 +161,7 @@ function ServicesLinksIn() {
             </div>
           </Swiper>
         </div>
-      </div>
+      </div> */}
 
       <div className="about-page">
         <div className="container">
