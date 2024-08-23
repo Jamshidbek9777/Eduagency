@@ -10,7 +10,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <Partners />
+      {/* <Partners /> */}
       <ServiceBlog />
       <About
         title={"Hakkımızda"}

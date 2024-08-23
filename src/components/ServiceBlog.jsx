@@ -15,7 +15,7 @@ function ServiceBlog() {
     <>
       <div className="services" id="services">
         <div className="container">
-          <div className="myItem align-items-center d-flex">
+          {/* <div className="myItem align-items-center d-flex">
             <div className="title">
               <h2>Hizmetler</h2>
             </div>
@@ -24,7 +24,7 @@ function ServiceBlog() {
                 <img src="img/logo.png" alt="" />
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className="service-blogs">
             <Link to={"/application"}>
@@ -125,7 +125,7 @@ function ServiceBlog() {
 
         <div className="twoPartners">
           <h3>Ortaklarımız</h3>
-          <Partners />
+          {/* <Partners /> */}
           <TwoPartners />
         </div>
       </div>
