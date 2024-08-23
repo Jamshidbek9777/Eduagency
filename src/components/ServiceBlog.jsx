@@ -1,12 +1,12 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import React from "react";
+// import React from "react";
 import TwoPartners from "./TwoPartners";
 import Partners from "./Partners";
 
 function ServiceBlog() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   // const handleNavigate = () => {
   //   navigate("/services/in");

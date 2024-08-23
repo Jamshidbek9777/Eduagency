@@ -31,7 +31,7 @@ root.render(
       <Route path="/application" exact element={<Application />} />
       <Route path="/student-transfer" exact element={<StudentTransfer />} />
       <Route path="/expert-transfer" exact element={<ExpertTransfer />} />
-      <Route path="/academic-tour" exact element={<AcademicTour />} />
+      <Route path="/turkiye-ofisi" exact element={<AcademicTour />} />
       <Route path="/university-community" exact element={<UniversityCom />} />
       <Route path="/contacts" exact element={<Contacts />} />
       <Route path="/about" exact element={<AboutPage />} />

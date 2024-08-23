@@ -107,7 +107,7 @@ body {
 
         .dropdown-menu {
           position: absolute;
-          top: 100%;
+          top: 150%;
           left: 0;
           background: #fff;
           padding: 10px 0;
@@ -375,7 +375,6 @@ body {
               color: #fff;
             }
           }
-          
 
           &:nth-child(1) {
             margin: 0;
@@ -440,16 +439,17 @@ body {
       flex-direction: column;
       align-items: center;
       width: 100%;
+      height: 95%;
+      justify-content: space-between;
 
       .nav-mobile-menu {
         margin: 0 2px;
         display: flex;
-        justify-content: end;
+        justify-content: space-between;
         align-items: center;
         border-radius: 80px;
         background: rgba(5, 86, 255, 0.1);
         padding: 8px !important;
-        position: absolute;
         gap: 5px;
         bottom: 24px;
 
@@ -503,6 +503,7 @@ body {
       }
 
       ul.nav-menu {
+        margin: auto;
         display: flex;
         justify-content: end;
         align-items: center;
@@ -1334,7 +1335,7 @@ body {
       position: relative;
 
       ::placeholder {
-        color: #c4c4c4 !important;
+        color: black !important;
       }
 
       select {
@@ -1346,7 +1347,7 @@ body {
         font-size: 20px;
         font-weight: 400;
         line-height: 22px;
-        color: #c4c4c4;
+        color: black;
         margin-bottom: 20px;
         font-weight: 400;
         padding-left: 0;
@@ -1369,7 +1370,7 @@ body {
         border-bottom: 2px solid #dcdcdc;
         box-sizing: border-box;
         background: transparent;
-        color: #c4c4c4 !important;
+        color: black !important;
         height: 150px;
         margin-bottom: 20px;
         font-weight: 400;
@@ -1530,7 +1531,7 @@ body {
     border-radius: 60px 60px 0px 0px;
     background: var(
       --Gradient,
-      linear-gradient(210deg, #80a9ff 13.39%, #0556ff 86.59%)
+      linear-gradient(180deg, #80a9ff 13.39%, #0556ff 86.59%)
     );
 
     &-top {
@@ -1659,7 +1660,27 @@ body {
   }
 
   .description {
-    margin-top: 100px;
+    margin-top: 200px;
+
+    h1 {
+      font-size: 70px;
+      margin-bottom: 50px;
+      @media (max-width: 1400px) {
+        font-size: 60px;
+      }
+
+      @media (max-width: 1200px) {
+        font-size: 50px;
+      }
+
+      @media (max-width: 992px) {
+        font-size: 40px;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 35px;
+      }
+    }
 
     p {
       margin-bottom: 20px;

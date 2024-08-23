@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import "../sass/swiper.scss";
 
+// eslint-disable-next-line react/prop-types
 const Swiper = ({ children, autoplayInterval = 40000 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const autoplayRef = useRef(null);

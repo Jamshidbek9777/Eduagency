@@ -3,6 +3,7 @@ export const uz = {
     aboutUs: "Biz haqimizda",
     functions: "Ilova vazifalari",
     contacts: "Aloqa",
+    services: "Xizmatlar",
     download: "Yuklab olish",
     more: "Batafsil",
     sendBtn: "Jo'natish",
@@ -49,6 +50,19 @@ export const uz = {
     address: "O'zbekistan, Toshkent, Mirobod t-n, Mironshoh 63A",
     email: "alisher.ict@gmail.com",
     gap: `Elektron pochta manzilida "@" belgisi bo'lishi kerak`,
-    // download: "Yuklab olish",
-    // download: "Yuklab olish",
+  
+        headerSwiperTitle1: "Ariza berish tartiblari",
+        headerSwiperTitle2: "Talaba transferi",
+        headerSwiperTitle3: "Ekspert transferi",
+        headerSwiperTitle4: "Akademik tur tashkilotlari",
+        headerSwiperTitle5: "Universitetlararo hamkorlik bo'yicha maslahat",
+        headerSwiperParagraph1: "Agentlik Turkiya va Oʻzbekistondagi taʼlim muassasalariga ariza topshirish jarayonini osonlashtirish uchun har tomonlama yordam koʻrsatadi. U talabalar va akademiklarga kerakli hujjatlarni to'plash, ariza shakllarini to'ldirish va jarayon bo'yicha maslahat olishda yordam beradi.",
+        headerSwiperParagraph2: "Ta'lim agentligi Turkiya va O'zbekiston o'rtasida talabalarni ko'chirishni osonlashtirish uchun ishlaydi. Bu talabalarga tegishli ta'lim muassasalariga joylashtirish, kredit o'tkazish va moslashish jarayonlarida yordam beradi.",
+        headerSwiperParagraph3: "Agentlik ikki davlat o‘rtasida ilmiy va ekspert kadrlar almashinuvini qo‘llab-quvvatlaydi. Ekspert transfer dasturlari tufayli akademiklar va mutaxassislar o'z bilim va tajribalarini almashish orqali ta'lim sifatini oshiradilar.",
+        headerSwiperParagraph4: "Turkiya-Oʻzbekiston Taʼlim Hamkorligi Agentligi akademik sayohatlar va yarmarkalar tashkil etadi, taʼlim muassasalarini targʻib qiladi va ikki davlat oʻrtasidagi akademik hamkorlikni ragʻbatlantiradi. Bu tadbirlar talabalar va akademiklar uchun yangi imkoniyatlar yaratadi.",
+        headerSwiperParagraph5: "Agentlik ikki davlat o‘rtasida ilmiy va ekspert kadrlar almashinuvini qo‘llab-quvvatlaydi. Ekspert transfer dasturlari tufayli akademiklar va mutaxassislar o'z bilim va tajribalarini almashish orqali ta'lim sifatini oshiradilar.",
+        headerButton1: "Batafsil ma'lumot",
+        headerButton2: "Biz bilan bog'lanish"
+    
+
 }

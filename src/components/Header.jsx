@@ -4,13 +4,14 @@ import HeaderMobile from "./HeaderMobile";
 import Swiper from "./Swipper";
 import headerData from "../data/headerData.js";
 import { Link } from "react-router-dom";
+
 const Header = () => {
   return (
     <div className="header">
       <div className="container header-pc">
         <Swiper>
           {headerData.map((item) => (
-            <div className="slide-content info">
+            <div className="slide-content info" key={item.title}>
               <div className="texts">
                 <h1>{item.title}</h1>
                 <p>{item.description}</p>
@@ -92,7 +93,7 @@ const Header = () => {
                     Öğrencilerin kabul aldığı eğitim kurumlarına yerleştirilmesi
                     sürecinde de ajans rehberlik eder.
                   </p>
-                  <button >
+                  <button>
                     <Link to={item.headerLink}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -104,10 +105,10 @@ const Header = () => {
                         <path
                           d="M19.24 7.90662L27.3333 16L19.24 24.0933"
                           stroke="white"
-                          stroke-width="2"
-                          stroke-miterlimit="10"
-                          stroke-linecap="square"
-                          stroke-linejoin="round"
+                          strokeWidth="2"
+                          strokeMiterlimit="10"
+                          strokeLinecap="square"
+                          strokeLinejoin="round"
                         />
                         <path
                           d="M4.66667 15H3.66667V17H4.66667V15ZM27.1067 17C27.659 17 28.1067 16.5523 28.1067 16C28.1067 15.4477 27.659 15 27.1067 15V17ZM4.66667 17H27.1067V15H4.66667V17Z"

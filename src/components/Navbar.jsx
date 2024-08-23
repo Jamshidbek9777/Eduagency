@@ -2,13 +2,21 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import MobileNavbar from "./MobileNavbar";
 import { motion } from "framer-motion";
-import { getLanguage, getText } from "../locales/index";
-import { LANGUAGE } from "../tools/constants";
+// import { getLanguage, getText } from "../locales/index";
+// import { LANGUAGE } from "../tools/constants";
+
+// const flagImages = {
+//   uz: "img/uzbekistán.png",
+//   ru: "img/russia.png",
+//   tr: "img/tr.png",
+// };
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   const [burger, setBurger] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  // const [selectedLanguage, setSelectedLanguage] = useState(getLanguage());
+  // const [selectedFlag, setSelectedFlag] = useState(flagImages[getLanguage()]);
   const location = useLocation();
 
   useEffect(() => {
@@ -37,10 +45,13 @@ const Navbar = () => {
     document.body.style.overflow = burger ? "hidden" : "auto";
   }, [burger]);
 
-  const changeLanguage = (e) => {
-    localStorage.setItem(LANGUAGE, e.target.value);
-    document.location.reload(true);
-  };
+  // const changeLanguage = (e) => {
+  //   const selectedLang = e.target.value;
+  //   localStorage.setItem(LANGUAGE, selectedLang);
+  //   setSelectedLanguage(selectedLang);
+  //   setSelectedFlag(flagImages[selectedLang]);
+  //   // No page reload needed
+  // };
 
   const handleLinkClick = (path) => {
     localStorage.setItem("activeLink", path);
@@ -64,7 +75,7 @@ const Navbar = () => {
                 <a href="/">
                   <img
                     className="w-100 logoblack"
-                    src="../img/logo.png"
+                    src="/img/logo.png"
                     alt="logo"
                   />
                 </a>
@@ -84,7 +95,7 @@ const Navbar = () => {
                       location.pathname === "/" ? "active-link" : ""
                     }`}
                   >
-                    {getText("home")}
+                    Anasayfa
                   </Link>
                 </li>
                 <li onClick={() => handleLinkClick("/about")}>
@@ -94,7 +105,7 @@ const Navbar = () => {
                       location.pathname === "/about" ? "active-link" : ""
                     }`}
                   >
-                    {getText("aboutUs")}
+                    Hakkimizda
                   </Link>
                 </li>
                 <li
@@ -107,13 +118,13 @@ const Navbar = () => {
                       location.pathname === "/services" ? "active-link" : ""
                     }`}
                   >
-                    Bizim hizmetler
+                    Hizmetler
                   </Link>
                   <motion.ul
                     initial={{ opacity: 0, y: -10 }}
                     animate={{
                       opacity: isDropdownOpen ? 1 : 0,
-                      y: isDropdownOpen ? 0 : -10,
+                      y: isDropdownOpen ? 0 : -30,
                     }}
                     transition={{ duration: 0.3 }}
                     className={`dropdown-menu ${isDropdownOpen ? "show" : ""}`}
@@ -154,11 +165,11 @@ const Navbar = () => {
                         Uzman Transferi
                       </Link>
                     </li>
-                    <li onClick={() => handleLinkClick("/academic-tour")}>
+                    <li onClick={() => handleLinkClick("/turkiye-ofisi")}>
                       <Link
-                        to="/academic-tour"
+                        to="/turkiye-ofisi"
                         className={`${
-                          location.pathname === "/academic-tour"
+                          location.pathname === "/turkiye-ofisi"
                             ? "active-link"
                             : ""
                         }`}
@@ -175,26 +186,24 @@ const Navbar = () => {
                       location.pathname === "/contacts" ? "active-link" : ""
                     }`}
                   >
-                    {getText("contacts")}
+                    İletişim
                   </Link>
                 </li>
               </ul>
-              <div className="siteLang d-flex align-items-center">
-                <i>
-                  <img src="img/tr.png" alt="" />
-                </i>
-                <select onChange={changeLanguage}>
+              {/* <div className="siteLang d-flex align-items-center">
+                <img src={selectedFlag} alt="Selected Language Flag" />
+                <select onChange={changeLanguage} value={selectedLanguage}>
                   <option value="uz" selected={getLanguage() === "uz"}>
                     Oʻzbek
                   </option>
-                  <option value="en" selected={getLanguage() === "en"}>
-                    English
+                  <option value="ru" selected={getLanguage() === "ru"}>
+                    Russia
                   </option>
                   <option value="tr" selected={getLanguage() === "tr"}>
                     Türkçe
                   </option>
                 </select>
-              </div>
+              </div> */}
             </div>
 
             <div
