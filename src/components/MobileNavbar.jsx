@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { getLanguage, getText } from "../locales/index";
@@ -70,10 +72,10 @@ const MobileNavbar = ({ burger, setBurger }) => {
           <div className="all-menu">
             <motion.ul className="nav-menu">
               {[
-                { to: "/", text: "Anasayfa" },
-                { to: "/about", text: "Hakkimizda" },
-                { to: "/services", text: "Bizim hizmetler" },
-                { to: "/contacts", text: "İletişim" },
+                { to: "/", text: getText("home") },
+                { to: "/about", text: getText("aboutUs") },
+                { to: "/services", text: getText("services") },
+                { to: "/contacts", text: getText("contacts") },
               ].map((item, index) => (
                 <motion.li
                   key={item.to}
@@ -99,7 +101,7 @@ const MobileNavbar = ({ burger, setBurger }) => {
                 <ul className="nav-mobile-menu">
                   {[
                     { img: "/img/turkey.png", alt: "turkey icon", text: "Turkish", val:"tr" },
-                    { img: "/img/uzbekistan.png", alt: "uzbekistán icon", text: "O'zbek", val:"uz" },
+                    { img: "/img/uzbekistán.png", alt: "uzbekistán icon", text: "O'zbek", val:"uz" },
                     { img: "/img/usa.png", alt: "english icon", text: "English", val:"en" },
                   ].map((lang, index) => (
                     <motion.li
