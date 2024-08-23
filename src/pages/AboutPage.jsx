@@ -4,6 +4,7 @@ import Partners from "../components/Partners";
 import About from "../components/About";
 import Getintouch from "../components/Getintouch";
 import MobileAboutPage from "./MobileAboutPage";
+import { getText } from "../locales";
 
 function AboutPage() {
   return (
@@ -60,8 +61,8 @@ function AboutPage() {
         </div>
         <div>
           <About
-            title="Önceliklerimiz hakkında"
-            desc="Ajans, Türkiye ve Özbekistan'daki üniversiteler arasında iş birliği fırsatlarını artırmak için danışmanlık hizmetleri sunar. Ortak projeler, müfredat geliştirme ve akademik değişim programları gibi konularda rehberlik eder."
+            title={getText("AboutPageTitle")}
+            desc={getText("AboutPageDesc")}
           />
         </div>
         <Getintouch />

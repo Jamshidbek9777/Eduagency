@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import { getLanguage, getText } from "../locales/index";
+
 
 const MobileNavbar = ({ burger, setBurger }) => {
   const navVariants = {

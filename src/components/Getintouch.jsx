@@ -3,6 +3,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import InputMask from "react-input-mask";
+import { getText } from "../locales";
 
 const Getintouch = () => {
   const [name, setName] = useState("");
@@ -22,7 +23,8 @@ const Getintouch = () => {
     setIsLoading(true);
 
     const text = `Name: ${name}\nMessage: ${description}\nPhone number: ${phone}\nEmail: ${
-      email.length === 0 ? "Email is empty" : email}\n Services: ${service}`;
+      email.length === 0 ? "Email is empty" : email
+    }\n Services: ${service}`;
 
     try {
       await axios.post(
@@ -58,15 +60,12 @@ const Getintouch = () => {
           </div>
           <div className="col-md-7">
             <form onSubmit={sendFeedback}>
-              <h3>Danışmanlık alın</h3>
-              <p>
-                Sorularınızı cevaplamaya hazırız. Bize yazın, sizinle en kısa
-                sürede iletişime geçelim.
-              </p>
+              <h3>{getText("getAdviceTitle")}</h3>
+              <p>{getText("getAdviceDescription")}</p>
               <div className="row">
                 <div className="inputWrap col-sm-6">
                   <InputMask
-                    placeholder="Adınız"
+                    placeholder={getText("getAdviceInputName")}
                     onChange={(e) => setName(e.target.value)}
                     value={name}
                     className="form-control"
@@ -89,7 +88,7 @@ const Getintouch = () => {
                 </div>
                 <div className="inputWrap">
                   <InputMask
-                    placeholder="E-posta"
+                    placeholder={getText("getAdviceInputEmail")}
                     onChange={(e) => setEmail(e.target.value)}
                     value={email}
                     className="form-control"
@@ -107,20 +106,26 @@ const Getintouch = () => {
                     required
                   >
                     <option value="" disabled>
-                      Ne tür hizmetlerle ilgileniyorsunuz?
+                      {getText("getAdviceSelectDefaultText")}
                     </option>
-                    <option value="Service 1">Muracaat İşlemleri</option>
-                    <option value="Service 2">Öğrenci Transferi</option>
-                    <option value="Service 3">Uzman Transferi</option>
-                    <option value="Service 4">Fuar Organizasyonları</option>
-                    <option value="Service 4">Akademik tur organizasyonları</option>
-                    <option value="Service 4">Üniversiteler Arası İş Birliği Danışmanlığı</option>
+                    <option value="Service 1">
+                      {getText("getAdviceSelectOption1")}
+                    </option>
+                    <option value="Service 2">
+                      {getText("getAdviceSelectOption2")}
+                    </option>
+                    <option value="Service 3">
+                      {getText("getAdviceSelectOption3")}
+                    </option>
+                    <option value="Service 4">
+                      {getText("getAdviceSelectOption4")}
+                    </option>
                   </select>
                 </div>
               </div>
               <div className="inputWrap">
                 <textarea
-                  placeholder="Mesaj"
+                  placeholder={getText("getAdviceInputMessage")}
                   onChange={(e) => setDescription(e.target.value)}
                   value={description}
                   className="form-control"
@@ -129,8 +134,8 @@ const Getintouch = () => {
                 />
               </div>
               <p className="bottom-top-p">
-                "Gönder" butonuna tıklayarak şartları kabul etmiş olursunuz{" "}
-                <a href="#">kişisel verilerin işlenmesi.</a>
+                {getText("getAdviceLinkText")}{" "}
+                <a href="#">{getText("getAdviceLinkTextLink")}</a>
               </p>
               <button type="submit" disabled={isLoading} className="btn">
                 {isLoading ? (
@@ -139,7 +144,7 @@ const Getintouch = () => {
                     className="spinner-border-sm spinner-border ms-2"
                   ></span>
                 ) : (
-                  "Göndermek"
+                  <span>{getText("getAdviceButton")}</span>
                 )}
               </button>
               <ToastContainer />

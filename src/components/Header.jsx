@@ -4,6 +4,7 @@ import HeaderMobile from "./HeaderMobile";
 import Swiper from "./Swipper";
 import headerData from "../data/headerData.js";
 import { Link } from "react-router-dom";
+import { getText } from "../locales/index.js";
 
 const Header = () => {
   return (
@@ -25,7 +26,7 @@ const Header = () => {
                         gap: "5px",
                       }}
                     >
-                      <p style={{ color: "white" }}>Detaylı bilgi</p>
+                      <p style={{ color: "white" }}>{getText("headerButton1")}</p>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="32"
@@ -57,7 +58,7 @@ const Header = () => {
                         gap: "5px",
                       }}
                     >
-                      <p style={{ color: "white" }}>İletişime geçin</p>
+                      <p style={{ color: "white" }}>{getText("headerButton2")}</p>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="32"
@@ -90,8 +91,7 @@ const Header = () => {
               <div className="card">
                 <div className="tope-btn">
                   <p>
-                    Öğrencilerin kabul aldığı eğitim kurumlarına yerleştirilmesi
-                    sürecinde de ajans rehberlik eder.
+                   {getText("headerCardDesc")}
                   </p>
                   <button>
                     <Link to={item.headerLink}>
@@ -119,8 +119,8 @@ const Header = () => {
                   </button>
                 </div>
                 <img src="/img/svg.svg" alt="" />
-                <h4 className="tope">Hızlı</h4>
-                <h4>Adaptasyon</h4>
+                {/* <h4 className="tope">{getText("headerCardTitle1")}</h4>
+                <h4>{getText("headerCardTitle2")}</h4> */}
               </div>
 
               <div className="bg-picture">

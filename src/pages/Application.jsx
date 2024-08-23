@@ -1,36 +1,26 @@
 import React from "react";
+import { getText } from "../locales";
 
 const Application = () => {
   return (
     <div className="service-pages">
       <div className="description container">
-        <h1>Muracaat İşlemleri</h1>
+        <h1>{getText("headerSwiperTitle1")}</h1>
         <p>
-          <span> 1. Bilgilendirme ve Danışmanlık: </span> Öğrenciler, ajansın
-          uzman danışmanlarından Türkiye ve Özbekistan'daki eğitim kurumları
-          hakkında ayrıntılı bilgi alabilirler. Danışmanlar, öğrencilerin
-          akademik geçmişlerine ve hedeflerine uygun eğitim programlarını
-          belirlemelerine yardımcı olur.
+          <span> {getText("ApplicationProceduresSpanDesc1")} </span>
+          {getText("ApplicationProceduresDesc1")}
         </p>
         <p>
-          <span> 2. Başvuru Belgelerinin Hazırlanması: </span> Ajans,
-          öğrencilerin gerekli belgeleri toplamasına ve başvuru formlarını
-          eksiksiz doldurmasına destek sağlar. Bu belgeler arasında
-          transkriptler, dil yeterlilik belgeleri, referans mektupları ve diğer
-          gerekli dokümanlar bulunur.
+          <span> {getText("ApplicationProceduresSpanDesc2")} </span>
+          {getText("ApplicationProceduresDesc2")}
         </p>
         <p>
-          <span> 3. Başvuru Takibi ve İletişim: </span> Ajans, başvuruların
-          ilgili eğitim kurumlarına zamanında ulaşmasını sağlar ve sürecin her
-          aşamasını yakından takip eder. Başvuru sürecinde öğrencilerle düzenli
-          iletişim kurarak, herhangi bir eksiklik veya gecikme durumunda hızlı
-          çözüm üretir.
+          <span> {getText("ApplicationProceduresSpanDesc3")} </span>
+          {getText("ApplicationProceduresDesc3")}
         </p>
         <p>
-          <span> 4. Yerleştirme ve Adaptasyon: </span> Öğrencilerin kabul aldığı
-          eğitim kurumlarına yerleştirilmesi sürecinde de ajans rehberlik eder.
-          Ayrıca, öğrencilerin yeni eğitim ortamına adaptasyonunu kolaylaştırmak
-          için oryantasyon programları düzenler.
+          <span> {getText("ApplicationProceduresSpanDesc4")} </span>
+          {getText("ApplicationProceduresDesc4")}
         </p>
       </div>
     </div>

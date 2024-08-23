@@ -8,6 +8,7 @@ import TwoPartners from "./TwoPartners";
 import Getintouch from "./Getintouch";
 import ServiceMobile from "./ServiceMobile";
 import ServiceBlog from "./ServiceBlog";
+import { getText } from "../locales";
 
 const Services = () => {
   const navigate = useNavigate();
@@ -336,7 +337,7 @@ const Services = () => {
 
       {/* <TwoPartners /> */}
 
-      <div className="services" id="services">
+      <div className="services" id="services" style={{ marginTop: "150px" }}>
         <div className="container">
           {/* <div className="myItem align-items-center d-flex">
             <div className="title">
@@ -355,15 +356,8 @@ const Services = () => {
                 <img src="img/service1.png" alt="" />
               </div>
               <div className="info">
-                <h3>Müracaat İşlemleri</h3>
-                <p>
-                  Ajans, Türkiye ve Özbekistan'daki eğitim kurumlarına başvuru
-                  sürecini kolaylaştırmak için kapsamlı destek sağlar.
-                  Öğrencilerin ve akademisyenlerin gerekli belgeleri toplama,
-                  başvuru formlarını doldurma ve süreçle ilgili danışmanlık alma
-                  konularında rehberlik eder. Çeviri Hizmetleri, Sınav Hazırlık
-                  ve Destek, Burs Başvuru Yardımı, Vize Başvuru Desteği
-                </p>
+                <h3>{getText("headerSwiperTitle1")}</h3>
+                <p>{getText("headerSwiperParagraph1")}</p>
               </div>
               <div className="icon">
                 <i>
@@ -376,13 +370,8 @@ const Services = () => {
                 <img src="img/service2.png" alt="" />
               </div>
               <div className="info">
-                <h3>Öğrenci Transferi</h3>
-                <p>
-                  Eğitim ajansı, Türkiye ve Özbekistan arasındaki öğrenci
-                  transferlerini kolaylaştırmak için çalışır. Öğrencilerin uygun
-                  eğitim kurumlarına yerleştirilmesi, kredi transferleri ve
-                  adaptasyon süreçleri konusunda yardımcı olur.
-                </p>
+                <h3>{getText("headerSwiperTitle2")}</h3>
+                <p>{getText("headerSwiperParagraph2")}</p>
               </div>
               <div className="icon">
                 <i>
@@ -395,13 +384,8 @@ const Services = () => {
                 <img src="img/service3.png" alt="" />
               </div>
               <div className="info">
-                <h3>Uzman Transferi</h3>
-                <p>
-                  Ajans, iki ülke arasındaki akademik ve uzman personel
-                  değişimini destekler. Uzman Transferi programları sayesinde,
-                  akademisyenler ve uzmanlar bilgi ve deneyimlerini paylaşarak
-                  eğitim kalitesini artırırlar
-                </p>
+                <h3>{getText("headerSwiperTitle3")}</h3>
+                <p>{getText("headerSwiperParagraph3")}</p>
               </div>
               <div className="icon">
                 <i>
@@ -414,13 +398,8 @@ const Services = () => {
                 <img src="img/service4.png" alt="" />
               </div>
               <div className="info">
-                <h3>Türkiye Uluslararası Ofisi</h3>
-                <p>
-                  Ajans, Türkiye ve Özbekistan'daki üniversiteler arasında iş
-                  birliği fırsatlarını artırmak için danışmanlık hizmetleri
-                  sunar. Ortak projeler, müfredat geliştirme ve akademik değişim
-                  programları gibi konularda rehberlik eder.
-                </p>
+                <h3>{getText("headerSwiperTitle3")}</h3>
+                <p>{getText("headerSwiperParagraph4")}</p>
               </div>
               <div className="icon">
                 <i>

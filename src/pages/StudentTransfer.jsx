@@ -1,39 +1,29 @@
 import React from "react";
+import { getText } from "../locales";
 
 const StudentTransfer = () => {
   return (
     <div className="service-pages">
-      <div className="description container">
-        <h1>Öğrenci Transferi</h1>
-        <p>
-          <span> 1. Bilgilendirme ve Danışmanlık: </span> Öğrenciler, ajansın
-          uzman danışmanlarından Türkiye ve Özbekistan'daki eğitim kurumları
-          hakkında ayrıntılı bilgi alabilirler. Danışmanlar, öğrencilerin
-          akademik geçmişlerine ve hedeflerine uygun eğitim programlarını
-          belirlemelerine yardımcı olur.
-        </p>
-        <p>
-          <span> 2. Başvuru Belgelerinin Hazırlanması: </span> Ajans,
-          öğrencilerin gerekli belgeleri toplamasına ve başvuru formlarını
-          eksiksiz doldurmasına destek sağlar. Bu belgeler arasında
-          transkriptler, dil yeterlilik belgeleri, referans mektupları ve diğer
-          gerekli dokümanlar bulunur.
-        </p>
-        <p>
-          <span> 3. Başvuru Takibi ve İletişim: </span> Ajans, başvuruların
-          ilgili eğitim kurumlarına zamanında ulaşmasını sağlar ve sürecin her
-          aşamasını yakından takip eder. Başvuru sürecinde öğrencilerle düzenli
-          iletişim kurarak, herhangi bir eksiklik veya gecikme durumunda hızlı
-          çözüm üretir.
-        </p>
-        <p>
-          <span> 4. Yerleştirme ve Adaptasyon: </span> Öğrencilerin kabul aldığı
-          eğitim kurumlarına yerleştirilmesi sürecinde de ajans rehberlik eder.
-          Ayrıca, öğrencilerin yeni eğitim ortamına adaptasyonunu kolaylaştırmak
-          için oryantasyon programları düzenler.
-        </p>
-      </div>
+    <div className="description container">
+      <h1>{getText("headerSwiperTitle2")}</h1>
+      <p>
+        <span> {getText("StudentTransferSpanDesc1")} </span>
+        {getText("StudentTransferDesc1")}
+      </p>
+      <p>
+        <span> {getText("StudentTransferSpanDesc2")} </span>
+        {getText("StudentTransferDesc2")}
+      </p>
+      <p>
+        <span> {getText("StudentTransferSpanDesc3")} </span>
+        {getText("StudentTransferDesc3")}
+      </p>
+      <p>
+        <span> {getText("StudentTransferSpanDesc4")} </span>
+        {getText("StudentTransferDesc4")}
+      </p>
     </div>
+  </div>
   );
 };
 

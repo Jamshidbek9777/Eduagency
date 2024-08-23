@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import MobileNavbar from "./MobileNavbar";
 import { motion } from "framer-motion";
-// import { getLanguage, getText } from "../locales/index";
+import { getLanguage, getText } from "../locales/index";
 import { LANGUAGE } from "../tools/constants";
 
 const flagImages = {
   uz: "img/uzbekistán.png",
-  ru: "img/russia.png",
+  en: "/img/usa.png",
   tr: "img/tr.png",
 };
 
@@ -15,8 +15,8 @@ const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   const [burger, setBurger] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  // const [selectedLanguage, setSelectedLanguage] = useState(getLanguage());
-  // const [selectedFlag, setSelectedFlag] = useState(flagImages[getLanguage()]);
+  const [selectedLanguage, setSelectedLanguage] = useState(getLanguage());
+  const [selectedFlag, setSelectedFlag] = useState(flagImages[getLanguage()]);
   const location = useLocation();
 
   useEffect(() => {
@@ -45,13 +45,12 @@ const Navbar = () => {
     document.body.style.overflow = burger ? "hidden" : "auto";
   }, [burger]);
 
-  // const changeLanguage = (e) => {
-  //   const selectedLang = e.target.value;
-  //   localStorage.setItem(LANGUAGE, selectedLang);
-  //   setSelectedLanguage(selectedLang);
-  //   setSelectedFlag(flagImages[selectedLang]);
-  //   // No page reload needed
-  // };
+  const changeLanguage = (e) => {
+    const selectedLang = e.target.value;
+    localStorage.setItem(LANGUAGE, selectedLang);
+    setSelectedLanguage(selectedLang);
+    setSelectedFlag(flagImages[selectedLang]);
+  };
 
   const handleLinkClick = (path) => {
     localStorage.setItem("activeLink", path);
@@ -95,7 +94,7 @@ const Navbar = () => {
                       location.pathname === "/" ? "active-link" : ""
                     }`}
                   >
-                    Anasayfa
+                    {getText("home")}
                   </Link>
                 </li>
                 <li onClick={() => handleLinkClick("/about")}>
@@ -105,7 +104,7 @@ const Navbar = () => {
                       location.pathname === "/about" ? "active-link" : ""
                     }`}
                   >
-                    Hakkımızda
+                    {getText("aboutUs")}
                   </Link>
                 </li>
                 <li
@@ -118,7 +117,7 @@ const Navbar = () => {
                       location.pathname === "/services" ? "active-link" : ""
                     }`}
                   >
-                    Hizmetlerimiz
+                    {getText("services")}
                   </Link>
                   <motion.ul
                     initial={{ opacity: 0, y: -10 }}
@@ -138,7 +137,7 @@ const Navbar = () => {
                             : ""
                         }`}
                       >
-                        Muracaat İşlemleri
+                        {getText("headerSwiperTitle1")}
                       </Link>
                     </li>
                     <li onClick={() => handleLinkClick("/student-transfer")}>
@@ -150,7 +149,7 @@ const Navbar = () => {
                             : ""
                         }`}
                       >
-                        Öğrenci Transferi
+                        {getText("headerSwiperTitle2")}
                       </Link>
                     </li>
                     <li onClick={() => handleLinkClick("/expert-transfer")}>
@@ -162,7 +161,7 @@ const Navbar = () => {
                             : ""
                         }`}
                       >
-                        Uzman Transferi
+                        {getText("headerSwiperTitle3")}
                       </Link>
                     </li>
                     <li onClick={() => handleLinkClick("/turkiye-ofisi")}>
@@ -174,7 +173,7 @@ const Navbar = () => {
                             : ""
                         }`}
                       >
-                        Turkiye Uluslararasi Ofisi
+                        {getText("headerSwiperTitle4")}
                       </Link>
                     </li>
                   </motion.ul>
@@ -186,24 +185,24 @@ const Navbar = () => {
                       location.pathname === "/contacts" ? "active-link" : ""
                     }`}
                   >
-                    İletişim
+                    {getText("contacts")}
                   </Link>
                 </li>
               </ul>
-              {/* <div className="siteLang d-flex align-items-center">
-                <img src={selectedFlag} alt="Selected Language Flag" />
+              <div className="siteLang d-flex align-items-center">
+                <img src={selectedFlag} alt="Selected Language Flag" style={{width: "20px", objectFit: "cover"}} />
                 <select onChange={changeLanguage} value={selectedLanguage}>
                   <option value="uz" selected={getLanguage() === "uz"}>
                     Oʻzbek
                   </option>
-                  <option value="ru" selected={getLanguage() === "ru"}>
-                    Russia
+                  <option value="en" selected={getLanguage() === "ru"}>
+                    English
                   </option>
                   <option value="tr" selected={getLanguage() === "tr"}>
                     Türkçe
                   </option>
                 </select>
-              </div> */}
+              </div>
             </div>
 
             <div

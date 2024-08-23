@@ -1,5 +1,4 @@
 import { LANGUAGE } from "../tools/constants";
-// import { en } from "./EN";
 import { en } from "./EN";
 import { uz } from "./UZ";
 import { tr } from "./TR";

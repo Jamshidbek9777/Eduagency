@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { getText } from "../locales";
 
 function HeaderMobile() {
   return (
@@ -11,14 +12,8 @@ function HeaderMobile() {
           className="mobile-header-bg"
         />
         <div className="mobile-header-texts">
-          <h2>Muracaat İşlemleri</h2>
-          <p>
-            Öğrenciler, ajansın uzman danışmanlarından Türkiye ve
-            Özbekistan'daki eğitim kurumları hakkında ayrıntılı bilgi
-            alabilirler. Danışmanlar, öğrencilerin akademik geçmişlerine ve
-            hedeflerine uygun eğitim programlarını belirlemelerine yardımcı
-            olur.
-          </p>
+          <h2>{getText("headerSwiperTitle1")}</h2>
+          <p>{getText("headerSwiperParagraph1")}</p>
           <div className="myBtn">
             <button>
               <Link
@@ -29,7 +24,7 @@ function HeaderMobile() {
                   gap: "5px",
                 }}
               >
-                <p style={{ color: "white" }}>Detaylı bilgi</p>
+                <p style={{ color: "white" }}>{getText("headerButton1")}</p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"
@@ -61,7 +56,7 @@ function HeaderMobile() {
                   gap: "5px",
                 }}
               >
-                <p style={{ color: "white" }}>İletişime geçin</p>
+                <p style={{ color: "white" }}>{getText("headerButton2")}</p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"

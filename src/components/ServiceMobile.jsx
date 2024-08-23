@@ -1,3 +1,4 @@
+import { getText } from "../locales";
 
 function ServiceMobile() {
   return (
@@ -9,17 +10,13 @@ function ServiceMobile() {
           className="mobile-header-bg"
         />
         <div className="mobile-header-texts">
-          <h2>Muracaat İşlemleri</h2>
+          <h2>{getText("headerSwiperTitle1")}</h2>
           <p>
-            Öğrenciler, ajansın uzman danışmanlarından Türkiye ve
-            Özbekistan'daki eğitim kurumları hakkında ayrıntılı bilgi
-            alabilirler. Danışmanlar, öğrencilerin akademik geçmişlerine ve
-            hedeflerine uygun eğitim programlarını belirlemelerine yardımcı
-            olur.
+            {getText("headerSwiperParagraph1")}
           </p>
           <div className="myBtn">
             <button>
-              Detaylı bilgi
+              {getText("headerButton1")}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -30,10 +27,10 @@ function ServiceMobile() {
                 <path
                   d="M19.24 8.40662L27.3333 16.5L19.24 24.5933"
                   stroke="white"
-                  stroke-width="2"
-                  stroke-miterlimit="10"
-                  stroke-linecap="square"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeMiterlimit="10"
+                  strokeLinecap="square"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M4.66663 15.5H3.66663V17.5H4.66663V15.5ZM27.1066 17.5C27.6589 17.5 28.1066 17.0523 28.1066 16.5C28.1066 15.9477 27.6589 15.5 27.1066 15.5V17.5ZM4.66663 17.5H27.1066V15.5H4.66663V17.5Z"
@@ -42,7 +39,7 @@ function ServiceMobile() {
               </svg>
             </button>
             <button>
-              İletişime geçin
+             {getText("headerButton2")}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
