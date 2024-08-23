@@ -349,7 +349,7 @@ const Services = () => {
             </div>
           </div> */}
 
-          {/* <div className="service-blogs">
+          <div className="service-blogs">
             <div className="item d-flex align-items-center">
               <div className="img">
                 <img src="img/service1.png" alt="" />
@@ -431,9 +431,9 @@ const Services = () => {
                 </i>
               </div>
             </div>
-          </div> */}
+          </div>
 
-          <ServiceBlog />
+          {/* <ServiceBlog /> */}
         </div>
 
         <div style={{ marginTop: "120px" }}>
