@@ -355,7 +355,7 @@ const Services = () => {
                 <img src="img/service1.png" alt="" />
               </div>
               <div className="info">
-                <h3>Muracaat İşlemleri</h3>
+                <h3>Müracaat İşlemleri</h3>
                 <p>
                   Ajans, Türkiye ve Özbekistan'daki eğitim kurumlarına başvuru
                   sürecini kolaylaştırmak için kapsamlı destek sağlar.
@@ -398,7 +398,7 @@ const Services = () => {
                 <h3>Uzman Transferi</h3>
                 <p>
                   Ajans, iki ülke arasındaki akademik ve uzman personel
-                  değişimini destekler. Uzman transferi programları sayesinde,
+                  değişimini destekler. Uzman Transferi programları sayesinde,
                   akademisyenler ve uzmanlar bilgi ve deneyimlerini paylaşarak
                   eğitim kalitesini artırırlar
                 </p>
@@ -414,7 +414,7 @@ const Services = () => {
                 <img src="img/service4.png" alt="" />
               </div>
               <div className="info">
-                <h3>Turkiye Uluslararasi Ofisi</h3>
+                <h3>Türkiye Uluslararası Ofisi</h3>
                 <p>
                   Ajans, Türkiye ve Özbekistan'daki üniversiteler arasında iş
                   birliği fırsatlarını artırmak için danışmanlık hizmetleri
