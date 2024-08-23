@@ -1,6 +1,19 @@
+import { useContext, useEffect } from "react";
 import { getText } from "../locales";
+import { LanguageContext } from "../context/LanguageContext";
 
 function ServiceMobile() {
+
+
+  const { selectedLanguage, selectedFlag, changeLanguage } =
+  useContext(LanguageContext);
+
+  useEffect(()=>{
+    console.log("-------");
+    
+  },[changeLanguage])
+
+
   return (
     <>
       <div className="container header-mobile">

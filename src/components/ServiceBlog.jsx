@@ -5,6 +5,8 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import TwoPartners from "./TwoPartners";
 import Partners from "./Partners";
 import { getText } from "../locales";
+import { useContext, useEffect } from "react";
+import { LanguageContext } from "../context/LanguageContext";
 
 function ServiceBlog() {
   // const navigate = useNavigate();
@@ -12,6 +14,16 @@ function ServiceBlog() {
   // const handleNavigate = () => {
   //   navigate("/services/in");
   // };
+
+
+  const { selectedLanguage, selectedFlag, changeLanguage } =
+  useContext(LanguageContext);
+
+  useEffect(()=>{
+    console.log("-------");
+    
+  },[changeLanguage])
+
   return (
     <>
       <div className="services" id="services">

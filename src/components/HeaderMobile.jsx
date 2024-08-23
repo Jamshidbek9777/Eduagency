@@ -1,8 +1,20 @@
-import React from "react";
+/* eslint-disable no-unused-vars */
+
 import { Link } from "react-router-dom";
 import { getText } from "../locales";
+import { LanguageContext } from "../context/LanguageContext";
+import { useContext, useEffect } from "react";
 
 function HeaderMobile() {
+
+  const { selectedLanguage, selectedFlag, changeLanguage } =
+  useContext(LanguageContext);
+
+  useEffect(()=>{
+    console.log("-------");
+    
+  },[changeLanguage])
+
   return (
     <>
       <div className="container header-mobile">

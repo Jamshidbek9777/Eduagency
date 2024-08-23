@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -9,6 +9,7 @@ import Getintouch from "./Getintouch";
 import ServiceMobile from "./ServiceMobile";
 import ServiceBlog from "./ServiceBlog";
 import { getText } from "../locales";
+import { LanguageContext } from "../context/LanguageContext";
 
 const Services = () => {
   const navigate = useNavigate();
@@ -16,6 +17,15 @@ const Services = () => {
   // const handleNavigate = () => {
   //   navigate("/services/in");
   // };
+
+
+  const { selectedLanguage, selectedFlag, changeLanguage } =
+  useContext(LanguageContext);
+
+  useEffect(()=>{
+    console.log("-------");
+    
+  },[changeLanguage])
 
   return (
     <>

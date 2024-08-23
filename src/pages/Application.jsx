@@ -1,7 +1,19 @@
-import React from "react";
+/* eslint-disable no-unused-vars */
+import React, { useContext, useEffect } from "react";
 import { getText } from "../locales";
+import { LanguageContext } from "../context/LanguageContext";
 
 const Application = () => {
+
+  const { selectedLanguage, selectedFlag, changeLanguage } =
+  useContext(LanguageContext);
+
+  useEffect(()=>{
+    console.log("-------");
+    
+  },[changeLanguage])
+
+
   return (
     <div className="service-pages">
       <div className="description container">

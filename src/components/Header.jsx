@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import "../sass/swiper.scss";
 import "../sass/swiperContent.scss";
 import HeaderMobile from "./HeaderMobile";
@@ -5,8 +6,24 @@ import Swiper from "./Swipper";
 import headerData from "../data/headerData.js";
 import { Link } from "react-router-dom";
 import { getText } from "../locales/index.js";
+import { useContext, useEffect, useState } from "react";
+import { LanguageContext } from "../context/LanguageContext.jsx";
+import useHeaderData from "../data/headerData.js";
 
 const Header = () => {
+
+  // const { selectedLanguage, selectedFlag, changeLanguage } =
+  // useContext(LanguageContext);
+
+  // const [editedData, setThisData] = useState([])
+
+  // useEffect(()=>{
+  //   console.log("-------");
+  //   setThisData(headerData)
+  // },[changeLanguage])
+
+  const headerData = useHeaderData()
+
   return (
     <div className="header">
       <div className="container header-pc">

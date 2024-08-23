@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import "../sass/about.scss";
 import Partners from "../components/Partners";
 import About from "../components/About";
 import Getintouch from "../components/Getintouch";
 import MobileAboutPage from "./MobileAboutPage";
 import { getText } from "../locales";
+import { LanguageContext } from "../context/LanguageContext";
 
 function AboutPage() {
+
+
+  const { selectedLanguage, selectedFlag, changeLanguage } =
+  useContext(LanguageContext);
+
+  useEffect(()=>{
+    console.log("-------");
+    
+  },[changeLanguage])
   return (
     <>
       {/* <div className="about-page-bg">

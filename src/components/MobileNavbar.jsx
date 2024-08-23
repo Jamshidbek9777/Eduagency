@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { getLanguage, getText } from "../locales/index";
+import { useContext, useEffect } from "react";
+import { LanguageContext } from "../context/LanguageContext";
 
 
 const MobileNavbar = ({ burger, setBurger }) => {
@@ -42,6 +44,17 @@ const MobileNavbar = ({ burger, setBurger }) => {
       },
     }),
   };
+
+
+  const { selectedLanguage, selectedFlag, changeLanguage } =
+    useContext(LanguageContext);
+
+
+  
+    useEffect(()=>{
+      console.log("-------");
+      
+    },[changeLanguage])
 
   return (
     <AnimatePresence>
@@ -85,9 +98,9 @@ const MobileNavbar = ({ burger, setBurger }) => {
               <div className="all-menu">
                 <ul className="nav-mobile-menu">
                   {[
-                    { img: "/img/turkey.png", alt: "turkey icon", text: "Turkish" },
-                    { img: "/img/uzbekistán.png", alt: "uzbekistán icon", text: "O'zbek" },
-                    { img: "/img/russia.png", alt: "russia icon", text: "Русский" },
+                    { img: "/img/turkey.png", alt: "turkey icon", text: "Turkish", val:"tr" },
+                    { img: "/img/uzbekistan.png", alt: "uzbekistán icon", text: "O'zbek", val:"uz" },
+                    { img: "/img/usa.png", alt: "english icon", text: "English", val:"en" },
                   ].map((lang, index) => (
                     <motion.li
                       key={lang.text}
@@ -95,9 +108,10 @@ const MobileNavbar = ({ burger, setBurger }) => {
                       custom={index + 6}
                       initial="hidden"
                       animate="visible"
+                      value={selectedLanguage}
                     >
-                      <a href="#" className="flag-div">
-                        <img src={lang.img} alt={lang.alt} />
+                      <a href="#" className="flag-div" onClick={()=> changeLanguage(lang.val)} >
+                        <img src={lang.img} alt={lang.alt}  style={{ width: "20px", objectFit: "cover" }} />
                         {lang.text}
                       </a>
                     </motion.li>

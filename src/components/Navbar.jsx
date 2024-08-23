@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import React, { useContext, useEffect, useState } from "react";
+import  { useContext, useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import MobileNavbar from "./MobileNavbar";
 import { motion } from "framer-motion";

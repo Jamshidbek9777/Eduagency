@@ -1,8 +1,20 @@
-// import { getText } from "../locales";
+/* eslint-disable no-unused-vars */
 
+
+import { useContext, useEffect } from "react";
 import { getText } from "../locales";
+import { LanguageContext } from "../context/LanguageContext";
 
 const ContactsLocation = () => {
+
+  const { selectedLanguage, selectedFlag, changeLanguage } =
+  useContext(LanguageContext);
+
+  useEffect(()=>{
+    console.log("-------");
+    
+  },[changeLanguage])
+
   return (
     <div className="contactsLocation">
       <div className="">

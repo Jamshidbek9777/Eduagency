@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import React from 'react'
 // import { getText } from '../locales'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
