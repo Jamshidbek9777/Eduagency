@@ -1,6 +1,6 @@
 export const tr = {
     home: "Anasayfa",
-    aboutUs: "Hakkimizda",
+    aboutUs: "Hakkımızda",
     contacts: "Iletisim",
     services: "Hizmetler",
    
@@ -16,5 +16,7 @@ export const tr = {
         headerSwiperParagraph5: "Ajans, Türkiye ve Özbekistan'daki üniversiteler arasında iş birliği fırsatlarını artırmak için danışmanlık hizmetleri sunar. Ortak projeler, müfredat geliştirme ve akademik değişim programları gibi konularda rehberlik eder.",
         headerButton1: "Detaylı bilgi",
         headerButton2: "İletişime geçin"
-  
+    
+
+
 }

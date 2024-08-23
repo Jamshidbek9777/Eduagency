@@ -296,9 +296,9 @@
     align-items: start;
     flex-direction: column;
     z-index: 1;
-    // h1{
-    //   max-width: 00px;
-    // }
+    h1{
+      text-transform: lowercase;
+    }
     h4 {
       color: #000;
       font-size: 76px;

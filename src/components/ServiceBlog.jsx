@@ -33,7 +33,7 @@ function ServiceBlog() {
                   <img src="img/service1.png" alt="" />
                 </div>
                 <div className="info">
-                  <h3>Muracaat İşlemleri</h3>
+                  <h3>MÜRACAAT İŞLEMLERİ</h3>
                   <p>
                     Ajans, Türkiye ve Özbekistan'daki eğitim kurumlarına başvuru
                     sürecini kolaylaştırmak için kapsamlı destek sağlar.
@@ -58,7 +58,7 @@ function ServiceBlog() {
                   <img src="img/service2.png" alt="" />
                 </div>
                 <div className="info">
-                  <h3>Öğrenci Transferi</h3>
+                  <h3>ÖĞRENCİ TRANSFERİ</h3>
                   <p>
                     Eğitim ajansı, Türkiye ve Özbekistan arasındaki öğrenci
                     transferlerini kolaylaştırmak için çalışır. Öğrencilerin
@@ -80,10 +80,10 @@ function ServiceBlog() {
                   <img src="img/service3.png" alt="" />
                 </div>
                 <div className="info">
-                  <h3>Uzman Transferi</h3>
+                  <h3>ÖĞRENCİ TRANSFERİ</h3>
                   <p>
                     Ajans, iki ülke arasındaki akademik ve uzman personel
-                    değişimini destekler. Uzman transferi programları sayesinde,
+                    değişimini destekler. ÖĞRENCİ TRANSFERİ programları sayesinde,
                     akademisyenler ve uzmanlar bilgi ve deneyimlerini paylaşarak
                     eğitim kalitesini artırırlar
                   </p>
@@ -102,7 +102,7 @@ function ServiceBlog() {
                   <img src="img/service4.png" alt="" />
                 </div>
                 <div className="info">
-                  <h3>Turkiye Uluslararasi Ofisi</h3>
+                  <h3>TÜRKİYE ULUSLARARASI OFİSİ</h3>
                   <p>
                     Ajans, Türkiye ve Özbekistan'daki üniversiteler arasında iş
                     birliği fırsatlarını artırmak için danışmanlık hizmetleri

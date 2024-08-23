@@ -1,5 +1,5 @@
 import React from 'react'
-import { getText } from '../locales'
+// import { getText } from '../locales'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'

@@ -50,7 +50,6 @@ export const uz = {
     address: "O'zbekistan, Toshkent, Mirobod t-n, Mironshoh 63A",
     email: "alisher.ict@gmail.com",
     gap: `Elektron pochta manzilida "@" belgisi bo'lishi kerak`,
-  
         headerSwiperTitle1: "Ariza berish tartiblari",
         headerSwiperTitle2: "Talaba transferi",
         headerSwiperTitle3: "Ekspert transferi",
@@ -62,7 +61,12 @@ export const uz = {
         headerSwiperParagraph4: "Turkiya-Oʻzbekiston Taʼlim Hamkorligi Agentligi akademik sayohatlar va yarmarkalar tashkil etadi, taʼlim muassasalarini targʻib qiladi va ikki davlat oʻrtasidagi akademik hamkorlikni ragʻbatlantiradi. Bu tadbirlar talabalar va akademiklar uchun yangi imkoniyatlar yaratadi.",
         headerSwiperParagraph5: "Agentlik ikki davlat o‘rtasida ilmiy va ekspert kadrlar almashinuvini qo‘llab-quvvatlaydi. Ekspert transfer dasturlari tufayli akademiklar va mutaxassislar o'z bilim va tajribalarini almashish orqali ta'lim sifatini oshiradilar.",
         headerButton1: "Batafsil ma'lumot",
-        headerButton2: "Biz bilan bog'lanish"
+        headerButton2: "Biz bilan bog'lanish",
+        headerCardDesc: "Agentlik talabalarni o‘zlari qabul qilingan ta’lim muassasalariga joylashtirish jarayonida ham rahbarlik qiladi.",
+        headerCardTitle: "Tez Moslashuv"
     
+
+
+
 
 }

@@ -3,13 +3,13 @@ import { Link, useLocation } from "react-router-dom";
 import MobileNavbar from "./MobileNavbar";
 import { motion } from "framer-motion";
 // import { getLanguage, getText } from "../locales/index";
-// import { LANGUAGE } from "../tools/constants";
+import { LANGUAGE } from "../tools/constants";
 
-// const flagImages = {
-//   uz: "img/uzbekistán.png",
-//   ru: "img/russia.png",
-//   tr: "img/tr.png",
-// };
+const flagImages = {
+  uz: "img/uzbekistán.png",
+  ru: "img/russia.png",
+  tr: "img/tr.png",
+};
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -105,7 +105,7 @@ const Navbar = () => {
                       location.pathname === "/about" ? "active-link" : ""
                     }`}
                   >
-                    Hakkimizda
+                    Hakkımızda
                   </Link>
                 </li>
                 <li
@@ -118,7 +118,7 @@ const Navbar = () => {
                       location.pathname === "/services" ? "active-link" : ""
                     }`}
                   >
-                    Hizmetler
+                    Hizmetlerimiz
                   </Link>
                   <motion.ul
                     initial={{ opacity: 0, y: -10 }}

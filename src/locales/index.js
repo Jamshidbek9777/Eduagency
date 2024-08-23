@@ -1,6 +1,6 @@
 import { LANGUAGE } from "../tools/constants";
 // import { en } from "./EN";
-import { ru } from "./RU";
+import { en } from "./EN";
 import { uz } from "./UZ";
 import { tr } from "./TR";
 
@@ -14,8 +14,8 @@ export const getText = (word) => {
     return getLanguage() === "uz"
         ? uz[word]
         :
-         getLanguage() === "ru"
-        ? ru[word]
+         getLanguage() === "en"
+        ? en[word]
         : tr[word];
 };
 
