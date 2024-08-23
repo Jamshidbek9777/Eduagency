@@ -1,9 +1,14 @@
-import { LANGUAGE } from "../tools/constants";
+// src/locales/index.js
 import { en } from "./EN";
 import { uz } from "./UZ";
 import { tr } from "./TR";
+import { LANGUAGE } from "../tools/constants";
 
-import 'swiper/css';
+export const flagImages = {
+    uz: "/img/uzbekistán.png",
+    en: "/img/usa.png",
+    tr: "/img/tr.png",
+};
 
 export const getLanguage = () => {
     return localStorage.getItem(LANGUAGE);
@@ -12,9 +17,7 @@ export const getLanguage = () => {
 export const getText = (word) => {
     return getLanguage() === "uz"
         ? uz[word]
-        :
-         getLanguage() === "en"
+        : getLanguage() === "en"
         ? en[word]
         : tr[word];
 };
-

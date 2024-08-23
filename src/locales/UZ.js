@@ -118,6 +118,12 @@ export const uz = {
     TurkeyOfisSpan4: "4. Tadqiqot va innovatsion seminarlar:",
     TurkeyOfis4: "Agentlik ikki davlat o‘rtasidagi akademik hamkorlikni rivojlantirish maqsadida tadqiqot va innovatsiyalar bo‘yicha seminarlar tashkil etadi. Ushbu seminarlar akademik va tadqiqotchilarga o‘z bilim va tajribalari bilan o‘rtoqlashish, yangi loyihalar ishlab chiqish va xalqaro nashrlar yaratish uchun zamin yaratadi.",
 
+    contactsLocationHeading: "Biz bilan bog'lanish",
+    contactsLocationNumber: "Telefon raqami",
+    contactsLocationContact: "Ish vaqtlari",
+    contactsLocationMap: "Manzil",
+    contactsLocationEmail: "Elektron pochta",
+
     AboutPageTitle: "Bizning ustuvorliklarimiz haqida",
     AboutPageDesc: "Agentlik Turkiya va Oʻzbekiston universitetlari oʻrtasida hamkorlik imkoniyatlarini kengaytirish uchun maslahat xizmatlarini koʻrsatadi. Qo'shma loyihalar, o'quv dasturlarini ishlab chiqish va akademik almashinuv dasturlari kabi masalalar bo'yicha ko'rsatmalar beradi."
 }

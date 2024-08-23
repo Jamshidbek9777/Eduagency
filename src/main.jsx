@@ -19,26 +19,29 @@ import Contacts from "./pages/Contacts.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
 import Services from "./components/Services.jsx";
 import ServicesLinksIn from "./pages/ServicesLinksIn.jsx";
+import { LanguageProvider } from "./context/LanguageContext.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-  <HashRouter>
-    <Navbar />
-    <ScrollToTop />
-    <Routes>
-      <Route path="/" exact element={<App />} />
-      <Route path="/application" exact element={<Application />} />
-      <Route path="/student-transfer" exact element={<StudentTransfer />} />
-      <Route path="/expert-transfer" exact element={<ExpertTransfer />} />
-      <Route path="/turkiye-ofisi" exact element={<AcademicTour />} />
-      <Route path="/university-community" exact element={<UniversityCom />} />
-      <Route path="/contacts" exact element={<Contacts />} />
-      <Route path="/about" exact element={<AboutPage />} />
-      <Route path="/services" exact element={<Services />} />
-      <Route path="/services/in" exact element={<ServicesLinksIn />} />
-    </Routes>
-    <Footer />
-    {/* <Up /> */}
-  </HashRouter>
+  <LanguageProvider>
+    <HashRouter>
+      <Navbar />
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" exact element={<App />} />
+        <Route path="/application" exact element={<Application />} />
+        <Route path="/student-transfer" exact element={<StudentTransfer />} />
+        <Route path="/expert-transfer" exact element={<ExpertTransfer />} />
+        <Route path="/turkiye-ofisi" exact element={<AcademicTour />} />
+        <Route path="/university-community" exact element={<UniversityCom />} />
+        <Route path="/contacts" exact element={<Contacts />} />
+        <Route path="/about" exact element={<AboutPage />} />
+        <Route path="/services" exact element={<Services />} />
+        <Route path="/services/in" exact element={<ServicesLinksIn />} />
+      </Routes>
+      <Footer />
+      {/* <Up /> */}
+    </HashRouter>
+  </LanguageProvider>
 );

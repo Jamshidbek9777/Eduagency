@@ -1,22 +1,17 @@
-import { useEffect, useState } from "react";
+/* eslint-disable no-undef */
+import React, { useContext, useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import MobileNavbar from "./MobileNavbar";
 import { motion } from "framer-motion";
-import { getLanguage, getText } from "../locales/index";
-import { LANGUAGE } from "../tools/constants";
-
-const flagImages = {
-  uz: "img/uzbekistán.png",
-  en: "/img/usa.png",
-  tr: "img/tr.png",
-};
+import { LanguageContext } from "../context/LanguageContext";
+import { getText } from "../locales/index";
 
 const Navbar = () => {
+  const { selectedLanguage, selectedFlag, changeLanguage } =
+    useContext(LanguageContext);
   const [navbar, setNavbar] = useState(false);
   const [burger, setBurger] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState(getLanguage());
-  const [selectedFlag, setSelectedFlag] = useState(flagImages[getLanguage()]);
   const location = useLocation();
 
   useEffect(() => {
@@ -44,13 +39,6 @@ const Navbar = () => {
   useEffect(() => {
     document.body.style.overflow = burger ? "hidden" : "auto";
   }, [burger]);
-
-  const changeLanguage = (e) => {
-    const selectedLang = e.target.value;
-    localStorage.setItem(LANGUAGE, selectedLang);
-    setSelectedLanguage(selectedLang);
-    setSelectedFlag(flagImages[selectedLang]);
-  };
 
   const handleLinkClick = (path) => {
     localStorage.setItem("activeLink", path);
@@ -190,17 +178,18 @@ const Navbar = () => {
                 </li>
               </ul>
               <div className="siteLang d-flex align-items-center">
-                <img src={selectedFlag} alt="Selected Language Flag" style={{width: "20px", objectFit: "cover"}} />
-                <select onChange={changeLanguage} value={selectedLanguage}>
-                  <option value="uz" selected={getLanguage() === "uz"}>
-                    Oʻzbek
-                  </option>
-                  <option value="en" selected={getLanguage() === "ru"}>
-                    English
-                  </option>
-                  <option value="tr" selected={getLanguage() === "tr"}>
-                    Türkçe
-                  </option>
+                <img
+                  src={selectedFlag}
+                  alt="Selected Language Flag"
+                  style={{ width: "20px", objectFit: "cover" }}
+                />
+                <select
+                  onChange={(e) => changeLanguage(e.target.value)}
+                  value={selectedLanguage}
+                >
+                  <option value="uz">Oʻzbek</option>
+                  <option value="en">English</option>
+                  <option value="tr">Türkçe</option>
                 </select>
               </div>
             </div>

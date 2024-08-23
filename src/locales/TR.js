@@ -74,5 +74,11 @@ export const tr = {
     AboutPageDesc: "Ajans, Türkiye ve Özbekistan'daki üniversiteler arasında iş birliği fırsatlarını artırmak için danışmanlık hizmetleri sunar. Ortak projeler, müfredat geliştirme ve akademik değişim programları gibi konularda rehberlik eder.",
 
     contactsLocationHeading: "Bize Ulaşın",
+    contactsLocationNumber: "Telefon numara",
+    contactsLocationContact: "Çalışma saatleri",
+    contactsLocationMap: "Adres",
+    contactsLocationEmail: "E-posta",
+
+
 
 }

@@ -76,6 +76,13 @@ export const en = {
     AboutPageTitle: "About our priorities",
     AboutPageDesc: "The agency provides consultancy services to increase cooperation opportunities between universities in Turkey and Uzbekistan, providing guidance on issues such as joint projects, curriculum development and academic exchange programs.",
 
+    contactsLocationHeading: "Contact Us",
+    contactsLocationNumber: "Phone Number",
+    contactsLocationContact: "Working Hours",
+    contactsLocationMap: "Address",
+    contactsLocationEmail: "Email",
+
+
     slogan: "Expert guidance for every transition",
     aboutDesc: "At Eduagency, we specialize in navigating the complexities of educational and professional transitions with ease. Our dedicated team of experts is committed to providing personalized support and seamless solutions for students and professionals alike. Whether you're looking to advance your academic journey or make a significant career move, we are here to guide you every step of the way.",
 

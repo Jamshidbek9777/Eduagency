@@ -1,5 +1,7 @@
 // import { getText } from "../locales";
 
+import { getText } from "../locales";
+
 const ContactsLocation = () => {
   return (
     <div className="contactsLocation">
@@ -7,27 +9,27 @@ const ContactsLocation = () => {
         <div className="row">
           <div className="contact-blog-p">
             <div className="col-12 text-center mb-5 container">
-              <h1>Bize Ulaşın</h1>
+              <h1>{getText("contactsLocationHeading")}</h1>
             </div>
             <div className="contact-blog container">
               <div className="contact-blog-in">
                 <img src="/img/credit-card-icon.png" alt="" />
-                <h4>Telefon numara</h4>
+                <h4>{getText("contactsLocationNumber")}</h4>
                 <a href="tel:+998 (71) 777-77-77">+998 (71) 777-77-77</a>
               </div>
               <div className="contact-blog-in">
                 <img src="/img/calendar-icon.png" alt="" />
-                <h4>Çalışma saatleri</h4>
+                <h4>{getText("contactsLocationContact")}</h4>
                 <p>Pazartesi - Cumartesi 9:00 - 18:00</p>
               </div>
               <div className="contact-blog-in">
                 <img src="/img/map-icon.png" alt="" />
-                <h4>Adres</h4>
+                <h4>{getText("contactsLocationMap")}</h4>
                 <p>100000, г. Ташкент, ул. Амира Темура, д. 6</p>
               </div>
               <div className="contact-blog-in">
                 <img src="/img/passports-icon.png" alt="" />
-                <h4>E-posta</h4>
+                <h4>{getText("contactsLocationEmail")}</h4>
                 <p>info@zamaantravel.uz</p>
               </div>
             </div>
