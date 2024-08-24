@@ -40,7 +40,7 @@ const Footer = () => {
                     <h4>Instagram</h4>
                     <img src="/img/footer_instagram.png" alt="instagram icon" />
                   </div>
-                  <h5>@Eduagency_In</h5>
+                  <h5>@eduagency_uz</h5>
                 </div>
               </a>
             </li>
@@ -62,7 +62,7 @@ const Footer = () => {
                     <h4>Telegram</h4>
                     <img src="/img/footer_telegram.png" alt="instagram icon" />
                   </div>
-                  <h5>@Eduagency_Tg</h5>
+                  <h5>@eduagency_uz</h5>
                 </div>
               </a>
             </li>
@@ -76,7 +76,7 @@ const Footer = () => {
                       </h4>
                       <h5>
                         <a href="https://t.me/eduagencyuz" target="_blank" style={{color: "white"}}>
-                          @Eduagency
+                          @eduagencyuz
                         </a>
                       </h5>
                     </div>

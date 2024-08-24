@@ -1024,7 +1024,7 @@ body {
 
     .service-blogs {
       margin-top: 50px;
-
+    
       .item {
         padding: 30px 0;
         border-bottom: 2px solid #d1d0d7;
@@ -1032,133 +1032,140 @@ body {
         cursor: pointer;
         display: flex;
         justify-content: space-between;
-
-        .imgAndInfo{
+    
+        .imgAndInfo {
           display: flex !important;
           align-items: center !important;
         }
-
+    
         .img {
-          transition: all ease-in 0.4s;
+          transition: transform 0.4s ease-in;
           transform: scale(0.9);
-
+    
           @media (max-width: 992px) {
             img {
               width: 50px;
             }
           }
-
+    
           @media (max-width: 1400px) {
             img {
               width: 80px;
             }
           }
         }
-
+    
         .info {
           margin-right: 15%;
           margin-left: 30px;
-
+    
           @media (max-width: 992px) {
             margin-right: 0;
           }
-
+    
           h3 {
             font-size: 65px;
             font-weight: 500;
             line-height: 85.47px;
             color: #51516c;
-            // text-transform: uppercase;
-            transition: all ease-in 0.4s;
+            transition: transform 0.4s ease-in;
             transform: translate(0px, 30px);
-
+    
             @media (max-width: 1400px) {
               font-size: 55px;
               line-height: 70.47px;
             }
-
+    
             @media (max-width: 992px) {
               font-size: 25px;
               line-height: 115.5%;
+              transform: translate(0px, 0); /* Ensure h3 is in normal state on mobile */
             }
           }
-
+    
           p {
             line-height: 23.2px;
             color: #51536d;
             font-size: 16px;
             transform: translate(0px, 100px);
-            transition: all ease-in 0.4s;
+            transition: transform 0.4s ease-in;
             opacity: 0;
-
+    
             @media (max-width: 992px) {
               font-size: 15px;
               margin-top: 16px;
+              transform: translate(0px, 0); /* Ensure p is in normal state on mobile */
+              opacity: 1; /* Ensure p is visible on mobile */
             }
           }
         }
-
+    
         .icon {
           background: #0556ff1a;
           padding: 50px;
           border-radius: 50px;
-
+    
           svg {
-            transition: all ease-in 0.2s;
+            transition: color 0.2s ease-in;
             font-size: 40px;
             transform: rotate(-45deg);
             color: $colorBlue;
           }
-
+    
           @media (max-width: 1400px) {
             padding: 30px;
             border-radius: 30px;
           }
-
+    
           @media (max-width: 992px) {
-            display: none;
+            display: none; /* Hide icon on mobile */
           }
         }
-
+    
         &:nth-child(1) {
           border-top: 1px solid #d1d0d7;
         }
-
-        &:hover {
-          .img {
-            transform: scale(1.2);
-          }
-
-          h3 {
-            background: -webkit-linear-gradient(
-              209.98deg,
-              #80a9ff 13.39%,
-              #0556ff 86.59%
-            );
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            transform: translate(0);
-          }
-
-          p {
-            transform: translate(0);
-            opacity: 1;
-          }
-
-          .icon {
-            background: linear-gradient(
-              209.98deg,
-              #80a9ff 13.39%,
-              #0556ff 86.59%
-            );
-
-            svg {
-              color: #fff;
+    
+        // Apply hover effects only on screens larger than 992px
+        @media (min-width: 993px) {
+          &:hover {
+            .img {
+              transform: scale(1.2);
+            }
+    
+            h3 {
+              background: -webkit-linear-gradient(
+                209.98deg,
+                #80a9ff 13.39%,
+                #0556ff 86.59%
+              );
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+              transform: translate(0);
+            }
+    
+            p {
+              transform: translate(0);
+              opacity: 1;
+            }
+    
+            .icon {
+              background: linear-gradient(
+                209.98deg,
+                #80a9ff 13.39%,
+                #0556ff 86.59%
+              );
+    
+              svg {
+                color: #fff;
+              }
             }
           }
         }
       }
     }
+    
+    
 
     .card {
       background-color: #f5f5f5;
