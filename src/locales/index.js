@@ -4,11 +4,11 @@ import { uz } from "./UZ";
 import { tr } from "./TR";
 import { LANGUAGE } from "../tools/constants";
 // eslint-disable-next-line no-unused-vars
-import uzb from "../../public/img/uzbekistán.png"
+import uzb_logo from "../../public/img/uzbekistán.png"
 
 
 export const flagImages = {
-    uz: uzb,
+    uz: uzb_logo,
     en: "/img/usa.png",
     tr: "/img/tr.png",
 };
