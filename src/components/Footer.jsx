@@ -72,7 +72,7 @@ const Footer = () => {
                   <div className="footer_link_and_icon">
                     <div>
                       <h4>
-                        <a href="tel:+998901234567">+998(90) 123 45 67</a>
+                        <a href="tel:+998334691101">+998(33) 469 11 01</a>
                       </h4>
                       <h5>
                         <a href="https://t.me/eduagencyuz" target="_blank" style={{color: "white"}}>

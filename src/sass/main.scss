@@ -618,6 +618,7 @@ body {
         gap: 12px;
         padding-bottom: 32px;
         z-index: 1;
+        user-select: none;
 
         h1 {
           max-width: 800px;
