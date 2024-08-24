@@ -34,7 +34,7 @@ const Footer = () => {
         <div className="footer-bottom">
           <ul className="footer-links">
             <li>
-              <a href="/">
+              <a href="https://www.instagram.com/eduagency_uz/" target="_blank">
                 <div className="footer-first-link">
                   <div className="footer_link_and_icon">
                     <h4>Instagram</h4>
@@ -56,7 +56,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="/">
+              <a href="https://t.me/eduagency_uz" target="_blank">
                 <div className="footer-first-link">
                   <div className="footer_link_and_icon">
                     <h4>Telegram</h4>
@@ -74,7 +74,11 @@ const Footer = () => {
                       <h4>
                         <a href="tel:+998901234567">+998(90) 123 45 67</a>
                       </h4>
-                      <h5>@Eduagency</h5>
+                      <h5>
+                        <a href="https://t.me/eduagencyuz" target="_blank" style={{color: "white"}}>
+                          @Eduagency
+                        </a>
+                      </h5>
                     </div>
                     <img src="/img/footer_phone.png" alt="phone" />
                   </div>

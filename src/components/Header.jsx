@@ -54,10 +54,10 @@ const Header = () => {
                         <path
                           d="M19.24 8.40662L27.3333 16.5L19.24 24.5933"
                           stroke="white"
-                          stroke-width="2"
-                          stroke-miterlimit="10"
-                          stroke-linecap="square"
-                          stroke-linejoin="round"
+                          strokeWidth="2"
+                          strokeMiterlimit="10"
+                          strokeLinecap="square"
+                          strokeLinejoin="round"
                         />
                         <path
                           d="M4.66663 15.5H3.66663V17.5H4.66663V15.5ZM27.1066 17.5C27.6589 17.5 28.1066 17.0523 28.1066 16.5C28.1066 15.9477 27.6589 15.5 27.1066 15.5V17.5ZM4.66663 17.5H27.1066V15.5H4.66663V17.5Z"
@@ -136,8 +136,6 @@ const Header = () => {
                   </button>
                 </div>
                 <img src="/img/svg.svg" alt="" />
-                {/* <h4 className="tope">{getText("headerCardTitle1")}</h4>
-                <h4>{getText("headerCardTitle2")}</h4> */}
               </div>
 
               <div className="bg-picture">

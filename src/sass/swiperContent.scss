@@ -46,6 +46,10 @@
       bottom: 68px;
     }
 
+    img {
+      width: 80%;
+    }
+
     .tope-btn {
       display: flex;
       flex-direction: row;
@@ -102,8 +106,8 @@
       }
       .tope-btn {
         button {
-          left: 22px;
-          top: -58px;
+          left: -15px;
+          top: -35px;
         }
       }
     }
@@ -129,11 +133,8 @@
       }
       p {
         font-size: 20px;
-        max-width: 238px;
-      }
-      h4 {
-        position: relative;
-        font-size: 26px;
+        margin-top: 10px;
+        max-width: 200px;
       }
 
       .tope {

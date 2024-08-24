@@ -1029,6 +1029,13 @@ body {
         border-bottom: 2px solid #d1d0d7;
         overflow-y: hidden;
         cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+
+        .imgAndInfo{
+          display: flex !important;
+          align-items: center !important;
+        }
 
         .img {
           transition: all ease-in 0.4s;

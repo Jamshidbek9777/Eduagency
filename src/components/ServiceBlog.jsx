@@ -15,39 +15,28 @@ function ServiceBlog() {
   //   navigate("/services/in");
   // };
 
-
   const { selectedLanguage, selectedFlag, changeLanguage } =
-  useContext(LanguageContext);
+    useContext(LanguageContext);
 
-  useEffect(()=>{
+  useEffect(() => {
     console.log("-------");
-    
-  },[changeLanguage])
+  }, [changeLanguage]);
 
   return (
     <>
       <div className="services" id="services">
         <div className="container">
-          {/* <div className="myItem align-items-center d-flex">
-            <div className="title">
-              <h2>Hizmetler</h2>
-            </div>
-            <div className="logo">
-              <div className="img">
-                <img src="img/logo.png" alt="" />
-              </div>
-            </div>
-          </div> */}
-
           <div className="service-blogs">
             <Link to={"/application"}>
               <div className="item d-flex align-items-center">
-                <div className="img">
-                  <img src="img/service1.png" alt="" />
-                </div>
-                <div className="info">
-                  <h3>{getText("headerSwiperTitle1")}</h3>
-                  <p>{getText("headerSwiperParagraph1")}</p>
+                <div className="imgAndInfo">
+                  <div className="img">
+                    <img src="img/service1.png" alt="" />
+                  </div>
+                  <div className="info">
+                    <h3>{getText("headerSwiperTitle1")}</h3>
+                    <p>{getText("headerSwiperParagraph1")}</p>
+                  </div>
                 </div>
                 <div className="icon">
                   <i>
@@ -59,12 +48,14 @@ function ServiceBlog() {
 
             <Link to={"/student-transfer"}>
               <div className="item d-flex align-items-center">
-                <div className="img">
-                  <img src="img/service2.png" alt="" />
-                </div>
-                <div className="info">
-                  <h3>{getText("headerSwiperTitle2")}</h3>
-                  <p>{getText("headerSwiperParagraph2")}</p>
+                <div className="imgAndInfo">
+                  <div className="img">
+                    <img src="img/service1.png" alt="" />
+                  </div>
+                  <div className="info">
+                    <h3>{getText("headerSwiperTitle2")}</h3>
+                    <p>{getText("headerSwiperParagraph2")}</p>
+                  </div>
                 </div>
                 <div className="icon">
                   <i>
@@ -76,12 +67,14 @@ function ServiceBlog() {
 
             <Link to={"/expert-transfer"}>
               <div className="item d-flex align-items-center">
-                <div className="img">
-                  <img src="img/service3.png" alt="" />
-                </div>
-                <div className="info">
-                  <h3>{getText("headerSwiperTitle3")}</h3>
-                  <p>{getText("headerSwiperParagraph3")}</p>
+                <div className="imgAndInfo">
+                  <div className="img">
+                    <img src="img/service1.png" alt="" />
+                  </div>
+                  <div className="info">
+                    <h3>{getText("headerSwiperTitle3")}</h3>
+                    <p>{getText("headerSwiperParagraph3")}</p>
+                  </div>
                 </div>
                 <div className="icon">
                   <i>
@@ -93,12 +86,14 @@ function ServiceBlog() {
 
             <Link to={"/turkiye-ofisi"}>
               <div className="item d-flex align-items-center">
-                <div className="img">
-                  <img src="img/service4.png" alt="" />
-                </div>
-                <div className="info">
-                  <h3>{getText("headerSwiperTitle4")}</h3>
-                  <p>{getText("headerSwiperParagraph4")}</p>
+                <div className="imgAndInfo">
+                  <div className="img">
+                    <img src="img/service1.png" alt="" />
+                  </div>
+                  <div className="info">
+                    <h3>{getText("headerSwiperTitle4")}</h3>
+                    <p>{getText("headerSwiperParagraph4")}</p>
+                  </div>
                 </div>
                 <div className="icon">
                   <i>
