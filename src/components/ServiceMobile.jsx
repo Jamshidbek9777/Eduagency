@@ -5,6 +5,7 @@ import { LanguageContext } from "../context/LanguageContext";
 function ServiceMobile() {
 
 
+  // eslint-disable-next-line no-unused-vars
   const { selectedLanguage, selectedFlag, changeLanguage } =
   useContext(LanguageContext);
 
