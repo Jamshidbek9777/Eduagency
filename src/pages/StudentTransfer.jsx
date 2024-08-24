@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useContext, useEffect } from "react";
 import { getText } from "../locales";
 import { LanguageContext } from "../context/LanguageContext";
