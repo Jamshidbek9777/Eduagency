@@ -50,7 +50,7 @@ function ServiceBlog() {
               <div className="item d-flex align-items-center">
                 <div className="imgAndInfo">
                   <div className="img">
-                    <img src="img/service1.png" alt="" />
+                    <img src="img/service2.png" alt="" />
                   </div>
                   <div className="info">
                     <h3>{getText("headerSwiperTitle2")}</h3>
@@ -69,7 +69,7 @@ function ServiceBlog() {
               <div className="item d-flex align-items-center">
                 <div className="imgAndInfo">
                   <div className="img">
-                    <img src="img/service1.png" alt="" />
+                    <img src="img/service3.png" alt="" />
                   </div>
                   <div className="info">
                     <h3>{getText("headerSwiperTitle3")}</h3>
@@ -88,7 +88,7 @@ function ServiceBlog() {
               <div className="item d-flex align-items-center">
                 <div className="imgAndInfo">
                   <div className="img">
-                    <img src="img/service1.png" alt="" />
+                    <img src="img/service4.png" alt="" />
                   </div>
                   <div className="info">
                     <h3>{getText("headerSwiperTitle4")}</h3>
