@@ -8,9 +8,9 @@ const Application = () => {
   const { selectedLanguage, selectedFlag, changeLanguage } =
     useContext(LanguageContext);
 
-  useEffect(() => {
-    console.log("-------");
-  }, [changeLanguage]);
+  // useEffect(() => {
+  //   console.log("-------");
+  // }, [changeLanguage]);
 
   return (
     <>

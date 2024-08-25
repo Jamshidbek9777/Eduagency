@@ -10,10 +10,10 @@ const ContactsLocation = () => {
   const { selectedLanguage, selectedFlag, changeLanguage } =
   useContext(LanguageContext);
 
-  useEffect(()=>{
-    console.log("-------");
+  // useEffect(()=>{
+  //   console.log("-------");
     
-  },[changeLanguage])
+  // },[changeLanguage])
 
   return (
     <div className="contactsLocation">

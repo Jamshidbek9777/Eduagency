@@ -1,7 +1,5 @@
-/* eslint-disable no-undef */
-import  { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import MobileNavbar from "./MobileNavbar";
 import { motion } from "framer-motion";
 import { LanguageContext } from "../context/LanguageContext";
 import { getText } from "../locales/index";
@@ -50,6 +48,45 @@ const Navbar = () => {
 
   const handleDropdownHover = (state) => {
     setIsDropdownOpen(state);
+  };
+
+  const navVariants = {
+    hidden: { opacity: 0, x: "100%" },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        type: "spring",
+        stiffness: 70,
+        damping: 15,
+        duration: 0.5,
+      },
+    },
+    exit: {
+      opacity: 0,
+      x: "100%",
+      transition: {
+        type: "spring",
+        stiffness: 50,
+        damping: 20,
+        duration: 0.5,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30, scale: 0.9 },
+    visible: (custom) => ({
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: {
+        type: "spring",
+        stiffness: 50,
+        damping: 10,
+        delay: custom * 0.1,
+      },
+    }),
   };
 
   return (
@@ -180,7 +217,6 @@ const Navbar = () => {
               <div className="siteLang d-flex align-items-center">
                 <img
                   src={selectedFlag}
-                  alt="Selected Language Flag"
                   style={{ width: "20px", objectFit: "cover" }}
                 />
                 <select
@@ -208,7 +244,83 @@ const Navbar = () => {
         </div>
       </div>
 
-      {burger && <MobileNavbar burger={burger} setBurger={setBurger} />}
+      <motion.div
+        className={`mobNav ${burger ? "active" : ""}`}
+        initial="hidden"
+        animate={burger ? "visible" : "hidden"}
+        exit="exit"
+        variants={navVariants}
+      >
+        <div className="all-menu">
+          <motion.ul className="nav-menu">
+            {[
+              { to: "/", text: getText("home") },
+              { to: "/about", text: getText("aboutUs") },
+              { to: "/services", text: getText("services") },
+              { to: "/contacts", text: getText("contacts") },
+            ].map((item, index) => (
+              <motion.li
+                key={item.to}
+                variants={itemVariants}
+                custom={index + 1}
+              >
+                <Link onClick={() => setBurger(false)} to={item.to}>
+                  {item.text}
+                </Link>
+              </motion.li>
+            ))}
+          </motion.ul>
+          <motion.div
+            className="siteLang d-flex align-items-center"
+            variants={itemVariants}
+            custom={5}
+          >
+            <div className="all-menu">
+              <ul className="nav-mobile-menu">
+                {[
+                  {
+                    img: "/img/turkey.png",
+                    text: "Turkish",
+                    val: "tr",
+                  },
+                  {
+                    img: "/img/uzbekistán.png",
+                    text: "O'zbek",
+                    val: "uz",
+                  },
+                  {
+                    img: "/img/usa.png",
+                    text: "English",
+                    val: "en",
+                  },
+                ].map((lang, index) => (
+                  <motion.li
+                    key={lang.text}
+                    variants={itemVariants}
+                    custom={index + 6}
+                  >
+                    <a
+                      href="#"
+                      className="flag-div"
+                      onClick={() => {
+                        changeLanguage(lang.val);
+                        setBurger(false);
+                      }}
+                    >
+                      <img
+                        src={lang.img}
+                        alt={lang.alt}
+                        style={{ width: "20px", objectFit: "cover" }}
+                      />
+                      {lang.text}
+                    </a>
+                  </motion.li>
+                ))}
+              </ul>
+            </div>
+          </motion.div>
+        </div>
+      </motion.div>
     </>
   );
 };

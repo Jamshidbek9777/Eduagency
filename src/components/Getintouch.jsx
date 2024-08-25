@@ -50,10 +50,10 @@ const Getintouch = () => {
   const { selectedLanguage, selectedFlag, changeLanguage } =
   useContext(LanguageContext);
 
-  useEffect(()=>{
-    console.log("-------");
+  // useEffect(()=>{
+  //   console.log("-------");
     
-  },[changeLanguage])
+  // },[changeLanguage])
 
   return (
     <div className="Getintouch mt-5">

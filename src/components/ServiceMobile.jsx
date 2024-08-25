@@ -9,10 +9,10 @@ function ServiceMobile() {
   const { selectedLanguage, selectedFlag, changeLanguage } =
   useContext(LanguageContext);
 
-  useEffect(()=>{
-    console.log("-------");
+  // useEffect(()=>{
+  //   console.log("-------");
     
-  },[changeLanguage])
+  // },[changeLanguage])
 
 
   return (

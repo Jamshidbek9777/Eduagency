@@ -15,12 +15,13 @@ function ServiceBlog() {
   //   navigate("/services/in");
   // };
 
+  // eslint-disable-next-line no-unused-vars
   const { selectedLanguage, selectedFlag, changeLanguage } =
     useContext(LanguageContext);
 
-  useEffect(() => {
-    console.log("-------");
-  }, [changeLanguage]);
+  // useEffect(() => {
+  //   console.log("-------");
+  // }, [changeLanguage]);
 
   return (
     <>

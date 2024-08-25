@@ -6,17 +6,15 @@ import Getintouch from "../components/Getintouch";
 import MobileAboutPage from "./MobileAboutPage";
 import { getText } from "../locales";
 import { LanguageContext } from "../context/LanguageContext";
+import AboutText from "../components/AboutText";
 
 function AboutPage() {
-
-
   const { selectedLanguage, selectedFlag, changeLanguage } =
-  useContext(LanguageContext);
+    useContext(LanguageContext);
 
-  useEffect(()=>{
-    console.log("-------");
-    
-  },[changeLanguage])
+  // useEffect(() => {
+  //   console.log("-------");
+  // }, [changeLanguage]);
   return (
     <>
       {/* <div className="about-page-bg">
@@ -63,18 +61,19 @@ function AboutPage() {
         </div>
       </div> */}
 
-      <div className="about-page" style={{marginTop: "250px"}}>
+      <div className="about-page" style={{ marginTop: "250px" }}>
         <div className="container">
+          <AboutText />
           <div className="partners-div-p">
             <Partners />
           </div>
         </div>
-        <div>
+        {/* <div>
           <About
             title={getText("AboutPageTitle")}
             desc={getText("AboutPageDesc")}
           />
-        </div>
+        </div> */}
         <Getintouch />
       </div>
 

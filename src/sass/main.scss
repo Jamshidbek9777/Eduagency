@@ -595,6 +595,12 @@ body {
     }
   }
 
+  .mobNav.active {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
   .header {
     height: auto;
     margin-top: 32px;
@@ -1024,7 +1030,7 @@ body {
 
     .service-blogs {
       margin-top: 50px;
-    
+
       .item {
         padding: 30px 0;
         border-bottom: 2px solid #d1d0d7;
@@ -1032,37 +1038,37 @@ body {
         cursor: pointer;
         display: flex;
         justify-content: space-between;
-    
+
         .imgAndInfo {
           display: flex !important;
           align-items: center !important;
         }
-    
+
         .img {
           transition: transform 0.4s ease-in;
           transform: scale(0.9);
-    
+
           @media (max-width: 992px) {
             img {
               width: 50px;
             }
           }
-    
+
           @media (max-width: 1400px) {
             img {
               width: 80px;
             }
           }
         }
-    
+
         .info {
           margin-right: 15%;
           margin-left: 30px;
-    
+
           @media (max-width: 992px) {
             margin-right: 0;
           }
-    
+
           h3 {
             font-size: 65px;
             font-weight: 500;
@@ -1070,19 +1076,19 @@ body {
             color: #51516c;
             transition: transform 0.4s ease-in;
             transform: translate(0px, 30px);
-    
+
             @media (max-width: 1400px) {
               font-size: 55px;
               line-height: 70.47px;
             }
-    
+
             @media (max-width: 992px) {
               font-size: 25px;
               line-height: 115.5%;
-              transform: translate(0px, 0); 
+              transform: translate(0px, 0);
             }
           }
-    
+
           p {
             line-height: 23.2px;
             color: #51536d;
@@ -1090,49 +1096,50 @@ body {
             transform: translate(0px, 100px);
             transition: transform 0.4s ease-in;
             opacity: 0;
-    
+
             @media (max-width: 992px) {
+              display: none;
               font-size: 15px;
               margin-top: 16px;
-              transform: translate(0px, 0); 
+              transform: translate(0px, 0);
               opacity: 1;
             }
           }
         }
-    
+
         .icon {
           background: #0556ff1a;
           padding: 50px;
           border-radius: 50px;
-    
+
           svg {
             transition: color 0.2s ease-in;
             font-size: 40px;
             transform: rotate(-45deg);
             color: $colorBlue;
           }
-    
+
           @media (max-width: 1400px) {
             padding: 30px;
             border-radius: 30px;
           }
-    
+
           @media (max-width: 992px) {
             display: none; /* Hide icon on mobile */
           }
         }
-    
+
         &:nth-child(1) {
           border-top: 1px solid #d1d0d7;
         }
-    
+
         // Apply hover effects only on screens larger than 992px
         @media (min-width: 993px) {
           &:hover {
             .img {
               transform: scale(1.2);
             }
-    
+
             h3 {
               background: -webkit-linear-gradient(
                 209.98deg,
@@ -1143,19 +1150,19 @@ body {
               -webkit-text-fill-color: transparent;
               transform: translate(0);
             }
-    
+
             p {
               transform: translate(0);
               opacity: 1;
             }
-    
+
             .icon {
               background: linear-gradient(
                 209.98deg,
                 #80a9ff 13.39%,
                 #0556ff 86.59%
               );
-    
+
               svg {
                 color: #fff;
               }
@@ -1164,8 +1171,6 @@ body {
         }
       }
     }
-    
-    
 
     .card {
       background-color: #f5f5f5;
@@ -1892,5 +1897,43 @@ body {
   .service-mobile {
     width: 100%;
     display: block;
+  }
+}
+
+.about-texts {
+  h2,h4 {
+    font-size: 70px;
+    margin-bottom: 50px;
+    @media (max-width: 1400px) {
+      font-size: 60px;
+    }
+
+    @media (max-width: 1200px) {
+      font-size: 50px;
+    }
+
+    @media (max-width: 992px) {
+      font-size: 40px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 35px;
+    }
+  }
+
+  p {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #666666;
+
+    span {
+      font-weight: 700;
+      color: #666;
+    }
+  }
+  ul{
+    li{
+      list-style: decimal;
+    }
   }
 }

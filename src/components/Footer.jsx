@@ -45,13 +45,13 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="/">
+              <a href="https://facebook.com/eduagency.uz" target="_blank">
                 <div className="footer-first-link">
                   <div className="footer_link_and_icon">
                     <h4>Facebook</h4>
                     <img src="/img/footer_facebook.png" alt="instagram icon" />
                   </div>
-                  <h5>@Eduagency_Fb</h5>
+                  <h5>@eduagency.uz</h5>
                 </div>
               </a>
             </li>

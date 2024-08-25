@@ -2,6 +2,7 @@ import React from "react";
 import Partners from "../components/Partners";
 import Getintouch from "../components/Getintouch";
 import About from "../components/About";
+import AboutText from "../components/AboutText";
 
 function MobileAboutPage() {
   return (
@@ -51,14 +52,9 @@ function MobileAboutPage() {
             </button>
           </div>
         </div>
+        <AboutText />
         <div className="partners-div-p">
           <Partners />
-        </div>
-        <div>
-          <About
-            title="Önceliklerimiz hakkında"
-            desc="Ajans, Türkiye ve Özbekistan'daki üniversiteler arasında iş birliği fırsatlarını artırmak için danışmanlık hizmetleri sunar. Ortak projeler, müfredat geliştirme ve akademik değişim programları gibi konularda rehberlik eder."
-          />
         </div>
         <Getintouch />
       </div>

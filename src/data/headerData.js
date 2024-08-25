@@ -18,7 +18,6 @@ const useHeaderData = () => {
     };
 
     fetchData();
-    console.log("Til ozgardi", selectedLanguage);
   }, [changeLanguage, selectedLanguage]);
 
   return headerData;
