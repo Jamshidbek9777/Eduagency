@@ -88,6 +88,21 @@ export const tr = {
     contactsLocationMap: "Adres",
     contactsLocationEmail: "E-posta",
 
-
+    AboutPageTextP1: "EduAgency,28 yıl önce üniversite yıllarında farklı olmak projesi ile başlayan milenyum öğretmenleri eğitimi ile devam eden vizyonun vücut bulmuş hali… uzun yıllar Türkiye’de eğitimin her çeşidinde hizmet veren gönüldaşların yıllar sonra Özbekistan coğrafyasında burada buluşarak devam eden ve yeşeren filizin hikayesi .",
+    AboutPageTextP2: "Vizyonumuz ,Türkiye Özbekistan tarihi kültürler bağları’ndan aldığımız güçle eğitim sektöründe ortak sürecin inşa edilmesine anlamlı katkı sağlamak ,",
+    AboutPageTextP3: "Türkiye’de başlayan 2024 yengi Özbekistan’da yaşları kolla ve kuvvetlaştırış yılı münasebetiyle Taşkent‘teki ofisiyle devam eden bir hizmet hikayesi",
+    AboutPageTextP4: "hedefimiz Türkiye Özbekistan arasında eğitim sektöründeki birikimleri rezonans sağlayana kadar bir araya getirmek paylaşmak ,transfer etmek işbirliği sağlamak",
+    AboutPageTextUlFirst: "farkımız",
+    AboutPageTextUlDesc: "sevdiğimiz ülkelere,Türkiye sevdiğimiz işle severek hizmet etmek.",
+    AboutPageTextUlHeading: "temel değerlerimi",
+    AboutPageTextUlp1: "liyakat",
+    AboutPageTextUlp2: "şeffaf iletişim",
+    AboutPageTextUlp3: "hizmet bilinci",
+    AboutPageTextUlp4: "inkişaf yani sürekli gelişim yenilikçilik",
+    AboutPageTextUlp5: "kültürel uyum",
+    AboutPageTextUlp6: "rehberlik",
+    AboutPageTextUlp7: "uluslararası standart",
+    AboutPageTextUlp8: "takip anlayışı",
+    AboutPageTextUlp9: "takım çalışması",
 
 }

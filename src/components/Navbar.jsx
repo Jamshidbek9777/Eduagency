@@ -189,7 +189,7 @@ const Navbar = () => {
                         {getText("headerSwiperTitle3")}
                       </Link>
                     </li>
-                    <li onClick={() => handleLinkClick("/turkiye-ofisi")}>
+                    {/* <li onClick={() => handleLinkClick("/turkiye-ofisi")}>
                       <Link
                         to="/turkiye-ofisi"
                         className={`${
@@ -200,7 +200,7 @@ const Navbar = () => {
                       >
                         {getText("headerSwiperTitle4")}
                       </Link>
-                    </li>
+                    </li> */}
                   </motion.ul>
                 </li>
                 <li onClick={() => handleLinkClick("/contacts")}>

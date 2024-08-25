@@ -79,7 +79,7 @@ const Services = () => {
                 </i>
               </div>
             </div>
-            <div className="item d-flex align-items-center">
+            {/* <div className="item d-flex align-items-center">
               <div className="imgAndInfo">
                 <div className="img">
                   <img src="img/service4.png" alt="" />
@@ -97,7 +97,7 @@ const Services = () => {
                   />
                 </i>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* <ServiceBlog /> */}

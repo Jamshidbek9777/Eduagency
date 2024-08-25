@@ -91,6 +91,24 @@ export const en = {
     contactsLocationEmail: "Email",
 
 
+    AboutPageTextP1: "EduAgency is the embodiment of the vision that began 28 years ago with the project of being different in university years and continued with the training of millennium teachers… The story of the sprout that continued and blossomed after the volunteers who served in all kinds of education in Turkey for many years met here in Uzbekistan after many years.",
+    AboutPageTextP2: "Our vision is to make a meaningful contribution to the construction of a common process in the education sector with the strength we get from the historical cultural ties of Turkey and Uzbekistan.",
+    AboutPageTextP3: "A service story that started in Turkey and continues with its office in Tashkent on the occasion of the 2024 victory year of protection and strengthening of the elderly in Uzbekistan",
+    AboutPageTextP4: "Our goal is to bring together, share, transfer and cooperate until resonance is achieved between Turkey and Uzbekistan in the education sector.",
+    AboutPageTextUlFirst: "Our difference",
+    AboutPageTextUlDesc: "To serve the countries we love, Türkiye, with love, with the work we love.",
+    AboutPageTextUlHeading: "My core values",
+    AboutPageTextUlp1: "Merit",
+    AboutPageTextUlp2: "transparent communication",
+    AboutPageTextUlp3: "Service consciousness",
+    AboutPageTextUlp4: "development, that is, continuous development, innovation",
+    AboutPageTextUlp5: "cultural adaptation",
+    AboutPageTextUlp6: "guidance",
+    AboutPageTextUlp7: "international standard",
+    AboutPageTextUlp8: "follow-up concept",
+    AboutPageTextUlp9: "teamwork",
+
+
     slogan: "Expert guidance for every transition",
     aboutDesc: "At Eduagency, we specialize in navigating the complexities of educational and professional transitions with ease. Our dedicated team of experts is committed to providing personalized support and seamless solutions for students and professionals alike. Whether you're looking to advance your academic journey or make a significant career move, we are here to guide you every step of the way.",
 
