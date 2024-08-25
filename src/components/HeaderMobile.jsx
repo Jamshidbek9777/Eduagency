@@ -1,38 +1,38 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 import { Link } from "react-router-dom";
 import { getText } from "../locales";
 import { LanguageContext } from "../context/LanguageContext";
 import { useContext, useEffect, useRef, useState } from "react";
 import "../sass/swiper.scss";
+import useHeaderData from "../data/headerData";
 
 function HeaderMobile() {
-  const { selectedLanguage, selectedFlag, changeLanguage } =
-    useContext(LanguageContext);
-
+  const { selectedLanguage, selectedFlag, changeLanguage } = useContext(LanguageContext);
   const [currentIndex, setCurrentIndex] = useState(0);
   const autoplayRef = useRef(null);
-  const swiperRef = useRef(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [translateX, setTranslateX] = useState(0);
 
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === slides.length - 1 ? 0 : prevIndex + 1
-    );
-  };
+  const headerData = useHeaderData();
 
   useEffect(() => {
-    autoplayRef.current = handleNext;
-  });
+    autoplayRef.current = () => handleNext();
+  }, []);
 
   useEffect(() => {
-    const play = () => {
-      autoplayRef.current();
-    };
-    const intervalId = setInterval(play, 4000);
+    const intervalId = setInterval(() => autoplayRef.current(), 4000);
     return () => clearInterval(intervalId);
   }, []);
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % headerData.length);
+  };
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + headerData.length) % headerData.length);
+  };
 
   const handleTouchStart = (e) => {
     setIsDragging(true);
@@ -43,41 +43,22 @@ function HeaderMobile() {
   const handleTouchMove = (e) => {
     if (!isDragging) return;
     const currentX = e.touches ? e.touches[0].clientX : e.clientX;
-    const diff = currentX - startX;
-    setTranslateX(diff);
+    setTranslateX(currentX - startX);
   };
 
   const handleTouchEnd = () => {
     setIsDragging(false);
     if (translateX > 50) {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === 0 ? slides.length - 1 : prevIndex - 1
-      );
+      handlePrev();
     } else if (translateX < -50) {
       handleNext();
     }
     setTranslateX(0);
   };
 
-  const slides = [
-    {
-      title: getText("headerSwiperTitle1"),
-      paragraph: getText("headerSwiperParagraph1"),
-      buttonText: getText("headerButton1"),
-      link: "/application",
-    },
-    {
-      title: getText("headerSwiperTitle2"),
-      paragraph: getText("headerSwiperParagraph2"),
-      buttonText: getText("headerButton2"),
-      link: "/student-transfer",
-    },
-  ];
-
   return (
     <div
       className="swiper-container"
-      ref={swiperRef}
       onMouseDown={handleTouchStart}
       onMouseMove={handleTouchMove}
       onMouseUp={handleTouchEnd}
@@ -90,7 +71,7 @@ function HeaderMobile() {
         className="swiper-wrapper"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
-        {slides.map((slide, index) => (
+        {headerData.map((slide, index) => (
           <div className="swiper-slide" key={index}>
             <div className="container header-mobile">
               <img
@@ -179,7 +160,7 @@ function HeaderMobile() {
         ))}
       </div>
       <div className="swiper-dots">
-        {slides.map((_, index) => (
+        {headerData.map((_, index) => (
           <span
             key={index}
             className={`swiper-dot ${index === currentIndex ? "active" : ""}`}
