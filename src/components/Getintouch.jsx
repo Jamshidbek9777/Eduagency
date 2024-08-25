@@ -46,13 +46,12 @@ const Getintouch = () => {
     }
   };
 
-
   const { selectedLanguage, selectedFlag, changeLanguage } =
-  useContext(LanguageContext);
+    useContext(LanguageContext);
 
   // useEffect(()=>{
   //   console.log("-------");
-    
+
   // },[changeLanguage])
 
   return (
@@ -118,16 +117,16 @@ const Getintouch = () => {
                     <option value="" disabled>
                       {getText("getAdviceSelectDefaultText")}
                     </option>
-                    <option value="Service 1">
+                    <option value={getText("getAdviceSelectOption1")}>
                       {getText("getAdviceSelectOption1")}
                     </option>
-                    <option value="Service 2">
+                    <option value={getText("getAdviceSelectOption2")}>
                       {getText("getAdviceSelectOption2")}
                     </option>
-                    <option value="Service 3">
+                    <option value={getText("getAdviceSelectOption3")}>
                       {getText("getAdviceSelectOption3")}
                     </option>
-                    <option value="Service 4">
+                    <option value={getText("getAdviceSelectOption4")}>
                       {getText("getAdviceSelectOption4")}
                     </option>
                   </select>

@@ -48,26 +48,14 @@ const Services = () => {
               </div>
             </div>
             <div className="item d-flex align-items-center">
-              <div className="img">
-                <img src="img/service2.png" alt="" />
-              </div>
-              <div className="info">
-                <h3>{getText("headerSwiperTitle2")}</h3>
-                <p>{getText("headerSwiperParagraph2")}</p>
-              </div>
-              <div className="icon">
-                <i>
-                  <FontAwesomeIcon icon={faArrowRight} />
-                </i>
-              </div>
-            </div>
-            <div className="item d-flex align-items-center">
-              <div className="img">
-                <img src="img/service3.png" alt="" />
-              </div>
-              <div className="info">
-                <h3>{getText("headerSwiperTitle3")}</h3>
-                <p>{getText("headerSwiperParagraph3")}</p>
+              <div className="imgAndInfo">
+                <div className="img">
+                  <img src="img/service2.png" alt="" />
+                </div>
+                <div className="info">
+                  <h3>{getText("headerSwiperTitle2")}</h3>
+                  <p>{getText("headerSwiperParagraph2")}</p>
+                </div>
               </div>
               <div className="icon">
                 <i>
@@ -76,12 +64,30 @@ const Services = () => {
               </div>
             </div>
             <div className="item d-flex align-items-center">
-              <div className="img">
-                <img src="img/service4.png" alt="" />
+              <div className="imgAndInfo">
+                <div className="img">
+                  <img src="img/service3.png" alt="" />
+                </div>
+                <div className="info">
+                  <h3>{getText("headerSwiperTitle3")}</h3>
+                  <p>{getText("headerSwiperParagraph3")}</p>
+                </div>
               </div>
-              <div className="info">
-                <h3>{getText("headerSwiperTitle3")}</h3>
-                <p>{getText("headerSwiperParagraph4")}</p>
+              <div className="icon">
+                <i>
+                  <FontAwesomeIcon icon={faArrowRight} />
+                </i>
+              </div>
+            </div>
+            <div className="item d-flex align-items-center">
+              <div className="imgAndInfo">
+                <div className="img">
+                  <img src="img/service4.png" alt="" />
+                </div>
+                <div className="info">
+                  <h3>{getText("headerSwiperTitle4")}</h3>
+                  <p>{getText("headerSwiperParagraph4")}</p>
+                </div>
               </div>
               <div className="icon">
                 <i>
