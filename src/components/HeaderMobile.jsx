@@ -100,7 +100,7 @@ function HeaderMobile() {
               />
               <div className="mobile-header-texts">
                 <h2>{slide.title}</h2>
-                {/* <p>{slide.paragraph}</p> */}
+                <p>{slide.paragraph}</p>
                 <div className="myBtn">
                   <button>
                     <Link
