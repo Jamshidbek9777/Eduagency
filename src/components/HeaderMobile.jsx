@@ -8,30 +8,50 @@ import "../sass/swiper.scss";
 import useHeaderData from "../data/headerData";
 
 function HeaderMobile() {
-  const { selectedLanguage, selectedFlag, changeLanguage } = useContext(LanguageContext);
+  const { selectedLanguage, selectedFlag, changeLanguage } =
+    useContext(LanguageContext);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1000);
   const autoplayRef = useRef(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [translateX, setTranslateX] = useState(0);
 
-  const headerData = useHeaderData();
+  const [seconds, setSeconds] = useState(4);
+  const [isActive, setIsActive] = useState(true);
+
+  const slides = useHeaderData();
 
   useEffect(() => {
-    autoplayRef.current = () => handleNext();
-  }, []);
+    let countdownInterval = null;
 
-  useEffect(() => {
-    const intervalId = setInterval(() => autoplayRef.current(), 4000);
-    return () => clearInterval(intervalId);
-  }, []);
+    if (isActive && seconds > 0) {
+      countdownInterval = setInterval(() => {
+        setSeconds((prevSeconds) => prevSeconds - 1);
+        console.log("Hello");
+        goToNextSlide();
+      }, 4000);
+    } else {
+      clearInterval(countdownInterval);
+    }
 
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % headerData.length);
+    return () => {
+      clearInterval(countdownInterval);
+    };
+  }, [isActive, seconds]);
+
+  const goToNextSlide = () => {
+    if (slides.length - 1 > currentIndex) {
+      setCurrentIndex((prevIndex) => prevIndex + 1);
+    } else {
+      console.log("Toxtashi kk");
+    }
   };
 
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + headerData.length) % headerData.length);
+  const goToPrevSlide = () => {
+    if (currentIndex > 0) {
+      setCurrentIndex((prevIndex) => prevIndex - 1);
+    }
   };
 
   const handleTouchStart = (e) => {
@@ -49,20 +69,22 @@ function HeaderMobile() {
   const handleTouchEnd = () => {
     setIsDragging(false);
     if (translateX > 50) {
-      handlePrev();
+      goToPrevSlide();
     } else if (translateX < -50) {
-      handleNext();
+      goToNextSlide();
     }
     setTranslateX(0);
   };
 
+  if (!isMobile) return null;
+
   return (
     <div
       className="swiper-container"
-      onMouseDown={handleTouchStart}
-      onMouseMove={handleTouchMove}
-      onMouseUp={handleTouchEnd}
-      onMouseLeave={handleTouchEnd}
+      // onMouseDown={handleTouchStart}
+      // onMouseMove={handleTouchMove}
+      // onMouseUp={handleTouchEnd}
+      // onMouseLeave={handleTouchEnd}
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
@@ -71,7 +93,7 @@ function HeaderMobile() {
         className="swiper-wrapper"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
-        {headerData.map((slide, index) => (
+        {slides.map((slide, index) => (
           <div className="swiper-slide" key={index}>
             <div className="container header-mobile">
               <img
@@ -81,18 +103,20 @@ function HeaderMobile() {
               />
               <div className="mobile-header-texts">
                 <h2>{slide.title}</h2>
-                <p>{slide.paragraph}</p>
+                <p>{slide.description}</p>
                 <div className="myBtn">
                   <button>
                     <Link
-                      to={slide.link}
+                      to={slide.headerLink}
                       style={{
                         display: "flex",
                         alignItems: "center",
                         gap: "5px",
                       }}
                     >
-                      <p style={{ color: "white" }}>{slide.buttonText}</p>
+                      <p style={{ color: "white" }}>
+                        {getText("headerButton1")}
+                      </p>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="32"
@@ -160,7 +184,7 @@ function HeaderMobile() {
         ))}
       </div>
       <div className="swiper-dots">
-        {headerData.map((_, index) => (
+        {slides.map((_, index) => (
           <span
             key={index}
             className={`swiper-dot ${index === currentIndex ? "active" : ""}`}
