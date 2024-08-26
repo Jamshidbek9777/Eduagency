@@ -81,6 +81,13 @@ export const uz = {
     getAdviceLinkText: "Yuborish tugmasini bosish orqali siz shaxsiy maʼlumotlarni qayta ishlash shartlariga rozilik bildirasiz.",
     getAdviceButton: "Yuborish uchun",
 
+    ApplicationYardamTitle: "Quyidagi masalalar bo'yicha bizdan yordam olishingiz mumkin:",
+    ApplicationYardamDesc1: "Ekvivalent operatsiyalar",
+    ApplicationYardamDesc2: "Tr-YÖS ilovalari va maslahati",
+    ApplicationYardamDesc3: "YTB ​​stipendiyasi uchun ariza va maslahat ",
+    ApplicationYardamDesc4: "TYS ilovasi va maslahati",
+    ApplicationYardamDesc5: "Sertifikatni tekshirish jarayonlari ",
+    ApplicationYardamDesc6: "Umumiy konsalting xizmatlari",
     ApplicationProceduresSpanDesc1: "1. Axborot va konsultatsiya:",
     ApplicationProceduresDesc1: " Talabalar Turkiya va Oʻzbekistondagi taʼlim muassasalari haqida toʻliq maʼlumotni agentlikning ekspert maslahatchilaridan olishlari mumkin. Maslahatchilar talabalarga ularning ilmiy darajasi va maqsadlariga mos keladigan ta'lim dasturlarini aniqlashda yordam beradi.",
     ApplicationProceduresSpanDesc2: "2. Ariza hujjatlarini tayyorlash:",

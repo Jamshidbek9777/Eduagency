@@ -37,6 +37,13 @@ export const en = {
     getAdviceLinkText: "By clicking the send button you agree to the terms of processing of personal data.",
     getAdviceButton: "Submit",
 
+    ApplicationYardamTitle: "You can get help from us on the following issues:",
+    ApplicationYardamDesc1: "Equivalence Procedures",
+    ApplicationYardamDesc2: "Tr-YÖS applications and consultancy",
+    ApplicationYardamDesc3: "YTB ​​scholarship application and consultancy",
+    ApplicationYardamDesc4: "TYS application and consultancy",
+    ApplicationYardamDesc5: "Certificate Verification operations",
+    ApplicationYardamDesc6: "General Consulting services",
     ApplicationProceduresSpanDesc1: "1. Information and Consultancy:",
     ApplicationProceduresDesc1: " Students can get detailed information about educational institutions in Turkey and Uzbekistan from the agency's expert consultants. The consultants help students determine educational programs that are suitable for their academic background and goals.",
     ApplicationProceduresSpanDesc2: "2. Başvuru Belgelerinin Hazırlanması: ",

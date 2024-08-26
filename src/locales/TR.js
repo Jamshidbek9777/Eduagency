@@ -34,6 +34,13 @@ export const tr = {
     getAdviceLinkTextLink: "kişisel verilerin işlenmesi.",
     getAdviceButton: "Göndermek",
 
+    ApplicationYardamTitle: "Aşağıdaki konularda bizden yardım alabilirsiniz :",
+    ApplicationYardamDesc1: "Denklik İşlemleri",
+    ApplicationYardamDesc2: "Tr-YÖS başvuruları ve danışmanlık ",
+    ApplicationYardamDesc3: "YTB bursu başvuru ve danışmanlık ",
+    ApplicationYardamDesc4: "TYS başvuru ve danışmanlık ",
+    ApplicationYardamDesc5: "Sertifika Doğrulama işlemleri ",
+    ApplicationYardamDesc6: "Genel Danışmanlık hizmetleri",
     ApplicationProceduresSpanDesc1: "1. Bilgilendirme ve Danışmanlık:",
     ApplicationProceduresDesc1: " Öğrenciler, ajansın uzman danışmanlarından Türkiye ve Özbekistan'daki eğitim kurumları hakkında ayrıntılı bilgi alabilirler. Danışmanlar, öğrencilerin akademik geçmişlerine ve hedeflerine uygun eğitim programlarını belirlemelerine yardımcı olur.",
     ApplicationProceduresSpanDesc2: "2. Başvuru Belgelerinin Hazırlanması:",
