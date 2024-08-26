@@ -203,6 +203,16 @@ const Navbar = () => {
                     </li> */}
                   </motion.ul>
                 </li>
+                <li onClick={() => handleLinkClick("/question")}>
+                  <Link
+                    to="/question"
+                    className={`${
+                      location.pathname === "/question" ? "active-link" : ""
+                    }`}
+                  >
+                    {getText("question")}
+                  </Link>
+                </li>
                 <li onClick={() => handleLinkClick("/contacts")}>
                   <Link
                     to="/contacts"
@@ -258,6 +268,7 @@ const Navbar = () => {
               { to: "/about", text: getText("aboutUs") },
               { to: "/services", text: getText("services") },
               { to: "/contacts", text: getText("contacts") },
+              { to: "/question", text: getText("question") },
             ].map((item, index) => (
               <motion.li
                 key={item.to}

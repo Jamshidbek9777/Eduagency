@@ -3,6 +3,7 @@ export const tr = {
     aboutUs: "Hakkımızda",
     contacts: "Iletisim",
     services: "Hizmetler",
+    question: "SSS",
 
     headerSwiperTitle1: "Müracaat İşlemleri",
     headerSwiperTitle2: "Öğrenci Transferi",

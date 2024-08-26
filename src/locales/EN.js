@@ -4,6 +4,7 @@ export const en = {
     functions: "Functions",
     contacts: "Contacts",
     services: "Services",
+    question: "FAQ",
     download: "Download",
     more: "More details",
 

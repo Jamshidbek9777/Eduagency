@@ -4,6 +4,8 @@ export const uz = {
     functions: "Ilova vazifalari",
     contacts: "Aloqa",
     services: "Xizmatlar",
+    question: "KBS",
+
     download: "Yuklab olish",
     more: "Batafsil",
     sendBtn: "Jo'natish",

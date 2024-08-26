@@ -20,6 +20,7 @@ import AboutPage from "./pages/AboutPage.jsx";
 import Services from "./components/Services.jsx";
 import ServicesLinksIn from "./pages/ServicesLinksIn.jsx";
 import { LanguageProvider } from "./context/LanguageContext.jsx";
+import Question from "./pages/Question.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -39,6 +40,7 @@ root.render(
         <Route path="/about" exact element={<AboutPage />} />
         <Route path="/services" exact element={<Services />} />
         <Route path="/services/in" exact element={<ServicesLinksIn />} />
+        <Route path="/question" exact element={<Question />} />
       </Routes>
       <Footer />
       {/* <Up /> */}
