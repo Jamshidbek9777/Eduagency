@@ -18,6 +18,27 @@ const ExpertTransfer = () => {
       <div className="service-pages">
         <div className="description container">
           <h1>{getText("headerSwiperTitle3")}</h1>
+          <div>
+            <h2>{getText("ExpertTransferYardamTitle")}</h2>
+
+            <ul style={{marginTop: "20px"}}>
+              <li>
+                <p>{getText("ExpertTransferYardamDesc1")}</p>
+              </li>
+              <li>
+                <p>{getText("ExpertTransferYardamDesc2")}</p>
+              </li>
+              <li>
+                <p>{getText("ExpertTransferYardamDesc3")}</p>
+              </li>
+              <li>
+                <p>{getText("ExpertTransferYardamDesc4")}</p>
+              </li>
+              <li>
+                <p>{getText("ExpertTransferYardamDesc5")}</p>
+              </li>
+            </ul>
+          </div>
           <p>
             <span> {getText("ExpertTransferSpan1")} </span>
             {getText("ExpertTransfer1")}

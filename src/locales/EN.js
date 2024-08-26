@@ -62,6 +62,12 @@ export const en = {
     StudentTransferSpanDesc4: "4. Placement and Adaptation:",
     StudentTransferDesc4: " The agency also guides students in the process of being placed in the educational institutions they are accepted to. It also organizes orientation programs to facilitate students' adaptation to the new educational environment.",
 
+    ExpertTransferYardamTitle: "We provide Expert Transfer service in 3 different ways:",
+    ExpertTransferYardamDesc1: "Short-Term Transfer: Conference -Workshop - Consultancy services",
+    ExpertTransferYardamDesc2: "for Expert Transfer",
+    ExpertTransferYardamDesc3: "Project Purpose: For special projects, the time and plan are subject to negotiation",
+    ExpertTransferYardamDesc4: "Expert Transfer",
+    ExpertTransferYardamDesc5: "Long-Term; Expert Transfer for jobs to be done with an annual contract",
     ExpertTransferSpan1: "1. Position and Need:",
     ExpertTransfer1: " The Agency determines the required areas of expertise in cooperation with universities and research centers in Turkey and Uzbekistan. It provides information on suitable positions and requirements for expert transfer.",
     ExpertTransferSpan2: "2. Selection and Application of Experts:",

@@ -107,7 +107,12 @@ export const uz = {
     StudentTransferDesc4: " Agentlik talabalarni ular qabul qilingan ta’lim muassasalariga joylashtirishga ham rahbarlik qiladi. Shuningdek, u o'quvchilarning yangi ta'lim muhitiga moslashishini osonlashtirish uchun yo'naltiruvchi dasturlarni tashkil qiladi.",
 
 
-    ExpertTransferSpan1: "1. Lavozim va ehtiyoj:",
+    ExpertTransferYardamTitle: "Biz Expert Transfer xizmatini 3 xil usulda taqdim etamiz:",
+    ExpertTransferYardamDesc1: "Qisqa muddatli transfer: Konferentsiya - Seminar - Konsalting xizmatlari",
+    ExpertTransferYardamDesc2: "Mutaxassis transferi",
+    ExpertTransferYardamDesc3: "Loyiha maqsadlari: Maxsus loyihalar uchun vaqt va reja muhokama qilinadi",
+    ExpertTransferYardamDesc4: "Expert Transfer",
+    ExpertTransferYardamDesc5: "Uzoq muddatli, yillik shartnoma bo'yicha amalga oshiriladigan ishlar uchun ekspert transferi",
     ExpertTransfer1: " Agentlik Turkiya va O‘zbekistondagi universitetlar va tadqiqot markazlari bilan hamkorlik qilish orqali zarur bo‘lgan mutaxassislik sohalarini belgilaydi. Mutaxassisni o'tkazish uchun tegishli lavozimlar va talablar haqida ma'lumot beradi.",
     ExpertTransferSpan2: "2. Mutaxassislarni tanlash va qo'llash:",
     ExpertTransfer2: " Ekspertlar agentlik tomonidan taqdim etilgan ko'rsatmalarga muvofiq ariza hujjatlarini tayyorlaydilar. Ushbu hujjatlarga rezyume, akademik nashrlar, ma'lumotnomalar va boshqa zarur hujjatlar kiradi.",

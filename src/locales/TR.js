@@ -59,6 +59,12 @@ export const tr = {
     StudentTransferSpanDesc4: "4. Yerleştirme ve Adaptasyon:",
     StudentTransferDesc4: " Öğrencilerin kabul aldığı eğitim kurumlarına yerleştirilmesi sürecinde de ajans rehberlik eder. Ayrıca, öğrencilerin yeni eğitim ortamına adaptasyonunu kolaylaştırmak için oryantasyon programları düzenler.",
 
+    ExpertTransferYardamTitle: "Uzman Transferi hizmetini 3 ayrı şekilde veriyoruz :",
+    ExpertTransferYardamDesc1: "Kısa Süreli Transfer: Konferans -Workshop-Danışmanlık hizmetleri ",
+    ExpertTransferYardamDesc2: "için Uzman transferi",
+    ExpertTransferYardamDesc3: "Proje Amaçlı: Özel projeler için zamanı ve planı görüşmeye bağlı ",
+    ExpertTransferYardamDesc4: "Uzman Transferi",
+    ExpertTransferYardamDesc5: "Uzun Süreli; Yıllık kontratla yapılacak işler için Uzman Transferi",
     ExpertTransferSpan1: "1. Pozisyon ve İhtiyaç:",
     ExpertTransfer1: " Ajans, Türkiye ve Özbekistan'daki üniversiteler ve araştırma merkezleri ile iş birliği yaparak, ihtiyaç duyulan uzmanlık alanlarını belirler. Uzman transferi için uygun pozisyonlar ve gereksinimler hakkında bilgi sağlar.",
     ExpertTransferSpan2: "2. Uzmanların Seçimi ve Başvurusu:",
