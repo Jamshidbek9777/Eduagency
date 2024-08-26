@@ -7,7 +7,6 @@ export const en = {
     question: "FAQ",
     download: "Download",
     more: "More details",
-
     headerSwiperTitle1: "Application Process",
     headerSwiperTitle2: "Transfer students",
     headerSwiperTitle3: "Exchange of experts",

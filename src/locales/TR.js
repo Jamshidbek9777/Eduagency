@@ -4,7 +4,6 @@ export const tr = {
     contacts: "Iletisim",
     services: "Hizmetler",
     question: "SSS",
-
     headerSwiperTitle1: "Müracaat İşlemleri",
     headerSwiperTitle2: "Öğrenci Transferi",
     headerSwiperTitle3: "Uzman Transferi",
