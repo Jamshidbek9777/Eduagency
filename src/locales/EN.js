@@ -44,6 +44,7 @@ export const en = {
     ApplicationYardamDesc4: "TYS application and consultancy",
     ApplicationYardamDesc5: "Certificate Verification operations",
     ApplicationYardamDesc6: "General Consulting services",
+    ApplicationProceduresBosqich: "We carry out our work in four stages:",
     ApplicationProceduresSpanDesc1: "1. Information and Consultancy:",
     ApplicationProceduresDesc1: " Students can get detailed information about educational institutions in Turkey and Uzbekistan from the agency's expert consultants. The consultants help students determine educational programs that are suitable for their academic background and goals.",
     ApplicationProceduresSpanDesc2: "2. Başvuru Belgelerinin Hazırlanması: ",

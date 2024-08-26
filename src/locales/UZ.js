@@ -88,6 +88,7 @@ export const uz = {
     ApplicationYardamDesc4: "TYS ilovasi va maslahati",
     ApplicationYardamDesc5: "Sertifikatni tekshirish jarayonlari ",
     ApplicationYardamDesc6: "Umumiy konsalting xizmatlari",
+    ApplicationProceduresBosqich: "Biz ishimizni to'rt bosqichda bajaramiz:",
     ApplicationProceduresSpanDesc1: "1. Axborot va konsultatsiya:",
     ApplicationProceduresDesc1: " Talabalar Turkiya va Oʻzbekistondagi taʼlim muassasalari haqida toʻliq maʼlumotni agentlikning ekspert maslahatchilaridan olishlari mumkin. Maslahatchilar talabalarga ularning ilmiy darajasi va maqsadlariga mos keladigan ta'lim dasturlarini aniqlashda yordam beradi.",
     ApplicationProceduresSpanDesc2: "2. Ariza hujjatlarini tayyorlash:",

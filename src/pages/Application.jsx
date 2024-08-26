@@ -40,7 +40,8 @@ const Application = () => {
               </li>
             </ul>
           </div>
-          <p>
+          <h2>{getText("ApplicationProceduresBosqich")}</h2>
+          <p style={{marginTop: "20px"}}>
             <span> {getText("ApplicationProceduresSpanDesc1")} </span>
             {getText("ApplicationProceduresDesc1")}
           </p>
