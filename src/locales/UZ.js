@@ -110,11 +110,9 @@ export const uz = {
 
 
     ExpertTransferYardamTitle: "Biz Expert Transfer xizmatini 3 xil usulda taqdim etamiz:",
-    ExpertTransferYardamDesc1: "Qisqa muddatli transfer: Konferentsiya - Seminar - Konsalting xizmatlari",
-    ExpertTransferYardamDesc2: "Mutaxassis transferi",
-    ExpertTransferYardamDesc3: "Loyiha maqsadlari: Maxsus loyihalar uchun vaqt va reja muhokama qilinadi",
-    ExpertTransferYardamDesc4: "Expert Transfer",
-    ExpertTransferYardamDesc5: "Uzoq muddatli, yillik shartnoma bo'yicha amalga oshiriladigan ishlar uchun ekspert transferi",
+    ExpertTransferYardamDesc1: "Qisqa muddatli transfer: Konferentsiya - Seminar - Konsalting xizmatlari Mutaxassis transferi",
+    ExpertTransferYardamDesc2: "Loyiha maqsadlari: Maxsus loyihalar uchun vaqt va reja muhokama qilinadi Expert Transfer",
+    ExpertTransferYardamDesc3: "Uzoq muddatli, yillik shartnoma bo'yicha amalga oshiriladigan ishlar uchun ekspert transferi",
     ExpertTransfer1: " Agentlik Turkiya va O‘zbekistondagi universitetlar va tadqiqot markazlari bilan hamkorlik qilish orqali zarur bo‘lgan mutaxassislik sohalarini belgilaydi. Mutaxassisni o'tkazish uchun tegishli lavozimlar va talablar haqida ma'lumot beradi.",
     ExpertTransferSpan2: "2. Mutaxassislarni tanlash va qo'llash:",
     ExpertTransfer2: " Ekspertlar agentlik tomonidan taqdim etilgan ko'rsatmalarga muvofiq ariza hujjatlarini tayyorlaydilar. Ushbu hujjatlarga rezyume, akademik nashrlar, ma'lumotnomalar va boshqa zarur hujjatlar kiradi.",
