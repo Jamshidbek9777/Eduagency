@@ -66,7 +66,8 @@ function AccordionUI() {
               target="_blank"
               style={{ color: "blue" }}
             >
-              {" "}eduageny.uz{" "}
+              {" "}
+              eduageny.uz{" "}
             </a>
             bilan irtibata o'tishingiz.
           </AccordionPanel>
@@ -87,40 +88,275 @@ function AccordionUI() {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4} mt={3} color={"#666666"}>
-            2009-yilda ODTU (Orta Doğu Teknik Universiteti) Enformatik Enstitüsü
-            binosida qurilgan URAP Araştırma Laboratuvarı Turkiya va Dunyo
-            umumiy indeksida nashr qilinmoqda. Here you go ılaştırılma va keng
-            çapta kurumlarning rivojlanishiga ochiq yanlarının farqlanishiga
-            yordam beradi. <br /> <br /> Turkiyaning oliy o'quv yurtlarining
-            akademik muvaffaqiyatlari baholanadi. Barcha bu unchaliklarni
-            to'plash tartibi belgilanmaydi.
-            <br /> <br />
-            <ul>
-              <li>
-                <p>Makale Puani</p>
-              </li>
-              <li>
-                <p>Atif Puani</p>
-              </li>
-              <li>
-                <p>Doktora Puani</p>
-              </li>
-              <li>
-                <p>Bilimsel Dokuman Puani</p>
-              </li>
-              <li>
-                <p>Öğretim a'zosining öğrenciye oranı Puani</p>
-              </li>
-              <li>
-                <p>Xalqaro hamkorlik puanı</p>
-              </li>
-              <li>
-                <p>Yurtiçi hamkorlik Puani</p>
-              </li>
-              <li>
-                <p>TÜBİTAK Loyiha Puani</p>
-              </li>
-            </ul>
+            <p>
+              2024 Turkiyaning eng yaxshi universitetlari umumiy tartibini
+              yozishni davom ettirishda incelashingiz mumkin.{" "}
+              <a
+                href="https://newtr.urapcenter.org/Rankings/2023-2024/GENEL-SIRALAMASI-2023"
+                target="_blank"
+              >
+                URAP
+              </a>{" "}
+              rasmiy sahifasiga tashrif buyurishingiz mumkin .
+            </p>
+
+
+          </AccordionPanel>
+        </AccordionItem>
+
+        <AccordionItem>
+          <h2>
+            <AccordionButton>
+              <Box
+                as="span"
+                flex="1"
+                textAlign="left"
+                style={{ fontWeight: "500", fontSize: "20px", padding: "5px" }}
+              >
+                4.⁠ ⁠türkiyede üniversitede okuyan özbekistanlı öğrenci sayısı kaçtır
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+          </h2>
+          <AccordionPanel pb={4} mt={3} color={"#666666"}>
+            <p>
+            İstatistik kurumundan alınan bilgilere göre Türkiyede özel yahut devlette  üniversite okuyan özbek vatandaşı öğrenci sayısı  3896 erkek 2351 kız olmak üzere toplam 6247 öğrenci vardır.
+            </p>    
+          </AccordionPanel>
+        </AccordionItem>
+
+        <AccordionItem>
+          <h2>
+            <AccordionButton>
+              <Box
+                as="span"
+                flex="1"
+                textAlign="left"
+                style={{ fontWeight: "500", fontSize: "20px", padding: "5px" }}
+              >
+                5.⁠ ⁠Türk üniversitelerinde okumak  maliyetli mi ?
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+          </h2>
+          <AccordionPanel pb={4} mt={3} color={"#666666"}>
+            <p>
+            Türkiyede her bütçeye hitap özel vakıf üniversiteler bulunmaktadır. Genel olarak çok maliyetli değildir. 
+            </p>            
+          </AccordionPanel>
+        </AccordionItem>
+
+        <AccordionItem>
+          <h2>
+            <AccordionButton>
+              <Box
+                as="span"
+                flex="1"
+                textAlign="left"
+                style={{ fontWeight: "500", fontSize: "20px", padding: "5px" }}
+              >
+                 6.⁠ ⁠Türkiye’de  yemek kültürü nasıl?
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+          </h2>
+          <AccordionPanel pb={4} mt={3} color={"#666666"}>
+            <p>
+            Türkiye yemek kültürü çok çeşitli ve ilgi çekicidir. Türkiye mutfağı dünyanın önde gelen mutfakları arasında yerini almıştır. Özbek öğrenciler için türk mutfağına adapte olmak çok kolay ve keyiflidir.
+            </p>
+          </AccordionPanel>
+        </AccordionItem>
+
+        <AccordionItem>
+          <h2>
+            <AccordionButton>
+              <Box
+                as="span"
+                flex="1"
+                textAlign="left"
+                style={{ fontWeight: "500", fontSize: "20px", padding: "5px" }}
+              >
+                 7.⁠ ⁠Türkiye’de okuyan öğrenciler nerelerde yaşayabilirler ? yurtlar güvenli mi ? ücretleri ne kadar?
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+          </h2>
+          <AccordionPanel pb={4} mt={3} color={"#666666"}>
+            <p>
+            Üniversite öğrencileri genellikle kendi uyruktan insanlarla beraber ev kiralayabilir veya özel yahut devletin  Kredi yurtlar kurumunda kalabilirler. Öğrencilere ilk yıl bir yurt ortamında kalmaları tavsiye edilir.
+            </p>
+          </AccordionPanel>
+        </AccordionItem>
+
+        <AccordionItem>
+          <h2>
+            <AccordionButton>
+              <Box
+                as="span"
+                flex="1"
+                textAlign="left"
+                style={{ fontWeight: "500", fontSize: "20px", padding: "5px" }}
+              >
+                 8.⁠ ⁠İstanbul ilçelerine göre kiralık ev fiyatları yaklaşık ne kadar?
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+          </h2>
+          <AccordionPanel pb={4} mt={3} color={"#666666"}>
+            <p>
+            15.000 tl ile 30.000 tl arasında değişen ücretlerde öğrenci evi bulmak mümkün.
+            </p>
+          </AccordionPanel>
+        </AccordionItem>
+
+        <AccordionItem>
+          <h2>
+            <AccordionButton>
+              <Box
+                as="span"
+                flex="1"
+                textAlign="left"
+                style={{ fontWeight: "500", fontSize: "20px", padding: "5px" }}
+              >
+                  9.⁠ ⁠Türkiye’de okumak için türkçe seviyeniz ne olmalı?
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+          </h2>
+          <AccordionPanel pb={4} mt={3} color={"#666666"}>
+            <p>
+            hazırlık sınıfı okumak istemiyorsanız C1 seviyesinde Türkçenizin olması istenmektedir.
+            </p>
+          </AccordionPanel>
+        </AccordionItem>
+
+        <AccordionItem>
+          <h2>
+            <AccordionButton>
+              <Box
+                as="span"
+                flex="1"
+                textAlign="left"
+                style={{ fontWeight: "500", fontSize: "20px", padding: "5px" }}
+              >
+                 10.  Özbeklerin en çok tercih ettiği türk üniversiteleri hangileridirr?
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+          </h2>
+          <AccordionPanel pb={4} mt={3} color={"#666666"}>
+            <div style={{display: "flex", flexDirection: "column", gap: "15px"}}>
+            <p>ANADOLU ÜNİVERSİTESİ</p>
+            <p>BANDIRMA ONYEDİ EYLÜL ÜNİVERSİTESİ</p>
+            <p>BOLU ABANT İZZET BAYSAL ÜNİVERSİTESİ</p>
+            <p>DOKUZ EYLÜL ÜNİVERSİTESİ</p>
+            <p>FATİH SULTAN MEHMET VAKIF ÜNİVERSİTESİ</p>
+            <p>İSTANBUL ATLAS ÜNİVERSİTESİ</p>
+            <p>İSTANBUL KENT ÜNİVERSİTESİ</p>
+            <p>İSTANBUL RUMELİ ÜNİVERSİTESİ</p>
+            <p>İSTANBUL ŞİŞLİ MESLEK YÜKSEKOKULU</p>
+            <p>İSTANBUL TOPKAPI ÜNİVERSİTESİ</p>
+            <p>İSTANBUL ÜNİVERSİTESİ</p>
+            <p>İSTANBUL YENİ YÜZYIL ÜNİVERSİTESİ</p>
+            <p>KARABÜK ÜNİVERSİTESİ</p>
+            <p>KIRKLARELİ ÜNİVERSİTESİ</p>
+            <p>ONDOKUZ MAYIS ÜNİVERSİTESİ</p>
+            <p>SAĞLIK BİLİMLERİ ÜNİVERSİTESİ</p>
+            <p>SAKARYA ÜNİVERSİTESİ</p>
+            </div>
+          </AccordionPanel>
+        </AccordionItem>
+
+        <AccordionItem>
+          <h2>
+            <AccordionButton>
+              <Box
+                as="span"
+                flex="1"
+                textAlign="left"
+                style={{ fontWeight: "500", fontSize: "20px", padding: "5px" }}
+              >
+                12.  Özbekistanlı öğrenciler Türkiye’de okumalarında nelere dikkat etmeliler?
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+          </h2>
+          <AccordionPanel pb={4} mt={3} color={"#666666"}>
+            <p>
+              2024 Turkiyaning eng yaxshi universitetlari umumiy tartibini
+              yozishni davom ettirishda incelashingiz mumkin.{" "}
+              <a
+                href="https://newtr.urapcenter.org/Rankings/2023-2024/GENEL-SIRALAMASI-2023"
+                target="_blank"
+              >
+                URAP
+              </a>{" "}
+              rasmiy sahifasiga tashrif buyurishingiz mumkin .
+            </p>
+
+            
+          </AccordionPanel>
+        </AccordionItem>
+
+        <AccordionItem>
+          <h2>
+            <AccordionButton>
+              <Box
+                as="span"
+                flex="1"
+                textAlign="left"
+                style={{ fontWeight: "500", fontSize: "20px", padding: "5px" }}
+              >
+                13.⁠ ⁠Özbekistanlı ebeveynlerin  en çok sorduğu soru-cevaplar
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+          </h2>
+          <AccordionPanel pb={4} mt={3} color={"#666666"}>
+            <p>
+              2024 Turkiyaning eng yaxshi universitetlari umumiy tartibini
+              yozishni davom ettirishda incelashingiz mumkin.{" "}
+              <a
+                href="https://newtr.urapcenter.org/Rankings/2023-2024/GENEL-SIRALAMASI-2023"
+                target="_blank"
+              >
+                URAP
+              </a>{" "}
+              rasmiy sahifasiga tashrif buyurishingiz mumkin .
+            </p>
+
+            
+          </AccordionPanel>
+        </AccordionItem>
+
+        <AccordionItem>
+          <h2>
+            <AccordionButton>
+              <Box
+                as="span"
+                flex="1"
+                textAlign="left"
+                style={{ fontWeight: "500", fontSize: "20px", padding: "5px" }}
+              >
+               14.  Öğrenciler hem okuyup hem çalışabilir mi?
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+          </h2>
+          <AccordionPanel pb={4} mt={3} color={"#666666"}>
+            <p>
+              2024 Turkiyaning eng yaxshi universitetlari umumiy tartibini
+              yozishni davom ettirishda incelashingiz mumkin.{" "}
+              <a
+                href="https://newtr.urapcenter.org/Rankings/2023-2024/GENEL-SIRALAMASI-2023"
+                target="_blank"
+              >
+                URAP
+              </a>{" "}
+              rasmiy sahifasiga tashrif buyurishingiz mumkin .
+            </p>
+
+            
           </AccordionPanel>
         </AccordionItem>
       </Accordion>
