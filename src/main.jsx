@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { HashRouter, Routes, Route } from "react-router-dom";
+import { ChakraProvider } from '@chakra-ui/react'
 
 import App from "./App.jsx";
 
@@ -25,25 +26,31 @@ import Question from "./pages/Question.jsx";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-  <LanguageProvider>
-    <HashRouter>
-      <Navbar />
-      <ScrollToTop />
-      <Routes>
-        <Route path="/" exact element={<App />} />
-        <Route path="/application" exact element={<Application />} />
-        <Route path="/student-transfer" exact element={<StudentTransfer />} />
-        <Route path="/expert-transfer" exact element={<ExpertTransfer />} />
-        <Route path="/turkiye-ofisi" exact element={<AcademicTour />} />
-        <Route path="/university-community" exact element={<UniversityCom />} />
-        <Route path="/contacts" exact element={<Contacts />} />
-        <Route path="/about" exact element={<AboutPage />} />
-        <Route path="/services" exact element={<Services />} />
-        <Route path="/services/in" exact element={<ServicesLinksIn />} />
-        <Route path="/question" exact element={<Question />} />
-      </Routes>
-      <Footer />
-      {/* <Up /> */}
-    </HashRouter>
-  </LanguageProvider>
+  <ChakraProvider>
+    <LanguageProvider>
+      <HashRouter>
+        <Navbar />
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" exact element={<App />} />
+          <Route path="/application" exact element={<Application />} />
+          <Route path="/student-transfer" exact element={<StudentTransfer />} />
+          <Route path="/expert-transfer" exact element={<ExpertTransfer />} />
+          <Route path="/turkiye-ofisi" exact element={<AcademicTour />} />
+          <Route
+            path="/university-community"
+            exact
+            element={<UniversityCom />}
+          />
+          <Route path="/contacts" exact element={<Contacts />} />
+          <Route path="/about" exact element={<AboutPage />} />
+          <Route path="/services" exact element={<Services />} />
+          <Route path="/services/in" exact element={<ServicesLinksIn />} />
+          <Route path="/question" exact element={<Question />} />
+        </Routes>
+        <Footer />
+        {/* <Up /> */}
+      </HashRouter>
+    </LanguageProvider>
+  </ChakraProvider>
 );

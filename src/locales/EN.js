@@ -5,6 +5,7 @@ export const en = {
     contacts: "Contacts",
     services: "Services",
     question: "FAQ",
+    questionTitle: "Frequently Asked Questions",
     download: "Download",
     more: "More details",
     headerSwiperTitle1: "Application Process",
