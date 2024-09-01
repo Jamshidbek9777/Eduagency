@@ -1,5 +1,7 @@
+import { getText } from "../locales";
+
 export const allLists = [
-  {linkName: "Koç Üniversitesi"},
+  {linkName: getText("linkName")},
   {linkName: "Hacettepe Üniversitesi"},
   {linkName: "Orta Doğu Teknik Üniversitesi (ODTÜ)"},
   {linkName: "Ankara Üniversitesi "},

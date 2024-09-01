@@ -142,7 +142,7 @@ const Header = () => {
               </div>
 
               <div className="bg-picture">
-                <img src="/img/header-bg.png" alt="" />
+                <img src={item.bgImage} alt="" />
               </div>
             </div>
           ))}

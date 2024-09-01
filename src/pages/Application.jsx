@@ -29,7 +29,7 @@ const Application = () => {
               <li>
                 <p>{getText("ApplicationYardamDesc3")}</p>
               </li>
-              <li>
+              {/* <li>
                 <p>{getText("ApplicationYardamDesc4")}</p>
               </li>
               <li>
@@ -37,7 +37,7 @@ const Application = () => {
               </li>
               <li>
                 <p>{getText("ApplicationYardamDesc6")}</p>
-              </li>
+              </li> */}
             </ul>
           </div>
           <h2>{getText("ApplicationProceduresBosqich")}</h2>
