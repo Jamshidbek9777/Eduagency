@@ -50,6 +50,11 @@ const Getintouch = () => {
   const { selectedLanguage, selectedFlag, changeLanguage } =
     useContext(LanguageContext);
 
+  const handlePhoneChange = (e) => {
+    const cleaned = e.target.value.replace(/[^+\d]/g, '');
+    setPhone(cleaned);
+  };
+
   return (
     <div className="Getintouch mt-5">
       <div className="container">
@@ -82,12 +87,12 @@ const Getintouch = () => {
                 <div className="inputWrap col-sm-6">
                   <InputMask
                     placeholder={getText("getAdviceInputPhone")}
-                    onChange={(e) => setPhone(e.target.value)}
+                    onChange={handlePhoneChange}
                     value={phone}
                     className="form-control"
                     name="phone"
                     required
-                    mask="+998 (99) 999-99-99"
+                    mask="+999 (99) 999-99-99" 
                     type="text"
                   />
                 </div>
