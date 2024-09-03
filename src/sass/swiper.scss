@@ -43,8 +43,17 @@
     &.next {
       left: 178px;
     }
-    @media screen and (max-width:1400px) {
+   
+    @media screen and (max-width:992px) {
       display: none;
+    }
+  }
+
+  @media screen and (max-width: 1400px) {
+    .swiper-button{
+      padding: 10px;
+      // background-color: red;
+      width: 120px;
     }
   }
 

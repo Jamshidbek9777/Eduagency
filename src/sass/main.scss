@@ -1741,9 +1741,11 @@ body {
 .bg-picture {
   position: relative; 
   width: 100%; 
+  object-fit: cover;
   height: auto; 
   overflow: hidden;
   background-size: cover;
+  height: 850px;
   background-position: center;
   border-radius: 20px !important;
 }

@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
@@ -8,7 +8,7 @@ import { LanguageContext } from "../context/LanguageContext";
 
 const Getintouch = () => {
   const [name, setName] = useState("");
-  const [phone, setPhone] = useState("+998");
+  const [phone, setPhone] = useState("+998 (__) ___-__-__");
   const [email, setEmail] = useState("");
   const [service, setService] = useState("");
   const [description, setDescription] = useState("");
@@ -39,20 +39,16 @@ const Getintouch = () => {
     } finally {
       setIsLoading(false);
       setName("");
-      setPhone("+998");
+      setPhone("+998 (__) ___-__-__");
       setEmail("");
       setDescription("");
       setService("");
     }
   };
 
+  // eslint-disable-next-line no-unused-vars
   const { selectedLanguage, selectedFlag, changeLanguage } =
     useContext(LanguageContext);
-
-  // useEffect(()=>{
-  //   console.log("-------");
-
-  // },[changeLanguage])
 
   return (
     <div className="Getintouch mt-5">
@@ -85,16 +81,17 @@ const Getintouch = () => {
                 </div>
                 <div className="inputWrap col-sm-6">
                   <InputMask
-                    placeholder="Telefon numaranız"
+                    placeholder={getText("getAdviceInputPhone")}
                     onChange={(e) => setPhone(e.target.value)}
                     value={phone}
                     className="form-control"
                     name="phone"
                     required
-                    mask="+999999999999"
+                    mask="+998 (99) 999-99-99"
                     type="text"
                   />
                 </div>
+
                 <div className="inputWrap">
                   <InputMask
                     placeholder={getText("getAdviceInputEmail")}
