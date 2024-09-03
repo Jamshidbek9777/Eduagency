@@ -46,6 +46,11 @@ const Navbar = () => {
     setBurger((prevBurger) => !prevBurger);
   };
 
+  useEffect(() => {
+    document.body.style.overflow = burger ? "hidden" : "auto";
+  }, [burger]);
+  
+
   const handleDropdownHover = (state) => {
     setIsDropdownOpen(state);
   };

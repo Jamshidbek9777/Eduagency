@@ -26,6 +26,7 @@ export const tr = {
     getAdviceInputName: "Adınız",
     getAdviceInputEmail: "E-posta",
     getAdviceInputMessage: "Mesaj",
+    getAdviceInputPhone: "Telefonunuz",
     getAdviceSelectDefaultText: " Ne tür hizmetlerle ilgileniyorsunuz?",
     getAdviceSelectOption1: "Müracaat İşlemleri",
     getAdviceSelectOption2: "Öğrenci Transferi",

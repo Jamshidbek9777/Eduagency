@@ -75,6 +75,7 @@ export const uz = {
     getAdviceInputName: "Sizning ismingiz",
     getAdviceInputEmail: "Elektron pochta",
     getAdviceInputMessage: "Xabar",
+    getAdviceInputPhone: "Telefoningiz",
     getAdviceSelectDefaultText: " Siz qanday xizmatlarga qiziqasiz?",
     getAdviceSelectOption1: "Ariza berish tartiblari",
     getAdviceSelectOption2: "Talaba transferi",

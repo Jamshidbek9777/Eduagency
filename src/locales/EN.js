@@ -30,6 +30,7 @@ export const en = {
     getAdviceInputName: "Your name",
     getAdviceInputEmail: "Email",
     getAdviceInputMessage: "Message",
+    getAdviceInputPhone: "Your Phone",
     getAdviceSelectDefaultText: "What kind of services are you interested in?",
     getAdviceSelectOption1: "Application Procedures",
     getAdviceSelectOption2: "Student Transfer",
