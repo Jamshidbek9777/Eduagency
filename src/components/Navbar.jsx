@@ -46,11 +46,6 @@ const Navbar = () => {
     setBurger((prevBurger) => !prevBurger);
   };
 
-  useEffect(() => {
-    document.body.style.overflow = burger ? "hidden" : "auto";
-  }, [burger]);
-  
-
   const handleDropdownHover = (state) => {
     setIsDropdownOpen(state);
   };
@@ -258,7 +253,7 @@ const Navbar = () => {
       </div>
 
       <motion.div
-        className={`mobNav ${burger ? "active" : ""}`}
+        className={`mobNav`}
         initial="hidden"
         animate={burger ? "visible" : "hidden"}
         exit="exit"
