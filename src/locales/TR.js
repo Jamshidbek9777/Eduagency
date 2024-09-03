@@ -1,7 +1,7 @@
 export const tr = {
     home: "Anasayfa",
     aboutUs: "Hakkımızda",
-    contacts: "Iletisim",
+    contacts: "Iletişim",
     services: "Hizmetler",
     question: "SSS",
     questionTitle: "Sıkça Sorulam Sorular",

@@ -20,15 +20,29 @@ const Header = () => {
   //   console.log("-------");
   //   setThisData(headerData)
   // },[changeLanguage])
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1200);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 1200);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const headerData = useHeaderData();
 
   return (
     <div className="header">
-      <div className="container header-pc">
+      <div className="container header-pc" style={{ marginTop: "130px", borderRadius: "20px" }}>
         <Swiper>
           {headerData.map((item) => (
-            <div className="slide-content info" key={item.title}>
+            <div
+              className="slide-content info"
+              key={item.title}
+              style={{ position: "relative" }}
+            >
               <div className="texts">
                 <h1>{item.title}</h1>
                 <p>{item.description}</p>
@@ -108,7 +122,7 @@ const Header = () => {
                 </div>
               </div>
 
-              <div className="card">
+              {/* <div className="card">
                 <div className="tope-btn-p">
                   <div className="tope-btn">
                     <p>{getText("headerCardDesc")}</p>
@@ -139,10 +153,16 @@ const Header = () => {
                   </div>
                   <img src="/img/svg.svg" alt="" />
                 </div>
-              </div>
+              </div> */}
 
-              <div className="bg-picture">
-                <img src={item.bgImage} alt="" />
+              <div
+                className={`bg-picture`}
+              >
+                {/* <img src={item.bgImage} alt="" /> */}
+                <img
+                  src={item.mobBgImage}
+                  alt=""
+                />
               </div>
             </div>
           ))}

@@ -155,7 +155,7 @@
 
 @media screen and (max-width: 1200px) {
   .slide-content {
-    background: url("/img/7129ee73fb9c15e17860c99924215444.png") no-repeat;
+    // background: url("/img/7129ee73fb9c15e17860c99924215444.png") no-repeat;
     border-radius: 20px;
     background-size: cover;
     height: 540px;
@@ -164,14 +164,14 @@
     }
     .bg-picture {
       top: 5px;
-      display: none;
+      // display: none;
     }
   }
 }
 
 @media (max-width: 320px) {
   .slide-content {
-    background: url("/img/7129ee73fb9c15e17860c99924215444.png") no-repeat;
+    // background: url("/img/7129ee73fb9c15e17860c99924215444.png") no-repeat;
     border-radius: 20px;
     background-size: cover;
     // height: 540px;

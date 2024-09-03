@@ -9,9 +9,9 @@ const useHeaderData = () => {
   useEffect(() => {
     const fetchData = () => {
       const data = [
-        { title: getText("headerSwiperTitle1"), description: getText("headerSwiperParagraph1"), headerLink: '/application', bgImage: "/img/header-bg.png" },
-        { title: getText("headerSwiperTitle2"), description: getText("headerSwiperParagraph2"), headerLink: '/student-transfer', bgImage: "/img/İlk Slider.jpg" },
-        { title: getText("headerSwiperTitle3"), description: getText("headerSwiperParagraph3"), headerLink: '/expert-transfer', bgImage: "/public/img/İkinci Slider.jpg" },
+        { title: getText("headerSwiperTitle1"), description: getText("headerSwiperParagraph1"), headerLink: '/application', bgImage: "/img/header-bg.png", mobBgImage: "/img/7129ee73fb9c15e17860c99924215444.png" },
+        { title: getText("headerSwiperTitle2"), description: getText("headerSwiperParagraph2"), headerLink: '/student-transfer', bgImage: "/img/header2.png",mobBgImage: "/img/headerMob2.jpg" },
+        { title: getText("headerSwiperTitle3"), description: getText("headerSwiperParagraph3"), headerLink: '/expert-transfer', bgImage: "/img/header3.png",mobBgImage: "/img/headerMob3.jpg" },
         // { title: getText("headerSwiperTitle4"), description: getText("headerSwiperParagraph4"), headerLink: "/turkiye-ofisi" }
       ];
       setHeaderData(data);

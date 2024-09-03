@@ -107,9 +107,7 @@ const Navbar = () => {
             </div>
 
             <div
-              className={`d-flex nav-menu-pc justify-content align-items-center ${
-                navbar ? "mt-0" : "mt-5"
-              }`}
+              className={`d-flex nav-menu-pc justify-content align-items-center`}
             >
               <ul className="nav-menu">
                 <li onClick={() => handleLinkClick("/")}>

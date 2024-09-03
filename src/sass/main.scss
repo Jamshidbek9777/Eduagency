@@ -95,12 +95,17 @@ body {
     position: fixed;
     left: 0;
     top: 0;
+    margin-top: 20px;
     right: 0;
     // background: #ffffffbb;
     transition: all ease 0.8s;
 
     .nav-menu {
       position: relative;
+      border-radius: 114px;
+      border: 1px solid rgba(5, 86, 255, 0.5);
+      background: rgba(5, 86, 255, 0.1) !important;
+      backdrop-filter: blur(10px);
 
       li {
         position: relative;
@@ -142,17 +147,6 @@ body {
       animation: anim 0.8s ease-in-out;
       padding: 15px 0;
 
-      .burger {
-        .burger1,
-        .burger3 {
-          background: #000;
-        }
-
-        .burger2 {
-          background: $colorBlue;
-        }
-      }
-
       .all-menu {
         display: flex;
 
@@ -177,63 +171,7 @@ body {
         }
       }
 
-      .burger {
-        position: relative;
-        width: 20px;
-        height: 20px;
-        margin-right: 25px;
-        transition: all 0.5s ease-in-out;
-        z-index: 999999;
-        display: none;
-        margin-left: auto;
-        padding-right: 40px;
-
-        .burger1,
-        .burger2,
-        .burger3 {
-          position: absolute;
-          width: 25px;
-          height: 2px;
-          background-color: #fff;
-          border-radius: 20px;
-          transition: all 0.5s ease-in-out;
-        }
-
-        .burger1 {
-          top: 0;
-        }
-
-        .burger2 {
-          top: 9px;
-          transition: all 0.3s ease-in-out;
-          width: 37%;
-          right: 15px;
-        }
-
-        .burger3 {
-          top: 18px;
-        }
-
-        &.burgered {
-          .burger1 {
-            transform: translateY(10px) rotate(45deg);
-            background-color: #fff;
-          }
-
-          .burger2 {
-            opacity: 0;
-          }
-
-          .burger3 {
-            transform: translateY(-8px) rotate(-45deg);
-            background-color: #fff;
-          }
-        }
-
-        @media (max-width: 992px) {
-          display: flex;
-        }
-      }
+    
     }
 
     .mobileWrap {
@@ -297,9 +235,14 @@ body {
 
     .nav-menu-pc {
       .siteLang {
-        background: rgba(255, 255, 255, 0.7);
+        // background: rgba(255, 255, 255, 0.7);
+        // border-radius: 114px;
+        // padding: 29px;
         border-radius: 114px;
-        padding: 29px;
+        border: 1px solid rgba(5, 86, 255, 0.5);
+        background: rgba(5, 86, 255, 0.1) !important;
+        backdrop-filter: blur(10px);
+        padding: 32px;
 
         select {
           background: transparent;
@@ -1452,7 +1395,7 @@ body {
       .contact-blog {
         display: flex;
         justify-content: space-around;
-        align-items: center;
+        align-items: start;
         text-align: center;
         flex-wrap: wrap;
 
@@ -1465,12 +1408,12 @@ body {
 
           a {
             font-size: 16px;
-            color: #c4c4c4;
+            color: black;
           }
 
           p,
           h4 {
-            color: #c4c4c4;
+            color: black;
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
@@ -1708,7 +1651,6 @@ body {
       color: #666666;
 
       span {
-        font-weight: 700;
         color: #666;
       }
     }
@@ -1796,9 +1738,34 @@ body {
   margin-top: 60px;
 }
 
-// .bg-picture {
-//   margin-top: 30px;
-// }
+.bg-picture {
+  position: relative; 
+  width: 100%; 
+  height: auto; 
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px !important;
+}
+
+.bg-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+  border-radius: 20px !important;
+}
+
+.bg-picture::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(to top, white, transparent 70%);
+  pointer-events: none;
+}
 
 .service-pc {
   display: none;
@@ -1943,11 +1910,11 @@ body {
     }
   }
 }
-.accerdionHeading{
+.accerdionHeading {
   font-size: 20px;
   padding: 5px;
   font-weight: 500;
-  @media (max-width: 768px){
+  @media (max-width: 768px) {
     font-size: 17px;
   }
 }

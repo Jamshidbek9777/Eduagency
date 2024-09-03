@@ -27,7 +27,7 @@ const ContactsLocation = () => {
               <div className="contact-blog-in">
                 <img src="/img/credit-card-icon.png" alt="" />
                 <h4>{getText("contactsLocationNumber")}</h4>
-                <a href="tel:+998 (71) 777-77-77">+998 (71) 777-77-77</a>
+                <a href="tel:+998334691101">+998 (33) 469-11-01</a>
               </div>
               <div className="contact-blog-in">
                 <img src="/img/calendar-icon.png" alt="" />
@@ -37,12 +37,12 @@ const ContactsLocation = () => {
               <div className="contact-blog-in">
                 <img src="/img/map-icon.png" alt="" />
                 <h4>{getText("contactsLocationMap")}</h4>
-                <p>100000, г. Ташкент, ул. Амира Темура, д. 6</p>
+                <p>Mukimi Street 7, 100013, Tashkent, Uzbekistan</p>
               </div>
               <div className="contact-blog-in">
                 <img src="/img/passports-icon.png" alt="" />
                 <h4>{getText("contactsLocationEmail")}</h4>
-                <p>info@zamaantravel.uz</p>
+                <a href="mail:info@eduagency.uz" target="_blank">info@eduagency.uz</a>
               </div>
             </div>
           </div>

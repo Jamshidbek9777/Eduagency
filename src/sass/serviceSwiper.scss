@@ -143,14 +143,13 @@
 
 @media screen and (max-width: 1200px) {
   .slide-content {
-    background: url("/img/7129ee73fb9c15e17860c99924215444.png") no-repeat;
-    border-radius: 20px;
-    height: 540px;
+    // background: url("/img/7129ee73fb9c15e17860c99924215444.png") no-repeat;
+    // border-radius: 20px;
+    // height: auto;
     width: 100%;
-    .card,
-    .bg-picture {
-      display: none;
-    }
+   .card{
+    display: none;
+   }
   }
 }
 

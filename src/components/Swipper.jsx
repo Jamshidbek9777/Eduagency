@@ -81,7 +81,7 @@ const Swiper = ({ children, autoplayInterval = 40000 }) => {
         ))}
       </div>
       <button className="swiper-button prev" onClick={handlePrev}>
-        <svg
+        {/* <svg
           xmlns="http://www.w3.org/2000/svg"
           width="114"
           height="36"
@@ -94,10 +94,12 @@ const Swiper = ({ children, autoplayInterval = 40000 }) => {
               fill="black"
             />
           </g>
-        </svg>
+        </svg> */}
+
+        <img src="/img/arrow-left.png" alt="" />
       </button>
       <button className="swiper-button next" onClick={handleNext}>
-        <svg
+        {/* <svg
           xmlns="http://www.w3.org/2000/svg"
           width="114"
           height="36"
@@ -110,7 +112,8 @@ const Swiper = ({ children, autoplayInterval = 40000 }) => {
               fill="black"
             />
           </g>
-        </svg>
+        </svg> */}
+        <img src="/img/arrow-right.png" alt="" />
       </button>
       <div className="swiper-dots">
         {children.map((_, index) => (
