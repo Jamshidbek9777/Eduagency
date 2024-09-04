@@ -19,12 +19,18 @@ import {
   VStack,
   Button,
 } from "@chakra-ui/react";
-import React, { useState } from "react";
-import { allLists } from "../../data/allLists";
+import React, { useContext, useState } from "react";
+import useListData from "../../data/allLists";
+import { getText } from "../../locales";
+import { LanguageContext } from "../../context/LanguageContext";
 
 function AccordionUI() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [lists, setLists] = useState([]);
+  const { selectedLanguage, selectedFlag, changeLanguage } =
+    useContext(LanguageContext);
+    const allListData = useListData();
+
 
   const handleTekrarClick = () => {
     const extractedLists = Array.from(document.querySelectorAll("li")).map(
@@ -46,7 +52,7 @@ function AccordionUI() {
                 // style={{ fontWeight: "500", fontSize: "20px", padding: "5px" }}
                 className="accerdionHeading"
               >
-                1.⁠ ⁠Türkiyede okumanın avantajları nelerdir?
+                {getText("question1Title")}
               </Box>
               <AccordionIcon />
             </AccordionButton>
@@ -59,7 +65,7 @@ function AccordionUI() {
             >
               Link
             </a>
-            <p>bu linkteki yozmalari qoyalim</p>
+            <p>{getText("question1Desc")}</p>
           </AccordionPanel>
         </AccordionItem>
 
@@ -73,17 +79,15 @@ function AccordionUI() {
                 // style={{ fontWeight: "500", fontSize: "20px", padding: "5px" }}
                 className="accerdionHeading"
               >
-                 2.⁠ ⁠Özbekler Turkiyada qanday shartlarda o'qiy oladilar?
+                {getText("question2Title")}
               </Box>
               <AccordionIcon />
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4} mt={3} color={"#666666"}>
-            O'zbek fuqarolari turkiyede bepul burslu va ucretli sifatida o'qiy
-            oladilar. <br /> <br /> ücretsiz o'qish uchun YÖS imtihaninam
-            girerek muvaffaqiyatli bo'lishi kerak. Bundan tashqari, qanday qilib
-            o'qisangiz YTB burslaridan foyda olishingiz mumkin. <br /> <br />{" "}
-            geniş için bilgi
+            {getText("question2Desc1")} <br /> <br />{" "}
+            {getText("question2Desc2")} <br /> <br />{" "}
+            {getText("question2Desc3")}
             <a
               href="https://eduagency.uz/"
               target="_blank"
@@ -92,7 +96,7 @@ function AccordionUI() {
               {" "}
               eduageny.uz{" "}
             </a>
-            bilan irtibata o'tishingiz.
+            {getText("question2Desc4")}
           </AccordionPanel>
         </AccordionItem>
 
@@ -106,7 +110,7 @@ function AccordionUI() {
                 // style={{ fontWeight: "500", fontSize: "20px", padding: "5px" }}
                 className="accerdionHeading"
               >
-                 3.⁠ ⁠Turkiyenin en iyi universitetleri hangileridir?
+                {getText("question3Title")}
               </Box>
               <AccordionIcon />
             </AccordionButton>
@@ -114,70 +118,70 @@ function AccordionUI() {
           <AccordionPanel pb={4} mt={3} color={"#666666"}>
             <ul>
               <li>
-                <p>Koç Üniversitesi</p>
+                <p>{getText("question3List1")}</p>
               </li>
               <li>
-                <p>Hacettepe Üniversitesi</p>
+                <p>{getText("question3List2")}</p>
               </li>
               <li>
-                <p>Orta Doğu Teknik Üniversitesi (ODTÜ)</p>
+                <p>{getText("question3List3")}</p>
               </li>
               <li>
-                <p>Ankara Üniversitesi </p>
+                <p>{getText("question3List4")}</p>
               </li>
               <li>
-                <p>İstanbul Teknik Üniversitesi (İTÜ)</p>
+                <p>{getText("question3List5")}</p>
               </li>
               <li>
-                <p>İstanbul Üniversitesi</p>
+                <p>{getText("question3List6")}</p>
               </li>
               <li>
-                <p>Sabancı Üniversitesi </p>
+                <p>{getText("question3List7")} </p>
               </li>
               <li>
-                <p>Gazi Üniversitesi </p>
+                <p>{getText("question3List8")} </p>
               </li>
               <li>
-                <p>Ege Üniversitesi</p>
+                <p>{getText("question3List9")}</p>
               </li>
               <li>
-                <p>İstanbul Üniversitesi-Cerrahpaşa</p>
+                <p>{getText("question3List10")}</p>
               </li>
               <li>
-                <p>İhsan Doğramacı Bilkent Üniversitesi </p>
+                <p>{getText("question3List11")} </p>
               </li>
               <li>
-                <p>Gebze Teknik Üniversitesi </p>
+                <p>{getText("question3List12")} </p>
               </li>
               <li>
-                <p>Marmara Üniversitesi </p>
+                <p>{getText("question3List13")} </p>
               </li>
               <li>
-                <p>Yıldız Teknik Üniversitesi</p>
+                <p>{getText("question3List14")}</p>
               </li>
               <li>
-                <p>Erciyes Üniversitesi</p>
+                <p>{getText("question3List15")}</p>
               </li>
               <li>
-                <p>Atatürk Üniversitesi</p>
+                <p>{getText("question3List16")}</p>
               </li>
               <li>
-                <p>Boğaziçi Üniversitesi</p>
+                <p>{getText("question3List17")}</p>
               </li>
               <li>
-                <p>Dokuz Eylül Üniversitesi</p>
+                <p>{getText("question3List18")}</p>
               </li>
               <li>
-                <p>Fırat Üniversitesi </p>
+                <p>{getText("question3List19")} </p>
               </li>
               <li>
-                <p>Çukurova Üniversitesi </p>
+                <p>{getText("question3List20")}</p>
               </li>
               <li
                 style={{ color: "blue", cursor: "pointer", fontSize: "18px" }}
                 onClick={handleTekrarClick}
               >
-                Tekrar...
+                {getText("questionListLink")}
               </li>
             </ul>
           </AccordionPanel>
@@ -193,18 +197,13 @@ function AccordionUI() {
                 // style={{ fontWeight: "500", fontSize: "20px", padding: "5px" }}
                 className="accerdionHeading"
               >
-                4.⁠ ⁠türkiyede üniversitede okuyan özbekistanlı öğrenci sayısı
-                kaçtır
+                {getText("question4Title")}
               </Box>
               <AccordionIcon />
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4} mt={3} color={"#666666"}>
-            <p>
-              İstatistik kurumundan alınan bilgilere göre Türkiyede özel yahut
-              devlette üniversite okuyan özbek vatandaşı öğrenci sayısı 3896
-              erkek 2351 kız olmak üzere toplam 6247 öğrenci vardır.
-            </p>
+            <p>{getText("question41Desc")}</p>
           </AccordionPanel>
         </AccordionItem>
 
@@ -218,16 +217,13 @@ function AccordionUI() {
                 // style={{ fontWeight: "500", fontSize: "20px", padding: "5px" }}
                 className="accerdionHeading"
               >
-                5.⁠ ⁠Türk üniversitelerinde okumak maliyetli mi ?
+                {getText("question5Title")}
               </Box>
               <AccordionIcon />
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4} mt={3} color={"#666666"}>
-            <p>
-              Türkiyede her bütçeye hitap özel vakıf üniversiteler
-              bulunmaktadır. Genel olarak çok maliyetli değildir.
-            </p>
+            <p>{getText("question5Desc")}</p>
           </AccordionPanel>
         </AccordionItem>
 
@@ -241,18 +237,13 @@ function AccordionUI() {
                 // style={{ fontWeight: "500", fontSize: "20px", padding: "5px" }}
                 className="accerdionHeading"
               >
-                 6.⁠ ⁠Türkiye’de yemek kültürü nasıl?
+                  {getText("question6Title")}
               </Box>
               <AccordionIcon />
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4} mt={3} color={"#666666"}>
-            <p>
-              Türkiye yemek kültürü çok çeşitli ve ilgi çekicidir. Türkiye
-              mutfağı dünyanın önde gelen mutfakları arasında yerini almıştır.
-              Özbek öğrenciler için türk mutfağına adapte olmak çok kolay ve
-              keyiflidir.
-            </p>
+            <p>{getText("question6Desc")}</p>
           </AccordionPanel>
         </AccordionItem>
 
@@ -266,19 +257,13 @@ function AccordionUI() {
                 // style={{ fontWeight: "500", fontSize: "20px", padding: "5px" }}
                 className="accerdionHeading"
               >
-                 7.⁠ ⁠Türkiye’de okuyan öğrenciler nerelerde yaşayabilirler ?
-                yurtlar güvenli mi ? ücretleri ne kadar?
+                  {getText("question7Title")}
               </Box>
               <AccordionIcon />
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4} mt={3} color={"#666666"}>
-            <p>
-              Üniversite öğrencileri genellikle kendi uyruktan insanlarla
-              beraber ev kiralayabilir veya özel yahut devletin Kredi yurtlar
-              kurumunda kalabilirler. Öğrencilere ilk yıl bir yurt ortamında
-              kalmaları tavsiye edilir.
-            </p>
+            <p>{getText("question7Desc")}</p>
           </AccordionPanel>
         </AccordionItem>
 
@@ -292,17 +277,13 @@ function AccordionUI() {
                 // style={{ fontWeight: "500", fontSize: "20px", padding: "5px" }}
                 className="accerdionHeading"
               >
-                 8.⁠ ⁠İstanbul ilçelerine göre kiralık ev fiyatları yaklaşık ne
-                kadar?
+                  {getText("question8Title")}
               </Box>
               <AccordionIcon />
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4} mt={3} color={"#666666"}>
-            <p>
-              15.000 tl ile 30.000 tl arasında değişen ücretlerde öğrenci evi
-              bulmak mümkün.
-            </p>
+            <p>{getText("question8Desc")}</p>
           </AccordionPanel>
         </AccordionItem>
 
@@ -316,16 +297,13 @@ function AccordionUI() {
                 // style={{ fontWeight: "500", fontSize: "20px", padding: "5px" }}
                 className="accerdionHeading"
               >
-                  9.⁠ ⁠Türkiye’de okumak için türkçe seviyeniz ne olmalı?
+                  {getText("question9Title")}
               </Box>
               <AccordionIcon />
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4} mt={3} color={"#666666"}>
-            <p>
-              hazırlık sınıfı okumak istemiyorsanız C1 seviyesinde Türkçenizin
-              olması istenmektedir.
-            </p>
+            <p>{getText("question9Desc")}</p>
           </AccordionPanel>
         </AccordionItem>
 
@@ -339,8 +317,7 @@ function AccordionUI() {
                 // style={{ fontWeight: "500", fontSize: "20px", padding: "5px" }}
                 className="accerdionHeading"
               >
-                 10. Özbeklerin en çok tercih ettiği türk üniversiteleri
-                hangileridirr?
+                  {getText("question10Title")}
               </Box>
               <AccordionIcon />
             </AccordionButton>
@@ -349,23 +326,23 @@ function AccordionUI() {
             <div
               style={{ display: "flex", flexDirection: "column", gap: "15px" }}
             >
-              <p>ANADOLU ÜNİVERSİTESİ</p>
-              <p>BANDIRMA ONYEDİ EYLÜL ÜNİVERSİTESİ</p>
-              <p>BOLU ABANT İZZET BAYSAL ÜNİVERSİTESİ</p>
-              <p>DOKUZ EYLÜL ÜNİVERSİTESİ</p>
-              <p>FATİH SULTAN MEHMET VAKIF ÜNİVERSİTESİ</p>
-              <p>İSTANBUL ATLAS ÜNİVERSİTESİ</p>
-              <p>İSTANBUL KENT ÜNİVERSİTESİ</p>
-              <p>İSTANBUL RUMELİ ÜNİVERSİTESİ</p>
-              <p>İSTANBUL ŞİŞLİ MESLEK YÜKSEKOKULU</p>
-              <p>İSTANBUL TOPKAPI ÜNİVERSİTESİ</p>
-              <p>İSTANBUL ÜNİVERSİTESİ</p>
-              <p>İSTANBUL YENİ YÜZYIL ÜNİVERSİTESİ</p>
-              <p>KARABÜK ÜNİVERSİTESİ</p>
-              <p>KIRKLARELİ ÜNİVERSİTESİ</p>
-              <p>ONDOKUZ MAYIS ÜNİVERSİTESİ</p>
-              <p>SAĞLIK BİLİMLERİ ÜNİVERSİTESİ</p>
-              <p>SAKARYA ÜNİVERSİTESİ</p>
+              <p>{getText("question10List1")}</p>
+              <p>{getText("question10List2")}</p>
+              <p>{getText("question10List3")}</p>
+              <p>{getText("question10List4")}</p>
+              <p>{getText("question10List5")}</p>
+              <p>{getText("question10List6")}</p>
+              <p>{getText("question10List7")}</p>
+              <p>{getText("question10List8")}</p>
+              <p>{getText("question10List9")}</p>
+              <p>{getText("question10List10")}</p>
+              <p>{getText("question10List11")}</p>
+              <p>{getText("question10List12")}</p>
+              <p>{getText("question10List13")}</p>
+              <p>{getText("question10List14")}</p>
+              <p>{getText("question10List15")}</p>
+              <p>{getText("question10List16")}</p>
+              <p>{getText("question10List17")}</p>
             </div>
           </AccordionPanel>
         </AccordionItem>
@@ -380,23 +357,34 @@ function AccordionUI() {
                 // style={{ fontWeight: "500", fontSize: "20px", padding: "5px" }}
                 className="accerdionHeading"
               >
-                12. Özbekistanlı öğrenciler Türkiye’de okumalarında nelere
-                dikkat etmeliler?
+                {getText("question11Title")}
               </Box>
               <AccordionIcon />
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4} mt={3} color={"#666666"}>
             <p>
-              2024 Turkiyaning eng yaxshi universitetlari umumiy tartibini
-              yozishni davom ettirishda incelashingiz mumkin.{" "}
-              <a
-                href="https://newtr.urapcenter.org/Rankings/2023-2024/GENEL-SIRALAMASI-2023"
-                target="_blank"
-              >
-                URAP
-              </a>{" "}
-              rasmiy sahifasiga tashrif buyurishingiz mumkin .
+              {getText("question11Desc1")}
+              <br /> <br />
+              {getText("question11Desc2")} <br /> <br />
+              {getText("question11Desc3")}
+              <br /> <br />
+              {getText("question11Desc4")} <br /> <br />
+              {getText("question11Desc5")}
+              <br /> <br />
+              {getText("question11Desc6")}
+              <br /> <br />
+              {getText("question11Desc7")}
+              <br /> <br />
+              {getText("question11Desc8")}
+              <br /> <br />
+              {getText("question11Desc9")}
+              <br /> <br />
+              {getText("question11Desc10")}
+              <br /> <br />
+              {getText("question11Desc11")}
+              <br /> <br />
+              {getText("question11Desc12")}
             </p>
           </AccordionPanel>
         </AccordionItem>
@@ -411,23 +399,36 @@ function AccordionUI() {
                 // style={{ fontWeight: "500", fontSize: "20px", padding: "5px" }}
                 className="accerdionHeading"
               >
-                13.⁠ ⁠Özbekistanlı ebeveynlerin en çok sorduğu soru-cevaplar
+                {getText("question12Title")}
               </Box>
               <AccordionIcon />
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4} mt={3} color={"#666666"}>
-            <p>
-              2024 Turkiyaning eng yaxshi universitetlari umumiy tartibini
-              yozishni davom ettirishda incelashingiz mumkin.{" "}
-              <a
-                href="https://newtr.urapcenter.org/Rankings/2023-2024/GENEL-SIRALAMASI-2023"
-                target="_blank"
-              >
-                URAP
-              </a>{" "}
-              rasmiy sahifasiga tashrif buyurishingiz mumkin .
-            </p>
+            <ul>
+              <li>
+                <p>{getText("question12Desc1")}</p>
+              </li>
+              <li>
+                <p> {getText("question12Desc2")}</p>
+              </li>
+              <li>
+                <p> {getText("question12Desc3")}</p>
+              </li>
+              <li>
+                <p> {getText("question12Desc4")}</p>
+              </li>
+              <li>
+                <p> {getText("question12Desc5")}</p>
+              </li>
+              <li>
+                <p>{getText("question12Desc6")}</p>
+              </li>
+              <li>
+                <p>{getText("question12Desc7")}</p>
+              </li>
+              {/* <li><p></p></li> */}
+            </ul>
           </AccordionPanel>
         </AccordionItem>
 
@@ -441,22 +442,18 @@ function AccordionUI() {
                 // style={{ fontWeight: "500", fontSize: "20px", padding: "5px" }}
                 className="accerdionHeading"
               >
-                14. Öğrenciler hem okuyup hem çalışabilir mi?
+                {getText("question13Title")}
               </Box>
               <AccordionIcon />
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4} mt={3} color={"#666666"}>
             <p>
-              2024 Turkiyaning eng yaxshi universitetlari umumiy tartibini
-              yozishni davom ettirishda incelashingiz mumkin.{" "}
-              <a
-                href="https://newtr.urapcenter.org/Rankings/2023-2024/GENEL-SIRALAMASI-2023"
-                target="_blank"
-              >
-                URAP
-              </a>{" "}
-              rasmiy sahifasiga tashrif buyurishingiz mumkin .
+              {getText("question13Desc1")} <br /> <br />
+              {getText("question13Desc2")}
+              <br />
+              <br />
+              {getText("question13Desc3")}
             </p>
           </AccordionPanel>
         </AccordionItem>
@@ -465,11 +462,11 @@ function AccordionUI() {
       <Modal isOpen={isOpen} onClose={onClose} size="lg" className="modall">
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>Türkiye'deki üniversitelerin listesi</ModalHeader>
+          <ModalHeader>{getText("questionModalTitle")}</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
             <VStack spacing={3} align="start">
-              {allLists.map((item, index) => (
+              {allListData.map((item, index) => (
                 <Box key={index} p={2} borderRadius="md" bg="gray.50" w="full">
                   {item.linkName}
                 </Box>
@@ -479,7 +476,7 @@ function AccordionUI() {
 
           <ModalFooter>
             <Button colorScheme="blue" mr={3} onClick={onClose}>
-              kapatmak
+              {getText("linkButton")}
             </Button>
           </ModalFooter>
         </ModalContent>

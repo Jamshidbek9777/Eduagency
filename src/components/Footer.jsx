@@ -34,13 +34,13 @@ const Footer = () => {
         <div className="footer-bottom">
           <ul className="footer-links">
             <li>
-              <a href="https://www.instagram.com/eduagency_uz/" target="_blank">
+              <a href="https://www.instagram.com/eduagencyuz/" target="_blank">
                 <div className="footer-first-link">
                   <div className="footer_link_and_icon">
                     <h4>Instagram</h4>
                     <img src="/img/footer_instagram.png" alt="instagram icon" />
                   </div>
-                  <h5>@eduagency_uz</h5>
+                  <h5>@eduagencyuz</h5>
                 </div>
               </a>
             </li>

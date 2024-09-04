@@ -1184,6 +1184,126 @@ body {
   .Getintouch,
   .contacts {
     // padding: 50px 0 70px 0;
+    .list_p {
+      .list_contact {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        width: 100%;
+        border-left: 1px solid rgba(0, 0, 0, 0.164);
+        border-top: 1px solid rgba(0, 0, 0, 0.164);
+        padding: 10px;
+        box-sizing: border-box;
+        margin-top: 20px;
+      }
+      .list_contact_first{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        width: 100%;
+        // border-left: 1px solid rgba(0, 0, 0, 0.164);
+        border-top: 1px solid rgba(0, 0, 0, 0.164);
+        padding: 10px;
+        box-sizing: border-box;
+        margin-top: 20px;
+      }
+    }
+
+    .list_contact_texts {
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+      .logoAndTexts{
+        display: flex;
+        flex-direction: column;
+        @media screen and (max-width: 992px) {
+          gap: 10px;
+        justify-content: center;
+        align-items: center;
+        }
+      }
+    }
+
+    .flagAndText {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .flag_images {
+      width: 40px;
+      height: auto;
+    }
+
+    h4 {
+      margin: 0;
+      font-size: 1.2em;
+    }
+
+    p {
+      margin: 0;
+      font-size: 1em;
+    }
+
+    @media (max-width: 992px) {
+      .list_p {
+        flex-direction: column;
+        .list_contact {
+          flex-direction: column;
+          align-items: center;
+          border-left: none;
+          border-top: 1px solid rgba(0, 0, 0, 0.164);
+        }
+      }
+
+      .flag_images {
+        width: 30px;
+      }
+
+      h4 {
+        font-size: 1em;
+      }
+
+      p {
+        font-size: 0.9em;
+      }
+
+      .list_contact_texts {
+        text-align: center;
+      }
+
+      .flagAndText {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .list_contact_texts > div {
+        margin-top: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .flag_images {
+        width: 25px;
+      }
+
+      h4 {
+        font-size: 0.9em;
+      }
+
+      p {
+        font-size: 0.8em;
+      }
+    }
+
+    .flag_images {
+      width: 35px;
+      height: 25px;
+      object-fit: cover;
+      // border-radius: 50%;
+      border-radius: 5px;
+    }
 
     h3 {
       font-size: 64px;
@@ -1460,7 +1580,7 @@ body {
       }
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 1024px) {
       .contact-blog {
         flex-direction: column;
         align-items: center;
