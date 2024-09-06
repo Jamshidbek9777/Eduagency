@@ -47,13 +47,13 @@ export const en = {
     ApplicationYardamDesc5: "Certificate Verification operations",
     ApplicationYardamDesc6: "General Consulting services",
     ApplicationProceduresBosqich: "We carry out our work in four stages:",
-    ApplicationProceduresSpanDesc1: "1. Information and Consultancy:",
+    ApplicationProceduresSpanDesc1: "Information and Consultancy:",
     // ApplicationProceduresDesc1: " Students can get detailed information about educational institutions in Turkey and Uzbekistan from the agency's expert consultants. The consultants help students determine educational programs that are suitable for their academic background and goals.",
-    ApplicationProceduresSpanDesc2: "2. Başvuru Belgelerinin Hazırlanması: ",
+    ApplicationProceduresSpanDesc2: "Başvuru Belgelerinin Hazırlanması: ",
     // ApplicationProceduresDesc2: "Ajans, öğrencilerin gerekli belgeleri toplamasına ve başvuru formlarını eksiksiz doldurmasına destek sağlar. Bu belgeler arasında transkriptler, dil yeterlilik belgeleri, referans mektupları ve diğer gerekli dokümanlar bulunur.",
-    ApplicationProceduresSpanDesc3: "3. Application Tracking and Communication: ",
+    ApplicationProceduresSpanDesc3: "Application Tracking and Communication: ",
     // ApplicationProceduresDesc3: "3. Application Tracking and Communication: The agency ensures that applications reach the relevant educational institutions on time and closely follows every stage of the process. It establishes regular communication with students throughout the application process and produces rapid solutions in case of any deficiencies or delays.",
-    ApplicationProceduresSpanDesc4: "4. Placement and Adaptation: ",
+    ApplicationProceduresSpanDesc4: "Placement and Adaptation: ",
     // ApplicationProceduresDesc4: " The agency also guides students in the process of being placed in the educational institutions they are accepted to. It also organizes orientation programs to facilitate students' adaptation to the new educational environment.",
 
     StudentTransferSpanDesc1: "1. Information and Consultancy:",
@@ -107,6 +107,9 @@ export const en = {
     contactsFlagTitle1: "Turkey Representative",
     contactsFlagTitle2: "Kazakistan Representative",
     contactsFlagTitle3: "Kirgizistan Representative",
+    contactsName1: "Mr.Ali Rıza",
+    contactsName2: "Mr.Azamat",
+    contactsName3: "Mr.Avazbek",
 
 
     AboutPageTextP1: "EduAgency is the embodiment of the vision that began 28 years ago with the project of being different in university years and continued with the training of millennium teachers… The story of the sprout that continued and blossomed after the volunteers who served in all kinds of education in Turkey for many years met here in Uzbekistan after many years.",

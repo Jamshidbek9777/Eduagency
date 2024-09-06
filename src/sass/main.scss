@@ -1772,6 +1772,15 @@ body {
         color: #666;
       }
     }
+    li {
+      margin-bottom: 20px;
+      font-size: 22px;
+      color: #666666;
+
+      span {
+        color: #666;
+      }
+    }
     ul {
       li {
         list-style: decimal;
@@ -2018,6 +2027,12 @@ body {
     }
   }
 
+  li{
+    font-size: 22px;
+    color: #666666;
+    margin-bottom: 20px;
+
+  }
   p {
     margin-bottom: 20px;
     font-size: 22px;
@@ -2063,3 +2078,6 @@ body {
 .chakra-modal__content-container {
   z-index: 9999999999 !important;
 }
+
+
+

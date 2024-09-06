@@ -24,7 +24,7 @@ function AboutText() {
         <h3>{getText("AboutPageTextUlHeading")}</h3>
         <ul style={{ marginTop: "20px" }}>
           <li>
-            <p>{getText("AboutPageTextUlp1")}</p>
+            <span>{getText("AboutPageTextUlp1")}</span>
           </li>
           <li>
             <p>{getText("AboutPageTextUlp2")}</p>

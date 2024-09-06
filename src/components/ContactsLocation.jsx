@@ -87,7 +87,7 @@ const ContactsLocation = () => {
                       alt=""
                       style={{ width: "18px" }}
                     />
-                    <p style={{ margin: 0, fontSize: "18px" }}>Ali Rıza</p>
+                    <p style={{ margin: 0, fontSize: "18px" }}>{getText("contactsName1")}</p>
                   </div>
                   <div
                     style={{
@@ -131,7 +131,7 @@ const ContactsLocation = () => {
                       alt=""
                       style={{ width: "18px" }}
                     />
-                    <p style={{ margin: 0, fontSize: "18px" }}>Azamat</p>
+                    <p style={{ margin: 0, fontSize: "18px" }}>{getText("contactsName2")}</p>
                   </div>
                   <div
                     style={{
@@ -176,7 +176,7 @@ const ContactsLocation = () => {
                       alt=""
                       style={{ width: "18px" }}
                     />
-                    <p style={{ margin: 0, fontSize: "18px" }}>Avazbek</p>
+                    <p style={{ margin: 0, fontSize: "18px" }}>{getText("contactsName3")}</p>
                   </div>
                   <div
                     style={{
