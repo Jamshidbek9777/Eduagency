@@ -157,10 +157,10 @@ export const uz = {
     AboutPageTitle: "Bizning ustuvorliklarimiz haqida",
     AboutPageDesc: "Agentlik Turkiya va Oʻzbekiston universitetlari oʻrtasida hamkorlik imkoniyatlarini kengaytirish uchun maslahat xizmatlarini koʻrsatadi. Qo'shma loyihalar, o'quv dasturlarini ishlab chiqish va akademik almashinuv dasturlari kabi masalalar bo'yicha ko'rsatmalar beradi.",
 
-    AboutPageTextP1: "EduAgency - 28 yil avval universitet yillarida boshqacha bo'lish loyihasi bilan boshlangan va ming yillik o'qituvchilarni tayyorlash bilan davom etayotgan qarashning timsolidir... Bu niholning hikoyasi shu yerda, geografiyada uchrashish orqali davom etadi va gullaydi. Ko'p yillar davomida Turkiyada barcha turdagi ta'lim sohasida xizmat qilgan ko'p yillik ko'ngillilardan so'ng O'zbekiston.",
+    AboutPageTextP1: "EduAgency, Biz Turkiya va O'zbekiston o'rtasidagi ta'lim sohasida rezonans yaratish maqsadida almashish, uzatish va hamkorlik qilish bo'lgan ta'lim hamjamiyatimiz.",
     AboutPageTextP2: "Vizyonimiz Turkiya va O‘zbekistonning tarixiy madaniy aloqalaridan olgan kuchimiz bilan ta’lim sohasida umumiy jarayonning qurilishiga mazmunli hissa qo‘shish,",
-    AboutPageTextP3: "2024-yil O‘zbekistonda g‘alaba va mustahkamlanish yili munosabati bilan Turkiyada boshlangan va Toshkentdagi vakolatxonasi bilan davom etayotgan xizmat hikoyasi",
-    AboutPageTextP4: "Maqsadimiz Turkiya va O'zbekiston o'rtasida ta'lim sohasidagi bilimlarni bir joyga to'plash, baham ko'rish, uzatish va hamkorlik qilishdir.",
+    AboutPageTextP3: "",
+    AboutPageTextP4: "",
     AboutPageTextUlFirst: "Bizning farqimiz",
     AboutPageTextUlDesc: "Biz sevgan mamlakatlarga, sevgan ishimiz bilan xizmat qilish.",
     AboutPageTextUlHeading: "Mening asosiy qadriyatlarim",
