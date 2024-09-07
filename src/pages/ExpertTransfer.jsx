@@ -33,7 +33,8 @@ const ExpertTransfer = () => {
               </li>
             </ul>
           </div>
-          <p>
+          <h2>{getText("ExpertTransferSecondTitle")}</h2>
+          <p style={{marginTop: "20px"}}>
             <span> {getText("ExpertTransferSpan1")} </span>
             {getText("ExpertTransfer1")}
           </p>
