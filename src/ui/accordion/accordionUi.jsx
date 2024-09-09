@@ -59,56 +59,74 @@ function AccordionUI() {
           <AccordionPanel pb={4} mt={3} color={"#666666"}>
             <div style={{ color: "#666666" }}>
               <div>
-                <h5 className="gradient-text">{getText("question1DescTitle1")}</h5>
+                <h5 className="gradient-text">
+                  {getText("question1DescTitle1")}
+                </h5>
 
                 <p style={{ marginTop: "20px" }}>
                   {getText("question1DescP1")}
                 </p>
               </div>
               <div style={{ marginTop: "20px" }}>
-                <h5 className="gradient-text">{getText("question1DescTitle2")}</h5>
+                <h5 className="gradient-text">
+                  {getText("question1DescTitle2")}
+                </h5>
                 <p style={{ marginTop: "20px" }}>
                   {getText("question1DescP2")}
                 </p>
               </div>
               <div style={{ marginTop: "20px" }}>
-                <h5 className="gradient-text">{getText("question1DescTitle3")}</h5>
+                <h5 className="gradient-text">
+                  {getText("question1DescTitle3")}
+                </h5>
                 <p style={{ marginTop: "20px" }}>
                   {getText("question1DescP3")}
                 </p>
               </div>
               <div style={{ marginTop: "20px" }}>
-                <h5 className="gradient-text">{getText("question1DescTitle4")}</h5>
+                <h5 className="gradient-text">
+                  {getText("question1DescTitle4")}
+                </h5>
                 <p style={{ marginTop: "20px" }}>
                   {getText("question1DescP4")}
                 </p>
               </div>
               <div style={{ marginTop: "20px" }}>
-                <h5 className="gradient-text">{getText("question1DescTitle5")}</h5>
+                <h5 className="gradient-text">
+                  {getText("question1DescTitle5")}
+                </h5>
                 <p style={{ marginTop: "20px" }}>
                   {getText("question1DescP5")}
                 </p>
               </div>
               <div style={{ marginTop: "20px" }}>
-                <h5 className="gradient-text">{getText("question1DescTitle6")}</h5>
+                <h5 className="gradient-text">
+                  {getText("question1DescTitle6")}
+                </h5>
                 <p style={{ marginTop: "20px" }}>
                   {getText("question1DescP6")}
                 </p>
               </div>
               <div style={{ marginTop: "20px" }}>
-                <h5 className="gradient-text">{getText("question1DescTitle7")}</h5>
+                <h5 className="gradient-text">
+                  {getText("question1DescTitle7")}
+                </h5>
                 <p style={{ marginTop: "20px" }}>
                   {getText("question1DescP7")}
                 </p>
               </div>
               <div style={{ marginTop: "20px" }}>
-                <h5 className="gradient-text">{getText("question1DescTitle8")}</h5>
+                <h5 className="gradient-text">
+                  {getText("question1DescTitle8")}
+                </h5>
                 <p style={{ marginTop: "20px" }}>
                   {getText("question1DescP8")}
                 </p>
               </div>
               <div style={{ marginTop: "20px" }}>
-                <h5 className="gradient-text">{getText("question1DescTitle9")}</h5>
+                <h5 className="gradient-text">
+                  {getText("question1DescTitle9")}
+                </h5>
                 <p style={{ marginTop: "20px" }}>
                   {getText("question1DescP91")}
                   <br />
@@ -117,7 +135,9 @@ function AccordionUI() {
                 </p>
               </div>
               <div style={{ marginTop: "20px" }}>
-                <h5 className="gradient-text">{getText("question1DescTitle10")}</h5>
+                <h5 className="gradient-text">
+                  {getText("question1DescTitle10")}
+                </h5>
                 <p style={{ marginTop: "20px" }}>
                   {getText("question1DescP10")}
                 </p>
@@ -144,16 +164,16 @@ function AccordionUI() {
           </h2>
           <AccordionPanel pb={4} mt={3} color={"#666666"}>
             {getText("question2Desc1")} <br /> <br />{" "}
-            {getText("question2Desc2")} <br /> <br />{" "}
-            {getText("question2Desc3")}
-            <a
+            {/* {getText("question2Desc2")} <br /> <br />{" "} */}
+            {/* {getText("question2Desc3")} */}
+            {/* <a
               href="https://eduagency.uz/"
               target="_blank"
               style={{ color: "blue" }}
             >
               {" "}
               eduageny.uz{" "}
-            </a>
+            </a> */}
             {getText("question2Desc4")}
           </AccordionPanel>
         </AccordionItem>
@@ -423,25 +443,25 @@ function AccordionUI() {
           <AccordionPanel pb={4} mt={3} color={"#666666"}>
             <p>
               {getText("question11Desc1")}
-              <br /> <br />
-              {getText("question11Desc2")} <br /> <br />
+              <br />
+              {getText("question11Desc2")} <br />
               {getText("question11Desc3")}
-              <br /> <br />
-              {getText("question11Desc4")} <br /> <br />
+              <br />
+              {getText("question11Desc4")} <br />
               {getText("question11Desc5")}
-              <br /> <br />
+              <br />
               {getText("question11Desc6")}
-              <br /> <br />
+              <br />
               {getText("question11Desc7")}
-              <br /> <br />
+              <br />
               {getText("question11Desc8")}
-              <br /> <br />
+              <br />
               {getText("question11Desc9")}
-              <br /> <br />
+              <br />
               {getText("question11Desc10")}
-              <br /> <br />
+              <br />
               {getText("question11Desc11")}
-              <br /> <br />
+              <br />
               {getText("question11Desc12")}
             </p>
           </AccordionPanel>
@@ -464,28 +484,31 @@ function AccordionUI() {
           </h2>
           <AccordionPanel pb={4} mt={3} color={"#666666"}>
             <ul>
-              <li>
-                <p>{getText("question12Desc1")}</p>
-              </li>
-              <li>
-                <p> {getText("question12Desc2")}</p>
-              </li>
-              <li>
-                <p> {getText("question12Desc3")}</p>
-              </li>
-              <li>
-                <p> {getText("question12Desc4")}</p>
-              </li>
-              <li>
-                <p> {getText("question12Desc5")}</p>
-              </li>
-              <li>
-                <p>{getText("question12Desc6")}</p>
-              </li>
-              <li>
-                <p>{getText("question12Desc7")}</p>
-              </li>
-              {/* <li><p></p></li> */}
+              <p>{getText("question12Desc1")}</p>
+
+              <p> {getText("question12Desc2")}</p>
+
+              <p> {getText("question12Desc3")}</p>
+
+              <p> {getText("question12Desc4")}</p>
+
+              <p> {getText("question12Desc5")}</p>
+
+              <p>{getText("question12Desc6")}</p>
+
+              <p>{getText("question12Desc7")}</p>
+
+              <p>{getText("question12Desc8")}</p>
+
+              <p>{getText("question12Desc9")}</p>
+
+              <p>{getText("question12Desc10")}</p>
+
+              <p>{getText("question12Desc11")}</p>
+
+              <p>{getText("question12Desc12")}</p>
+
+              {/*<p></p></li> */}
             </ul>
           </AccordionPanel>
         </AccordionItem>
@@ -507,11 +530,19 @@ function AccordionUI() {
           </h2>
           <AccordionPanel pb={4} mt={3} color={"#666666"}>
             <p>
-              {getText("question13Desc1")} <br /> <br />
+              {getText("question13Desc1")}
+              <br />
+              <br />
               {getText("question13Desc2")}
               <br />
               <br />
               {getText("question13Desc3")}
+              <br />
+              <br />
+              {getText("question13Desc4")}
+              <br />
+              <br />
+              {getText("question13Desc5")}
             </p>
           </AccordionPanel>
         </AccordionItem>
