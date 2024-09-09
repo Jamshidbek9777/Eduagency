@@ -2079,5 +2079,10 @@ body {
   z-index: 9999999999 !important;
 }
 
-
-
+.gradient-text {
+  background: linear-gradient(to right, #ff7e5f, #feb47b); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  padding: 2px;
+}
