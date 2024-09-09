@@ -29,8 +29,7 @@ function AccordionUI() {
   const [lists, setLists] = useState([]);
   const { selectedLanguage, selectedFlag, changeLanguage } =
     useContext(LanguageContext);
-    const allListData = useListData();
-
+  const allListData = useListData();
 
   const handleTekrarClick = () => {
     const extractedLists = Array.from(document.querySelectorAll("li")).map(
@@ -58,14 +57,133 @@ function AccordionUI() {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4} mt={3} color={"#666666"}>
-            <a
-              href="https://www.studyinturkiye.gov.tr/StudyinTurkey/ShowDetail?rID=r/bj33XIqnc=&&cId=PE4Nr0mMoY4="
-              target="_blank"
-              style={{ color: "blue" }}
-            >
-              Link
-            </a>
-            <p>{getText("question1Desc")}</p>
+            <div style={{color: "#666666"}}>
+              <div>
+                <h5>1. Kaliteli Yükseköğrenim Olanakları</h5>
+
+                <p style={{ marginTop: "20px" }}>
+                  Türkiye, yükseköğretime erişimde %94.2’lik yükseköğretimde
+                  okullaşma oranıyla dünyada ikinci ülke konumundadır. Avrupa
+                  Yükseköğretim Alanına dâhil olan Türkiye, Bologna Sürecini
+                  mükemmel bir şekilde uygulamakta olup; Bologna karnesi 5
+                  üzerinden 5’tir. Yani Türkiye’deki bir üniversiteden aldığınız
+                  diploma tüm Avrupa ülkelerinde tanınmaktadır! Ders kredi
+                  sisteminde Avrupa ile uyumlu olarak AKTS uygulanmakta ve tüm
+                  öğrencilere Diploma Eki verilmektedir. Ayrıca Türkiye,
+                  Erasmus+ kapsamında değişime katılan en başarılı ülkelerden
+                  biridir. Erasmus’un yanı sıra Türkiye’de öğrenci ve öğretim
+                  elemanı hareketliliğini destekleyen Mevlana, Farabi gibi
+                  birçok değişim programı bulunmaktadır.
+                </p>
+              </div>
+              <div style={{ marginTop: "20px" }}>
+                <h5>2. Üniversite ve Program Çeşitliliği</h5>
+                <p style={{ marginTop: "20px" }}>
+                  85 Milyon nüfuslu Türkiye’de 208 üniversite bulunmaktadır.
+                  Öğrenci sayısı 7 milyondan fazladır. Bu öğrenci sayısıyla
+                  Türkiye, Avrupa Yükseköğretim Alanında en fazla öğrencisi
+                  olan, birinci ülkedir. 208 üniversitede 45.000'den fazla
+                  program yer almaktadır. Böylesi bir çeşitlilikte mutlaka
+                  kendinize uygun bir üniversite ve program bulacaksınız.
+                </p>
+              </div>
+              <div style={{ marginTop: "20px" }}> 
+                <h5>3. Çok Kültürlü Yaşam</h5>
+                <p style={{ marginTop: "20px" }}>
+                  Binlerce yıldır topraklarında birçok köklü medeniyete ev
+                  sahipliği yapmış olan Türkiye, adeta bir kültür mozaiğidir!
+                  Sayısız medeniyete ev sahipliği yapmış bu ülkede herkes
+                  birbirine karşı hoşgörülü ve saygılıdır. Kendi köklerinizden
+                  bir parça bulabileceğiniz, belki de dilinizi konuşan
+                  insanlarla tanışabileceğiniz Türkiye, güvenli ve huzurlu
+                  ortamıyla öğrenciler için idealdir.
+                </p>
+              </div>
+              <div style={{ marginTop: "20px" }}>
+                <h5>4. Doğal Güzellikler</h5>
+                <p style={{ marginTop: "20px" }}>
+                  Dört mevsimin yaşandığı Türkiye, doğal güzellikleri ile tüm
+                  dünyada ün salmıştır. Türkiye’nin etrafını çeviren denizlerde
+                  yüzmenin, su sporlarının tadını çıkarabilir; birçok şehirde
+                  bulunan dağlarında kayak yapabilir; nehirlerinde rafting
+                  deneyebilir ve birçok ekstrem sporu yaşayabilirsiniz. Sadece
+                  manzarası ile büyüleyecek sayısız güzelliğe sahip Türkiye’de
+                  cennette gibi hissedeceksiniz!
+                </p>
+              </div>
+              <div style={{ marginTop: "20px" }}>
+                <h5>5. Tarihi ve Kültürel Birikim</h5>
+                <p style={{ marginTop: "20px" }}>
+                  Köklü bir geçmişe dayanan Türkiye’de birçoğu UNESCO Kültür
+                  Mirası olarak korunan binlerce tarihi ve kültürel eser
+                  bulunmaktadır. Günlük yaşantınızda bile sıklıkla
+                  karşılaşabileceğiniz izlerin etkisini sürmek isteyeceksiniz!
+                </p>
+              </div>
+              <div style={{ marginTop: "20px" }}>
+                <h5>6. Öğrenci Dostu</h5>
+                <p style={{ marginTop: "20px" }}>
+                  Her şehrinde en az bir üniversite bulunan Türkiye tam bir
+                  öğrenci dostu ülkedir! Her üniversitede bulunan sosyal
+                  kulüpler, spor takımları, kültürel etkinlikler öğrencileri bir
+                  araya getirmekte; uzak coğrafyaları yakın kılmaktadır.
+                  Türkiye’ye geldiğinizde şehrin en hareketli noktalarının
+                  öğrencilerin sosyalleştiği yerler olduğunu anlayacaksınız!
+                  Öğrencilerin takıldığı kafeler, restoranlar, kütüphaneler
+                  sayesinde şehirler 24 saat yaşamaktadır.
+                </p>
+              </div>
+              <div style={{ marginTop: "20px" }}>
+                <h5>7. Misafirperver Türk Halkı</h5>
+                <p style={{ marginTop: "20px" }}>
+                  Türk halkının misafirperverliği tüm dünyada dillere destan
+                  olmuştur! Bir öğrenci olarak kimden yardım isteseniz size tüm
+                  içtenliği ve güleryüzüyle elinden geleni yapacaktır. Türkler,
+                  sizi misafirleri olarak ağırlayacak ve memnun kalmanız için
+                  birçok ikramda bulunacaktır. Emin olun burada ev özlemi
+                  çekmeyeceksiniz!
+                </p>
+              </div>
+              <div style={{ marginTop: "20px" }}>
+                <h5>8. Çağı Yakalayan Teknolojik Kampüsler</h5>
+                <p style={{ marginTop: "20px" }}>
+                  208 üniversitenin hangisine giderseniz gidin, son teknoloji
+                  ile donatılmış, modern ve elverişli bir kampüs hayatı
+                  yaşayacaksınız.
+                </p>
+              </div>
+              <div style={{ marginTop: "20px" }}>
+                <h5>9. Kolay Yaşam Koşulları</h5>
+                <p style={{ marginTop: "20px" }}>
+                  Türkiye’de yaşam birçok ülkeye göre daha uygundur. Konaklama,
+                  yeme-içme, eğlence gibi ihtiyaçlarınızı karşılanabilir bir
+                  düzeyde giderebilirsiniz. Üniversite kampüslerinin içlerinde
+                  veya yakınlarında yer alan yurtlarda kalabilir ya da makul bir
+                  kira ödeyerek ev tutabilirsiniz. Ayrıca bir öğrenci olarak
+                  hangi ulaşım aracını seçerseniz seçin, indirimli fiyattan
+                  bilet alırsınız veya sinemada izlemek istediğiniz filmi daha
+                  ucuza izlersiniz. <br />
+                  <br />
+                  Ayrıca Türkiye, Asya ve Avrupa kıtalarının ortasında olması
+                  nedeniyle ulaşması kolay bir ülkedir. Gezilecek sayısız yere
+                  ev sahipliği yapan Türkiye’yi keşfetmek için hangi ulaşım
+                  yolunu seçerseniz seçin, varmak istediğiniz yere hızlı ve
+                  konforlu bir şekilde varabilirsiniz.
+                </p>
+              </div>
+              <div style={{ marginTop: "20px" }}>
+                <h5>10. Türkçe Öğrenme Olanağı</h5>
+                <p style={{ marginTop: "20px" }}>
+                  Türkiye’deki üniversitelerin birçok programının İngilizce
+                  olmasının yanı sıra, Dünyada en çok konuşulan 5. dil olan
+                  Türkçeyi de öğrenebilirsiniz! Üniversitenizin size sunacağı
+                  Türkçe kurslarında hem yeni bir dili öğrenme şansını
+                  yakalayabilir hem de birçok farklı kültürden gelen kişilerle
+                  arkadaş olabilirsiniz.
+                </p>
+              </div>
+            </div>
+            {/* <p>{getText("question1Desc")}</p> */}
           </AccordionPanel>
         </AccordionItem>
 
