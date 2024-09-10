@@ -66,7 +66,7 @@ function AccordionUI() {
                   <p style={{ marginTop: "20px" }}>
                     {getText("question1DescP1")}
                   </p>
-                  <div>
+                  <div className="firstAccordionImgDiv">
                     <img src="/img/testt.png" alt="" />
                   </div>
                 </div>
@@ -76,7 +76,7 @@ function AccordionUI() {
                   {getText("question1DescTitle2")}
                 </h5>
                 <div className="accordionP_and_Img">
-                  <div>
+                  <div className="firstAccordionImgDiv">
                     <img src="/img/testt.png" alt="" />
                   </div>
                   <p style={{ marginTop: "20px" }}>
@@ -92,7 +92,7 @@ function AccordionUI() {
                   <p style={{ marginTop: "20px" }}>
                     {getText("question1DescP3")}
                   </p>
-                  <div>
+                  <div className="firstAccordionImgDiv">
                     <img src="/img/testt.png" alt="" />
                   </div>
                 </div>
@@ -102,7 +102,7 @@ function AccordionUI() {
                   {getText("question1DescTitle4")}
                 </h5>
                 <div className="accordionP_and_Img">
-                  <div>
+                  <div className="firstAccordionImgDiv">
                     <img src="/img/testt.png" alt="" />
                   </div>
                   <p style={{ marginTop: "20px" }}>
@@ -118,7 +118,7 @@ function AccordionUI() {
                   <p style={{ marginTop: "20px" }}>
                     {getText("question1DescP5")}
                   </p>
-                  <div>
+                  <div className="firstAccordionImgDiv">
                     <img src="/img/testt.png" alt="" />
                   </div>
                 </div>
@@ -128,7 +128,7 @@ function AccordionUI() {
                   {getText("question1DescTitle6")}
                 </h5>
                 <div className="accordionP_and_Img">
-                  <div>
+                  <div className="firstAccordionImgDiv">
                     <img src="/img/testt.png" alt="" />
                   </div>
                   <p style={{ marginTop: "20px" }}>
@@ -144,7 +144,7 @@ function AccordionUI() {
                   <p style={{ marginTop: "20px" }}>
                     {getText("question1DescP7")}
                   </p>
-                  <div>
+                  <div className="firstAccordionImgDiv">
                     <img src="/img/testt.png" alt="" />
                   </div>
                 </div>
@@ -154,7 +154,7 @@ function AccordionUI() {
                   {getText("question1DescTitle8")}
                 </h5>
                 <div className="accordionP_and_Img">
-                  <div>
+                  <div className="firstAccordionImgDiv">
                     <img src="/img/testt.png" alt="" />
                   </div>
                   <p style={{ marginTop: "20px" }}>
@@ -173,7 +173,7 @@ function AccordionUI() {
                     <br />
                     {getText("question1DescP92")}
                   </p>
-                  <div>
+                  <div className="firstAccordionImgDiv">
                     <img src="/img/testt.png" alt="" />
                   </div>
                 </div>
@@ -183,7 +183,7 @@ function AccordionUI() {
                   {getText("question1DescTitle10")}
                 </h5>
                 <div className="accordionP_and_Img">
-                  <div>
+                  <div className="firstAccordionImgDiv">
                     <img src="/img/testt.png" alt="" />
                   </div>
                   <p style={{ marginTop: "20px" }}>
