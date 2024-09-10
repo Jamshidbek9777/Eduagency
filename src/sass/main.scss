@@ -2030,7 +2030,7 @@ body {
   li {
     font-size: 22px;
     color: #666666;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
   }
   p {
     margin-bottom: 20px;
@@ -2043,9 +2043,13 @@ body {
     }
   }
   ul {
-    li {
-      list-style: decimal;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 20px;
+    // li {
+    //   list-style: decimal;
+    // }
   }
 }
 .accerdionHeading {
@@ -2104,7 +2108,7 @@ body {
   }
 
   .gradient-text {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
     background: linear-gradient(209.98deg, #80a9ff 13.39%, #0556ff 86.59%);
     -webkit-background-clip: text;

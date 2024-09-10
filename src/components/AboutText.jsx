@@ -18,11 +18,11 @@ function AboutText() {
           <p>{getText("AboutPageTextP4")}</p>
         </div>
 
-        <h4>{getText("AboutPageTextUlFirst")}</h4>
+        <h4 style={{fontSize: "1.85rem"}}>{getText("AboutPageTextUlFirst")}</h4>
         <p>{getText("AboutPageTextUlDesc")}</p>
 
         <h3>{getText("AboutPageTextUlHeading")}</h3>
-        <ul style={{ marginTop: "20px" }}>
+        <ul style={{ marginTop: "20px", padding: "0" }}>
           <li>
             <p style={{ display: "flex", alignItems: "center", gap: "5px" }}>
               {getText("AboutPageTextUlp1")}{" "}
