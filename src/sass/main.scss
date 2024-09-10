@@ -2031,6 +2031,10 @@ body {
     font-size: 22px;
     color: #666666;
     // margin-bottom: 20px;
+    @media screen and (max-width: 768px) {
+      font-size: 17px;
+    }
+    
   }
   p {
     margin-bottom: 20px;
@@ -2040,6 +2044,10 @@ body {
     span {
       font-weight: 700;
       color: #666;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
     }
   }
   ul {
@@ -2100,11 +2108,11 @@ body {
   }
 
   @media screen and (max-width: 768px) {
-      .firstAccordionImgDiv{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+    .firstAccordionImgDiv {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   .gradient-text {
