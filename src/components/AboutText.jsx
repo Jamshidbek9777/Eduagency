@@ -24,31 +24,58 @@ function AboutText() {
         <h3>{getText("AboutPageTextUlHeading")}</h3>
         <ul style={{ marginTop: "20px" }}>
           <li>
-            <span>{getText("AboutPageTextUlp1")}</span>
+            <p style={{ display: "flex", alignItems: "center", gap: "5px" }}>
+              {getText("AboutPageTextUlp1")}{" "}
+              <img src="/img/check.png" alt="" style={{ width: "25px" }} />
+            </p>
           </li>
           <li>
-            <p>{getText("AboutPageTextUlp2")}</p>
+            <p style={{ display: "flex", alignItems: "center", gap: "5px" }}>
+              {getText("AboutPageTextUlp2")}{" "}
+              <img src="/img/check.png" alt="" style={{ width: "25px" }} />
+            </p>
           </li>
           <li>
-            <p>{getText("AboutPageTextUlp3")}</p>
+            <p style={{ display: "flex", alignItems: "center", gap: "5px" }}>
+              {getText("AboutPageTextUlp3")}{" "}
+              <img src="/img/check.png" alt="" style={{ width: "25px" }} />
+            </p>
           </li>
           <li>
-            <p>{getText("AboutPageTextUlp4")}</p>
+            <p style={{ display: "flex", alignItems: "center", gap: "5px" }}>
+              {getText("AboutPageTextUlp4")}{" "}
+              <img src="/img/check.png" alt="" style={{ width: "25px" }} />
+            </p>
           </li>
           <li>
-            <p>{getText("AboutPageTextUlp5")}</p>
+            <p style={{ display: "flex", alignItems: "center", gap: "5px" }}>
+              {getText("AboutPageTextUlp5")}{" "}
+              <img src="/img/check.png" alt="" style={{ width: "25px" }} />
+            </p>
           </li>
           <li>
-            <p>{getText("AboutPageTextUlp6")}</p>
+            <p style={{ display: "flex", alignItems: "center", gap: "5px" }}>
+              {getText("AboutPageTextUlp6")}{" "}
+              <img src="/img/check.png" alt="" style={{ width: "25px" }} />
+            </p>
           </li>
           <li>
-            <p>{getText("AboutPageTextUlp7")}</p>
+            <p style={{ display: "flex", alignItems: "center", gap: "5px" }}>
+              {getText("AboutPageTextUlp7")}{" "}
+              <img src="/img/check.png" alt="" style={{ width: "25px" }} />
+            </p>
           </li>
           <li>
-            <p>{getText("AboutPageTextUlp8")}</p>
+            <p style={{ display: "flex", alignItems: "center", gap: "5px" }}>
+              {getText("AboutPageTextUlp8")}{" "}
+              <img src="/img/check.png" alt="" style={{ width: "25px" }} />
+            </p>
           </li>
           <li>
-            <p>{getText("AboutPageTextUlp9")}</p>
+            <p style={{ display: "flex", alignItems: "center", gap: "5px" }}>
+              {getText("AboutPageTextUlp9")}{" "}
+              <img src="/img/check.png" alt="" style={{ width: "25px" }} />
+            </p>
           </li>
         </ul>
       </div>

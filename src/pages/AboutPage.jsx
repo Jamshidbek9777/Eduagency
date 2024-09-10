@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useContext, useEffect } from "react";
 import "../sass/about.scss";
 import Partners from "../components/Partners";
