@@ -58,137 +58,147 @@ function AccordionUI() {
           </h2>
           <AccordionPanel pb={4} mt={3} color={"#666666"}>
             <div style={{ color: "#666666" }}>
-              <div>
+              <div style={{display: "flex", alignItems: "center", gap: "5px"}}>
                 <h5 className="gradient-text">
                   {getText("question1DescTitle1")}
                 </h5>
+                <img src="/img/check.png" alt="" style={{ width: "25px", marginBottom: "5px" }} />
                 <div className="accordionP_and_Img">
-                  <p style={{ marginTop: "20px" }}>
+                  {/* <p style={{ marginTop: "20px" }}>
                     {getText("question1DescP1")}
-                  </p>
-                  <div className="firstAccordionImgDiv">
+                  </p> */}
+                  {/* <div className="firstAccordionImgDiv">
                     <img src="/img/testt.png" alt="" />
-                  </div>
+                  </div> */}
                 </div>
               </div>
-              <div style={{ marginTop: "20px" }}>
+              <div style={{display: "flex", alignItems: "center", gap: "5px"}}>
                 <h5 className="gradient-text">
                   {getText("question1DescTitle2")}
                 </h5>
+                <img src="/img/check.png" alt="" style={{ width: "25px", marginBottom: "5px" }} />
                 <div className="accordionP_and_Img">
-                  <div className="firstAccordionImgDiv">
+                  {/* <div className="firstAccordionImgDiv">
                     <img src="/img/testt.png" alt="" />
-                  </div>
-                  <p style={{ marginTop: "20px" }}>
+                  </div> */}
+                  {/* <p style={{ marginTop: "20px" }}>
                     {getText("question1DescP2")}
-                  </p>
+                  </p> */}
                 </div>
               </div>
-              <div style={{ marginTop: "20px" }}>
+              <div style={{display: "flex", alignItems: "center", gap: "5px"}}>
                 <h5 className="gradient-text">
                   {getText("question1DescTitle3")}
                 </h5>
+                <img src="/img/check.png" alt="" style={{ width: "25px", marginBottom: "5px" }} />
                 <div className="accordionP_and_Img">
-                  <p style={{ marginTop: "20px" }}>
+                  {/* <p style={{ marginTop: "20px" }}>
                     {getText("question1DescP3")}
-                  </p>
-                  <div className="firstAccordionImgDiv">
+                  </p> */}
+                  {/* <div className="firstAccordionImgDiv">
                     <img src="/img/testt.png" alt="" />
-                  </div>
+                  </div> */}
                 </div>
               </div>
-              <div style={{ marginTop: "20px" }}>
+              <div style={{display: "flex", alignItems: "center", gap: "5px"}}>
                 <h5 className="gradient-text">
                   {getText("question1DescTitle4")}
                 </h5>
+                <img src="/img/check.png" alt="" style={{ width: "25px", marginBottom: "5px" }} />
                 <div className="accordionP_and_Img">
-                  <div className="firstAccordionImgDiv">
+                  {/* <div className="firstAccordionImgDiv">
                     <img src="/img/testt.png" alt="" />
-                  </div>
-                  <p style={{ marginTop: "20px" }}>
+                  </div> */}
+                  {/* <p style={{ marginTop: "20px" }}>
                     {getText("question1DescP4")}
-                  </p>
+                  </p> */}
                 </div>
               </div>
-              <div style={{ marginTop: "20px" }}>
+              <div style={{display: "flex", alignItems: "center", gap: "5px"}}>
                 <h5 className="gradient-text">
                   {getText("question1DescTitle5")}
                 </h5>
+                <img src="/img/check.png" alt="" style={{ width: "25px", marginBottom: "5px" }} />
                 <div className="accordionP_and_Img">
-                  <p style={{ marginTop: "20px" }}>
+                  {/* <p style={{ marginTop: "20px" }}>
                     {getText("question1DescP5")}
-                  </p>
-                  <div className="firstAccordionImgDiv">
+                  </p> */}
+                  {/* <div className="firstAccordionImgDiv">
                     <img src="/img/testt.png" alt="" />
-                  </div>
+                  </div> */}
                 </div>
               </div>
-              <div style={{ marginTop: "20px" }}>
+              <div style={{display: "flex", alignItems: "center", gap: "5px"}}>
                 <h5 className="gradient-text">
                   {getText("question1DescTitle6")}
                 </h5>
+                <img src="/img/check.png" alt="" style={{ width: "25px", marginBottom: "5px" }} />
                 <div className="accordionP_and_Img">
-                  <div className="firstAccordionImgDiv">
+                  {/* <div className="firstAccordionImgDiv">
                     <img src="/img/testt.png" alt="" />
-                  </div>
-                  <p style={{ marginTop: "20px" }}>
+                  </div> */}
+                  {/* <p style={{ marginTop: "20px" }}>
                     {getText("question1DescP6")}
-                  </p>
+                  </p> */}
                 </div>
               </div>
-              <div style={{ marginTop: "20px" }}>
+              <div style={{display: "flex", alignItems: "center", gap: "5px"}}>
                 <h5 className="gradient-text">
                   {getText("question1DescTitle7")}
                 </h5>
+                <img src="/img/check.png" alt="" style={{ width: "25px", marginBottom: "5px" }} />
                 <div className="accordionP_and_Img">
-                  <p style={{ marginTop: "20px" }}>
+                  {/* <p style={{ marginTop: "20px" }}>
                     {getText("question1DescP7")}
-                  </p>
-                  <div className="firstAccordionImgDiv">
+                  </p> */}
+                  {/* <div className="firstAccordionImgDiv">
                     <img src="/img/testt.png" alt="" />
-                  </div>
+                  </div> */}
                 </div>
               </div>
-              <div style={{ marginTop: "20px" }}>
+              <div style={{display: "flex", alignItems: "center", gap: "5px"}}>
                 <h5 className="gradient-text">
                   {getText("question1DescTitle8")}
                 </h5>
+                <img src="/img/check.png" alt="" style={{ width: "25px", marginBottom: "5px" }} />
                 <div className="accordionP_and_Img">
-                  <div className="firstAccordionImgDiv">
+                  {/* <div className="firstAccordionImgDiv">
                     <img src="/img/testt.png" alt="" />
-                  </div>
-                  <p style={{ marginTop: "20px" }}>
+                  </div> */}
+                  {/* <p style={{ marginTop: "20px" }}>
                     {getText("question1DescP8")}
-                  </p>
+                  </p> */}
                 </div>
               </div>
-              <div style={{ marginTop: "20px" }}>
+              <div style={{display: "flex", alignItems: "center", gap: "5px"}}>
                 <h5 className="gradient-text">
                   {getText("question1DescTitle9")}
                 </h5>
+                <img src="/img/check.png" alt="" style={{ width: "25px", marginBottom: "5px" }} />
                 <div className="accordionP_and_Img">
-                  <p style={{ marginTop: "20px" }}>
+                  {/* <p style={{ marginTop: "20px" }}>
                     {getText("question1DescP91")}
                     <br />
                     <br />
                     {getText("question1DescP92")}
-                  </p>
-                  <div className="firstAccordionImgDiv">
+                  </p> */}
+                  {/* <div className="firstAccordionImgDiv">
                     <img src="/img/testt.png" alt="" />
-                  </div>
+                  </div> */}
                 </div>
               </div>
-              <div style={{ marginTop: "20px" }}>
+              <div style={{display: "flex", alignItems: "center", gap: "5px"}}>
                 <h5 className="gradient-text">
                   {getText("question1DescTitle10")}
                 </h5>
+                <img src="/img/check.png" alt="" style={{ width: "25px", marginBottom: "5px" }} />
                 <div className="accordionP_and_Img">
-                  <div className="firstAccordionImgDiv">
+                  {/* <div className="firstAccordionImgDiv">
                     <img src="/img/testt.png" alt="" />
-                  </div>
-                  <p style={{ marginTop: "20px" }}>
+                  </div> */}
+                  {/* <p style={{ marginTop: "20px" }}>
                     {getText("question1DescP10")}
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
