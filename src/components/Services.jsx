@@ -86,25 +86,27 @@ const Services = () => {
                 </div>
               </div>
             </Link>
-            {/* <div className="item d-flex align-items-center">
-              <div className="imgAndInfo">
-                <div className="img">
-                  <img src="img/service4.png" alt="" />
+            <Link to={"/turkiye-dili"}>
+              <div className="item d-flex align-items-center">
+                <div className="imgAndInfo">
+                  <div className="img">
+                    <img src="img/service4.png" alt="" />
+                  </div>
+                  <div className="info">
+                    <h3>{getText("headerSwiperTitle4")}</h3>
+                    <p>{getText("headerSwiperParagraph4")}</p>
+                  </div>
                 </div>
-                <div className="info">
-                  <h3>{getText("headerSwiperTitle4")}</h3>
-                  <p>{getText("headerSwiperParagraph4")}</p>
+                <div className="icon">
+                  <i>
+                    <FontAwesomeIcon
+                      className="fa-gradient"
+                      icon={faArrowRight}
+                    />
+                  </i>
                 </div>
               </div>
-              <div className="icon">
-                <i>
-                  <FontAwesomeIcon
-                    className="fa-gradient"
-                    icon={faArrowRight}
-                  />
-                </i>
-              </div>
-            </div> */}
+            </Link>
           </div>
 
           {/* <ServiceBlog /> */}

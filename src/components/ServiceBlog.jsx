@@ -86,7 +86,7 @@ function ServiceBlog() {
               </div>
             </Link>
 
-            {/* <Link to={"/turkiye-ofisi"}>
+            <Link to={"/turkiye-dili"}>
               <div className="item d-flex align-items-center">
                 <div className="imgAndInfo">
                   <div className="img">
@@ -106,7 +106,7 @@ function ServiceBlog() {
                   </i>
                 </div>
               </div>
-            </Link> */}
+            </Link>
           </div>
         </div>
 

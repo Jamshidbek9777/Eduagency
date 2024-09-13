@@ -23,6 +23,7 @@ import Services from "./components/Services.jsx";
 import ServicesLinksIn from "./pages/ServicesLinksIn.jsx";
 import { LanguageProvider } from "./context/LanguageContext.jsx";
 import Question from "./pages/Question.jsx";
+import TurkiyeDili from "./pages/AcademicTour.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -37,7 +38,7 @@ root.render(
           <Route path="/application" exact element={<Application />} />
           <Route path="/student-transfer" exact element={<StudentTransfer />} />
           <Route path="/expert-transfer" exact element={<ExpertTransfer />} />
-          <Route path="/turkiye-ofisi" exact element={<AcademicTour />} />
+          <Route path="/turkiye-dili" exact element={<TurkiyeDili />} />
           <Route
             path="/university-community"
             exact

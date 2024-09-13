@@ -4,7 +4,7 @@ import { getText } from "../locales";
 import { LanguageContext } from "../context/LanguageContext";
 import Getintouch from "../components/Getintouch";
 
-const AcademicTour = () => {
+const TurkiyeDili = () => {
   const { selectedLanguage, selectedFlag, changeLanguage } =
     useContext(LanguageContext);
 
@@ -15,7 +15,7 @@ const AcademicTour = () => {
   return (
     <>
       <div className="service-pages">
-        <div className="description container">
+        {/* <div className="description container">
           <h1>{getText("TurkeyOfisHeading")}</h1>
           <p>{getText("TurkeyOfisParagrf")}</p>
           <p>{getText("TurkeyOfisParagrf2")}</p>
@@ -44,7 +44,8 @@ const AcademicTour = () => {
             {getText("TurkeyOfis6")}
           </p>
           <p>{getText("TurkeyOfisEndTitle")}</p>
-        </div>
+        </div> */}
+        <h1 style={{display: "flex", justifyContent: "center", marginTop: "200px"}}>Soon...</h1>
       </div>
       <div>
         <Getintouch />
@@ -53,4 +54,4 @@ const AcademicTour = () => {
   );
 };
 
-export default AcademicTour;
+export default TurkiyeDili;

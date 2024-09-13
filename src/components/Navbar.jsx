@@ -187,18 +187,18 @@ const Navbar = () => {
                         {getText("headerSwiperTitle3")}
                       </Link>
                     </li>
-                    {/* <li onClick={() => handleLinkClick("/turkiye-ofisi")}>
+                    <li onClick={() => handleLinkClick("/turkiye-dili")}>
                       <Link
-                        to="/turkiye-ofisi"
+                        to="/turkiye-dili"
                         className={`${
-                          location.pathname === "/turkiye-ofisi"
+                          location.pathname === "/turkiye-dili"
                             ? "active-link"
                             : ""
                         }`}
                       >
                         {getText("headerSwiperTitle4")}
                       </Link>
-                    </li> */}
+                    </li>
                   </motion.ul>
                 </li>
                 <li onClick={() => handleLinkClick("/question")}>
