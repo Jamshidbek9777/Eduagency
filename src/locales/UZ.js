@@ -127,16 +127,17 @@ export const uz = {
     TurkeyDiliHeading: "Turk Tili Xizmatlari",
     TurkeyDiliParagrf2: "Turk Tili bo‘yicha 3 xil xizmat ko‘rsatamiz:",
     TurkeyDiliSpan1: "1-Suhbat Kursi:",
-    TurkeyDili1: "Kurs: Ushbu kurs Turkiyada sayohat qilib ko‘rishni istaydigan yoki Turkiyada universitetda o‘qishni xohlovchilar uchun turk tilini o‘rganmoqchi bo‘lganlar uchun.",
+    TurkeyDili1: "Ushbu kurs xizmatlari turk tilini o‘rganmoqchi bo‘lganlar, Turkiyaga sayohat qilib ko‘rishni istaydiganlar va Turkiyada universitetda o‘qishni xohlovchilar uchun.",
     TurkeyDiliSpan2: "2-Sertifikat Kursi:",
-    TurkeyDili2: "Ushbu kurs Turkiyada universitetda o‘qishni yoki O‘zbekistonda magistratura qilishni istaganlar uchun bo‘lib, A1-A2-B1-B2-C1 darajalarini qamrab oladi.",
+    TurkeyDili2: "Ushbu kurs Turkiyada universitetda o‘qishni yoki O‘zbekistonda magistratura qilishni istaganlar uchun bo‘lib, A1-A2-B1-B2-C1 darajalarini qamrab oladi. Sertifikat kurslari TYS, TÖMER va Milliy Sertifikat imtihonlariga tayyorgarlikni ham o‘z ichiga oladi.",
     TurkeyDiliSpan3: "3-Ish’da Turkcha:",
     TurkeyDili3: "Ushbu kurslar tijorat maqsadlarida turk tilini o‘rganmoqchi bo‘lgan maxsus guruhlar va firmalar uchun. Kurs guruhga maxsus ravishda ishlab chiqilib, taqdim etiladi.",
     TurkeyDiliEndFourListTitle: "Yo‘nalishlar:",
     TurkeyDiliList1: "Turizm Turkchasi",
-    TurkeyDiliList2: "Sog‘liq Turizm Turkchasi",
+    TurkeyDiliList2: "Salomatlik Turizm Turkchasi",
     TurkeyDiliList3: "Savdo va Marketing Turkchasi",
     TurkeyDiliList4: "Akademik Ta'lim Turkchasi",
+
 
 
     contactsLocationHeading: "Biz bilan bog'lanish",
