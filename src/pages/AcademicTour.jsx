@@ -15,37 +15,38 @@ const TurkiyeDili = () => {
   return (
     <>
       <div className="service-pages">
-        {/* <div className="description container">
-          <h1>{getText("TurkeyOfisHeading")}</h1>
-          <p>{getText("TurkeyOfisParagrf")}</p>
-          <p>{getText("TurkeyOfisParagrf2")}</p>
+        <div className="description container">
+          <h1>{getText("TurkeyDiliHeading")}</h1>
+          <p>{getText("TurkeyDiliParagrf2")}</p>
           <p>
-            <span> {getText("TurkeyOfisSpan1")} </span>
-            {getText("TurkeyOfis1")}
+            <span> {getText("TurkeyDiliSpan1")} </span>
+            {getText("TurkeyDili1")}
           </p>
           <p>
-            <span> {getText("TurkeyOfisSpan2")} </span>
-            {getText("TurkeyOfis2")}
+            <span> {getText("TurkeyDiliSpan2")} </span>
+            {getText("TurkeyDili2")}
           </p>
           <p>
-            <span> {getText("TurkeyOfisSpan3")} </span>
-            {getText("TurkeyOfis3")}
+            <span> {getText("TurkeyDiliSpan3")} </span>
+            {getText("TurkeyDili3")}
           </p>
-          <p>
-            <span> {getText("TurkeyOfisSpan4")} </span>
-            {getText("TurkeyOfis4")}
-          </p>
-          <p>
-            <span> {getText("TurkeyOfisSpan5")} </span>
-            {getText("TurkeyOfis5")}
-          </p>
-          <p>
-            <span> {getText("TurkeyOfisSpan6")} </span>
-            {getText("TurkeyOfis6")}
-          </p>
-          <p>{getText("TurkeyOfisEndTitle")}</p>
-        </div> */}
-        <h1 style={{display: "flex", justifyContent: "center", marginTop: "200px"}}>Soon...</h1>
+          <h4>{getText("TurkeyDiliEndFourListTitle")}</h4>
+          <ul style={{ marginTop: "10px" }}>
+            <li>
+              <p>{getText("TurkeyDiliList1")}</p>
+            </li>
+            <li>
+              <p>{getText("TurkeyDiliList2")}</p>
+            </li>
+            <li>
+              <p>{getText("TurkeyDiliList3")}</p>
+            </li>
+            <li>
+              <p>{getText("TurkeyDiliList4")}</p>
+            </li>
+          </ul>
+        </div>
+        {/* <h1 style={{display: "flex", justifyContent: "center", marginTop: "200px"}}>Soon...</h1> */}
       </div>
       <div>
         <Getintouch />
