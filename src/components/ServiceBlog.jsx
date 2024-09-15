@@ -29,25 +29,6 @@ function ServiceBlog() {
       <div className="services" id="services">
         <div className="container">
           <div className="service-blogs">
-            <Link to={"/application"}>
-              <div className="item d-flex align-items-center">
-                <div className="imgAndInfo">
-                  <div className="img">
-                    <img src="img/service1.png" alt="" />
-                  </div>
-                  <div className="info">
-                    <h3>{getText("headerSwiperTitle1")}</h3>
-                    <p>{getText("headerSwiperParagraph1")}</p>
-                  </div>
-                </div>
-                <div className="icon">
-                  <i>
-                    <FontAwesomeIcon icon={faArrowRight} />
-                  </i>
-                </div>
-              </div>
-            </Link>
-
             <Link to={"/student-transfer"}>
               <div className="item d-flex align-items-center">
                 <div className="imgAndInfo">
@@ -57,25 +38,6 @@ function ServiceBlog() {
                   <div className="info">
                     <h3>{getText("headerSwiperTitle2")}</h3>
                     <p>{getText("headerSwiperParagraph2")}</p>
-                  </div>
-                </div>
-                <div className="icon">
-                  <i>
-                    <FontAwesomeIcon icon={faArrowRight} />
-                  </i>
-                </div>
-              </div>
-            </Link>
-
-            <Link to={"/expert-transfer"}>
-              <div className="item d-flex align-items-center">
-                <div className="imgAndInfo">
-                  <div className="img">
-                    <img src="img/service3.png" alt="" />
-                  </div>
-                  <div className="info">
-                    <h3>{getText("headerSwiperTitle3")}</h3>
-                    <p>{getText("headerSwiperParagraph3")}</p>
                   </div>
                 </div>
                 <div className="icon">
@@ -103,6 +65,42 @@ function ServiceBlog() {
                       className="fa-gradient"
                       icon={faArrowRight}
                     />
+                  </i>
+                </div>
+              </div>
+            </Link>
+            <Link to={"/application"}>
+              <div className="item d-flex align-items-center">
+                <div className="imgAndInfo">
+                  <div className="img">
+                    <img src="img/service1.png" alt="" />
+                  </div>
+                  <div className="info">
+                    <h3>{getText("headerSwiperTitle1")}</h3>
+                    <p>{getText("headerSwiperParagraph1")}</p>
+                  </div>
+                </div>
+                <div className="icon">
+                  <i>
+                    <FontAwesomeIcon icon={faArrowRight} />
+                  </i>
+                </div>
+              </div>
+            </Link>
+            <Link to={"/expert-transfer"}>
+              <div className="item d-flex align-items-center">
+                <div className="imgAndInfo">
+                  <div className="img">
+                    <img src="img/service3.png" alt="" />
+                  </div>
+                  <div className="info">
+                    <h3>{getText("headerSwiperTitle3")}</h3>
+                    <p>{getText("headerSwiperParagraph3")}</p>
+                  </div>
+                </div>
+                <div className="icon">
+                  <i>
+                    <FontAwesomeIcon icon={faArrowRight} />
                   </i>
                 </div>
               </div>

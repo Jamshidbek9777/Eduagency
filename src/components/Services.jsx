@@ -32,24 +32,6 @@ const Services = () => {
       <div className="services" id="services" style={{ marginTop: "150px" }}>
         <div className="container">
           <div className="service-blogs">
-            <Link to={"/application"}>
-              <div className="item d-flex align-items-center">
-                <div className="imgAndInfo">
-                  <div className="img">
-                    <img src="img/service1.png" alt="" />
-                  </div>
-                  <div className="info">
-                    <h3>{getText("headerSwiperTitle1")}</h3>
-                    <p>{getText("headerSwiperParagraph1")}</p>
-                  </div>
-                </div>
-                <div className="icon">
-                  <i>
-                    <FontAwesomeIcon icon={faArrowRight} />
-                  </i>
-                </div>
-              </div>
-            </Link>
             <Link to={"/student-transfer"}>
               <div className="item d-flex align-items-center">
                 <div className="imgAndInfo">
@@ -59,6 +41,46 @@ const Services = () => {
                   <div className="info">
                     <h3>{getText("headerSwiperTitle2")}</h3>
                     <p>{getText("headerSwiperParagraph2")}</p>
+                  </div>
+                </div>
+                <div className="icon">
+                  <i>
+                    <FontAwesomeIcon icon={faArrowRight} />
+                  </i>
+                </div>
+              </div>
+            </Link>
+
+            <Link to={"/turkiye-dili"}>
+              <div className="item d-flex align-items-center">
+                <div className="imgAndInfo">
+                  <div className="img">
+                    <img src="img/service4.png" alt="" />
+                  </div>
+                  <div className="info">
+                    <h3>{getText("headerSwiperTitle4")}</h3>
+                    <p>{getText("headerSwiperParagraph4")}</p>
+                  </div>
+                </div>
+                <div className="icon">
+                  <i>
+                    <FontAwesomeIcon
+                      className="fa-gradient"
+                      icon={faArrowRight}
+                    />
+                  </i>
+                </div>
+              </div>
+            </Link>
+            <Link to={"/application"}>
+              <div className="item d-flex align-items-center">
+                <div className="imgAndInfo">
+                  <div className="img">
+                    <img src="img/service1.png" alt="" />
+                  </div>
+                  <div className="info">
+                    <h3>{getText("headerSwiperTitle1")}</h3>
+                    <p>{getText("headerSwiperParagraph1")}</p>
                   </div>
                 </div>
                 <div className="icon">
@@ -82,27 +104,6 @@ const Services = () => {
                 <div className="icon">
                   <i>
                     <FontAwesomeIcon icon={faArrowRight} />
-                  </i>
-                </div>
-              </div>
-            </Link>
-            <Link to={"/turkiye-dili"}>
-              <div className="item d-flex align-items-center">
-                <div className="imgAndInfo">
-                  <div className="img">
-                    <img src="img/service4.png" alt="" />
-                  </div>
-                  <div className="info">
-                    <h3>{getText("headerSwiperTitle4")}</h3>
-                    <p>{getText("headerSwiperParagraph4")}</p>
-                  </div>
-                </div>
-                <div className="icon">
-                  <i>
-                    <FontAwesomeIcon
-                      className="fa-gradient"
-                      icon={faArrowRight}
-                    />
                   </i>
                 </div>
               </div>
