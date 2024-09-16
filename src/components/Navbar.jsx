@@ -113,9 +113,8 @@ const Navbar = () => {
                 <li onClick={() => handleLinkClick("/")}>
                   <Link
                     to="/"
-                    className={`${
-                      location.pathname === "/" ? "active-link" : ""
-                    }`}
+                    className={`${location.pathname === "/" ? "active-link" : ""
+                      }`}
                   >
                     {getText("home")}
                   </Link>
@@ -123,9 +122,8 @@ const Navbar = () => {
                 <li onClick={() => handleLinkClick("/about")}>
                   <Link
                     to="/about"
-                    className={`${
-                      location.pathname === "/about" ? "active-link" : ""
-                    }`}
+                    className={`${location.pathname === "/about" ? "active-link" : ""
+                      }`}
                   >
                     {getText("aboutUs")}
                   </Link>
@@ -136,9 +134,8 @@ const Navbar = () => {
                 >
                   <Link
                     to="/services"
-                    className={`${
-                      location.pathname === "/services" ? "active-link" : ""
-                    }`}
+                    className={`${location.pathname === "/services" ? "active-link" : ""
+                      }`}
                   >
                     {getText("services")}
                   </Link>
@@ -151,62 +148,59 @@ const Navbar = () => {
                     transition={{ duration: 0.3 }}
                     className={`dropdown-menu ${isDropdownOpen ? "show" : ""}`}
                   >
-                    <li onClick={() => handleLinkClick("/application")}>
-                      <Link
-                        to="/application"
-                        className={`${
-                          location.pathname === "/application"
-                            ? "active-link"
-                            : ""
-                        }`}
-                      >
-                        {getText("headerSwiperTitle1")}
-                      </Link>
-                    </li>
                     <li onClick={() => handleLinkClick("/student-transfer")}>
                       <Link
                         to="/student-transfer"
-                        className={`${
-                          location.pathname === "/student-transfer"
+                        className={`${location.pathname === "/student-transfer"
                             ? "active-link"
                             : ""
-                        }`}
+                          }`}
                       >
                         {getText("headerSwiperTitle2")}
-                      </Link>
-                    </li>
-                    <li onClick={() => handleLinkClick("/expert-transfer")}>
-                      <Link
-                        to="/expert-transfer"
-                        className={`${
-                          location.pathname === "/expert-transfer"
-                            ? "active-link"
-                            : ""
-                        }`}
-                      >
-                        {getText("headerSwiperTitle3")}
                       </Link>
                     </li>
                     <li onClick={() => handleLinkClick("/turkiye-dili")}>
                       <Link
                         to="/turkiye-dili"
-                        className={`${
-                          location.pathname === "/turkiye-dili"
+                        className={`${location.pathname === "/turkiye-dili"
                             ? "active-link"
                             : ""
-                        }`}
+                          }`}
                       >
                         {getText("headerSwiperTitle4")}
                       </Link>
                     </li>
+                    <li onClick={() => handleLinkClick("/application")}>
+                      <Link
+                        to="/application"
+                        className={`${location.pathname === "/application"
+                            ? "active-link"
+                            : ""
+                          }`}
+                      >
+                        {getText("headerSwiperTitle1")}
+                      </Link>
+                    </li>
+
+                    <li onClick={() => handleLinkClick("/expert-transfer")}>
+                      <Link
+                        to="/expert-transfer"
+                        className={`${location.pathname === "/expert-transfer"
+                            ? "active-link"
+                            : ""
+                          }`}
+                      >
+                        {getText("headerSwiperTitle3")}
+                      </Link>
+                    </li>
+
                   </motion.ul>
                 </li>
                 <li onClick={() => handleLinkClick("/question")}>
                   <Link
                     to="/question"
-                    className={`${
-                      location.pathname === "/question" ? "active-link" : ""
-                    }`}
+                    className={`${location.pathname === "/question" ? "active-link" : ""
+                      }`}
                   >
                     {getText("question")}
                   </Link>
@@ -214,9 +208,8 @@ const Navbar = () => {
                 <li onClick={() => handleLinkClick("/contacts")}>
                   <Link
                     to="/contacts"
-                    className={`${
-                      location.pathname === "/contacts" ? "active-link" : ""
-                    }`}
+                    className={`${location.pathname === "/contacts" ? "active-link" : ""
+                      }`}
                   >
                     {getText("contacts")}
                   </Link>
