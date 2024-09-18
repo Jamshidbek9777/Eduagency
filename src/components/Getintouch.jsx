@@ -16,6 +16,7 @@ const Getintouch = () => {
 
   const TOKEN = "6595677829:AAGkeV8LwYLNGNjsu8xus7o6gkFkOhvp1sQ";
   const USERID = "-1002173244569";
+  const USER2ID = "-1002148619946";
 
   const encodeText = (text) => encodeURIComponent(text);
 
@@ -23,13 +24,17 @@ const Getintouch = () => {
     e.preventDefault();
     setIsLoading(true);
 
-    const text = `Name: ${name}\nMessage: ${description}\nPhone number: ${phone}\nEmail: ${
-      email.length === 0 ? "Email is empty" : email
-    }\n Services: ${service}`;
+    const text = `Name: ${name}\nMessage: ${description}\nPhone number: ${phone}\nEmail: ${email.length === 0 ? "Email is empty" : email
+      }\n Services: ${service}`;
 
     try {
       await axios.post(
         `https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=${USERID}&text=${encodeText(
+          text
+        )}`
+      );
+      await axios.post(
+        `https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=${USER2ID}&text=${encodeText(
           text
         )}`
       );
@@ -92,7 +97,7 @@ const Getintouch = () => {
                     className="form-control"
                     name="phone"
                     required
-                    mask="+999 (99) 999-99-99" 
+                    mask="+999 (99) 999-99-99"
                     type="text"
                   />
                 </div>
