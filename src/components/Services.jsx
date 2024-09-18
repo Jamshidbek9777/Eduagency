@@ -1,34 +1,27 @@
 /* eslint-disable no-unused-vars */
-import React, { useContext, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useContext } from "react";
+import { useNavigate, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import Swiper from "../components/Swipper";
-import Partners from "./Partners";
-import TwoPartners from "./TwoPartners";
 import Getintouch from "./Getintouch";
-import ServiceMobile from "./ServiceMobile";
-import ServiceBlog from "./ServiceBlog";
 import { getText } from "../locales";
-import { Link } from "react-router-dom";
 import { LanguageContext } from "../context/LanguageContext";
+import Helmet from "../components/Helmet";
 
 const Services = () => {
   const navigate = useNavigate();
-
-  // const handleNavigate = () => {
-  //   navigate("/services/in");
-  // };
-
   const { selectedLanguage, selectedFlag, changeLanguage } =
     useContext(LanguageContext);
 
-  // useEffect(() => {
-  //   console.log("-------");
-  // }, [changeLanguage]);
-
   return (
     <>
+      <Helmet
+        title={getText("ServicesPageTitle") || "Our Services"}
+        description={getText("ServicesPageDesc") || "Explore our range of services to assist you."}
+        link="/services"
+        keywords="services, education, consulting, university"
+      />
+
       <div className="services" id="services" style={{ marginTop: "150px" }}>
         <div className="container">
           <div className="service-blogs">
@@ -64,14 +57,12 @@ const Services = () => {
                 </div>
                 <div className="icon">
                   <i>
-                    <FontAwesomeIcon
-                      className="fa-gradient"
-                      icon={faArrowRight}
-                    />
+                    <FontAwesomeIcon className="fa-gradient" icon={faArrowRight} />
                   </i>
                 </div>
               </div>
             </Link>
+
             <Link to={"/application"}>
               <div className="item d-flex align-items-center">
                 <div className="imgAndInfo">
@@ -90,6 +81,7 @@ const Services = () => {
                 </div>
               </div>
             </Link>
+
             <Link to={"/expert-transfer"}>
               <div className="item d-flex align-items-center">
                 <div className="imgAndInfo">
@@ -110,7 +102,6 @@ const Services = () => {
             </Link>
           </div>
 
-          {/* <ServiceBlog /> */}
         </div>
 
         <div style={{ marginTop: "120px" }}>

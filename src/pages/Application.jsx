@@ -1,19 +1,26 @@
 /* eslint-disable no-unused-vars */
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
+import Helmet from "react-helmet"; // Import Helmet
 import { getText } from "../locales";
 import { LanguageContext } from "../context/LanguageContext";
 import Getintouch from "../components/Getintouch";
 
 const Application = () => {
-  const { selectedLanguage, selectedFlag, changeLanguage } =
-    useContext(LanguageContext);
+  const { selectedLanguage } = useContext(LanguageContext);
 
-  // useEffect(() => {
-  //   console.log("-------");
-  // }, [changeLanguage]);
+  const metaDescription = "EduAgency offers comprehensive assistance for students navigating the application process for educational institutions in Turkey and Uzbekistan. From document preparation to personalized consultancy, we guide you through every step of your academic journey.";
+
+  const metaKeywords = "application assistance, education consultancy, Turkey education, Uzbekistan education, YTB scholarships, TYS exam consultancy, student guidance, document preparation, academic consulting";
 
   return (
     <>
+      <Helmet>
+        <title>{getText("headerSwiperTitle1")} | EduAgency</title>
+        <meta name="description" content={metaDescription} />
+        <meta name="keywords" content={metaKeywords} />
+        <link rel="canonical" href="https://yourwebsite.com/application" />
+      </Helmet>
+
       <div className="service-pages">
         <div className="description container">
           <h1>{getText("headerSwiperTitle1")}</h1>
@@ -32,31 +39,29 @@ const Application = () => {
               <li>
                 <p>{getText("ApplicationYardamDesc4")}</p>
               </li>
-              {/* <li>
+              {/* Uncomment if needed
+              <li>
                 <p>{getText("ApplicationYardamDesc5")}</p>
               </li>
               <li>
                 <p>{getText("ApplicationYardamDesc6")}</p>
-              </li> */}
+              </li>
+              */}
             </ul>
           </div>
           <h2>{getText("ApplicationProceduresBosqich")}</h2>
           <ul>
             <li style={{ marginTop: "20px" }}>
               <span> {getText("ApplicationProceduresSpanDesc1")} </span>
-              {/* {getText("ApplicationProceduresDesc1")} */}
             </li>
             <li>
               <span> {getText("ApplicationProceduresSpanDesc2")} </span>
-              {/* {getText("ApplicationProceduresDesc2")} */}
             </li>
             <li>
               <span> {getText("ApplicationProceduresSpanDesc3")} </span>
-              {/* {getText("ApplicationProceduresDesc3")} */}
             </li>
             <li>
               <span> {getText("ApplicationProceduresSpanDesc4")} </span>
-              {/* {getText("ApplicationProceduresDesc4")} */}
             </li>
           </ul>
         </div>

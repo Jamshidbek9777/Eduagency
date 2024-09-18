@@ -1,8 +1,18 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
+import Helmet from "../components/Helmet"; 
 
 const UniversityCom = () => {
   return (
     <div className="service-pages">
+      <Helmet
+        title="Üniversiteler Arası İş Birliği Danışmanlığı"
+        description="Türkiye-Özbekistan Eğitim İş Birliği Ajansı'nın üniversiteler arası iş birliği danışmanlığı hizmetleri hakkında bilgi."
+        link="/university-community"
+        keywords="üniversiteler, iş birliği, danışmanlık, Türkiye, Özbekistan"
+      />
+
       <div className="description container">
         <h1>Üniversiteler Arası İş Birliği Danışmanlığı</h1>
 

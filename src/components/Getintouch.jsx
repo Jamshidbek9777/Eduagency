@@ -68,7 +68,7 @@ const Getintouch = () => {
             <div className="img">
               <img
                 className="w-100 img-getInTouch"
-                src="img/getintouch.png"
+                src="/img/getintouch.png"
                 alt="Contact Us"
               />
             </div>

@@ -49,6 +49,7 @@ export const tr = {
     ApplicationProceduresSpanDesc2: "Başvuru Belgelerinin Hazırlanması",
     // ApplicationProceduresDesc2: " EduAgency, öğrencilerin gerekli belgeleri toplamasına ve başvuru formlarını eksiksiz doldurmasına destek sağlar. Bu belgeler arasında transkriptler, dil yeterlilik belgeleri, referans mektupları ve diğer gerekli dokümanlar bulunur.",
     ApplicationProceduresSpanDesc3: "Başvuru Takibi ve İletişim",
+    ApplicationProceduresSpanDesc4: "Yerleştirme ve Uyum",
     // ApplicationProceUrkTransferSpanDesc1: "1. Bilgilendirme ve Danışmanlık:",
     StudentTransferDesc1: " Öğrenciler, EduAgency uzman danışmanlarından Türkiye ve Özbekistan'daki eğitim kurumları hakkında ayrıntılı bilgi alabilirler. Danışmanlar, öğrencilerin akademik geçmişlerine ve hedeflerine uygun eğitim programlarını belirlemelerine yardımcı olur.",
     StudentTransferSpanDesc2: "2. Başvuru Belgelerinin Hazırlanması:",

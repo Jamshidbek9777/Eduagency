@@ -1,33 +1,40 @@
 /* eslint-disable no-unused-vars */
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
+import Helmet from "../components/Helmet";
 import { getText } from "../locales";
 import { LanguageContext } from "../context/LanguageContext";
 import Getintouch from "../components/Getintouch";
 
 const TurkiyeDili = () => {
-  const { selectedLanguage, selectedFlag, changeLanguage } =
-    useContext(LanguageContext);
+  const { selectedLanguage } = useContext(LanguageContext);
 
-  // useEffect(() => {
-  //   console.log("-------");
-  // }, [changeLanguage]);
+  const metaDescription = "Türk Dili kursları ile Türkçe öğrenin! EduAgency, Türkiye'de üniversite okumak, seyahat etmek veya ticari amaçlarla Türkçe dil eğitimi sunmaktadır. A1'den C1'e kadar sertifika kursları mevcuttur.";
+
+  const metaKeywords = "Türkçe, Türk dili kursları, Türkçe eğitim, Türkiye, A1, B2, C1, sertifika kursları, konuşma kursu, iş Türkçesi, sağlık turizmi Türkçesi";
 
   return (
     <>
+      <Helmet
+        title={getText("TurkeyDiliHeading")}
+        description={metaDescription}
+        link="/turkiye-dili"
+        keywords={metaKeywords}
+      />
+
       <div className="service-pages">
         <div className="description container">
           <h1>{getText("TurkeyDiliHeading")}</h1>
           <p>{getText("TurkeyDiliParagrf2")}</p>
           <p>
-            <span> {getText("TurkeyDiliSpan1")} </span>
+            <span>{getText("TurkeyDiliSpan1")}</span>
             {getText("TurkeyDili1")}
           </p>
           <p>
-            <span> {getText("TurkeyDiliSpan2")} </span>
+            <span>{getText("TurkeyDiliSpan2")}</span>
             {getText("TurkeyDili2")}
           </p>
           <p>
-            <span> {getText("TurkeyDiliSpan3")} </span>
+            <span>{getText("TurkeyDiliSpan3")}</span>
             {getText("TurkeyDili3")}
           </p>
           <h4>{getText("TurkeyDiliEndFourListTitle")}</h4>
@@ -46,7 +53,6 @@ const TurkiyeDili = () => {
             </li>
           </ul>
         </div>
-        {/* <h1 style={{display: "flex", justifyContent: "center", marginTop: "200px"}}>Soon...</h1> */}
       </div>
       <div>
         <Getintouch />
