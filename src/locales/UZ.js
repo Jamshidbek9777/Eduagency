@@ -82,7 +82,7 @@ export const uz = {
     getAdviceSelectOption3: "Ekspert transferi",
     getAdviceSelectOption4: "Turkiya xalqaro idorasi",
     getAdviceLinkText: "Yuborish tugmasini bosish orqali siz shaxsiy maʼlumotlarni qayta ishlash shartlariga rozilik bildirasiz.",
-    getAdviceButton: "Yuborish uchun",
+    getAdviceButton: "Yuborish",
 
     ApplicationYardamTitle: "Quyidagi masalalar bo'yicha bizdan yordam olishingiz mumkin:",
     ApplicationYardamDesc1: "Ekvivalent operatsiyalar",

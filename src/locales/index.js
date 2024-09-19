@@ -4,7 +4,7 @@ import { tr } from "./TR";
 import { LANGUAGE } from "../tools/constants";
 
 export const flagImages = {
-    uz: "/img/uzbekistán.png",
+    uz: "/img/uzb.png",
     en: "/img/usa.png",
     tr: "/img/tr.png",
 };
@@ -16,9 +16,9 @@ export const getLanguage = () => {
 
 export const getText = (word) => {
     const language = getLanguage();
-    return language === "uz"
-        ? uz[word]
-        : language === "en"
-        ? en[word]
-        : tr[word];
+    return language === "uz" ?
+        uz[word] :
+        language === "en" ?
+        en[word] :
+        tr[word];
 };

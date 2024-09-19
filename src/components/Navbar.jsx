@@ -286,7 +286,7 @@ const Navbar = () => {
                     val: "tr",
                   },
                   {
-                    img: "/img/uzbekistán.png",
+                    img: "/img/uzb.png",
                     text: "O'zbek",
                     val: "uz",
                   },
