@@ -44,20 +44,20 @@ const Services = () => {
               </div>
             </Link>
 
-            <Link to={"/turkiye-dili"}>
+            <Link to={"/expert-transfer"}>
               <div className="item d-flex align-items-center">
                 <div className="imgAndInfo">
                   <div className="img">
-                    <img src="img/service4.png" alt="" />
+                    <img src="img/service3.png" alt="" />
                   </div>
                   <div className="info">
-                    <h3>{getText("headerSwiperTitle4")}</h3>
-                    <p>{getText("headerSwiperParagraph4")}</p>
+                    <h3>{getText("headerSwiperTitle3")}</h3>
+                    <p>{getText("headerSwiperParagraph3")}</p>
                   </div>
                 </div>
                 <div className="icon">
                   <i>
-                    <FontAwesomeIcon className="fa-gradient" icon={faArrowRight} />
+                    <FontAwesomeIcon icon={faArrowRight} />
                   </i>
                 </div>
               </div>
@@ -82,24 +82,29 @@ const Services = () => {
               </div>
             </Link>
 
-            <Link to={"/expert-transfer"}>
+            <Link to={"/turkiye-dili"}>
               <div className="item d-flex align-items-center">
                 <div className="imgAndInfo">
                   <div className="img">
-                    <img src="img/service3.png" alt="" />
+                    <img src="img/service4.png" alt="" />
                   </div>
                   <div className="info">
-                    <h3>{getText("headerSwiperTitle3")}</h3>
-                    <p>{getText("headerSwiperParagraph3")}</p>
+                    <h3>{getText("headerSwiperTitle4")}</h3>
+                    <p>{getText("headerSwiperParagraph4")}</p>
                   </div>
                 </div>
                 <div className="icon">
                   <i>
-                    <FontAwesomeIcon icon={faArrowRight} />
+                    <FontAwesomeIcon
+                      className="fa-gradient"
+                      icon={faArrowRight}
+                    />
                   </i>
                 </div>
               </div>
             </Link>
+
+
           </div>
 
         </div>

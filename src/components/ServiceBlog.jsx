@@ -48,6 +48,44 @@ function ServiceBlog() {
               </div>
             </Link>
 
+            <Link to={"/expert-transfer"}>
+              <div className="item d-flex align-items-center">
+                <div className="imgAndInfo">
+                  <div className="img">
+                    <img src="img/service3.png" alt="" />
+                  </div>
+                  <div className="info">
+                    <h3>{getText("headerSwiperTitle3")}</h3>
+                    <p>{getText("headerSwiperParagraph3")}</p>
+                  </div>
+                </div>
+                <div className="icon">
+                  <i>
+                    <FontAwesomeIcon icon={faArrowRight} />
+                  </i>
+                </div>
+              </div>
+            </Link>
+
+            <Link to={"/application"}>
+              <div className="item d-flex align-items-center">
+                <div className="imgAndInfo">
+                  <div className="img">
+                    <img src="img/service1.png" alt="" />
+                  </div>
+                  <div className="info">
+                    <h3>{getText("headerSwiperTitle1")}</h3>
+                    <p>{getText("headerSwiperParagraph1")}</p>
+                  </div>
+                </div>
+                <div className="icon">
+                  <i>
+                    <FontAwesomeIcon icon={faArrowRight} />
+                  </i>
+                </div>
+              </div>
+            </Link>
+
             <Link to={"/turkiye-dili"}>
               <div className="item d-flex align-items-center">
                 <div className="imgAndInfo">
@@ -69,42 +107,8 @@ function ServiceBlog() {
                 </div>
               </div>
             </Link>
-            <Link to={"/application"}>
-              <div className="item d-flex align-items-center">
-                <div className="imgAndInfo">
-                  <div className="img">
-                    <img src="img/service1.png" alt="" />
-                  </div>
-                  <div className="info">
-                    <h3>{getText("headerSwiperTitle1")}</h3>
-                    <p>{getText("headerSwiperParagraph1")}</p>
-                  </div>
-                </div>
-                <div className="icon">
-                  <i>
-                    <FontAwesomeIcon icon={faArrowRight} />
-                  </i>
-                </div>
-              </div>
-            </Link>
-            <Link to={"/expert-transfer"}>
-              <div className="item d-flex align-items-center">
-                <div className="imgAndInfo">
-                  <div className="img">
-                    <img src="img/service3.png" alt="" />
-                  </div>
-                  <div className="info">
-                    <h3>{getText("headerSwiperTitle3")}</h3>
-                    <p>{getText("headerSwiperParagraph3")}</p>
-                  </div>
-                </div>
-                <div className="icon">
-                  <i>
-                    <FontAwesomeIcon icon={faArrowRight} />
-                  </i>
-                </div>
-              </div>
-            </Link>
+
+
           </div>
         </div>
 

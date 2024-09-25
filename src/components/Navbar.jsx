@@ -159,15 +159,15 @@ const Navbar = () => {
                         {getText("headerSwiperTitle2")}
                       </Link>
                     </li>
-                    <li onClick={() => handleLinkClick("/turkiye-dili")}>
+                    <li onClick={() => handleLinkClick("/expert-transfer")}>
                       <Link
-                        to="/turkiye-dili"
-                        className={`${location.pathname === "/turkiye-dili"
+                        to="/expert-transfer"
+                        className={`${location.pathname === "/expert-transfer"
                             ? "active-link"
                             : ""
                           }`}
                       >
-                        {getText("headerSwiperTitle4")}
+                        {getText("headerSwiperTitle3")}
                       </Link>
                     </li>
                     <li onClick={() => handleLinkClick("/application")}>
@@ -182,17 +182,19 @@ const Navbar = () => {
                       </Link>
                     </li>
 
-                    <li onClick={() => handleLinkClick("/expert-transfer")}>
+                    <li onClick={() => handleLinkClick("/turkiye-dili")}>
                       <Link
-                        to="/expert-transfer"
-                        className={`${location.pathname === "/expert-transfer"
+                        to="/turkiye-dili"
+                        className={`${location.pathname === "/turkiye-dili"
                             ? "active-link"
                             : ""
                           }`}
                       >
-                        {getText("headerSwiperTitle3")}
+                        {getText("headerSwiperTitle4")}
                       </Link>
                     </li>
+                  
+                   
 
                   </motion.ul>
                 </li>
