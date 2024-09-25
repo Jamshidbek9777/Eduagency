@@ -55,7 +55,7 @@ export const uz = {
     headerSwiperTitle1: "Ariza berish tartiblari",
     headerSwiperTitle2: "Talaba transferi",
     headerSwiperTitle3: "Ta'lim Ekspert Transferi",
-    headerSwiperTitle4: "Turk tili xizmatlari",
+    headerSwiperTitle4: "Tashkilot xizmatlari",
     headerSwiperTitle5: "Universitetlararo hamkorlik bo'yicha maslahat",
     headerSwiperParagraph1: "Agentlik Turkiya va Oʻzbekistondagi taʼlim muassasalariga ariza topshirish jarayonini osonlashtirish uchun har tomonlama yordam koʻrsatadi. U talabalar va akademiklarga kerakli hujjatlarni to'plash, ariza shakllarini to'ldirish va jarayon bo'yicha maslahat olishda yordam beradi.",
     headerSwiperParagraph2: "Ta'lim agentligi Turkiya va O'zbekiston o'rtasida talabalarni ko'chirishni osonlashtirish uchun ishlaydi. Bu talabalarga tegishli ta'lim muassasalariga joylashtirish, kredit o'tkazish va moslashish jarayonlarida yordam beradi.",
