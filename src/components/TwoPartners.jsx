@@ -54,21 +54,6 @@ const TwoPartners = () => {
         <SwiperSlide>
           <img className="swiperSlider-img" src="img/part5.png" alt="" />
         </SwiperSlide>
-        {/* <SwiperSlide>
-          <img className="swiperSlider-img" src="img/part6.png" alt="" />
-        </SwiperSlide> */}
-        {/* <SwiperSlide>
-          <img className="swiperSlider-img" src="img/part7.png" alt="" />
-        </SwiperSlide> */}
-        {/* <SwiperSlide>
-          <img className="swiperSlider-img" src="img/part8.png" alt="" />
-        </SwiperSlide> */}
-        {/* <SwiperSlide>
-          <img className="swiperSlider-img" src="img/part9.png" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img className="swiperSlider-img" src="img/part10.png" alt="" />
-        </SwiperSlide> */}
         <SwiperSlide>
           <img className="swiperSlider-img" src="img/part12.png" alt="" />
         </SwiperSlide>
