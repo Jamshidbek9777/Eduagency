@@ -25,12 +25,8 @@ const TurkiyeDili = () => {
         <div className="description container">
           <h1>{getText("TurkeyDiliHeading")}</h1>
           <p>{getText("TurkeyDiliParagrf2")}</p>
-          <p>
-            <ul>
-              <li><p>{getText("TurkeyDiliSpan1")}</p></li>
-              <li><p>{getText("TurkeyDiliSpan12")}</p></li>
-            </ul>
-          </p>
+            <p style={{marginLeft: "15px"}}>{getText("TurkeyDiliSpan1")}</p>
+            <p style={{marginLeft: "15px"}}>{getText("TurkeyDiliSpan12")}</p>
           <p>
             <span>{getText("TurkeyDiliSpan2")}</span>
             {/* {getText("TurkeyDili2")} */}

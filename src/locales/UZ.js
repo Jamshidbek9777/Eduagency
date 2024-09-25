@@ -126,8 +126,8 @@ export const uz = {
 
     TurkeyDiliHeading: "Tashkilot xizmatlari",
     TurkeyDiliParagrf2: "1-Akademik sayohat tashkiloti",
-    TurkeyDiliSpan1: "Kosmos lageri sayohati",
-    TurkeyDiliSpan12: "Akademik yoz maktabi",
+    TurkeyDiliSpan1: "a. Kosmos lageri sayohati",
+    TurkeyDiliSpan12: "b. Akademik yoz maktabi",
     TurkeyDiliSpan2: "2-Konferensiya tashkiloti",
     TurkeyDiliSpan3: "3-Imtihon tashkiloti",
     TurkeyDiliEndFourListTitle: "Soha:",

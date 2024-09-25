@@ -75,8 +75,8 @@ export const tr = {
 
     TurkeyDiliHeading: "Organizasyon Hizmetleri",
     TurkeyDiliParagrf2: "1-Akademik Tur organizasyonu",
-    TurkeyDiliSpan1: "Uzay kampı seyahati",
-    TurkeyDiliSpan12: "Akademik Yaz Okulu",
+    TurkeyDiliSpan1: "a. Uzay kampı seyahati",
+    TurkeyDiliSpan12: "b. Akademik Yaz Okulu",
     TurkeyDiliSpan2: "2-Konferans Organizasyonu",
     // TurkeyDili2: "Bu kurs Türkiye’de Üniversite okumak veya Özbekistanda yüksek lisans yapmak isteyenler için olup A1-A2-B1-B2-C1 seviyelerini kapsamaktadır . Sertifika Kursları TYS ,TÖMER ve Milli Sertifikat imtihanlarına hazırlığı kapsar .",
     TurkeyDiliSpan3: "3-Sınav Organizasyonu",
