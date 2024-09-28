@@ -201,11 +201,7 @@ const ContactsLocation = () => {
           </div>
         </div>
         <div className="map">
-          <iframe
-            className="w-100"
-            title="Location"
-            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d537.2113744837891!2d71.79764787400728!3d40.38832276118418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDDCsDIzJzE3LjkiTiA3McKwNDcnNTIuMyJF!5e0!3m2!1sru!2s!4v1702739578826!5m2!1sru!2s"
-          ></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3812529f762a9f8d8589c2b07ad701044924dd730b6d1839d5c4e8cae02fbc8e&amp;source=constructor" width="500" height="400" frameBorder="0"></iframe>
         </div>
       </div>
     </div>
