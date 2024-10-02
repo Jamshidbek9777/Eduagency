@@ -9,6 +9,7 @@ export const tr = {
     headerSwiperTitle2: "Öğrenci Transferi",
     headerSwiperTitle3: "Eğitim Uzmanı Transferi",
     headerSwiperTitle4: "Organizasyon Hizmetleri",
+    headerSwiperTitle5: "Türk Dili Hizmetleri",
     headerSwiperParagraph1: "EduAgency, Türkiye ve Özbekistan'daki eğitim kurumlarına başvuru sürecini kolaylaştırmak için kapsamlı destek sağlar. Öğrencilerin ve akademisyenlerin gerekli belgeleri toplama, başvuru formlarını doldurma ve süreçle ilgili danışmanlık alma konularında rehberlik eder.",
     headerSwiperParagraph2: "Eğitim ajansı, Türkiye ve Özbekistan arasındaki öğrenci transferlerini kolaylaştırmak için çalışır. Öğrencilerin uygun eğitim kurumlarına yerleştirilmesi, kredi transferleri ve adaptasyon süreçleri konusunda yardımcı olur.",
     headerSwiperParagraph3: "EduAgency, iki ülke arasındaki akademik ve uzman personel değişimini destekler. Uzman transferi programları sayesinde, akademisyenler ve uzmanlar bilgi ve deneyimlerini paylaşarak eğitim kalitesini artırırlar.",
@@ -87,6 +88,10 @@ export const tr = {
     TurkeyDiliList2: "Sağlık Turizm Türkçesi",
     TurkeyDiliList3: "Satış ve Pazarlama Türkçesi ",
     TurkeyDiliList4: "Akademik Eğitim Türkçesi",
+
+
+    OrganizationP1: "1-Akademik Tur- Uzay kampı Seyahati",
+    OrganizationP2: "2-Sınav Organizasyonu",
 
     AboutPageTitle: "Önceliklerimiz hakkında",
     AboutPageDesc: "EduAgency, Türkiye ve Özbekistan'daki üniversiteler arasında iş birliği fırsatlarını artırmak için danışmanlık hizmetleri sunar. Ortak projeler, müfredat geliştirme ve akademik değişim programları gibi konularda rehberlik eder.",

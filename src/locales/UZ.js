@@ -56,7 +56,7 @@ export const uz = {
     headerSwiperTitle2: "Talaba transferi",
     headerSwiperTitle3: "Ta'lim Ekspert Transferi",
     headerSwiperTitle4: "Tashkilot xizmatlari",
-    headerSwiperTitle5: "Universitetlararo hamkorlik bo'yicha maslahat",
+    headerSwiperTitle5: "Turk tili xizmatlari",
     headerSwiperParagraph1: "Agentlik Turkiya va Oʻzbekistondagi taʼlim muassasalariga ariza topshirish jarayonini osonlashtirish uchun har tomonlama yordam koʻrsatadi. U talabalar va akademiklarga kerakli hujjatlarni to'plash, ariza shakllarini to'ldirish va jarayon bo'yicha maslahat olishda yordam beradi.",
     headerSwiperParagraph2: "Ta'lim agentligi Turkiya va O'zbekiston o'rtasida talabalarni ko'chirishni osonlashtirish uchun ishlaydi. Bu talabalarga tegishli ta'lim muassasalariga joylashtirish, kredit o'tkazish va moslashish jarayonlarida yordam beradi.",
     headerSwiperParagraph3: "Agentlik ikki davlat o‘rtasida ilmiy va ekspert kadrlar almashinuvini qo‘llab-quvvatlaydi. Ekspert transfer dasturlari tufayli akademiklar va mutaxassislar o'z bilim va tajribalarini almashish orqali ta'lim sifatini oshiradilar.",
@@ -135,6 +135,9 @@ export const uz = {
     TurkeyDiliList2: "Sog'liq turizm turkchasi",
     TurkeyDiliList3: "Savdo va marketing turkchasi",
     TurkeyDiliList4: "Akademik ta'lim turkchasi",
+
+    OrganizationP1: "1-Akademik sayohat- Kosmik lagerga sayohat",
+    OrganizationP2: "2-Imtihonni tashkil etish",
 
     contactsLocationHeading: "Biz bilan bog'lanish",
     contactsLocationNumber: "Telefon raqami",

@@ -24,6 +24,7 @@ import ServicesLinksIn from "./pages/ServicesLinksIn.jsx";
 import { LanguageProvider } from "./context/LanguageContext.jsx";
 import Question from "./pages/Question.jsx";
 import TurkiyeDili from "./pages/AcademicTour.jsx";
+import OrganizatsionServices from "./pages/OrganizatsionServices.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -39,6 +40,7 @@ root.render(
           <Route path="/student-transfer" exact element={<StudentTransfer />} />
           <Route path="/expert-transfer" exact element={<ExpertTransfer />} />
           <Route path="/turkiye-dili" exact element={<TurkiyeDili />} />
+          <Route path="/organization-services" exact element={<OrganizatsionServices />} />
           <Route
             path="/university-community"
             exact

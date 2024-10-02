@@ -152,8 +152,8 @@ const Navbar = () => {
                       <Link
                         to="/student-transfer"
                         className={`${location.pathname === "/student-transfer"
-                            ? "active-link"
-                            : ""
+                          ? "active-link"
+                          : ""
                           }`}
                       >
                         {getText("headerSwiperTitle2")}
@@ -163,8 +163,8 @@ const Navbar = () => {
                       <Link
                         to="/expert-transfer"
                         className={`${location.pathname === "/expert-transfer"
-                            ? "active-link"
-                            : ""
+                          ? "active-link"
+                          : ""
                           }`}
                       >
                         {getText("headerSwiperTitle3")}
@@ -174,8 +174,8 @@ const Navbar = () => {
                       <Link
                         to="/application"
                         className={`${location.pathname === "/application"
-                            ? "active-link"
-                            : ""
+                          ? "active-link"
+                          : ""
                           }`}
                       >
                         {getText("headerSwiperTitle1")}
@@ -186,15 +186,27 @@ const Navbar = () => {
                       <Link
                         to="/turkiye-dili"
                         className={`${location.pathname === "/turkiye-dili"
-                            ? "active-link"
-                            : ""
+                          ? "active-link"
+                          : ""
+                          }`}
+                      >
+                        {getText("headerSwiperTitle5")}
+                      </Link>
+                    </li>
+                    <li onClick={() => handleLinkClick("/organization-services")}>
+                      <Link
+                        to="/organization-services"
+                        className={`${location.pathname === "/organization-services"
+                          ? "active-link"
+                          : ""
                           }`}
                       >
                         {getText("headerSwiperTitle4")}
+                    
                       </Link>
                     </li>
-                  
-                   
+
+
 
                   </motion.ul>
                 </li>
