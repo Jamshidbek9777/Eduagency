@@ -15,8 +15,6 @@ function TurkiyeBurslari() {
         <div>
             <div className="container" style={{ paddingTop: "150px" }}>
                 <p style={{fontSize: "18px"}}>Türkiye Bursları, Türkiye Cumhuriyeti’nin uluslararası öğrencilere yönelik yürütmekte olduğu, kamu kaynaklı yükseköğrenim burs programıdır. Türkiye Bursları’nın öncelikli amacı, dünya genelindeki başarılı öğrencilere fırsat eşitliği sağlayarak uluslararası standartlarda burslu eğitim almalarını sağlamaktır. Bununla birlikte, Türkiye ile diğer ülkeler arasındaki karşılıklı iş birliğinin geliştirmesi ve akademiden sanata, ekonomiden edebiyata, teknolojiden mimariye kadar pek çok alanda bölgesel ve küresel kalkınmaya katkı sağlanması amaçlanmaktadır.
-                    Türkiye’nin sağladığı yükseköğrenim burs programları 2012 yılında “Türkiye Bursları” adıyla markalaşmış ve çalışmalar Yurtdışı Türkler ve Akraba Topluluklar Başkanlığı’nın (YTB) koordinasyonunda yürütülmeye başlanmıştır.
-                    Türkiye Bursları, ülkeler arasındaki sosyal, kültürel, politik ve ekonomik bağları genişletme ve geliştirme vizyonuyla uluslararası öğrencilere Türkiye'nin en prestijli üniversitelerinde eğitim ve burs imkânı sağlamayı amaçlamaktadır.
                     Türkiye Bursları, 2012 yılında 42 bin civarında başvuru alırken, 2024 yılında 170 ülkeden 121.830 başvuruya ulaşarak yıllar boyunca başvuru sayısında hızlı bir artış yaşamıştır. Türkiye Bursları kapsamında her yıl yaklaşık 5.000 uluslararası öğrenciye burs verilmektedir. Türkiye Bursları Programından yararlanıp halihazırda eğitimine devam eden yaklaşık 15.000 bursiyer vardır.</p>
                 <Accordion allowToggle style={{ paddingTop: "40px" }}>
                     {/* 1. Accordion Item - TÜRKİYE BURSLARI */}
