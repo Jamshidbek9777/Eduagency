@@ -124,6 +124,8 @@ export const tr = {
     AboutPageTextUlp8: "Takip anlayışı",
     AboutPageTextUlp9: "Takım çalışması",
 
+
+
     question1Title: "1.⁠Türkiyede okumanın avantajları nelerdir?",
     question2Title: "2.⁠Özbekler Türkiye’de hangi şartlarda  okuyabilirler ?",
     question3Title: "3.⁠Türkiyenin en iyi üniversiteleri hangileridir?",

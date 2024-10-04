@@ -251,14 +251,14 @@ body {
                         font-weight: 500;
                         line-height: 26px;
                         &:hover {
-                            background: linear-gradient( 209.98deg, #80a9ff 13.39%, #0556ff 86.59%);
+                            background: linear-gradient(209.98deg, #80a9ff 13.39%, #0556ff 86.59%);
                             color: #fff;
                         }
                         @media (min-width: 1536px) {
                             padding: 16px 32px 16px 32px !important;
                         }
                         &.active-link {
-                            background: linear-gradient( 209.98deg, #80a9ff 13.39%, #0556ff 86.59%);
+                            background: linear-gradient(209.98deg, #80a9ff 13.39%, #0556ff 86.59%);
                             color: #fff;
                         }
                     }
@@ -347,7 +347,7 @@ body {
                         border-radius: 66px;
                         width: 100%;
                         &:hover {
-                            background: linear-gradient( 209.98deg, #80a9ff 13.39%, #0556ff 86.59%);
+                            background: linear-gradient(209.98deg, #80a9ff 13.39%, #0556ff 86.59%);
                             color: #fff;
                             width: 100%;
                         }
@@ -397,7 +397,7 @@ body {
                         border: 1px solid rgba(5, 86, 255, 0.1);
                         width: 100%;
                         &:hover {
-                            background: linear-gradient( 209.98deg, #80a9ff 13.39%, #0556ff 86.59%);
+                            background: linear-gradient(209.98deg, #80a9ff 13.39%, #0556ff 86.59%);
                             color: #fff;
                             width: 100%;
                         }
@@ -902,7 +902,7 @@ body {
                             transform: scale(1.2);
                         }
                         h3 {
-                            background: -webkit-linear-gradient( 209.98deg, #80a9ff 13.39%, #0556ff 86.59%);
+                            background: -webkit-linear-gradient(209.98deg, #80a9ff 13.39%, #0556ff 86.59%);
                             background-clip: text;
                             -webkit-text-fill-color: transparent;
                             transform: translate(0);
@@ -912,7 +912,7 @@ body {
                             opacity: 1;
                         }
                         .icon {
-                            background: linear-gradient( 209.98deg, #80a9ff 13.39%, #0556ff 86.59%);
+                            background: linear-gradient(209.98deg, #80a9ff 13.39%, #0556ff 86.59%);
                             svg {
                                 color: #fff;
                             }
@@ -1345,7 +1345,7 @@ body {
         z-index: 30;
         position: relative;
         border-radius: 60px 60px 0px 0px;
-        background: var( --Gradient, linear-gradient(180deg, #80a9ff 13.39%, #0556ff 86.59%));
+        background: var(--Gradient, linear-gradient(180deg, #80a9ff 13.39%, #0556ff 86.59%));
         &-top {
             // padding: 80px 0;
             border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -1478,7 +1478,7 @@ body {
             color: #272626;
         }
         span {
-            color: #0556FF;
+            color: #0556ff;
             font-size: 20px;
         }
         li {
@@ -1829,3 +1829,40 @@ body {
     text-decoration: none;
     transition: color 0.3s ease, border-color 0.3s ease;
 }
+
+// .turkiye-burslari {
+//     h4 {
+//         color: #2c3e50;
+//         font-size: 24px;
+//         margin-top: 20px;
+//         border-bottom: 2px solid #3498db6f;
+//         padding-bottom: 5px;
+//         ul {
+//             margin-left: 20px;
+//         }
+//     }
+//     p {
+//         color: #555;
+//         font-size: 17px;
+//         line-height: 1.6;
+//         ul {
+//             margin-left: 20px;
+//         }
+//     }
+//     ul {
+//         margin-top: 10px;
+//         margin-bottom: 20px;
+//         list-style: circle;
+//         li {
+//             margin: 5px 0;
+//             padding-left: 10px;
+//             list-style: disc;
+//             font-size: 17px;
+//         }
+//         p {
+//             font-size: 18px;
+//             color: black;
+//             font-weight: 600;
+//         }
+//     }
+// }
