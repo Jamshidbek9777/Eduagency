@@ -77,8 +77,6 @@ export const tr = {
     TurkeyDiliHeading: "Organizasyon Hizmetleri",
     TurkeyDiliParagrf2: "1-Akademik Tur organizasyonu",
     TurkeyDiliSpan1: "a. Uzay kampı seyahati",
-    TurkeyDiliSpan12: "1-Akademik Tur- Uzay kampı Seyahati",
-    TurkeyDiliSpan123: "2-Sınav Organizasyonu",
     TurkeyDiliSpan2: "2-Konferans Organizasyonu",
     // TurkeyDili2: "Bu kurs Türkiye’de Üniversite okumak veya Özbekistanda yüksek lisans yapmak isteyenler için olup A1-A2-B1-B2-C1 seviyelerini kapsamaktadır . Sertifika Kursları TYS ,TÖMER ve Milli Sertifikat imtihanlarına hazırlığı kapsar .",
     TurkeyDiliSpan3: "3-Sınav Organizasyonu",
@@ -90,8 +88,8 @@ export const tr = {
     TurkeyDiliList4: "Akademik Eğitim Türkçesi",
 
 
-    OrganizationP1: "1-Akademik Tur- Uzay kampı Seyahati",
-    OrganizationP2: "2-Sınav Organizasyonu",
+    OrganizationP1: "1- Uzay Kampı Seyahati",
+    OrganizationP2: "2-Konferans-Seminer-Sınav organizasyonu",
 
     AboutPageTitle: "Önceliklerimiz hakkında",
     AboutPageDesc: "EduAgency, Türkiye ve Özbekistan'daki üniversiteler arasında iş birliği fırsatlarını artırmak için danışmanlık hizmetleri sunar. Ortak projeler, müfredat geliştirme ve akademik değişim programları gibi konularda rehberlik eder.",

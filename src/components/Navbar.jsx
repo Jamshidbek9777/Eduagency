@@ -202,7 +202,19 @@ const Navbar = () => {
                           }`}
                       >
                         {getText("headerSwiperTitle4")}
-                    
+
+                      </Link>
+                    </li>
+                    <li onClick={() => handleLinkClick("/turkiye-burslari")}>
+                      <Link
+                        to="/turkiye-burslari"
+                        className={`${location.pathname === "/turkiye-burslari"
+                          ? "active-link"
+                          : ""
+                          }`}
+                      >
+                        {/* {getText("headerSwiperTitle4")} */}
+                        TurkiyeBurslari
                       </Link>
                     </li>
 
