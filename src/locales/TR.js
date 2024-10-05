@@ -178,6 +178,36 @@ export const tr = {
     TurkiyeBurslariAccordion11P: "Mülakata davet edilen adayların, mezun olmamışlar ise, tamamlamış oldukları önceki yılların tüm transkript/karne belgelerini ve sertifikalarını mülakata getirmeleri gerekmektedir.",
     TurkiyeBurslariAccordion12P: "Mülakat komiteleri tarafından aday olarak belirlenen başvuru sahiplerinin mülakat sonuçları, nihai seçim komitesi tarafından değerlendirilir ve burs alacak başvuru sahiplerinin listesi oluşturulur.",
 
+    OfficialRepresentativeServicesTitle: "Özbekistan’da Türkiye’nin Özel Üniversiteleri İçin Güvenilir Temsilcilik Hizmeti",
+    OfficialRepresentativeServicesP: "Türkiye’deki özel üniversitelerin küresel açılımını genişletmek ve Özbekistan pazarında kalıcı bir yer edinmelerini sağlamak amacıyla, resmi temsilcilik ve acente yönetimi hizmetleri sunuyoruz. Eğitim dünyasındaki güçlü ağımız ve yerel bilgi birikimimizle, üniversitenizi en etkili şekilde temsil ediyor, öğrenci kayıt süreçlerinde her aşamada profesyonel destek sağlıyoruz.",
+    OfficialRepresentativeServicesH2: "Hizmetlerimiz:",
+    OfficialRepresentativeServicesAccordionTitle1: "1. Resmi Temsilcilik Hizmeti",
+    OfficialRepresentativeServicesAccordionTitle2: "2. Acente Yönetimi",
+    OfficialRepresentativeServicesAccordionTitle3: "3. Öğrenci Danışmanlığı ve Kayıt Hizmetleri",
+    OfficialRepresentativeServicesAccordionTitle4: "4. Eğitim Fuarları ve Etkinlik Yönetimi",
+    OfficialRepresentativeServicesAccordionTitle5: "5. Pazarlama ve Dijital Tanıtım",
+    OfficialRepresentativeServicesAccordionTitle6: "6. Yerel İşbirlikleri ve Resmi Temaslar",
+    OfficialRepresentativeServicesAccordionTitleQ: "Neden Bizi Tercih Etmelisiniz?",
+
+    OfficialRepresentativeServicesAccordionP1: "Özbekistan’da üniversitenizin resmi temsilcisi olarak, kurumunuzun uluslararası prestijini artırıyor ve doğru hedef kitleye ulaşmanızı sağlıyoruz. Üniversitenizin sunduğu programları, burs imkanlarını ve akademik başarılarını, yerel öğrencilere ve eğitim kurumlarına tanıtıyoruz.",
+    OfficialRepresentativeServicesAccordionP2: "Eğitim ajansımız, Özbekistan genelinde geniş bir acente ağı yönetmektedir. Yerel acenteler aracılığıyla üniversitenizin bilinirliğini artırıyor ve öğrencilere doğrudan ulaşma fırsatı sunuyoruz. Acentelerle yapılan işbirlikleri sayesinde, yerel pazarda en etkili stratejileri kullanarak başarı sağlıyoruz.",
+    OfficialRepresentativeServicesAccordionP3: "Özbek öğrencilerin Türkiye’deki üniversitelere kayıt olma süreçlerinde tam kapsamlı danışmanlık hizmeti sunuyoruz. Başvuru sürecinden vize işlemlerine kadar her adımda öğrencilere rehberlik ediyor, onların sorunsuz bir şekilde kayıt olmalarını sağlıyoruz. Üniversitenizin kabul kriterlerine uygun öğrenci profillerini belirleyerek, nitelikli adayların başvurmasını sağlıyoruz.",
+    OfficialRepresentativeServicesAccordionP4: "Üniversitenizin Özbekistan’daki eğitim fuarlarına ve etkinliklere katılımını organize ediyoruz. Bu fuarlar ve etkinlikler, öğrenci adaylarıyla doğrudan buluşma ve üniversitenizi tanıtma fırsatı sunar. Ayrıca, özel etkinlikler düzenleyerek üniversitenizin görünürlüğünü artırıyoruz.",
+    OfficialRepresentativeServicesAccordionP5: "Yerel pazarın dinamiklerine uygun dijital pazarlama stratejileri geliştiriyoruz. Sosyal medya, web reklamları ve diğer dijital kanallar aracılığıyla üniversitenizin hedef kitlesine ulaşmasını sağlıyor ve başvuru sayısını artırıyoruz.",
+    OfficialRepresentativeServicesAccordionP6: "Özbekistan’daki devlet kurumları ve eğitim otoriteleri ile üniversiteniz adına resmi temaslarda bulunuyoruz. Yerel yönetmeliklere ve yasal prosedürlere uygun hareket ederek, üniversitenizin itibarını koruyor ve geliştirecek adımlar atıyoruz.",
+    OfficialRepresentativeServicesAccordionQTitle: "Neden Bizi Tercih Etmelisiniz?",
+    OfficialRepresentativeServicesAccordionQSpan1: "Yerel Pazar Uzmanlığı:",
+    OfficialRepresentativeServicesAccordionQSpan2: "Profesyonel Acente Yönetimi:",
+    OfficialRepresentativeServicesAccordionQSpan3: "Sonuç Odaklılık:",
+    OfficialRepresentativeServicesAccordionQSpan4: "Tam Kapsamlı Destek:",
+    OfficialRepresentativeServicesAccordionQP1: "Özbekistan’daki eğitim sektörü ve öğrenci ihtiyaçları konusunda derinlemesine bilgi sahibiyiz.",
+    OfficialRepresentativeServicesAccordionQP2: "Geniş acente ağımız ve etkili yönetim stratejilerimiz sayesinde üniversitenizin en doğru öğrencilere ulaşmasını sağlıyoruz.",
+    OfficialRepresentativeServicesAccordionQP3: "Amacımız, üniversitenizin uluslararası bilinirliğini artırmak ve nitelikli öğrenci sayısını yükseltmek.",
+    OfficialRepresentativeServicesAccordionQP4: "Öğrenci danışmanlığı, kayıt yönetimi, etkinlik organizasyonu ve pazarlama hizmetlerimizle her aşamada yanınızdayız.",
+    OfficialRepresentativeServicesAccordionEndSpan: "Geniş Bilgi İçin Bizi Arayın!",
+
+
+
 
     question1Title: "1.⁠Türkiyede okumanın avantajları nelerdir?",
     question2Title: "2.⁠Özbekler Türkiye’de hangi şartlarda  okuyabilirler ?",

@@ -216,6 +216,18 @@ const Navbar = () => {
                         {getText("headerSwiperTitle6")}
                       </Link>
                     </li>
+                    <li onClick={() => handleLinkClick("/official-representative-services")}>
+                      <Link
+                        to="/official-representative-services"
+                        className={`${location.pathname === "/official-representative-services"
+                          ? "active-link"
+                          : ""
+                          }`}
+                      >
+                        {/* {getText("headerSwiperTitle6")} */}
+                        Resmi Temsilcilik Hizmetleri
+                      </Link>
+                    </li>
 
 
 
