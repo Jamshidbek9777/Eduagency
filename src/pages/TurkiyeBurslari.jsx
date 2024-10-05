@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-irregular-whitespace */
 import {
@@ -9,13 +10,17 @@ import {
     Box,
     Text
 } from "@chakra-ui/react";
+import { getText } from "../locales";
+import { LanguageContext } from "../context/LanguageContext";
+import { useContext } from "react";
 
 function TurkiyeBurslari() {
+    const { selectedLanguage, selectedFlag, changeLanguage } =
+        useContext(LanguageContext);
     return (
         <div>
             <div className="container" style={{ paddingTop: "150px" }}>
-                <p style={{fontSize: "18px"}}>Türkiye Bursları, Türkiye Cumhuriyeti’nin uluslararası öğrencilere yönelik yürütmekte olduğu, kamu kaynaklı yükseköğrenim burs programıdır. Türkiye Bursları’nın öncelikli amacı, dünya genelindeki başarılı öğrencilere fırsat eşitliği sağlayarak uluslararası standartlarda burslu eğitim almalarını sağlamaktır. Bununla birlikte, Türkiye ile diğer ülkeler arasındaki karşılıklı iş birliğinin geliştirmesi ve akademiden sanata, ekonomiden edebiyata, teknolojiden mimariye kadar pek çok alanda bölgesel ve küresel kalkınmaya katkı sağlanması amaçlanmaktadır.
-                    Türkiye Bursları, 2012 yılında 42 bin civarında başvuru alırken, 2024 yılında 170 ülkeden 121.830 başvuruya ulaşarak yıllar boyunca başvuru sayısında hızlı bir artış yaşamıştır. Türkiye Bursları kapsamında her yıl yaklaşık 5.000 uluslararası öğrenciye burs verilmektedir. Türkiye Bursları Programından yararlanıp halihazırda eğitimine devam eden yaklaşık 15.000 bursiyer vardır.</p>
+                <p style={{ fontSize: "18px" }}>{getText("TurkiyeBurslariP")}</p>
                 <Accordion allowToggle style={{ paddingTop: "40px" }}>
                     {/* 1. Accordion Item - TÜRKİYE BURSLARI */}
                     <AccordionItem>
@@ -27,18 +32,14 @@ function TurkiyeBurslari() {
                                     textAlign="left"
                                     style={{ color: "black", fontWeight: "600", fontSize: "24px" }}
                                 >
-                                    TÜRKİYE BURSLARI
+                                    {getText("TurkiyeBurslariAccordion1Title")}
                                 </Box>
                                 <AccordionIcon />
                             </AccordionButton>
                         </h2>
                         <AccordionPanel pb={4} mt={3} color={"#666666"}>
                             <Text fontSize="md">
-                                Türkiye Bursları, üniversite ve bölüm yerleştirme, aylık burs,
-                                üniversite harcı, sağlık sigortası, barınma, Türkçe dil kursu,
-                                uçak bileti ile ücretsiz akademik ve kültürel program
-                                imkanlarıyla dünyanın en kapsamlı burs programlarından biri
-                                olarak kabul görmektedir.
+                                {getText("TurkiyeBurslariAccordion1P")}
                             </Text>
                         </AccordionPanel>
                     </AccordionItem>
@@ -53,17 +54,19 @@ function TurkiyeBurslari() {
                                     textAlign="left"
                                     style={{ color: "black", fontWeight: "600", fontSize: "24px" }}
                                 >
-                                    BURS MİKTARLARI
+                                    {getText("TurkiyeBurslariAccordion2Title")}
                                 </Box>
                                 <AccordionIcon />
                             </AccordionButton>
                         </h2>
                         <AccordionPanel pb={4} mt={3} color={"#666666"}>
                             <Text fontSize="md">
-                                · Lisans: Aylık 3.500 TL <br />
-                                · Yüksek Lisans Seviyesi: Aylık 5.000 TL <br />
-                                · Doktora Seviyesi: Aylık 6.500 TL <br />
-                                · Araştırma Burs Programı: Aylık 12.000 TL
+                                <ul>
+                                    <li style={{ listStyle: "inside" }}>{getText("TurkiyeBurslariAccordion2List1")}</li>
+                                    <li style={{ listStyle: "inside" }}>{getText("TurkiyeBurslariAccordion2List2")}</li>
+                                    <li style={{ listStyle: "inside" }}>{getText("TurkiyeBurslariAccordion2List3")}</li>
+                                    <li style={{ listStyle: "inside" }}>{getText("TurkiyeBurslariAccordion2List4")}</li>
+                                </ul>
                             </Text>
                         </AccordionPanel>
                     </AccordionItem>
@@ -78,21 +81,23 @@ function TurkiyeBurslari() {
                                     textAlign="left"
                                     style={{ color: "black", fontWeight: "600", fontSize: "24px" }}
                                 >
-                                    NEDEN TÜRKİYE BURSLARI
+                                    {getText("TurkiyeBurslariAccordion3Title")}
                                 </Box>
                                 <AccordionIcon />
                             </AccordionButton>
                         </h2>
                         <AccordionPanel pb={4} mt={3} color={"#666666"}>
                             <Text fontSize="md">
-                                Türkiye Bursları; <br />
-                                • Üniversite ve bölüm yerleştirmesi yapar. <br />
-                                • Üniversite öğrenim harçlarını karşılar. <br />
-                                • 1 senelik Türkçe dil eğitimi sağlar. <br />
-                                • Barınma imkanını sağlar. <br />
-                                • Uçak biletinizi karşılar. <br />
-                                • Sağlık sigortası sağlar. <br />
-                                • Aylık burs verir: Lisans: 3.500 TL, Yüksek Lisans: 5.000 TL, Doktora: 6.500 TL.
+                                <ul>
+                                    <p style={{ fontSize: "18px", color: "black", fontWeight: "500" }}>{getText("TurkiyeBurslariAccordion3ListTitle")}</p>
+                                    <li style={{ listStyle: "inside" }}>{getText("TurkiyeBurslariAccordion3List1")}</li>
+                                    <li style={{ listStyle: "inside" }}>{getText("TurkiyeBurslariAccordion3List2")}</li>
+                                    <li style={{ listStyle: "inside" }}>{getText("TurkiyeBurslariAccordion3List3")}</li>
+                                    <li style={{ listStyle: "inside" }}>{getText("TurkiyeBurslariAccordion3List4")}</li>
+                                    <li style={{ listStyle: "inside" }}>{getText("TurkiyeBurslariAccordion3List5")}</li>
+                                    <li style={{ listStyle: "inside" }}>{getText("TurkiyeBurslariAccordion3List6")}</li>
+                                    <li style={{ listStyle: "inside" }}>{getText("TurkiyeBurslariAccordion3List7")}</li>
+                                </ul>
                             </Text>
                         </AccordionPanel>
                     </AccordionItem>
@@ -107,16 +112,14 @@ function TurkiyeBurslari() {
                                     textAlign="left"
                                     style={{ color: "black", fontWeight: "600", fontSize: "24px" }}
                                 >
-                                    BAŞVURULAR
+                                    {getText("TurkiyeBurslariAccordion4Title")}
                                 </Box>
                                 <AccordionIcon />
                             </AccordionButton>
                         </h2>
                         <AccordionPanel pb={4} mt={3} color={"#666666"}>
                             <Text fontSize="md">
-                                Başvurular her yıl 10 Ocak-20 Şubat tarihleri arasında online
-                                ve ücretsiz olarak Türkiye Bursları web sayfası üzerinden
-                                yapılmaktadır.
+                                {getText("TurkiyeBurslariAccordion4P")}
                             </Text>
                         </AccordionPanel>
                     </AccordionItem>
@@ -132,17 +135,19 @@ function TurkiyeBurslari() {
                                     style={{ color: "black", fontWeight: "600", fontSize: "24px" }}
 
                                 >
-                                    BAŞVURU İÇİN TEMEL KRİTERLER
+                                    {getText("TurkiyeBurslariAccordion5Title")}
                                 </Box>
                                 <AccordionIcon />
                             </AccordionButton>
                         </h2>
                         <AccordionPanel pb={4} mt={3} color={"#666666"}>
                             <Text fontSize="md">
-                                Asgari Akademik Başarı Kriteri: <br />
-                                · Lisans adayları için: %70 <br />
-                                · Yüksek Lisans ve Doktora: %75 <br />
-                                · Sağlık Bilimleri adayları: %90
+                                <ul>
+                                    <p style={{ fontSize: "18px", color: "black", fontWeight: "500" }}>{getText("TurkiyeBurslariAccordion5ListTitle")}</p>
+                                    <li style={{ listStyle: "inside" }}>{getText("TurkiyeBurslariAccordion5List1")}</li>
+                                    <li style={{ listStyle: "inside" }}>{getText("TurkiyeBurslariAccordion5List2")}</li>
+                                    <li style={{ listStyle: "inside" }}>{getText("TurkiyeBurslariAccordion5List3")}</li>
+                                </ul>
                             </Text>
                         </AccordionPanel>
                     </AccordionItem>
@@ -157,19 +162,24 @@ function TurkiyeBurslari() {
                                     textAlign="left"
                                     style={{ color: "black", fontWeight: "600", fontSize: "24px" }}
                                 >
-                                    UYGUNLUK
+                                    {getText("TurkiyeBurslariAccordion6Title")}
                                 </Box>
                                 <AccordionIcon />
                             </AccordionButton>
                         </h2>
                         <AccordionPanel pb={4} mt={3} color={"#666666"}>
                             <Text fontSize="md">
-                                · Tüm ülkelerin vatandaşları <br />
-                                · Mezunlar veya mezun olacak olanlar <br />
-                                · Araştırmacılar ve akademisyenler
+                                <ul>
+                                    <li style={{ listStyle: "inside" }}>{getText("TurkiyeBurslariAccordion6List1")}</li>
+                                    <li style={{ listStyle: "inside" }}>{getText("TurkiyeBurslariAccordion6List2")}</li>
+                                    <li style={{ listStyle: "inside" }}>{getText("TurkiyeBurslariAccordion6List3")}</li>
+                                </ul>
                             </Text>
                         </AccordionPanel>
                     </AccordionItem>
+
+                    {/* style={{ listStyle: "inside" }} */}
+                    {/* style={{ fontSize: "18px", color: "black", fontWeight: "500" }} */}
 
                     {/* 7. Accordion Item - UYGUN OLMAYAN GRUPLAR */}
                     <AccordionItem>
@@ -181,15 +191,17 @@ function TurkiyeBurslari() {
                                     textAlign="left"
                                     style={{ color: "black", fontWeight: "600", fontSize: "24px" }}
                                 >
-                                    UYGUN OLMAYAN GRUPLAR
+                                    {getText("TurkiyeBurslariAccordion7Title")}
                                 </Box>
                                 <AccordionIcon />
                             </AccordionButton>
                         </h2>
                         <AccordionPanel pb={4} mt={3} color={"#666666"}>
                             <Text fontSize="md">
-                                · Türk vatandaşları ve Türk vatandaşlığını kaybetmiş bireyler <br />
-                                · Türk üniversitelerindeki programlara kayıtlı olan bireyler
+                                <ul>
+                                    <li style={{ listStyle: "inside" }}>{getText('TurkiyeBurslariAccordion7List1')}</li>
+                                    <li style={{ listStyle: "inside" }}>{getText('TurkiyeBurslariAccordion7List2')}</li>
+                                </ul>
                             </Text>
                         </AccordionPanel>
                     </AccordionItem>
@@ -204,21 +216,24 @@ function TurkiyeBurslari() {
                                     textAlign="left"
                                     style={{ color: "black", fontWeight: "600", fontSize: "24px" }}
                                 >
-                                    DEĞERLENDİRME VE SEÇİM
+                                    {getText("TurkiyeBurslariAccordion8Title")}
                                 </Box>
                                 <AccordionIcon />
                             </AccordionButton>
                         </h2>
                         <AccordionPanel pb={4} mt={3} color={"#666666"}>
                             <Text fontSize="md">
-                                4 aşamada yapılır: <br />
-                                · Ön İnceleme <br />
-                                · Uzman Değerlendirme <br />
-                                · Mülakat <br />
-                                · Nihai Değerlendirme
+                                <ul>
+                                    <p style={{ fontSize: "18px", color: "black", fontWeight: "500" }}>{getText("TurkiyeBurslariAccordion8ListTitle")}</p>
+                                    <li style={{ listStyle: "inside" }}>{getText("TurkiyeBurslariAccordion8List1")}</li>
+                                    <li style={{ listStyle: "inside" }}>{getText("TurkiyeBurslariAccordion8List2")}</li>
+                                    <li style={{ listStyle: "inside" }}>{getText("TurkiyeBurslariAccordion8List3")}</li>
+                                    <li style={{ listStyle: "inside" }}>{getText("TurkiyeBurslariAccordion8List4")}</li>
+                                </ul>
                             </Text>
                         </AccordionPanel>
                     </AccordionItem>
+
                     <AccordionItem>
                         <h2>
                             <AccordionButton>
@@ -226,13 +241,13 @@ function TurkiyeBurslari() {
                                     flex="1"
                                     textAlign="left"
                                     style={{ color: "black", fontWeight: "600", fontSize: "24px" }}>
-                                    Ön İnceleme
+                                    {getText("TurkiyeBurslariAccordion9Title")}
                                 </Box>
                                 <AccordionIcon />
                             </AccordionButton>
                         </h2>
                         <AccordionPanel pb={4}>
-                            Tüm başvurular; asgari akademik başarı, düzeyler için belirlenen yaş sınırları, gerekli belgeler gibi temel kriterler üzerinden incelenir.
+                            {getText("TurkiyeBurslariAccordion9P")}
                         </AccordionPanel>
                     </AccordionItem>
 
@@ -243,14 +258,13 @@ function TurkiyeBurslari() {
                                     flex="1"
                                     textAlign="left"
                                     style={{ color: "black", fontWeight: "600", fontSize: "24px" }}>
-                                    Uzman Değerlendirme
+                                    {getText("TurkiyeBurslariAccordion10Title")}
                                 </Box>
                                 <AccordionIcon />
                             </AccordionButton>
                         </h2>
                         <AccordionPanel pb={4}>
-                            Uygun görülen adayların başvuruları; akademik durum, önceki yeterlilikler, akademik ilgi alanları, kariyer hedefleri, tercihlerinin tutarlığı, niyet mektubunun içeriği/anlaşılırlığı ve sosyal faaliyetlere katılım gibi bir dizi kriterler üzerinden Uzman Komitesi tarafından dikkatlice incelenir.
-                            Bu aşamadan sonra, mülakat süreci için kalifiye adayların son listesi oluşturulur.
+                            {getText("TurkiyeBurslariAccordion10P")}
                         </AccordionPanel>
                     </AccordionItem>
 
@@ -261,21 +275,21 @@ function TurkiyeBurslari() {
                                     flex="1"
                                     textAlign="left"
                                     style={{ color: "black", fontWeight: "600", fontSize: "24px" }}>
-                                    Mülakat
+                                    {getText("TurkiyeBurslariAccordion11Title")}
                                 </Box>
                                 <AccordionIcon />
                             </AccordionButton>
                         </h2>
                         <AccordionPanel pb={4}>
-                            100’den fazla ülkeden seçilerek son listeye alınan adayları; akademisyen ve uzmanlardan oluşan mülakat komiteleri tarafından değerlendirilir. Genelde 15-30 dakika süren mülakat, aşağıda belirtilen format üzerinden gerçekleştirilir:
                             <ul>
-                                <li>Karşılama ve giriş</li>
-                                <li>Belgelerin kontrolü</li>
-                                <li>Adayın başvuru amacının öğrenilmesi</li>
-                                <li>Akademik bilgi ve kariyer hedefleri</li>
-                                <li>Kapanış ve aday tarafından komiteye soru sorulması</li>
+                                <p style={{ fontSize: "18px", color: "black", fontWeight: "500" }}>{getText("TurkiyeBurslariAccordion11ListTitle")}</p>
+                                <li style={{ listStyle: "inside" }}>{getText("TurkiyeBurslariAccordion11List1")}</li>
+                                <li style={{ listStyle: "inside" }}>{getText("TurkiyeBurslariAccordion11List2")}</li>
+                                <li style={{ listStyle: "inside" }}>{getText("TurkiyeBurslariAccordion11List3")}</li>
+                                <li style={{ listStyle: "inside" }}>{getText("TurkiyeBurslariAccordion11List4")}</li>
+                                <li style={{ listStyle: "inside" }}>{getText("TurkiyeBurslariAccordion11List5")}</li>
                             </ul>
-                            Mülakata davet edilen adayların, mezun olmamışlar ise, tamamlamış oldukları önceki yılların tüm transkript/karne belgelerini ve sertifikalarını mülakata getirmeleri gerekmektedir.
+                            <p>{getText("TurkiyeBurslariAccordion11P")}</p>
                         </AccordionPanel>
                     </AccordionItem>
 
@@ -286,13 +300,13 @@ function TurkiyeBurslari() {
                                     flex="1"
                                     textAlign="left"
                                     style={{ color: "black", fontWeight: "600", fontSize: "24px" }}>
-                                    Nihai Değerlendirme
+                                    {getText("TurkiyeBurslariAccordion12Title")}
                                 </Box>
                                 <AccordionIcon />
                             </AccordionButton>
                         </h2>
                         <AccordionPanel pb={4}>
-                            Mülakat komiteleri tarafından aday olarak belirlenen başvuru sahiplerinin mülakat sonuçları, nihai seçim komitesi tarafından değerlendirilir ve burs alacak başvuru sahiplerinin listesi oluşturulur.
+                            {getText("TurkiyeBurslariAccordion12P")}
                         </AccordionPanel>
                     </AccordionItem>
                 </Accordion>
