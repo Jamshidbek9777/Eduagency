@@ -213,8 +213,7 @@ const Navbar = () => {
                           : ""
                           }`}
                       >
-                        {/* {getText("headerSwiperTitle4")} */}
-                        TurkiyeBurslari
+                        {getText("headerSwiperTitle6")}
                       </Link>
                     </li>
 

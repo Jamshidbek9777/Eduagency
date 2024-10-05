@@ -13,6 +13,7 @@ export const en = {
     headerSwiperTitle3: "Education Expert transfer",
     headerSwiperTitle4: "Organization Services",
     headerSwiperTitle5: "Turkish Language Services",
+    headerSwiperTitle6: "Turkiye Scholarships",
     headerSwiperParagraph1: "The agency provides comprehensive support to facilitate the application process to educational institutions in Turkey and Uzbekistan. It assists students and academicians in collecting required documents, filling out application forms and providing guidance throughout the process.",
     headerSwiperParagraph2: "The educational agency is working to facilitate student transfers between Turkey and Uzbekistan. It assists in student placement, credit transfer, and onboarding processes.",
     headerSwiperParagraph3: "The Agency supports the exchange of academic and expert personnel between the two countries. Through expert exchange programs, academics and specialists share their knowledge and experience, improving the quality of education.",
