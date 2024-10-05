@@ -5,124 +5,364 @@ import { LanguageContext } from "../context/LanguageContext";
 import { getText } from "../locales/index";
 
 const Navbar = () => {
-  const { selectedLanguage, selectedFlag, changeLanguage } = useContext(LanguageContext);
-  const [navbarActive, setNavbarActive] = useState(false);
-  const [burgerOpen, setBurgerOpen] = useState(false);
+  const { selectedLanguage, selectedFlag, changeLanguage } =
+    useContext(LanguageContext);
+  const [navbar, setNavbar] = useState(false);
+  const [burger, setBurger] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
     const isActive = localStorage.getItem("navbarActive");
-    if (isActive) setNavbarActive(true);
+    if (isActive) {
+      setNavbar(true);
+    }
   }, []);
 
-  const handleScroll = () => {
-    setNavbarActive(window.scrollY >= 30);
+  const changeNavbar = () => {
+    if (window.scrollY >= 30) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", changeNavbar);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", changeNavbar);
     };
   }, []);
 
   useEffect(() => {
-    document.body.style.overflow = burgerOpen ? "hidden" : "auto";
-  }, [burgerOpen]);
+    document.body.style.overflow = burger ? "hidden" : "auto";
+  }, [burger]);
 
   const handleLinkClick = (path) => {
     localStorage.setItem("activeLink", path);
   };
 
-  const navItems = [
-    { to: "/student-transfer", text: getText("headerSwiperTitle2") },
-    { to: "/expert-transfer", text: getText("headerSwiperTitle3") },
-    { to: "/application", text: getText("headerSwiperTitle1") },
-    { to: "/turkiye-dili", text: getText("headerSwiperTitle5") },
-    { to: "/organization-services", text: getText("headerSwiperTitle4") },
-    { to: "/turkiye-burslari", text: getText("headerSwiperTitle6") },
-    { to: "/official-representative-services", text: getText("headerSwiperTitle7") },
-    { to: "/about", text: getText("aboutUs") },
-    { to: "/services", text: getText("services") },
-    { to: "/question", text: getText("question") },
-    { to: "/contacts", text: getText("contacts") },
-  ];
+  const handleOpenMobileNav = () => {
+    setBurger((prevBurger) => !prevBurger);
+  };
+
+  const handleDropdownHover = (state) => {
+    setIsDropdownOpen(state);
+  };
 
   const navVariants = {
     hidden: { opacity: 0, x: "100%" },
-    visible: { opacity: 1, x: 0, transition: { type: "spring", stiffness: 70, damping: 15, duration: 0.5 } },
-    exit: { opacity: 0, x: "100%", transition: { type: "spring", stiffness: 50, damping: 20, duration: 0.5 } },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        type: "spring",
+        stiffness: 70,
+        damping: 15,
+        duration: 0.5,
+      },
+    },
+    exit: {
+      opacity: 0,
+      x: "100%",
+      transition: {
+        type: "spring",
+        stiffness: 50,
+        damping: 20,
+        duration: 0.5,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30, scale: 0.9 },
+    visible: (custom) => ({
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: {
+        type: "spring",
+        stiffness: 50,
+        damping: 10,
+        delay: custom * 0.1,
+      },
+    }),
   };
 
   return (
     <>
-      <div className={`navBar ${navbarActive ? "active" : ""}`}>
+      <div className={`navBar ${navbar ? "active" : ""}`}>
         <div className="container">
           <div className="d-flex justify-content-between align-items-center">
             <div className="col-lg-2 col-md-4 col-6">
               <div className="logo">
-                <Link to="/">
-                  <img className="w-100 logoblack" src="/img/logo.png" alt="logo" />
-                </Link>
+                <a href="/">
+                  <img
+                    className="w-100 logoblack"
+                    src="/img/logo.png"
+                    alt="logo"
+                  />
+                </a>
               </div>
             </div>
 
-            <nav className="nav-menu-pc d-flex justify-content align-items-center">
+            <div
+              className={`d-flex nav-menu-pc justify-content align-items-center`}
+            >
               <ul className="nav-menu">
-                {navItems.map((item) => (
-                  <li key={item.to} onClick={() => handleLinkClick(item.to)}>
-                    <Link to={item.to} className={location.pathname === item.to ? "active-link" : ""}>
-                      {item.text}
-                    </Link>
-                  </li>
-                ))}
+                <li onClick={() => handleLinkClick("/")}>
+                  <Link
+                    to="/"
+                    className={`${location.pathname === "/" ? "active-link" : ""
+                      }`}
+                  >
+                    {getText("home")}
+                  </Link>
+                </li>
+                <li onClick={() => handleLinkClick("/about")}>
+                  <Link
+                    to="/about"
+                    className={`${location.pathname === "/about" ? "active-link" : ""
+                      }`}
+                  >
+                    {getText("aboutUs")}
+                  </Link>
+                </li>
+                <li
+                  style={{ display: "flex", alignItems: "center" }}
+                  onMouseEnter={() => handleDropdownHover(true)}
+                  onMouseLeave={() => handleDropdownHover(false)}
+                >
+                  <Link
+                    to="/services"
+                    className={`${location.pathname === "/services" ? "active-link" : ""}`}
+                    style={{ display: "flex", alignItems: "center", gap: "10px" }}
+                  >
+                    {getText("services")}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                      className={`services-arrow ${location.pathname === "/services" ? "active" : ""}`}
+                      style={{ width: "20px" }}
+                    >
+                      <path
+                        fill="#000000"
+                        d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                      />
+                    </svg>
+                  </Link>
+
+                  <motion.ul
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{
+                      opacity: isDropdownOpen ? 1 : 0,
+                      y: isDropdownOpen ? 0 : -30,
+                    }}
+                    transition={{ duration: 0.3 }}
+                    className={`dropdown-menu ${isDropdownOpen ? "show" : ""}`}
+                  >
+                    <li onClick={() => handleLinkClick("/student-transfer")}>
+                      <Link
+                        to="/student-transfer"
+                        className={`${location.pathname === "/student-transfer"
+                          ? "active-link"
+                          : ""
+                          }`}
+                      >
+                        {getText("headerSwiperTitle2")}
+                      </Link>
+                    </li>
+                    <li onClick={() => handleLinkClick("/expert-transfer")}>
+                      <Link
+                        to="/expert-transfer"
+                        className={`${location.pathname === "/expert-transfer"
+                          ? "active-link"
+                          : ""
+                          }`}
+                      >
+                        {getText("headerSwiperTitle3")}
+                      </Link>
+                    </li>
+                    <li onClick={() => handleLinkClick("/application")}>
+                      <Link
+                        to="/application"
+                        className={`${location.pathname === "/application"
+                          ? "active-link"
+                          : ""
+                          }`}
+                      >
+                        {getText("headerSwiperTitle1")}
+                      </Link>
+                    </li>
+
+                    <li onClick={() => handleLinkClick("/turkiye-dili")}>
+                      <Link
+                        to="/turkiye-dili"
+                        className={`${location.pathname === "/turkiye-dili"
+                          ? "active-link"
+                          : ""
+                          }`}
+                      >
+                        {getText("headerSwiperTitle5")}
+                      </Link>
+                    </li>
+                    <li onClick={() => handleLinkClick("/organization-services")}>
+                      <Link
+                        to="/organization-services"
+                        className={`${location.pathname === "/organization-services"
+                          ? "active-link"
+                          : ""
+                          }`}
+                      >
+                        {getText("headerSwiperTitle4")}
+
+                      </Link>
+                    </li>
+                    <li onClick={() => handleLinkClick("/turkiye-burslari")}>
+                      <Link
+                        to="/turkiye-burslari"
+                        className={`${location.pathname === "/turkiye-burslari"
+                          ? "active-link"
+                          : ""
+                          }`}
+                      >
+                        {getText("headerSwiperTitle6")}
+                      </Link>
+                    </li>
+                    <li onClick={() => handleLinkClick("/official-representative-services")}>
+                      <Link
+                        to="/official-representative-services"
+                        className={`${location.pathname === "/official-representative-services"
+                          ? "active-link"
+                          : ""
+                          }`}
+                      >
+                        {getText("headerSwiperTitle7")}
+                      </Link>
+                    </li>
+
+
+
+                  </motion.ul>
+                </li>
+                <li onClick={() => handleLinkClick("/question")}>
+                  <Link
+                    to="/question"
+                    className={`${location.pathname === "/question" ? "active-link" : ""
+                      }`}
+                  >
+                    {getText("question")}
+                  </Link>
+                </li>
+                <li onClick={() => handleLinkClick("/contacts")}>
+                  <Link
+                    to="/contacts"
+                    className={`${location.pathname === "/contacts" ? "active-link" : ""
+                      }`}
+                  >
+                    {getText("contacts")}
+                  </Link>
+                </li>
               </ul>
               <div className="siteLang d-flex align-items-center">
-                <img src={selectedFlag} alt="language flag" style={{ width: "20px", objectFit: "cover" }} />
-                <select onChange={(e) => changeLanguage(e.target.value)} value={selectedLanguage}>
+                <img
+                  src={selectedFlag}
+                  style={{ width: "20px", objectFit: "cover" }}
+                />
+                <select
+                  onChange={(e) => changeLanguage(e.target.value)}
+                  value={selectedLanguage}
+                >
                   <option value="uz">Oʻzbek</option>
                   <option value="en">English</option>
                   <option value="tr">Türkçe</option>
                 </select>
               </div>
-            </nav>
+            </div>
 
-            <div onClick={() => setBurgerOpen((prev) => !prev)} className={`burger pr-4 ml-auto d-flex`}>
-              <img src={burgerOpen ? "/img/opened-burger.png" : "/img/burger.svg"} alt="burger" />
+            <div
+              onClick={handleOpenMobileNav}
+              className={`burger pr-4 ml-auto d-flex d-lg-none`}
+            >
+              {burger ? (
+                <img src="/img/opened-burger.png" alt="burger" />
+              ) : (
+                <img src="/img/burger.svg" alt="burger" />
+              )}
             </div>
           </div>
         </div>
       </div>
 
-      <motion.div className={`mobNav`} initial="hidden" animate={burgerOpen ? "visible" : "hidden"} exit="exit" variants={navVariants}>
+      <motion.div
+        className={`mobNav`}
+        initial="hidden"
+        animate={burger ? "visible" : "hidden"}
+        exit="exit"
+        variants={navVariants}
+      >
         <div className="all-menu">
           <motion.ul className="nav-menu">
-            {navItems.map((item, index) => (
-              <motion.li key={item.to} variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { delay: index * 0.1 } } }}>
-                <Link onClick={() => setBurgerOpen(false)} to={item.to}>
+            {[
+              { to: "/", text: getText("home") },
+              { to: "/about", text: getText("aboutUs") },
+              { to: "/services", text: getText("services") },
+              { to: "/contacts", text: getText("contacts") },
+              { to: "/question", text: getText("question") },
+            ].map((item, index) => (
+              <motion.li
+                key={item.to}
+                variants={itemVariants}
+                custom={index + 1}
+              >
+                <Link onClick={() => setBurger(false)} to={item.to}>
                   {item.text}
                 </Link>
               </motion.li>
             ))}
           </motion.ul>
-          <motion.div className="siteLang d-flex align-items-center">
+          <motion.div
+            className="siteLang d-flex align-items-center"
+            variants={itemVariants}
+            custom={5}
+          >
             <div className="all-menu">
               <ul className="nav-mobile-menu">
                 {[
-                  { img: "/img/turkey.png", text: "Turkish", val: "tr" },
-                  { img: "/img/uzb.png", text: "O'zbek", val: "uz" },
-                  { img: "/img/usa.png", text: "English", val: "en" },
+                  {
+                    img: "/img/turkey.png",
+                    text: "Turkish",
+                    val: "tr",
+                  },
+                  {
+                    img: "/img/uzb.png",
+                    text: "O'zbek",
+                    val: "uz",
+                  },
+                  {
+                    img: "/img/usa.png",
+                    text: "English",
+                    val: "en",
+                  },
                 ].map((lang, index) => (
-                  <motion.li key={lang.text} variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { delay: index * 0.1 } } }}>
+                  <motion.li
+                    key={lang.text}
+                    variants={itemVariants}
+                    custom={index + 6}
+                  >
                     <a
                       href="#"
                       className="flag-div"
                       onClick={() => {
                         changeLanguage(lang.val);
-                        setBurgerOpen(false);
+                        setBurger(false);
                       }}
                     >
-                      <img src={lang.img} alt={lang.text} style={{ width: "20px", objectFit: "cover" }} />
+                      <img
+                        src={lang.img}
+                        alt={lang.alt}
+                        style={{ width: "20px", objectFit: "cover" }}
+                      />
                       {lang.text}
                     </a>
                   </motion.li>
