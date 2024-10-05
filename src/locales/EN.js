@@ -148,6 +148,8 @@ export const en = {
     TurkiyeBurslariAccordion10Title: "EXPERT EVALUATION",
     TurkiyeBurslariAccordion11Title: "INTERVIEW",
     TurkiyeBurslariAccordion12Title: "FINAL EVALUATION",
+    TUrkiyeBurslariOtherText: "Türkiye Scholarships is a publicly funded higher education scholarship program run by the Republic of Turkey for international students. The primary aim of Türkiye Scholarships is to provide equal opportunities for successful students around the world to receive scholarship education at international standards.",
+
 
     TurkiyeBurslariAccordion1P: "Turkiye Scholarships is considered one of the most comprehensive scholarship programs in the world, providing university and department placement, monthly stipends, university tuition fees, health insurance, accommodation, Turkish language courses, flight tickets, and free academic and cultural programs.",
     TurkiyeBurslariAccordion2List1: "Undergraduate: 3,500 TL per month",

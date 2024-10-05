@@ -187,6 +187,7 @@ export const uz = {
     TurkiyeBurslariAccordion10Title: "MUTAXASSIS BAHOSI",
     TurkiyeBurslariAccordion11Title: "SUHBAT",
     TurkiyeBurslariAccordion12Title: "YAKUNIY BAHOLASH",
+    TUrkiyeBurslariOtherText: "Turkiya stipendiyalari Turkiya Respublikasi tomonidan xalqaro talabalar uchun oʻtkaziladigan davlat oliy taʼlim stipendiyasi dasturidir.",
 
     TurkiyeBurslariAccordion1P: "Turkiya Grantlari, universitet va yo'nalish tanlovi, oylik grant, universitet to'lovlari, sog'liqni sug'urta qilish, yashash joyi, turk tili kursi, samolyot chiptasi va bepul akademik hamda madaniy dasturlar imkoniyatlari bilan dunyoning eng keng qamrovli grant dasturlaridan biri sifatida tan olingan.",
     TurkiyeBurslariAccordion2List1: "Bakalavr: Oyiga 3.500 TL",

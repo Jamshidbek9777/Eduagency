@@ -8,7 +8,7 @@ export const tr = {
     headerSwiperTitle1: "Müracaat İşlemleri",
     headerSwiperTitle2: "Öğrenci Transferi",
     headerSwiperTitle3: "Eğitim Uzmanı Transferi",
-    headerSwiperTitle4: "Organizasyon Hizmetleri",
+    headerSwiperTitle4: "Akademik tur",
     headerSwiperTitle5: "Türk Dili Hizmetleri",
     headerSwiperTitle6: "Türkiye Bursları",
     headerSwiperTitle7: "Resmi Temsilcilik Hizmetleri",
@@ -139,6 +139,7 @@ export const tr = {
     TurkiyeBurslariAccordion10Title: "UZMAN DEĞERLENDIRME",
     TurkiyeBurslariAccordion11Title: "MÜLAKAT",
     TurkiyeBurslariAccordion12Title: "NIHAI DEĞERLENDIRME",
+    TUrkiyeBurslariOtherText: "Türkiye Bursları, Türkiye Cumhuriyeti’ nin uluslararası öğrencilere yönelik yürütmekte olduğu, kamu kaynaklı yükseköğrenim burs programıdır.Türkiye Bursları’ nın öncelikli amacı, dünya genelindeki başarılı öğrencilere fırsat eşitliği sağlayarak uluslararası standartlarda burslu eğitim almalarını sağlamaktır.",
 
     TurkiyeBurslariAccordion1P: "Türkiye Bursları, üniversite ve bölüm yerleştirme, aylık burs, üniversite harcı, sağlık sigortası, barınma, Türkçe dil kursu, uçak bileti ile ücretsiz akademik ve kültürel program imkanlarıyla dünyanın en kapsamlı burs programlarından biri olarak kabul görmektedir.",
     TurkiyeBurslariAccordion2List1: "Lisans: Aylık 3.500 TL",

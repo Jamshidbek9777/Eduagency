@@ -8,6 +8,7 @@ import Partners from "./components/Partners";
 import ServiceBlog from "./components/ServiceBlog";
 import ReactGA from "react-ga4";
 import Helmet from "./components/Helmet";
+import NewCards from "./components/NewCards";
 
 const App = () => {
   useEffect(() => {
@@ -25,7 +26,8 @@ const App = () => {
       />
       <Header />
       {/* <Partners /> */}
-      <ServiceBlog />
+      {/* <ServiceBlog /> */}
+      <NewCards />
       {/* <About
         title={"Hakkımızda"}
         desc={
