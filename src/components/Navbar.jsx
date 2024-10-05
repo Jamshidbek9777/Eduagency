@@ -224,8 +224,7 @@ const Navbar = () => {
                           : ""
                           }`}
                       >
-                        {/* {getText("headerSwiperTitle6")} */}
-                        Resmi Temsilcilik Hizmetleri
+                        {getText("headerSwiperTitle7")}
                       </Link>
                     </li>
 
