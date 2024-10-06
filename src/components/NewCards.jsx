@@ -144,7 +144,7 @@ function NewCards() {
                 </div>
             </Link>
 
-            <Link to={"official-representative-services"}>
+            <Link to={"/educational-technologies"}>
                 <div className="custom-card">
                     <div className="icon-container">
                         <p className="icon-number">08</p>
@@ -155,8 +155,7 @@ function NewCards() {
                     <div style={{ display: "flex", flexDirection: "column" }}>
 
                         <h1 className="title">
-                            {/* {getText("headerSwiperTitle7")} */}
-                            Eğitim Teknolojileri
+                            {getText("headerSwiperTitle8")}
                         </h1>
                         <p className="desc">
                             {/* {getText("OfficialRepresentativeServicesTitle")} */}

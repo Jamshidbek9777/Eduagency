@@ -7,6 +7,7 @@ import Getintouch from "./Getintouch";
 import { getText } from "../locales";
 import { LanguageContext } from "../context/LanguageContext";
 import Helmet from "../components/Helmet";
+import NewCards from "./NewCards";
 
 const Services = () => {
   const navigate = useNavigate();
@@ -17,12 +18,15 @@ const Services = () => {
     <>
       <Helmet
         title={getText("ServicesPageTitle") || "Our Services"}
-        description={getText("ServicesPageDesc") || "Explore our range of services to assist you."}
+        description={
+          getText("ServicesPageDesc") ||
+          "Explore our range of services to assist you."
+        }
         link="/services"
         keywords="services, education, consulting, university"
       />
 
-      <div className="services" id="services" style={{ marginTop: "150px" }}>
+      {/* <div className="services" id="services" style={{ marginTop: "150px" }}>
         <div className="container">
           <div className="service-blogs">
             <Link to={"/student-transfer"}>
@@ -112,6 +116,9 @@ const Services = () => {
         <div style={{ marginTop: "120px" }}>
           <Getintouch />
         </div>
+      </div> */}
+      <div style={{marginTop: "150px"}}>
+        <NewCards />
       </div>
     </>
   );

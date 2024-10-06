@@ -27,6 +27,7 @@ import TurkiyeDili from "./pages/AcademicTour.jsx";
 import OrganizatsionServices from "./pages/OrganizatsionServices.jsx";
 import TurkiyeBurslari from "./pages/TurkiyeBurslari.jsx";
 import OfficialRepresentativeServices from "./pages/OfficialRepresentativeServices.jsx";
+import EducationalTechnologies from "./pages/EducationalTechnologies.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -42,6 +43,7 @@ root.render(
           <Route path="/student-transfer" exact element={<StudentTransfer />} />
           <Route path="/expert-transfer" exact element={<ExpertTransfer />} />
           <Route path="/turkiye-dili" exact element={<TurkiyeDili />} />
+          <Route path="/educational-technologies" exact element={<EducationalTechnologies />} />
           <Route path="/organization-services" exact element={<OrganizatsionServices />} />
           <Route path="/turkiye-burslari" exact element={<TurkiyeBurslari />} />
           <Route path="/official-representative-services" exact element={<OfficialRepresentativeServices />} />
