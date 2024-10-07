@@ -16,6 +16,7 @@ const useHeaderData = () => {
                 { title: getText("headerSwiperTitle5"), description: getText("headerSwiperParagraph4"), headerLink: "/turkiye-dili", bgImage: "/img/turkdili2.jpg", mobBgImage: "/img/turkdili2.jpg" },
                 { title: getText("headerSwiperTitle8"), description: getText(""), headerLink: "/educational-technologies", bgImage: "/img/egitim.png", mobBgImage: "/img/egitim.png" },
                 { title: getText("headerSwiperTitle7"), description: getText("OfficialRepresentativeServicesTitle"), headerLink: '/official-representative-services', bgImage: "/img/header3.png", mobBgImage: "/img/headerMob3.jpg" },
+                { title: getText("headerSwiperTitle6"), description: getText("TUrkiyeBurslariOtherText"), headerLink: '/turkiye-burslari', bgImage: "/img/turkey-scholarship-1.jpg", mobBgImage: "/img/turkey-scholarship-1.jpg" },
 
             ];
             setHeaderData(data);
