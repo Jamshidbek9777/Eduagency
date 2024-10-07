@@ -46,6 +46,7 @@ const Header = () => {
               <div className="texts">
                 <h1>{item.title}</h1>
                 <p>{item.description}</p>
+                <p>{item?.desc2}</p>
                 <div className="myBtn">
                   <button>
                     <Link
