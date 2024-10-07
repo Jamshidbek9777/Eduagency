@@ -32,6 +32,7 @@ const Header = () => {
   }, []);
 
   const headerData = useHeaderData();
+  const defaultColor = "#190a32"
 
   return (
     <div className="header">
@@ -44,7 +45,7 @@ const Header = () => {
               style={{ position: "relative" }}
             >
               <div className="texts">
-                <h1>{item.title}</h1>
+                <h1  style={{ color: item.customColor || defaultColor }}>{item.title}</h1>
                 <p>{item.description}</p>
                 <p>{item?.desc2}</p>
                 <div className="myBtn">
