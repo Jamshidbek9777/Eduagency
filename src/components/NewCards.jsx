@@ -75,7 +75,7 @@ function NewCards() {
         </div>
       </Link>
 
-      <Link to={"/turkiye-dili"}>
+      {/* <Link to={"/turkiye-dili"}>
         <div className="custom-card">
           <div className="icon-container icon5">
             <p className="icon-number">05</p>
@@ -88,12 +88,12 @@ function NewCards() {
             <p className="desc">{getText("headerSwiperParagraph4")}</p>
           </div>
         </div>
-      </Link>
+      </Link> */}
 
       <Link to={"/expert-transfer"}>
         <div className="custom-card">
           <div className="icon-container icon6">
-            <p className="icon-number">06</p>
+            <p className="icon-number">05</p>
           </div>
           <div className="icon">
             <img src="https://eduagency.uz/img/service2.png" alt="" />
@@ -105,7 +105,7 @@ function NewCards() {
         </div>
       </Link>
 
-      <Link to={"/educational-technologies"}>
+      {/* <Link to={"/educational-technologies"}>
         <div className="custom-card">
           <div className="icon-container icon7">
             <p className="icon-number">07</p>
@@ -116,7 +116,6 @@ function NewCards() {
           <div style={{ display: "flex", flexDirection: "column" }}>
             <h1 className="title">{getText("headerSwiperTitle8")}</h1>
             <p className="desc">
-              {/* {getText("OfficialRepresentativeServicesTitle")} */}
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis
               voluptatibus id, perferendis odit pariatur sit corporis soluta
               veritatis repellat dolore perspiciatis at reiciendis laborum
@@ -124,12 +123,12 @@ function NewCards() {
             </p>
           </div>
         </div>
-      </Link>
+      </Link> */}
 
       <Link to={"/application"}>
         <div className="custom-card">
           <div className="icon-container icon8">
-            <p className="icon-number">08</p>
+            <p className="icon-number">06</p>
           </div>
           <div className="icon">
             <img src="https://eduagency.uz/img/service2.png" alt="" />
