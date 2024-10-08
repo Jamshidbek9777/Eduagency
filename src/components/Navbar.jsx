@@ -252,6 +252,17 @@ const Navbar = () => {
                         {getText("headerSwiperTitle8")}
                       </Link>
                     </li>
+                    <li onClick={() => handleLinkClick("/online-certificate")}>
+                      <Link
+                        to="/online-certificate"
+                        className={`${location.pathname === "/online-certificate"
+                          ? "active-link"
+                          : ""
+                          }`}
+                      >
+                        {getText("headerSwiperTitle9")}
+                      </Link>
+                    </li>
 
 
 

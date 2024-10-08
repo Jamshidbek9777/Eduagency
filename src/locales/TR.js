@@ -13,12 +13,14 @@ export const tr = {
     headerSwiperTitle6: "Türkiye Bursları",
     headerSwiperTitle7: "Resmi Temsilcilik Hizmetleri",
     headerSwiperTitle8: "Eğitim Teknolojileri",
+    headerSwiperTitle9: "Online Sertifika Kursları",
     headerSwiperParagraph1: "EduAgency, Türkiye ve Özbekistan'daki eğitim kurumlarına başvuru sürecini kolaylaştırmak için kapsamlı destek sağlar. Öğrencilerin ve akademisyenlerin gerekli belgeleri toplama, başvuru formlarını doldurma ve süreçle ilgili danışmanlık alma konularında rehberlik eder.",
     headerSwiperParagraph2: "Eğitim ajansı, Türkiye ve Özbekistan arasındaki öğrenci transferlerini kolaylaştırmak için çalışır. Öğrencilerin uygun eğitim kurumlarına yerleştirilmesi, kredi transferleri ve adaptasyon süreçleri konusunda yardımcı olur.",
     headerSwiperParagraph3: "EduAgency, iki ülke arasındaki akademik ve uzman personel değişimini destekler. Uzman transferi programları sayesinde, akademisyenler ve uzmanlar bilgi ve deneyimlerini paylaşarak eğitim kalitesini artırırlar.",
     headerSwiperParagraph4: "Geleceğin Bilim İnsanlarını ve Kaşiflerini Yetiştiriyoruz",
     headerSwiperParagraph41: "Hayal et, keşfet ve yıldızlara ulaş!",
     headerSwiperParagraph5: "EduAgency, Türk Dilinin profesyoneller aracılığıyla  Kişilere ve firmalara en güzel şekilde öğretilmesi için programlı kurs hizmetleri  sunar.",
+    headerSwiperParagraph9: "Uluslararası kariyer sahibi olun!",
     headerSwiperALink: "turkosoft.uz",
     headerButton1: "Detaylı bilgi",
     headerButton2: "İletişime geçin",
@@ -211,6 +213,17 @@ export const tr = {
     OfficialRepresentativeServicesAccordionQP3: "Amacımız, üniversitenizin uluslararası bilinirliğini artırmak ve nitelikli öğrenci sayısını yükseltmek.",
     OfficialRepresentativeServicesAccordionQP4: "Öğrenci danışmanlığı, kayıt yönetimi, etkinlik organizasyonu ve pazarlama hizmetlerimizle her aşamada yanınızdayız.",
     OfficialRepresentativeServicesAccordionEndSpan: "Geniş Bilgi İçin Bizi Arayın!",
+
+
+    OnlineCertificateTitle: "Uluslararası Online Sertifika Eğitim Platformu",
+    OnlineCertificateParagraph: "Dijital dünyanın hızla değiştiği günümüzde, kariyerinizi bir adım öne taşımak için uluslararası geçerliliği olan sertifikalar almak hiç bu kadar kolay olmamıştı! Platformumuz, dünyanın her yerinden erişilebilen, modern eğitim teknolojileri ile donatılmış online kurslar sunarak sizlere kaliteli ve erişilebilir eğitim fırsatları sağlıyor.",
+    OnlineCertificateAccordionTitle: "Neden Biz?",
+    OnlineCertificateAccordionList1: "Uluslararası Geçerlilik: Sertifikalarımız uluslararası akreditasyon kuruluşları tarafından onaylıdır ve dünya genelinde tanınır.",
+    OnlineCertificateAccordionList2: "Esnek Eğitim: Kendi hızınızda öğrenmenizi sağlayan çevrimiçi ders içeriklerimiz, iş veya okul temponuza uyum sağlar.",
+    OnlineCertificateAccordionList3: "Uzman Eğitmenler: Alanında deneyimli ve uluslararası alanda tanınmış eğitmenlerden öğrenme fırsatı sunuyoruz.",
+    OnlineCertificateAccordionList4: "Geniş Kapsamlı Programlar: IT, dijital pazarlama, işletme, tasarım gibi çok çeşitli alanlarda sertifika programları sunuyoruz.",
+    OnlineCertificateAccordionList5: "Uygun Fiyatlar: Eğitim kalitesinden ödün vermeden uygun fiyatlarla uluslararası geçerli sertifikalara sahip olabilirsiniz.",
+    OnlineCertificateEndParagraph: "Geleceğinizi şekillendirmek ve küresel iş piyasasında fark oluşturmak için, platformumuzu hemen keşfedin. Sertifikalarımız ile kariyerinizde yeni kapılar açın!",
 
 
 
