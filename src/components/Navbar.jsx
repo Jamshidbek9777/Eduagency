@@ -264,6 +264,18 @@ const Navbar = () => {
                       </Link>
                     </li>
 
+                    <li onClick={() => handleLinkClick("/international-teacher")}>
+                      <Link
+                        to="/international-teacher"
+                        className={`${location.pathname === "/international-teacher"
+                          ? "active-link"
+                          : ""
+                          }`}
+                      >
+                        {getText("headerSwiperTitle10")}
+                      </Link>
+                    </li>
+
 
 
                   </motion.ul>

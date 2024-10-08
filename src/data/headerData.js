@@ -18,6 +18,7 @@ const useHeaderData = () => {
                 { title: getText("headerSwiperTitle7"), description: getText("OfficialRepresentativeServicesTitle"), headerLink: '/official-representative-services', bgImage: "/img/header3.png", mobBgImage: "/img/headerMob3.jpg" },
                 { title: getText("headerSwiperTitle6"), description: getText("TUrkiyeBurslariOtherText"), headerLink: '/turkiye-burslari', bgImage: "/img/turkey-scholarship-1.jpg", mobBgImage: "/img/turkey-scholarship-1.jpg" },
                 { title: getText("headerSwiperTitle9"), description: getText("headerSwiperParagraph9"), headerLink: '/online-certificate', bgImage: "/img/certificate1.jpg", mobBgImage: "/img/certificate1.jpg" },
+                { title: getText("headerSwiperTitle10"), description: getText("headerSwiperParagraph10"), headerLink: '/international-teacher', bgImage: "/img/teacher.avif", mobBgImage: "/img/teacher.avif" },
 
             ];
             setHeaderData(data);

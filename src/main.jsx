@@ -29,6 +29,7 @@ import TurkiyeBurslari from "./pages/TurkiyeBurslari.jsx";
 import OfficialRepresentativeServices from "./pages/OfficialRepresentativeServices.jsx";
 import EducationalTechnologies from "./pages/EducationalTechnologies.jsx";
 import OnlineCertificate from "./pages/OnlineCertificate.jsx";
+import LearningLeader from "./pages/LearningLeader.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -49,6 +50,7 @@ root.render(
           <Route path="/turkiye-burslari" exact element={<TurkiyeBurslari />} />
           <Route path="/official-representative-services" exact element={<OfficialRepresentativeServices />} />
           <Route path="/online-certificate" exact element={<OnlineCertificate />} />
+          <Route path="/international-teacher" exact element={<LearningLeader />} />
           <Route
             path="/university-community"
             exact

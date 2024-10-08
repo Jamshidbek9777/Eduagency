@@ -14,6 +14,7 @@ export const tr = {
     headerSwiperTitle7: "Resmi Temsilcilik Hizmetleri",
     headerSwiperTitle8: "Eğitim Teknolojileri",
     headerSwiperTitle9: "Online Sertifika Kursları",
+    headerSwiperTitle10: "Uluslararası Öğretmenlik Eğitimleri",
     headerSwiperParagraph1: "EduAgency, Türkiye ve Özbekistan'daki eğitim kurumlarına başvuru sürecini kolaylaştırmak için kapsamlı destek sağlar. Öğrencilerin ve akademisyenlerin gerekli belgeleri toplama, başvuru formlarını doldurma ve süreçle ilgili danışmanlık alma konularında rehberlik eder.",
     headerSwiperParagraph2: "Eğitim ajansı, Türkiye ve Özbekistan arasındaki öğrenci transferlerini kolaylaştırmak için çalışır. Öğrencilerin uygun eğitim kurumlarına yerleştirilmesi, kredi transferleri ve adaptasyon süreçleri konusunda yardımcı olur.",
     headerSwiperParagraph3: "EduAgency, iki ülke arasındaki akademik ve uzman personel değişimini destekler. Uzman transferi programları sayesinde, akademisyenler ve uzmanlar bilgi ve deneyimlerini paylaşarak eğitim kalitesini artırırlar.",
@@ -21,6 +22,7 @@ export const tr = {
     headerSwiperParagraph41: "Hayal et, keşfet ve yıldızlara ulaş!",
     headerSwiperParagraph5: "EduAgency, Türk Dilinin profesyoneller aracılığıyla  Kişilere ve firmalara en güzel şekilde öğretilmesi için programlı kurs hizmetleri  sunar.",
     headerSwiperParagraph9: "Uluslararası kariyer sahibi olun!",
+    headerSwiperParagraph10: "Öğrenen Lider Öğretmen !",
     headerSwiperALink: "turkosoft.uz",
     headerButton1: "Detaylı bilgi",
     headerButton2: "İletişime geçin",
@@ -224,6 +226,30 @@ export const tr = {
     OnlineCertificateAccordionList4: "Geniş Kapsamlı Programlar: IT, dijital pazarlama, işletme, tasarım gibi çok çeşitli alanlarda sertifika programları sunuyoruz.",
     OnlineCertificateAccordionList5: "Uygun Fiyatlar: Eğitim kalitesinden ödün vermeden uygun fiyatlarla uluslararası geçerli sertifikalara sahip olabilirsiniz.",
     OnlineCertificateEndParagraph: "Geleceğinizi şekillendirmek ve küresel iş piyasasında fark oluşturmak için, platformumuzu hemen keşfedin. Sertifikalarımız ile kariyerinizde yeni kapılar açın!",
+
+
+    InternationalTeacherTitle: "Öğrenen Lider Öğretmen ve Uluslararası Öğretmenlik Eğitimleri",
+    InternationalTeacherParagraph: "programlarının içerikleri, öğretmenlerin modern pedagojik yaklaşımları, dijital becerileri ve kültürlerarası öğretim yetkinliklerini geliştirmek üzere tasarlanmıştır. Programlar, öğretmenlerin sürekli öğrenme süreçlerini destekleyerek onları öğrencilerine ilham veren liderler haline getirmeyi amaçlar.",
+    InternationalTeacherAccordionTitle1: "Öğrenen Lider Öğretmen İçeriği:",
+    InternationalTeacherAccordionTitle2: "Uluslararası Öğretmenlik Eğitimleri İçeriği:",
+    InternationalTeacherAccordionTitle1Paragraph1Span1: "Eğitimde Liderlik ve Mentorluk:",
+    InternationalTeacherAccordionTitle1Paragraph1: "Öğretmenlerin sınıfta ve meslektaşları arasında liderlik rollerini nasıl üstlenebileceğini ele alır. Bu bölüm, rehberlik ve iş birliği temelli öğrenme toplulukları oluşturmayı öğretir.",
+    InternationalTeacherAccordionTitle1Paragraph1Span2: "Sürekli Mesleki Gelişim:",
+    InternationalTeacherAccordionTitle1Paragraph2: "Öğretmenlerin, meslek hayatı boyunca sürekli öğrenmelerini teşvik eder. Yenilikçi öğrenme stratejileri, kişisel gelişim planları ve reflektif öğretim üzerine odaklanır.",
+    InternationalTeacherAccordionTitle1Paragraph1Span3: "Eğitim Teknolojileri ve Dijital Araçlar:",
+    InternationalTeacherAccordionTitle1Paragraph3: "Dijital çağda öğretim yöntemlerini geliştiren, eğitim teknolojilerini sınıflarına entegre eden öğretmenlerin bu alanda yetkinleşmesi sağlanır.",
+    InternationalTeacherAccordionTitle1Paragraph1Span4: "Yenilikçi Öğretim Yaklaşımları:",
+    InternationalTeacherAccordionTitle1Paragraph4: "Farklı öğrenme stillerine göre sınıf yönetimi ve pedagojik yaklaşımlar sunar. Farklılaştırılmış öğretim, ters yüz sınıf (flipped classroom) ve proje tabanlı öğrenme gibi modern teknikler üzerinde durulur.",
+
+    InternationalTeacherAccordionTitle2Paragraph1Span1: "Kültürlerarası İletişim ve Eğitim:",
+    InternationalTeacherAccordionTitle2Paragraph1: "Kültürlerarası duyarlılık kazandırarak, öğretmenlerin farklı kültürel geçmişlere sahip öğrencilere etkili bir şekilde hitap etmelerini sağlar. Bu bölüm, çok kültürlü sınıflarda öğretim yöntemleri üzerinde yoğunlaşır.",
+    InternationalTeacherAccordionTitle2Paragraph1Span2: "Uluslararası Eğitim Sistemleri ve Pedagojik Yaklaşımlar:",
+    InternationalTeacherAccordionTitle2Paragraph2: "Dünya genelinde kabul gören eğitim modelleri ve yaklaşımlar hakkında bilgi verir. Öğretmenler, farklı eğitim sistemlerini tanır ve bu sistemlerden esinlenerek kendi öğretim stillerini geliştirir.",
+    InternationalTeacherAccordionTitle2Paragraph1Span3: "Çok Dillilik ve Dil Öğretimi:",
+    InternationalTeacherAccordionTitle2Paragraph3: " Dil becerilerini geliştiren ve öğretmenlerin çok dilli sınıflarda etkili bir şekilde eğitim verebilmesini sağlayan içerikler sunar.",
+    InternationalTeacherAccordionTitle2Paragraph1Span4: "Dijital Pedagoji ve Online Öğretim:",
+    InternationalTeacherAccordionTitle2Paragraph4: "Küresel eğilimlere paralel olarak, öğretmenlerin dijital platformlarda ders verebilme becerilerini artırır. Online öğrenme araçları ve uygulamaları hakkında bilgi verir.",
+
 
 
 
