@@ -10,6 +10,8 @@ const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   const [burger, setBurger] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isPartnersDropdownOpen, setIsPartnersDropdownOpen] = useState(false);
+
   const location = useLocation();
 
   useEffect(() => {
@@ -48,6 +50,10 @@ const Navbar = () => {
 
   const handleDropdownHover = (state) => {
     setIsDropdownOpen(state);
+  };
+
+  const handlePartnersDropdownHover = (state) => {
+    setIsPartnersDropdownOpen(state);
   };
 
   const navVariants = {
@@ -110,15 +116,9 @@ const Navbar = () => {
               className={`d-flex nav-menu-pc justify-content align-items-center`}
             >
               <ul className="nav-menu">
-                <li onClick={() => handleLinkClick("/")}>
-                  <Link
-                    to="/"
-                    className={`${location.pathname === "/" ? "active-link" : ""
-                      }`}
-                  >
-                    {getText("home")}
-                  </Link>
-                </li>
+
+
+
                 <li onClick={() => handleLinkClick("/about")}>
                   <Link
                     to="/about"
@@ -128,6 +128,7 @@ const Navbar = () => {
                     {getText("aboutUs")}
                   </Link>
                 </li>
+                {/* Services Dropdown */}
                 <li
                   style={{ display: "flex", alignItems: "center" }}
                   onMouseEnter={() => handleDropdownHover(true)}
@@ -135,14 +136,16 @@ const Navbar = () => {
                 >
                   <Link
                     to="/services"
-                    className={`${location.pathname === "/services" ? "active-link" : ""}`}
+                    className={`${location.pathname === "/services" ? "active-link" : ""
+                      }`}
                     style={{ display: "flex", alignItems: "center", gap: "10px" }}
                   >
                     {getText("services")}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
-                      className={`services-arrow ${location.pathname === "/services" ? "active" : ""}`}
+                      className={`services-arrow ${location.pathname === "/services" ? "active" : ""
+                        }`}
                       style={{ width: "20px" }}
                     >
                       <path
@@ -172,63 +175,7 @@ const Navbar = () => {
                         {getText("headerSwiperTitle2")}
                       </Link>
                     </li>
-                    <li onClick={() => handleLinkClick("/expert-transfer")}>
-                      <Link
-                        to="/expert-transfer"
-                        className={`${location.pathname === "/expert-transfer"
-                          ? "active-link"
-                          : ""
-                          }`}
-                      >
-                        {getText("headerSwiperTitle3")}
-                      </Link>
-                    </li>
-                    <li onClick={() => handleLinkClick("/application")}>
-                      <Link
-                        to="/application"
-                        className={`${location.pathname === "/application"
-                          ? "active-link"
-                          : ""
-                          }`}
-                      >
-                        {getText("headerSwiperTitle1")}
-                      </Link>
-                    </li>
 
-                    <li onClick={() => handleLinkClick("/turkiye-dili")}>
-                      <Link
-                        to="/turkiye-dili"
-                        className={`${location.pathname === "/turkiye-dili"
-                          ? "active-link"
-                          : ""
-                          }`}
-                      >
-                        {getText("headerSwiperTitle5")}
-                      </Link>
-                    </li>
-                    <li onClick={() => handleLinkClick("/organization-services")}>
-                      <Link
-                        to="/organization-services"
-                        className={`${location.pathname === "/organization-services"
-                          ? "active-link"
-                          : ""
-                          }`}
-                      >
-                        {getText("headerSwiperTitle4")}
-
-                      </Link>
-                    </li>
-                    <li onClick={() => handleLinkClick("/turkiye-burslari")}>
-                      <Link
-                        to="/turkiye-burslari"
-                        className={`${location.pathname === "/turkiye-burslari"
-                          ? "active-link"
-                          : ""
-                          }`}
-                      >
-                        {getText("headerSwiperTitle6")}
-                      </Link>
-                    </li>
                     <li onClick={() => handleLinkClick("/official-representative-services")}>
                       <Link
                         to="/official-representative-services"
@@ -241,46 +188,91 @@ const Navbar = () => {
                       </Link>
                     </li>
 
-                    <li onClick={() => handleLinkClick("/educational-technologies")}>
+                    <li onClick={() => handleLinkClick("/official-representative-services")}>
                       <Link
-                        to="/educational-technologies"
-                        className={`${location.pathname === "/educational-technologies"
+                        to="/official-representative-services"
+                        className={`${location.pathname === "/official-representative-services"
                           ? "active-link"
                           : ""
                           }`}
                       >
-                        {getText("headerSwiperTitle8")}
+                        Work and Travel
                       </Link>
                     </li>
-                    <li onClick={() => handleLinkClick("/online-certificate")}>
-                      <Link
-                        to="/online-certificate"
-                        className={`${location.pathname === "/online-certificate"
-                          ? "active-link"
-                          : ""
-                          }`}
-                      >
-                        {getText("headerSwiperTitle9")}
-                      </Link>
-                    </li>
-
-                    <li onClick={() => handleLinkClick("/international-teacher")}>
-                      <Link
-                        to="/international-teacher"
-                        className={`${location.pathname === "/international-teacher"
-                          ? "active-link"
-                          : ""
-                          }`}
-                      >
-                        {getText("headerSwiperTitle10")}
-                      </Link>
-                    </li>
-
-
-
                   </motion.ul>
                 </li>
-                <li onClick={() => handleLinkClick("/question")}>
+                {/* New Dropdown for Business Partners */}
+                <li
+                  style={{ display: "flex", alignItems: "center" }}
+                  onMouseEnter={() => handlePartnersDropdownHover(true)}
+                  onMouseLeave={() => handlePartnersDropdownHover(false)}
+                >
+                  <Link
+                    to="/business-partners"
+                    className={`${location.pathname === "/business-partners" ? "active-link" : ""
+                      }`}
+                    style={{ display: "flex", alignItems: "center", gap: "10px" }}
+                  >
+                    İş Ortaklarımız
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                      className={`services-arrow ${location.pathname === "/business-partners" ? "active" : ""
+                        }`}
+                      style={{ width: "20px" }}
+                    >
+                      <path
+                        fill="#000000"
+                        d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                      />
+                    </svg>
+                  </Link>
+
+                  <motion.ul
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{
+                      opacity: isPartnersDropdownOpen ? 1 : 0,
+                      y: isPartnersDropdownOpen ? 0 : -30,
+                    }}
+                    transition={{ duration: 0.3 }}
+                    className={`dropdown-menu ${isPartnersDropdownOpen ? "show" : ""}`}
+                  >
+                    <li onClick={() => handleLinkClick("/turkcha-soati")}>
+                      <Link
+                        to="/turkcha-soati"
+                        className={`${location.pathname === "/turkcha-soati"
+                          ? "active-link"
+                          : ""
+                          }`}
+                      >
+                        TurkchaSoati
+                      </Link>
+                    </li>
+
+                    <li onClick={() => handleLinkClick("/turksoft")}>
+                      <Link
+                        to="/turksoft"
+                        className={`${location.pathname === "/turksoft" ? "active-link" : ""
+                          }`}
+                      >
+                        TurkSoft
+                      </Link>
+                    </li>
+
+                    <li onClick={() => handleLinkClick("/kosmosx")}>
+                      <Link
+                        to="/kosmosx"
+                        className={`${location.pathname === "/kosmosx" ? "active-link" : ""
+                          }`}
+                      >
+                        KosmosX
+                      </Link>
+                    </li>
+                  </motion.ul>
+                </li>
+
+
+                {/* <li onClick={() => handleLinkClick("/question")}>
                   <Link
                     to="/question"
                     className={`${location.pathname === "/question" ? "active-link" : ""
@@ -288,7 +280,8 @@ const Navbar = () => {
                   >
                     {getText("question")}
                   </Link>
-                </li>
+                </li> */}
+
                 <li onClick={() => handleLinkClick("/contacts")}>
                   <Link
                     to="/contacts"
