@@ -30,6 +30,7 @@ import OfficialRepresentativeServices from "./pages/OfficialRepresentativeServic
 import EducationalTechnologies from "./pages/EducationalTechnologies.jsx";
 import OnlineCertificate from "./pages/OnlineCertificate.jsx";
 import LearningLeader from "./pages/LearningLeader.jsx";
+import WorkAndTravel from "./pages/WorkAndTravel.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -56,6 +57,7 @@ root.render(
             exact
             element={<UniversityCom />}
           />
+          <Route path="/work-and-travel" exact element={<WorkAndTravel />} />
           <Route path="/contacts" exact element={<Contacts />} />
           <Route path="/about" exact element={<AboutPage />} />
           <Route path="/services" exact element={<Services />} />

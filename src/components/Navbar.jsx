@@ -188,10 +188,10 @@ const Navbar = () => {
                       </Link>
                     </li>
 
-                    <li onClick={() => handleLinkClick("/official-representative-services")}>
+                    <li onClick={() => handleLinkClick("/work-and-travel")}>
                       <Link
-                        to="/official-representative-services"
-                        className={`${location.pathname === "/official-representative-services"
+                        to="/work-and-travel"
+                        className={`${location.pathname === "/work-and-travel"
                           ? "active-link"
                           : ""
                           }`}
@@ -201,7 +201,6 @@ const Navbar = () => {
                     </li>
                   </motion.ul>
                 </li>
-                {/* New Dropdown for Business Partners */}
                 <li
                   style={{ display: "flex", alignItems: "center" }}
                   onMouseEnter={() => handlePartnersDropdownHover(true)}
