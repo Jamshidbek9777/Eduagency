@@ -31,6 +31,7 @@ import EducationalTechnologies from "./pages/EducationalTechnologies.jsx";
 import OnlineCertificate from "./pages/OnlineCertificate.jsx";
 import LearningLeader from "./pages/LearningLeader.jsx";
 import WorkAndTravel from "./pages/WorkAndTravel.jsx";
+import TurkchaSoati from "./pages/TurkchaSoati.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -52,11 +53,13 @@ root.render(
           <Route path="/official-representative-services" exact element={<OfficialRepresentativeServices />} />
           <Route path="/online-certificate" exact element={<OnlineCertificate />} />
           <Route path="/international-teacher" exact element={<LearningLeader />} />
-          <Route
+          <Route path="/turkchasoati" exact element={<TurkchaSoati />} />
+          {/* <Route
             path="/university-community"
             exact
             element={<UniversityCom />}
-          />
+          /> */}
+
           <Route path="/work-and-travel" exact element={<WorkAndTravel />} />
           <Route path="/contacts" exact element={<Contacts />} />
           <Route path="/about" exact element={<AboutPage />} />

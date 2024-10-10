@@ -236,10 +236,10 @@ const Navbar = () => {
                     transition={{ duration: 0.3 }}
                     className={`dropdown-menu ${isPartnersDropdownOpen ? "show" : ""}`}
                   >
-                    <li onClick={() => handleLinkClick("/turkcha-soati")}>
+                    <li onClick={() => handleLinkClick("/turkchasoati")}>
                       <Link
-                        to="/turkcha-soati"
-                        className={`${location.pathname === "/turkcha-soati"
+                        to="/turkchasoati"
+                        className={`${location.pathname === "/turkchasoati"
                           ? "active-link"
                           : ""
                           }`}
