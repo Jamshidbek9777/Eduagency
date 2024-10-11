@@ -278,6 +278,46 @@ const Navbar = () => {
                         KosmosX
                       </Link>
                     </li>
+
+                    <li onClick={() => handleLinkClick("/turkiye-burslari")}>
+                      <Link
+                        to="/turkiye-burslari"
+                        className={`${location.pathname === "/turkiye-burslari" ? "active-link" : ""
+                          }`}
+                      >
+                        Türkiye Bursları
+                      </Link>
+                    </li>
+
+                    <li onClick={() => handleLinkClick("/airtravel")}>
+                      <Link
+                        to="/airtravel"
+                        className={`${location.pathname === "/airtravel" ? "active-link" : ""
+                          }`}
+                      >
+                        Airtravel
+                      </Link>
+                    </li>
+
+                    <li onClick={() => handleLinkClick("/certificate")}>
+                      <Link
+                        to="/certificate"
+                        className={`${location.pathname === "/certificate" ? "active-link" : ""
+                          }`}
+                      >
+                        Certificate
+                      </Link>
+                    </li>
+
+                    <li onClick={() => handleLinkClick("/e-ustoz")}>
+                      <Link
+                        to="/e-ustoz"
+                        className={`${location.pathname === "/e-ustoz" ? "active-link" : ""
+                          }`}
+                      >
+                        E-Ustoz
+                      </Link>
+                    </li>
                   </motion.ul>
                 </li>
 

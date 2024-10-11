@@ -35,6 +35,9 @@ import TurkchaSoati from "./pages/TurkchaSoati.jsx";
 import TurkSoft from "./pages/TurkSoft.jsx";
 import KosmosX from "./pages/KosmosX.jsx";
 import OrganizationofAcademicExchangePrograms from "./pages/OrganizationofAcademicExchangePrograms.jsx";
+import Airtravel from "./pages/Airtravel.jsx";
+import Certificate from "./pages/Certificate.jsx";
+import EUstoz from "./pages/EUstoz.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -59,6 +62,9 @@ root.render(
           <Route path="/turkchasoati" exact element={<TurkchaSoati />} />
           <Route path="/organization-of-academic-exchange-programs" exact element={<OrganizationofAcademicExchangePrograms />} />
           <Route path="/work-and-travel" exact element={<WorkAndTravel />} />
+          <Route path="/airtravel" exact element={<Airtravel />} />
+          <Route path="/certificate" exact element={<Certificate />} />
+          <Route path="/e-ustoz" exact element={<EUstoz />} />
           <Route path="/turksoft" exact element={<TurkSoft />} />
           <Route path="/kosmosx" exact element={<KosmosX />} />
           <Route path="/contacts" exact element={<Contacts />} />
