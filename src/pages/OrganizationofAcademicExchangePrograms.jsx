@@ -59,7 +59,7 @@ function OrganizationofAcademicExchangePrograms() {
                             </AccordionPanel>
                         </AccordionItem>
 
-                        <AccordionItem>
+                        {/* <AccordionItem>
                             <h2>
                                 <AccordionButton>
                                     <Box
@@ -81,7 +81,6 @@ function OrganizationofAcademicExchangePrograms() {
                             </AccordionPanel>
                         </AccordionItem>
 
-
                         <AccordionItem>
                             <h2>
                                 <AccordionButton>
@@ -102,7 +101,7 @@ function OrganizationofAcademicExchangePrograms() {
                                     <p>Öğrencilerin ve akademisyenlerin yurtdışındaki akademik ve sosyal hayata adapte olabilmeleri için, özel olarak tasarlanmış dil eğitim programları sunuyoruz. Bu programlar, özellikle eğitim alacakları ülkenin diline yönelik olup, onların daha hızlı uyum sağlamalarına ve akademik başarılarını artırmalarına yardımcı oluyor.</p>
                                 </div>
                             </AccordionPanel>
-                        </AccordionItem>
+                        </AccordionItem> */}
 
                         <AccordionItem>
                             <h2>

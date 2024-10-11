@@ -16,7 +16,7 @@ export const tr = {
     headerSwiperTitle8: "Eğitim Teknolojileri",
     headerSwiperTitle9: "Online Sertifika Kursları",
     headerSwiperTitle10: "Uluslararası Öğretmenlik Eğitimleri",
-    headerSwiperTitle11: "Akademik  Değişim Programları Organizasyonu",
+    headerSwiperTitle11: "Akademik Değişim Programları",
     headerSwiperParagraph1: "EduAgency, Türkiye ve Özbekistan'daki eğitim kurumlarına başvuru sürecini kolaylaştırmak için kapsamlı destek sağlar. Öğrencilerin ve akademisyenlerin gerekli belgeleri toplama, başvuru formlarını doldurma ve süreçle ilgili danışmanlık alma konularında rehberlik eder.",
     headerSwiperParagraph2: "Eğitim ajansı, Türkiye ve Özbekistan arasındaki öğrenci transferlerini kolaylaştırmak için çalışır. Öğrencilerin uygun eğitim kurumlarına yerleştirilmesi, kredi transferleri ve adaptasyon süreçleri konusunda yardımcı olur.",
     headerSwiperParagraph3: "EduAgency, iki ülke arasındaki akademik ve uzman personel değişimini destekler. Uzman transferi programları sayesinde, akademisyenler ve uzmanlar bilgi ve deneyimlerini paylaşarak eğitim kalitesini artırırlar.",

@@ -19,7 +19,7 @@ export const en = {
     headerSwiperTitle8: "Educational Technologies",
     headerSwiperTitle9: "Online Certificate Courses",
     headerSwiperTitle10: "International Teacher Trainings",
-    headerSwiperTitle11: "Organization of Academic Exchange Programs",
+    headerSwiperTitle11: "Academic Exchange Programs",
     headerSwiperParagraph1: "The agency provides comprehensive support to facilitate the application process to educational institutions in Turkey and Uzbekistan. It assists students and academicians in collecting required documents, filling out application forms and providing guidance throughout the process.",
     headerSwiperParagraph2: "The educational agency is working to facilitate student transfers between Turkey and Uzbekistan. It assists in student placement, credit transfer, and onboarding processes.",
     headerSwiperParagraph3: "The Agency supports the exchange of academic and expert personnel between the two countries. Through expert exchange programs, academics and specialists share their knowledge and experience, improving the quality of education.",

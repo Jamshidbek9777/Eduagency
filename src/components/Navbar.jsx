@@ -208,7 +208,7 @@ const Navbar = () => {
                           : ""
                           }`}
                       >
-                        Akademik  Değişim Programları Organizasyonu
+                        {getText("headerSwiperTitle11")}
                       </Link>
                     </li>
                   </motion.ul>
