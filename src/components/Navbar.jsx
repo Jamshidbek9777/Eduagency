@@ -196,7 +196,19 @@ const Navbar = () => {
                           : ""
                           }`}
                       >
-                        Work and Travel
+                        Work & Travel
+                      </Link>
+                    </li>
+
+                    <li onClick={() => handleLinkClick("/organization-of-academic-exchange-programs")}>
+                      <Link
+                        to="/organization-of-academic-exchange-programs"
+                        className={`${location.pathname === "/organization-of-academic-exchange-programs"
+                          ? "active-link"
+                          : ""
+                          }`}
+                      >
+                        Akademik  Değişim Programları Organizasyonu
                       </Link>
                     </li>
                   </motion.ul>
@@ -207,12 +219,11 @@ const Navbar = () => {
                   onMouseLeave={() => handlePartnersDropdownHover(false)}
                 >
                   <Link
-                    to="/business-partners"
                     className={`${location.pathname === "/business-partners" ? "active-link" : ""
                       }`}
                     style={{ display: "flex", alignItems: "center", gap: "10px" }}
                   >
-                    İş Ortaklarımız
+                    {getText("partners")}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
@@ -254,7 +265,7 @@ const Navbar = () => {
                         className={`${location.pathname === "/turksoft" ? "active-link" : ""
                           }`}
                       >
-                        TurkSoft
+                        Turkosoft
                       </Link>
                     </li>
 

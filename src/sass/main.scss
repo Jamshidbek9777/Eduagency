@@ -511,12 +511,15 @@ body {
                 p {
                     color: rgba(255, 255, 255, 0.762);
                     font-family: Jost;
+                    text-overflow: ellipsis;
                     font-size: 24px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    max-width: 500px;
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
-                    display: flex;
-                    max-width: 1100px;
+                    display: block;
                     @media screen and (max-width: 1800px) {
                         max-width: 900px;
                         font-size: 22px;
@@ -1976,11 +1979,10 @@ body {
 }
 
 .newcards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    place-items: center;
-    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     .custom-card {
         background-color: #f8f9fa;
         padding: 1.5rem;
@@ -2026,6 +2028,48 @@ body {
             -webkit-line-clamp: 3;
             /* Limit to 3 lines */
             -webkit-box-orient: vertical;
+        }
+    }
+}
+
+.coming-soon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(135deg, rgba(0, 136, 255, 0.8), rgba(255, 153, 0, 0.8));
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .countdown {
+        display: flex;
+        gap: 2rem;
+        .time-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 2rem;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 20px;
+            backdrop-filter: blur(5px);
+            span {
+                font-size: 3rem;
+                font-weight: bold;
+            }
+            p {
+                margin: 0;
+                font-size: 1rem;
+            }
         }
     }
 }

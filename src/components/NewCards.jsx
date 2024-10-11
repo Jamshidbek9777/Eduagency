@@ -41,7 +41,7 @@ function NewCards() {
         </div>
       </Link>
 
-      <Link to={"/turkiye-burslari"}>
+      <Link to={"/work-and-travel"}>
         <div className="custom-card">
           <div className="icon-container icon3">
             <p className="icon-number">03</p>
@@ -50,92 +50,12 @@ function NewCards() {
             <img src="https://eduagency.uz/img/service2.png" alt="" />
           </div>
           <div style={{ display: "flex", flexDirection: "column" }}>
-            <h1 className="title">{getText("headerSwiperTitle6")}</h1>
-            <p className="desc">{getText("TUrkiyeBurslariOtherText")}</p>
-          </div>
-        </div>
-      </Link>
+            <h1 className="title">Work and Travel</h1>
 
-      <Link to={"/organization-services"}>
-        <div className="custom-card">
-          <div className="icon-container icon4">
-            <p className="icon-number">04</p>
-          </div>
-          <div className="icon">
-            <img src="https://eduagency.uz/img/service2.png" alt="" />
-          </div>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <h1 className="title">{getText("headerSwiperTitle4")}</h1>
-            <p className="desc">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus
-              porro suscipit distinctio nostrum fugiat omnis, libero
-              reprehenderit provident excepturi voluptate?
-            </p>
-          </div>
-        </div>
-      </Link>
-
-      {/* <Link to={"/turkiye-dili"}>
-        <div className="custom-card">
-          <div className="icon-container icon5">
-            <p className="icon-number">05</p>
-          </div>
-          <div className="icon">
-            <img src="https://eduagency.uz/img/service2.png" alt="" />
-          </div>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <h1 className="title">{getText("headerSwiperTitle5")}</h1>
-            <p className="desc">{getText("headerSwiperParagraph4")}</p>
-          </div>
-        </div>
-      </Link> */}
-
-      <Link to={"/expert-transfer"}>
-        <div className="custom-card">
-          <div className="icon-container icon6">
-            <p className="icon-number">05</p>
-          </div>
-          <div className="icon">
-            <img src="https://eduagency.uz/img/service2.png" alt="" />
-          </div>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <h1 className="title">{getText("headerSwiperTitle3")}</h1>
-            <p className="desc">{getText("headerSwiperParagraph3")}</p>
-          </div>
-        </div>
-      </Link>
-
-      {/* <Link to={"/educational-technologies"}>
-        <div className="custom-card">
-          <div className="icon-container icon7">
-            <p className="icon-number">07</p>
-          </div>
-          <div className="icon">
-            <img src="https://eduagency.uz/img/service2.png" alt="" />
-          </div>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <h1 className="title">{getText("headerSwiperTitle8")}</h1>
-            <p className="desc">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis
-              voluptatibus id, perferendis odit pariatur sit corporis soluta
-              veritatis repellat dolore perspiciatis at reiciendis laborum
-              eveniet, odio praesentium ab eaque aliquam.
-            </p>
-          </div>
-        </div>
-      </Link> */}
-
-      <Link to={"/application"}>
-        <div className="custom-card">
-          <div className="icon-container icon8">
-            <p className="icon-number">06</p>
-          </div>
-          <div className="icon">
-            <img src="https://eduagency.uz/img/service2.png" alt="" />
-          </div>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <h1 className="title">{getText("headerSwiperTitle1")}</h1>
-            <p className="desc">{getText("headerSwiperParagraph1")}</p>
+            <p className="desc">Özbekistan’ın en güvenilir ve deneyimli Work and Travel firması
+              olarak, gençlerimizi ABD’ye hem çalışmak hem de farklı kültürleri
+              keşfetmek üzere gönderiyoruz. Her adımda yanınızda olarak, size
+              güvenli, keyifli ve kazançlı bir yolculuk sunmayı hedefliyoruz.</p>
           </div>
         </div>
       </Link>
