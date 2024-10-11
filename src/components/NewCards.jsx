@@ -50,12 +50,25 @@ function NewCards() {
             <img src="https://eduagency.uz/img/service2.png" alt="" />
           </div>
           <div style={{ display: "flex", flexDirection: "column" }}>
-            <h1 className="title">Work and Travel</h1>
+            <h1 className="title">Work & Travel</h1>
 
-            <p className="desc">Özbekistan’ın en güvenilir ve deneyimli Work and Travel firması
-              olarak, gençlerimizi ABD’ye hem çalışmak hem de farklı kültürleri
-              keşfetmek üzere gönderiyoruz. Her adımda yanınızda olarak, size
-              güvenli, keyifli ve kazançlı bir yolculuk sunmayı hedefliyoruz.</p>
+            <p className="desc">{getText("WorkAndTravelParagraph")}</p>
+          </div>
+        </div>
+      </Link>
+
+      <Link to={"/organization-of-academic-exchange-programs"}>
+        <div className="custom-card">
+          <div className="icon-container icon3">
+            <p className="icon-number">04</p>
+          </div>
+          <div className="icon">
+            <img src="https://eduagency.uz/img/service2.png" alt="" />
+          </div>
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            <h1 className="title">{getText("headerSwiperTitle11")}</h1>
+
+            <p className="desc">{getText("headerSwiperParagraph11")}</p>
           </div>
         </div>
       </Link>

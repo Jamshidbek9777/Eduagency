@@ -286,6 +286,21 @@ export const en = {
     WorkAndTravelEndParagraph: "Join us to invest in your future and experience an unforgettable journey!",
 
 
+    OrganizationofAcademicExchangeProgramsAccordionServicesTitle: "Our Services:",
+    OrganizationofAcademicExchangeProgramsAccordionTitle1: "1. Student Exchange Programs:",
+    OrganizationofAcademicExchangeProgramsAccordionTitle2: "2. Academic Staff Exchange Programs:",
+    OrganizationofAcademicExchangeProgramsAccordionTitle3: "Process Management:",
+    OrganizationofAcademicExchangeProgramsAccordionTitle4: "Inter-University and Institutional Collaborations:",
+    OrganizationofAcademicExchangeProgramsAccordionTitle5: "Cultural and Academic Development:",
+    OrganizationofAcademicExchangeProgramsAccordionTitle6: "In Conclusion:",
+    OrganizationofAcademicExchangeProgramsAccordionParagraph1: "We offer students the opportunity to study abroad, experience new cultures, and work with different academic systems. Through these programs, we manage collaborations between universities to provide students with experiences that will develop both their academic and social skills. Additionally, we provide consultancy services during the application, acceptance, and registration processes to make the journey abroad as easy as possible for students.",
+    OrganizationofAcademicExchangeProgramsAccordionParagraph2: "We organize academic staff exchange programs for universities and research institutions. These programs allow faculty members to teach abroad, conduct research, and establish international academic networks. We also ensure the smooth execution of protocols between universities, visa arrangements, and accommodation processes during this period.",
+    OrganizationofAcademicExchangeProgramsAccordionParagraph3: "Our firm meticulously manages every step of the academic exchange process by providing professional support. We offer comprehensive services from the application process for students and academics to communication with universities, visa procedures, accommodation, and cultural adaptation. We also provide consultancy services to facilitate their adjustment to life in the study abroad.",
+    OrganizationofAcademicExchangeProgramsAccordionParagraph4: "To successfully implement international academic exchange programs, we maintain close cooperation with universities and academic institutions. Through agreements made with educational institutions in Turkey and other countries, we ensure that students and academics can experience this journey under the best conditions.",
+    OrganizationofAcademicExchangeProgramsAccordionParagraph5: "We recognize that academic exchange programs are not limited to education alone. We value the importance of our participants gaining a global perspective by experiencing new cultures. Therefore, we aim to make life abroad more meaningful and unforgettable by offering additional services such as cultural adaptation programs, social activities, and local guidance services.",
+    OrganizationofAcademicExchangeProgramsAccordionParagraph6: "Our firm, with a team specialized in academic exchange programs, offers the most suitable and advantageous programs for students and academics. We support everyone who wants to contribute to their academic and personal development to experience a world-class educational experience.",
+
+
     slogan: "Expert guidance for every transition",
     aboutDesc: "At Eduagency, we specialize in navigating the complexities of educational and professional transitions with ease. Our dedicated team of experts is committed to providing personalized support and seamless solutions for students and professionals alike. Whether you're looking to advance your academic journey or make a significant career move, we are here to guide you every step of the way.",
 

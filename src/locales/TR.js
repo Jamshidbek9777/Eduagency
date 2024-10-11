@@ -280,7 +280,19 @@ export const tr = {
     WorkAndTravelEndTitle: "Amerika’da hem çalışmak hem de dünyayı keşfetmek için hazır mısınız?",
     WorkAndTravelEndParagraph: "Geleceğinize yatırım yapmak ve unutulmaz bir deneyim yaşamak için bize katılın!",
 
-
+    OrganizationofAcademicExchangeProgramsAccordionServicesTitle: "Hizmetlerimiz:",
+    OrganizationofAcademicExchangeProgramsAccordionTitle1: "1. Öğrenci Değişim Programları:",
+    OrganizationofAcademicExchangeProgramsAccordionTitle2: "2. Akademisyen Değişim Programları:",
+    OrganizationofAcademicExchangeProgramsAccordionTitle3: "Süreç Yönetimi:",
+    OrganizationofAcademicExchangeProgramsAccordionTitle4: "Üniversite ve Kurumlar Arası İş Birlikleri:",
+    OrganizationofAcademicExchangeProgramsAccordionTitle5: "Kültürel ve Akademik Gelişim:",
+    OrganizationofAcademicExchangeProgramsAccordionTitle6: "Sonuç Olarak:",
+    OrganizationofAcademicExchangeProgramsAccordionParagraph1: "Öğrencilere, yurt dışında eğitim alma, yeni kültürlerle tanışma ve farklı akademik sistemlerle çalışma fırsatı sunuyoruz. Bu programlar kapsamında üniversiteler arası iş birliklerini yöneterek, öğrencilere hem akademik hem de sosyal beceriler kazandıracak deneyimler sağlıyoruz. Ayrıca, öğrencilerin yurtdışına gidiş sürecini en kolay hale getirmek için başvuru, kabul ve kayıt süreçlerinde danışmanlık veriyoruz.",
+    OrganizationofAcademicExchangeProgramsAccordionParagraph2: "Üniversiteler ve araştırma kurumları için akademisyen değişim programları organize ediyoruz. Bu programlar, öğretim üyelerine yurt dışında ders verme, araştırma yapma ve uluslararası akademik ağlar kurma fırsatı tanıyor. Ayrıca bu süreçte üniversiteler arası protokollerin oluşturulmasını, vize ve konaklama işlemlerinin sorunsuz yürümesini sağlıyoruz.",
+    OrganizationofAcademicExchangeProgramsAccordionParagraph3: "Firmamız, her adımda profesyonel destek sunarak akademik değişim sürecinin her aşamasını titizlikle yönetir. Öğrenci ve akademisyenlerin başvuru sürecinden, üniversitelerle iletişim kurmalarına, vize işlemlerinden, konaklama ve kültürel uyumlarına kadar kapsamlı bir hizmet sunmaktayız. Ayrıca, yurt dışı eğitim hayatına uyum sağlamalarını kolaylaştırmak için danışmanlık hizmetleri de veriyoruz.",
+    OrganizationofAcademicExchangeProgramsAccordionParagraph4: "Uluslararası akademik değişim programlarını başarıyla yürütmek için üniversitelerle ve akademik kurumlarla sıkı bir iş birliği içerisindeyiz. Hem Türkiye’de hem de diğer ülkelerde eğitim kurumlarıyla yapılan anlaşmalar sayesinde, öğrenci ve akademisyenlerin en iyi koşullarda bu deneyimi yaşamasını sağlıyoruz.",
+    OrganizationofAcademicExchangeProgramsAccordionParagraph5: "Akademik değişim programlarının yalnızca eğitimle sınırlı olmadığının farkındayız. Katılımcılarımızın yeni kültürleri tanıyarak küresel bir bakış açısı kazanmalarını önemsiyoruz. Bu nedenle, kültürel uyum programları, sosyal etkinlikler ve yerel rehberlik hizmetleri gibi ek hizmetler de sunarak, yurtdışındaki yaşamı daha anlamlı ve unutulmaz kılmayı hedefliyoruz.",
+    OrganizationofAcademicExchangeProgramsAccordionParagraph6: "Firmamız, akademik değişim programları alanında uzmanlaşmış bir ekiple, öğrenciler ve akademisyenler için en uygun ve avantajlı programları sunar. Hem akademik hem de kişisel gelişimlerine katkı sağlamak isteyen herkesi, dünya standartlarında bir eğitim deneyimi yaşamaları için destekliyoruz.",
 
 
     question1Title: "1.⁠Türkiyede okumanın avantajları nelerdir?",

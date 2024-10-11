@@ -325,6 +325,21 @@ export const uz = {
     WorkAndTravelEndTitle: "Amerikada ham ishlashga, ham dunyoni kashf etishga tayyormisiz?",
     WorkAndTravelEndParagraph: "Kelajagingizga sarmoya kiritish va unutilmas tajriba olish uchun bizga qo‘shiling!",
 
+    OrganizationofAcademicExchangeProgramsAccordionServicesTitle: "Xizmatlarimiz:",
+    OrganizationofAcademicExchangeProgramsAccordionTitle1: "1. Talaba Almashuv Dasturlari:",
+    OrganizationofAcademicExchangeProgramsAccordionTitle2: "2. Akademik Xodim Almashuv Dasturlari:",
+    OrganizationofAcademicExchangeProgramsAccordionTitle3: "Jarayon Boshqaruvi:",
+    OrganizationofAcademicExchangeProgramsAccordionTitle4: "Universitetlar va Muassasalararo Hamkorliklar:",
+    OrganizationofAcademicExchangeProgramsAccordionTitle5: "Madaniy va Akademik Rivojlanish:",
+    OrganizationofAcademicExchangeProgramsAccordionTitle6: "Natijada:",
+    OrganizationofAcademicExchangeProgramsAccordionParagraph1: "Biz talabalarga chet elda ta’lim olish, yangi madaniyatlar bilan tanishish va turli akademik tizimlarda ishlash imkoniyatini taqdim etamiz. Ushbu dasturlar doirasida universitetlararo hamkorliklarni boshqarib, talabalarga akademik va ijtimoiy ko‘nikmalarni rivojlantirish uchun tajribalar taqdim etamiz. Shuningdek, talabalarni chet elga jo‘nash jarayonini eng oson qilish uchun ariza, qabul va ro‘yxatdan o‘tish jarayonlarida maslahat beramiz.",
+    OrganizationofAcademicExchangeProgramsAccordionParagraph2: "Biz universitetlar va ilmiy muassasalar uchun akademik xodim almashuv dasturlarini tashkil etamiz. Ushbu dasturlar o‘qituvchilarga chet elda dars berish, tadqiqot olib borish va xalqaro akademik tarmoqlarni qurish imkoniyatini taqdim etadi. Shuningdek, ushbu jarayonda universitetlararo protokollarni tayyorlash, viza va yashash joylarini muammosiz boshqarishni ta’minlaymiz.",
+    OrganizationofAcademicExchangeProgramsAccordionParagraph3: "Bizning firmamiz har bir qadamda professional qo‘llab-quvvatlashni taqdim etib, akademik almashuv jarayonining har bosqichini puxta boshqaradi. Talabalar va akademiklarning ariza jarayonidan, universitetlar bilan aloqa o‘rnatishdan, viza jarayonlaridan, yashash joylari va madaniy moslashuvlariga qadar keng qamrovli xizmatni taqdim etamiz. Shuningdek, chet elda ta’lim olish hayotiga moslashishga yordam berish uchun maslahat xizmatlari ham ko‘rsatamiz.",
+    OrganizationofAcademicExchangeProgramsAccordionParagraph4: "Xalqaro akademik almashuv dasturlarini muvaffaqiyatli amalga oshirish uchun universitetlar va ilmiy muassasalar bilan yaqindan hamkorlik qilamiz. Turkiyada va boshqa davlatlarda ta’lim muassasalari bilan tuzilgan shartnomalar orqali talaba va akademiklarning eng yaxshi sharoitlarda ushbu tajribani boshdan kechirishini ta’minlaymiz.",
+    OrganizationofAcademicExchangeProgramsAccordionParagraph5: "Akademik almashuv dasturlarining faqat ta’lim bilan cheklanmasligini tushunamiz. Ishtirokchilarimizning yangi madaniyatlarni o‘rganib, global nuqtai nazar egallashlari biz uchun muhimdir. Shu sababli, madaniy moslashuv dasturlari, ijtimoiy tadbirlar va mahalliy yo‘riqnomalar kabi qo‘shimcha xizmatlar taqdim etish orqali chet eldagi hayotni yanada mazmunli va unutilmas qilishni maqsad qilamiz.",
+    OrganizationofAcademicExchangeProgramsAccordionParagraph6: "Bizning firmamiz, akademik almashuv dasturlari sohasida ixtisoslashgan jamoa bilan, talabalar va akademiklar uchun eng mos va foydali dasturlarni taklif qiladi. Akademik va shaxsiy rivojlanishlariga hissa qo‘shmoqchi bo‘lgan har bir kishini, dunyo standartlaridagi ta’lim tajribasini yashashlari uchun qo‘llab-quvvatlaymiz.",
+
+
 
     question1Title: "1.⁠ ⁠Turkiyada o'qishning afzalliklari nimalar?",
     question2Title: "2.⁠ ⁠O'zbeklar Turkiyada qanday shartlarda o'qishlari mumkin?",
