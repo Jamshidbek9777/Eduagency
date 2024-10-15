@@ -299,7 +299,7 @@ const Navbar = () => {
                       </Link>
                     </li>
 
-                    <li onClick={() => handleLinkClick("/certificate")}>
+                    {/* <li onClick={() => handleLinkClick("/certificate")}>
                       <Link
                         to="/certificate"
                         className={`${location.pathname === "/certificate" ? "active-link" : ""
@@ -317,7 +317,7 @@ const Navbar = () => {
                       >
                         E-Ustoz
                       </Link>
-                    </li>
+                    </li> */}
                   </motion.ul>
                 </li>
 

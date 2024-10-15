@@ -18,12 +18,6 @@ const App = () => {
 
   return (
     <>
-      <Helmet
-        title="Home Page"
-        description="Welcome to EduAgency! Your gateway to studying in Turkey and Uzbekistan."
-        link="/"
-        keywords="eduagency, study in Turkey, study in Uzbekistan"
-      />
       <Header />
       {/* <Partners /> */}
       {/* <ServiceBlog /> */}
