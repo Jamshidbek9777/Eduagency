@@ -57,7 +57,7 @@ function NewCards() {
         </div>
       </Link>
 
-      <Link to={"/organization-of-academic-exchange-programs"}>
+      {/* <Link to={"/organization-of-academic-exchange-programs"}>
         <div className="custom-card">
           <div className="icon-container icon3">
             <p className="icon-number">04</p>
@@ -71,7 +71,7 @@ function NewCards() {
             <p className="desc">{getText("headerSwiperParagraph11")}</p>
           </div>
         </div>
-      </Link>
+      </Link> */}
     </div>
   );
 }
