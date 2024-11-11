@@ -116,17 +116,14 @@ const Navbar = () => {
               className={`d-flex nav-menu-pc justify-content align-items-center`}
             >
               <ul className="nav-menu">
-
-
-
                 <li onClick={() => handleLinkClick("/about")}>
                   <Link
                     to="/about"
-                    className={`${location.pathname === "/about" ? "active-link" : ""
-                      }`}
+                    className={`${
+                      location.pathname === "/about" ? "active-link" : ""
+                    }`}
                   >
                     {getText("aboutUs")}
-
                   </Link>
                 </li>
                 {/* Services Dropdown */}
@@ -135,22 +132,27 @@ const Navbar = () => {
                   onMouseEnter={() => handleDropdownHover(true)}
                   onMouseLeave={() => handleDropdownHover(false)}
                 >
-
                   <Link
                     to="/services"
-                    className={`${location.pathname === "/services" ? "active-link" : ""
-                      }`}
-                    style={{ display: "flex", alignItems: "center", gap: "10px" }}
+                    className={`${
+                      location.pathname === "/services" ? "active-link" : ""
+                    }`}
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "10px",
+                    }}
                   >
                     {getText("services")}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
-                      className={`services-arrow ${location.pathname === "/services" ? "active" : ""
-                        }`}
+                      className={`services-arrow ${
+                        location.pathname === "/services" ? "active" : ""
+                      }`}
                       style={{ width: "20px" }}
                     >
-                      <path 
+                      <path
                         fill="#000000"
                         d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
                       />
@@ -169,22 +171,29 @@ const Navbar = () => {
                     <li onClick={() => handleLinkClick("/student-transfer")}>
                       <Link
                         to="/student-transfer"
-                        className={`${location.pathname === "/student-transfer"
-                          ? "active-link"
-                          : ""
-                          }`}
+                        className={`${
+                          location.pathname === "/student-transfer"
+                            ? "active-link"
+                            : ""
+                        }`}
                       >
                         {getText("headerSwiperTitle2")}
                       </Link>
                     </li>
 
-                    <li onClick={() => handleLinkClick("/official-representative-services")}>
+                    <li
+                      onClick={() =>
+                        handleLinkClick("/official-representative-services")
+                      }
+                    >
                       <Link
                         to="/official-representative-services"
-                        className={`${location.pathname === "/official-representative-services"
-                          ? "active-link"
-                          : ""
-                          }`}
+                        className={`${
+                          location.pathname ===
+                          "/official-representative-services"
+                            ? "active-link"
+                            : ""
+                        }`}
                       >
                         {getText("headerSwiperTitle7")}
                       </Link>
@@ -193,16 +202,15 @@ const Navbar = () => {
                     <li onClick={() => handleLinkClick("/work-and-travel")}>
                       <Link
                         to="/work-and-travel"
-                        className={`${location.pathname === "/work-and-travel"
-                          ? "active-link"
-                          : ""
-                          }`}
+                        className={`${
+                          location.pathname === "/work-and-travel"
+                            ? "active-link"
+                            : ""
+                        }`}
                       >
                         Work & Travel
                       </Link>
                     </li>
-
-                 
                   </motion.ul>
                 </li>
                 <li
@@ -211,16 +219,26 @@ const Navbar = () => {
                   onMouseLeave={() => handlePartnersDropdownHover(false)}
                 >
                   <Link
-                    className={`${location.pathname === "/business-partners" ? "active-link" : ""
-                      }`}
-                    style={{ display: "flex", alignItems: "center", gap: "10px" }}
+                    className={`${
+                      location.pathname === "/business-partners"
+                        ? "active-link"
+                        : ""
+                    }`}
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "10px",
+                    }}
                   >
                     {getText("partners")}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
-                      className={`services-arrow ${location.pathname === "/business-partners" ? "active" : ""
-                        }`}
+                      className={`services-arrow ${
+                        location.pathname === "/business-partners"
+                          ? "active"
+                          : ""
+                      }`}
                       style={{ width: "20px" }}
                     >
                       <path
@@ -237,15 +255,18 @@ const Navbar = () => {
                       y: isPartnersDropdownOpen ? 0 : -30,
                     }}
                     transition={{ duration: 0.3 }}
-                    className={`dropdown-menu ${isPartnersDropdownOpen ? "show" : ""}`}
+                    className={`dropdown-menu ${
+                      isPartnersDropdownOpen ? "show" : ""
+                    }`}
                   >
                     <li onClick={() => handleLinkClick("/turkchasoati")}>
                       <Link
                         to="/turkchasoati"
-                        className={`${location.pathname === "/turkchasoati"
-                          ? "active-link"
-                          : ""
-                          }`}
+                        className={`${
+                          location.pathname === "/turkchasoati"
+                            ? "active-link"
+                            : ""
+                        }`}
                       >
                         TurkchaSoati
                       </Link>
@@ -254,8 +275,9 @@ const Navbar = () => {
                     <li onClick={() => handleLinkClick("/turksoft")}>
                       <Link
                         to="/turksoft"
-                        className={`${location.pathname === "/turksoft" ? "active-link" : ""
-                          }`}
+                        className={`${
+                          location.pathname === "/turksoft" ? "active-link" : ""
+                        }`}
                       >
                         Turkosoft
                       </Link>
@@ -264,8 +286,9 @@ const Navbar = () => {
                     <li onClick={() => handleLinkClick("/kosmosx")}>
                       <Link
                         to="/kosmosx"
-                        className={`${location.pathname === "/kosmosx" ? "active-link" : ""
-                          }`}
+                        className={`${
+                          location.pathname === "/kosmosx" ? "active-link" : ""
+                        }`}
                       >
                         KosmosX
                       </Link>
@@ -274,8 +297,11 @@ const Navbar = () => {
                     <li onClick={() => handleLinkClick("/turkiye-burslari")}>
                       <Link
                         to="/turkiye-burslari"
-                        className={`${location.pathname === "/turkiye-burslari" ? "active-link" : ""
-                          }`}
+                        className={`${
+                          location.pathname === "/turkiye-burslari"
+                            ? "active-link"
+                            : ""
+                        }`}
                       >
                         Türkiye Bursları
                       </Link>
@@ -284,8 +310,11 @@ const Navbar = () => {
                     <li onClick={() => handleLinkClick("/airtravel")}>
                       <Link
                         to="/airtravel"
-                        className={`${location.pathname === "/airtravel" ? "active-link" : ""
-                          }`}
+                        className={`${
+                          location.pathname === "/airtravel"
+                            ? "active-link"
+                            : ""
+                        }`}
                       >
                         Airtravel
                       </Link>
@@ -313,7 +342,6 @@ const Navbar = () => {
                   </motion.ul>
                 </li>
 
-
                 {/* <li onClick={() => handleLinkClick("/question")}>
                   <Link
                     to="/question"
@@ -327,8 +355,9 @@ const Navbar = () => {
                 <li onClick={() => handleLinkClick("/contacts")}>
                   <Link
                     to="/contacts"
-                    className={`${location.pathname === "/contacts" ? "active-link" : ""
-                      }`}
+                    className={`${
+                      location.pathname === "/contacts" ? "active-link" : ""
+                    }`}
                   >
                     {getText("contacts")}
                   </Link>
