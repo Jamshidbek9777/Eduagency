@@ -9,27 +9,10 @@ function NewCards() {
     useContext(LanguageContext);
   return (
     <div className="container newcards justify-content-center h-100 gap-5 mt-5">
-      <Link to={"/official-representative-services"}>
-        <div className="custom-card">
-          <div className="icon-container icon1">
-            <p className="icon-number">01</p>
-          </div>
-          <div className="icon">
-            <img src="https://eduagency.uz/img/service2.png" alt="" />
-          </div>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <h1 className="title">{getText("headerSwiperTitle7")}</h1>
-            <p className="desc">
-              {getText("OfficialRepresentativeServicesTitle")}
-            </p>
-          </div>
-        </div>
-      </Link>
-
       <Link to={"/student-transfer"}>
         <div className="custom-card">
           <div className="icon-container icon2">
-            <p className="icon-number">02</p>
+            <p className="icon-number">01</p>
           </div>
           <div className="icon">
             <img src="https://eduagency.uz/img/service2.png" alt="" />
@@ -44,7 +27,7 @@ function NewCards() {
       <Link to={"/work-and-travel"}>
         <div className="custom-card">
           <div className="icon-container icon3">
-            <p className="icon-number">03</p>
+            <p className="icon-number">02</p>
           </div>
           <div className="icon">
             <img src="https://eduagency.uz/img/service2.png" alt="" />

@@ -181,24 +181,6 @@ const Navbar = () => {
                       </Link>
                     </li>
 
-                    <li
-                      onClick={() =>
-                        handleLinkClick("/official-representative-services")
-                      }
-                    >
-                      <Link
-                        to="/official-representative-services"
-                        className={`${
-                          location.pathname ===
-                          "/official-representative-services"
-                            ? "active-link"
-                            : ""
-                        }`}
-                      >
-                        {getText("headerSwiperTitle7")}
-                      </Link>
-                    </li>
-
                     <li onClick={() => handleLinkClick("/work-and-travel")}>
                       <Link
                         to="/work-and-travel"
@@ -259,19 +241,6 @@ const Navbar = () => {
                       isPartnersDropdownOpen ? "show" : ""
                     }`}
                   >
-                    <li onClick={() => handleLinkClick("/turkchasoati")}>
-                      <Link
-                        to="/turkchasoati"
-                        className={`${
-                          location.pathname === "/turkchasoati"
-                            ? "active-link"
-                            : ""
-                        }`}
-                      >
-                        TurkchaSoati
-                      </Link>
-                    </li>
-
                     <li onClick={() => handleLinkClick("/turksoft")}>
                       <Link
                         to="/turksoft"
@@ -304,19 +273,6 @@ const Navbar = () => {
                         }`}
                       >
                         Türkiye Bursları
-                      </Link>
-                    </li>
-
-                    <li onClick={() => handleLinkClick("/airtravel")}>
-                      <Link
-                        to="/airtravel"
-                        className={`${
-                          location.pathname === "/airtravel"
-                            ? "active-link"
-                            : ""
-                        }`}
-                      >
-                        Airtravel
                       </Link>
                     </li>
 

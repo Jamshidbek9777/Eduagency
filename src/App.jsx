@@ -21,7 +21,7 @@ const App = () => {
       <Header />
       {/* <Partners /> */}
       {/* <ServiceBlog /> */}
-      <NewCards />
+      {/* <NewCards /> */}
       {/* <About
         title={"Hakkımızda"}
         desc={
